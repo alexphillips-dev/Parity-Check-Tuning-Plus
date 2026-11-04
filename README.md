@@ -13,6 +13,8 @@ The normal scheduled workflow starts with an array operation initiated by Unraid
 
 The first stable Plus release is published on `main`. It consolidates the fixes and improvements made since the previous plugin; read the [complete release notes](docs/releases/2026.11.04.04.md) before migrating. The owner reports completing the discussed live Unraid acceptance checks for the tested runtime. Local checks and owner-reported acceptance are recorded separately in [validation](docs/VALIDATION.md).
 
+The cumulative notes cover all five reviewed original issue reports (#16, #17, #19, #21, and #22), the completed/canceled notification fix, and every connected repair from the source audit and later Plus development. The [issue remediation guide](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/wiki/Issue-Remediation) links the original reports and their evidence.
+
 ## Documentation and support
 
 - [Complete wiki](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/wiki)

@@ -1,22 +1,22 @@
-# Issue remediation in 2026.11.03.02
+# Original issue remediation
 
 > Stable release: **2026.11.04.04** · Stable channel: **main** · Development channel: **dev**
 
-The work addressed all five reviewed upstream issue areas. This describes local Plus changes/evidence; it does not claim upstream issues were closed or a physical host tested.
+The first stable Plus release includes the repairs begun in `2026.11.03.02` and the subsequent connected fixes. All five open reports reviewed in the original repository are linked below. These are Plus fixes; this does not claim the original tickets have been closed. See [Release Notes](Release-Notes) for the complete cumulative fixes, later audit repairs, and cleanup. Local synthetic evidence and owner-reported host acceptance are recorded separately in the validation guide.
 
 | Report | Plus change | Evidence |
 | --- | --- | --- |
-| 16: installation permissions | Deterministic safe metadata, prohibited root/unrelated paths, validated staged archive. | Historical metadata negative control; root-preserving extraction; source/package checks. |
-| 17: version HTML | Matching runtime version path, format validation, escaped presentation. | Missing/empty/malformed/HTML-looking version fixtures. |
-| 17: translations | Offline late lookup independent of native early parsing. | 42 catalogs, actual native parsers, 225 browser cases. |
-| 17: assistant interactions | Correct setting binding, real button, scoped validation, popup behavior. | Mode/range/browser and popup escaping checks. |
-| 19: endpoint help | Canonical help describes the end point. | Source/catalog and rendered help checks. |
-| 21: background defaults | Informational messages off on fresh install; saved choices preserved. | Fresh/update configuration and quiet/opt-in transitions. |
-| 21: connected state | Explicit ownership replaces undefined notification state; overlapping/manual/heat/restart/window coordination. | Synthetic transitions and actual pause/resume function checks. |
-| 22: mover identity | PID/command validation replaces process-match counts. | Native/tuned positives and unrelated/stale/malformed negatives. |
+| #16: installation permissions | Deterministic safe metadata, prohibited root/unrelated paths, validated staged archive. Prevent the packaging defect; do not change permissions on an already affected host. | Historical metadata negative control; root-preserving extraction; source/package checks. |
+| #17: version HTML | Matching runtime version path, numeric format validation, escaped presentation, plain-text unknown fallback. | Missing/empty/malformed/HTML-looking version fixtures. |
+| #19: endpoint help | Canonical help describes the end point. | Source/catalog and rendered help checks. |
+| #21: background defaults | Informational messages off on fresh install; saved choices and automatic pause/resume preserved. | Fresh/update configuration and quiet/opt-in transitions. |
+| #22: mover identity | PID/command validation replaces process-match counts. | Native/tuned positives; missing, unrelated, stale, reused, malformed, and overflowing PID negatives. |
 
 ## Connected repairs
 
+- Offline late translation lookup works independently of native early parsing: 42 catalogs, actual native parsers, and 225 browser cases.
+- Assistant setting binding, real button references, scoped validation, and escaped popup output are corrected; mode/range/browser regressions cover them.
+- Explicit background pause ownership replaces undefined notification state and coordinates overlapping/manual/heat/restart/partial/window restrictions.
 - Defaults reloads reset settings before regenerating cron.
 - Assistant validation runs on the server before an operation command.
 - Percentage end bounds remain independent of later settings edits.
