@@ -38,7 +38,7 @@ Support and troubleshooting: [Unraid forum thread](https://forums.unraid.net/top
 
 The first stable release, 2026.11.04.04, is published on `main`; its manifest and package-download URLs remain on main. Development installations follow `dev`. Future dev pushes do not change the stable channel or create a Community Applications listing. The owner reports completing the discussed host acceptance checks; this is separate from automated evidence. Native-speaker translation review remains outstanding. Read the [complete stable release notes](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/blob/main/docs/releases/2026.11.04.04.md).
 
-The current validation suite includes 134 Python tests, 225 browser page cases, and 945 native-grid layout cases. The [comprehensive source audit](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/blob/main/docs/AUDIT-2026.11.03.md) records the preceding runtime audit. Local fixture/package results and physical Unraid acceptance remain separate.
+The current validation suite includes 143 Python tests, 225 browser page cases, and 945 native-grid layout cases. The [comprehensive source audit](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/blob/main/docs/AUDIT-2026.11.03.md) records the preceding runtime audit. Local fixture/package results and physical Unraid acceptance remain separate.
 
 The `2026.11.04.01` [runtime cleanup](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/blob/main/docs/CLEANUP-2026.11.04.md) removes unimplemented controls and unused integration files while retaining native compatibility, operational lifecycle hooks, and language-neutral progress/history fields. See [release notes](Release-Notes) for upgrade behavior and retired preferences.
 

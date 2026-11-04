@@ -1,7 +1,7 @@
 # Original-plugin compatibility review
 
 This review compares Plus `2026.11.04.02` with the original plugin at
-commit 5580d8f2a93223c81d805fbe556b00385b3201a7,
+pinned commit `5580d8f2a93223c81d805fbe556b00385b3201a7`,
 including its distributed `2026.04.24` package. The original archive SHA256 is
 `f6f6458db47d08c16f29726e958642b09e9cf839d37444ae8ca5f82bb06ae71f`.
 All 28 packaged files match the original repository after line-ending normalization
@@ -65,6 +65,9 @@ Matching a defective upstream result is not a compatibility requirement.
 
 The offline comparison checker verifies the original commit, manifest version,
 archive checksum, and source/archive parity before executing extracted functions:
+
+Provide a local checkout of that pinned baseline in the ignored
+`build/upstream-verification` directory, then run:
 
 ```text
 git -C build/upstream-verification checkout 5580d8f2a93223c81d805fbe556b00385b3201a7

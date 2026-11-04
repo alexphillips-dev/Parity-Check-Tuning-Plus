@@ -15,7 +15,7 @@ The first stable Plus release is published on `main`. It consolidates the fixes 
 
 The `2026.11.04.05` metadata update connects the plugin manager's **Support Thread** link to the [Unraid forum topic](https://forums.unraid.net/topic/201158-plugin-parity-check-tuning-plus/). See the [update notes](docs/releases/2026.11.04.05.md).
 
-The cumulative notes cover all five reviewed original issue reports (#16, #17, #19, #21, and #22), the completed/canceled notification fix, and every connected repair from the source audit and later Plus development. The [issue remediation guide](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/wiki/Issue-Remediation) links the original reports and their evidence.
+The cumulative notes cover all five reviewed original issue reports (#16, #17, #19, #21, and #22), the completed/canceled notification fix, and every connected repair from the source audit and later Plus development. The [issue remediation guide](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/wiki/Issue-Remediation) summarizes those reports and their evidence.
 
 ## Documentation and support
 
@@ -225,7 +225,7 @@ python -B tests/render_fixtures.py
 npm run test:ui
 ```
 
-The current validation suite contains 134 synthetic tests, including 48 legacy-progress subcases, 225 browser page/route cases, and 945 native-grid layout cases. Install development dependencies with `python -m pip install -r requirements-dev.txt` before discovering the suite; PyYAML is used only for repository issue-form checks. The optional offline upstream checker adds 602 executable comparisons. The browser renderer uses official Unraid Markdown/translation parser fixtures. Checks for the 114-file package cover source parity, checksums, ownership/modes, dangerous paths, root-preserving extraction, and failure-safe archive replacement. Reproducibility checks compare Windows/Linux package bytes. See [validation evidence and limits](docs/VALIDATION.md).
+The current validation suite contains 143 synthetic tests, including 48 legacy-progress subcases, 225 browser page/route cases, and 945 native-grid layout cases. Install development dependencies with `python -m pip install -r requirements-dev.txt` before discovering the suite; PyYAML is used only for repository issue-form checks. The optional offline upstream checker adds 602 executable comparisons. The browser renderer uses official Unraid Markdown/translation parser fixtures. Checks for the 114-file package cover source parity, checksums, ownership/modes, dangerous paths, root-preserving extraction, and failure-safe archive replacement. Reproducibility checks compare Windows/Linux package bytes. See [validation evidence and limits](docs/VALIDATION.md).
 
 The runtime reference check tokenizes owned PHP functions and follows entry-point/callback references, with native parser compatibility functions declared as external roots. It also checks named page JavaScript references. These checks help catch unused functions and complement real-browser/runtime tests; they do not prove every dynamic host path or branch is reachable.
 

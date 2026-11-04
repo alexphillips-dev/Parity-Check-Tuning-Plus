@@ -1,12 +1,14 @@
 """Publication boundary regressions, including forced adds and exact index bytes."""
 import io
+import os
 from pathlib import Path
 import subprocess
 import tarfile
 import tempfile
 import unittest
+from unittest.mock import patch
 
-from check_publish_files import allowed_path, check_index, content_issues, inspect_file
+from check_publish_files import ROOT, allowed_path, check_index, content_issues, identity_issues, inspect_file
 
 
 class Publication(unittest.TestCase):
@@ -69,6 +71,50 @@ class Publication(unittest.TestCase):
                 archive.addfile(entry, io.BytesIO(data))
         issues = inspect_file('archives/parity.check.tuning.plus-2026.11.03.07.txz', buffer.getvalue())
         self.assertEqual({category for _, category in issues}, {'local-file-in-package', 'github-token'})
+
+    def test_private_email_is_rejected_without_exposing_the_address(self):
+        address = ('private-person'+'@'+'mail.invalid').encode()
+        self.assertEqual(content_issues(address), ['nonpublic-email'])
+        for address in [b'public-alias@users.noreply.github.com', b'123+public-alias@users.noreply.github.com', b'person@example.com']:
+            self.assertEqual(content_issues(address), [])
+
+    def test_fixture_email_exception_requires_exact_path_and_bytes(self):
+        name = 'tests/fixtures/unraid/Markdown.php'
+        data = (ROOT/name).read_bytes()
+        self.assertIn('nonpublic-email', content_issues(data))
+        self.assertEqual(inspect_file(name, data), [])
+        self.assertIn((name, 'nonpublic-email'), inspect_file(name, data+b'\n'))
+        other = 'tests/fixtures/unraid/other.php'
+        self.assertIn((other, 'nonpublic-email'), inspect_file(other, data))
+
+    def test_personal_profile_name_is_rejected_without_exposing_it(self):
+        profile = 'Fixture'+' Private'
+        with patch('check_publish_files.Path.home', return_value=Path('/profiles')/profile):
+            self.assertEqual(content_issues(profile.upper().encode()), ['private-profile-name'])
+            self.assertEqual(content_issues(b'Public project documentation'), [])
+
+    def test_resolved_git_identities_reject_environment_leaks(self):
+        with tempfile.TemporaryDirectory(prefix='pct-identity-') as directory:
+            subprocess.run(['git', 'init', '-q', directory], check=True)
+            public = {'GIT_AUTHOR_NAME':'public-alias', 'GIT_COMMITTER_NAME':'public-alias',
+                      'GIT_AUTHOR_EMAIL':'public-alias@users.noreply.github.com',
+                      'GIT_COMMITTER_EMAIL':'public-alias@users.noreply.github.com'}
+            with patch.dict(os.environ, public):
+                self.assertEqual(identity_issues(directory), [])
+                with patch.dict(os.environ, {'GIT_AUTHOR_EMAIL':'private'+'@'+'mail.invalid'}):
+                    self.assertEqual(identity_issues(directory), [('git-author', 'nonpublic-identity-email')])
+                with patch.dict(os.environ, {'GIT_COMMITTER_NAME':'Fixture'+' Private'}):
+                    self.assertEqual(identity_issues(directory), [('git-committer', 'nonpublic-identity-name')])
+
+    def test_package_email_is_checked_even_when_its_filename_is_allowed(self):
+        buffer = io.BytesIO()
+        with tarfile.open(fileobj=buffer, mode='w:xz') as archive:
+            entry = tarfile.TarInfo('usr/local/emhttp/plugins/parity.check.tuning.plus/config.php')
+            data = ('<?php /* '+'private'+'@'+'mail.invalid'+' */').encode()
+            entry.size = len(data)
+            archive.addfile(entry, io.BytesIO(data))
+        issues = inspect_file('archives/parity.check.tuning.plus-2026.11.04.05.txz', buffer.getvalue())
+        self.assertEqual([category for _, category in issues], ['nonpublic-email'])
 
 
 if __name__ == '__main__':
