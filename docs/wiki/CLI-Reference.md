@@ -1,6 +1,6 @@
 # CLI reference
 
-> Stable release: **2026.11.04.04** · Stable channel: **main** · Development channel: **dev**
+> Stable release: **2026.11.04.05** · Stable channel: **main** · Development channel: **dev**
 
 The installer creates `/usr/local/bin/parity.check.plus` as a symlink to the Plus PHP entry point. That command name participates in CLI-mode detection; invoking the PHP file directly is not identical.
 

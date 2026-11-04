@@ -1,6 +1,6 @@
 # Temperature management
 
-> Stable release: **2026.11.04.04** · Stable channel: **main** · Development channel: **dev**
+> Stable release: **2026.11.04.05** · Stable channel: **main** · Development channel: **dev**
 
 ## Relative thresholds
 

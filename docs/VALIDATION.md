@@ -1,5 +1,9 @@
 # Parity Check Tuning Plus validation
 
+## Support-link metadata update: 2026.11.04.05
+
+The manifest's support target now points to the dedicated Unraid forum topic. All 21 focused channel/installer regressions passed on Linux, along with the support-target, channel, package/source/checksum, documentation/wiki, and 42-catalog checks. Runtime source, installed package bytes, settings, native hook scripts, and language catalogs are unchanged. The complete runtime qualification below remains the evidence for the unchanged runtime.
+
 ## First stable release: 2026.11.04.04
 
 The main promotion candidate passed the complete **134-test Python suite**, fresh

@@ -1,8 +1,8 @@
 # Diagnostics and support
 
-> Stable release: **2026.11.04.04** · Stable channel: **main** · Development channel: **dev**
+> Stable release: **2026.11.04.05** · Stable channel: **main** · Development channel: **dev**
 
-Use the [Plus issue tracker](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/issues). No support replies or host diagnostics are uploaded automatically by this development update.
+Use the [Unraid support thread](https://forums.unraid.net/topic/201158-plugin-parity-check-tuning-plus/) for discussion and troubleshooting. The plugin manager's **Support Thread** link opens that topic. Use the [Plus issue tracker](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/issues) for structured bug reports and feature requests. Support replies and host diagnostics are not uploaded automatically.
 
 ## Choose the right report
 

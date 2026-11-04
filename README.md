@@ -3,7 +3,7 @@
 ![Parity Check Tuning Plus](parity.check.tuning.plus.svg)
 
 **Maintainer:** [alexphillips-dev](https://github.com/alexphillips-dev)
-**Stable release:** `2026.11.04.04`
+**Stable release:** `2026.11.04.05`
 **Update channels:** `main` (stable), `dev` (development)
 **Minimum declared Unraid version:** `6.9.2`
 
@@ -13,10 +13,13 @@ The normal scheduled workflow starts with an array operation initiated by Unraid
 
 The first stable Plus release is published on `main`. It consolidates the fixes and improvements made since the previous plugin; read the [complete release notes](docs/releases/2026.11.04.04.md) before migrating. The owner reports completing the discussed live Unraid acceptance checks for the tested runtime. Local checks and owner-reported acceptance are recorded separately in [validation](docs/VALIDATION.md).
 
+The `2026.11.04.05` metadata update connects the plugin manager's **Support Thread** link to the [Unraid forum topic](https://forums.unraid.net/topic/201158-plugin-parity-check-tuning-plus/). See the [update notes](docs/releases/2026.11.04.05.md).
+
 The cumulative notes cover all five reviewed original issue reports (#16, #17, #19, #21, and #22), the completed/canceled notification fix, and every connected repair from the source audit and later Plus development. The [issue remediation guide](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/wiki/Issue-Remediation) links the original reports and their evidence.
 
 ## Documentation and support
 
+- [Unraid support thread](https://forums.unraid.net/topic/201158-plugin-parity-check-tuning-plus/)
 - [Complete wiki](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/wiki)
 - [Getting started](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/wiki/Getting-Started)
 - [Installation and migration](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/wiki/Installation-and-Migration)

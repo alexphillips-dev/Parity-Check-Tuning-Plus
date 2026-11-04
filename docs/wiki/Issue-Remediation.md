@@ -1,6 +1,6 @@
 # Original issue remediation
 
-> Stable release: **2026.11.04.04** · Stable channel: **main** · Development channel: **dev**
+> Stable release: **2026.11.04.05** · Stable channel: **main** · Development channel: **dev**
 
 The first stable Plus release includes the repairs begun in `2026.11.03.02` and the subsequent connected fixes. All five open reports reviewed in the original repository are linked below. These are Plus fixes; this does not claim the original tickets have been closed. See [Release Notes](Release-Notes) for the complete cumulative fixes, later audit repairs, and cleanup. Local synthetic evidence and owner-reported host acceptance are recorded separately in the validation guide.
 

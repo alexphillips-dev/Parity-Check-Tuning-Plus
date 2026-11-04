@@ -1,6 +1,6 @@
 # Frequently asked questions
 
-> Stable release: **2026.11.04.04** · Stable channel: **main** · Development channel: **dev**
+> Stable release: **2026.11.04.05** · Stable channel: **main** · Development channel: **dev**
 
 ## Does Plus start the monthly check?
 
@@ -48,4 +48,4 @@ No. Removal deletes Plus configuration/state. Save desired settings first.
 
 ## Is dev stable-qualified?
 
-Stable release `2026.11.04.04` is available on main. The dev channel can advance independently; future dev pushes do not automatically inherit stable qualification or change stable installations. See [compatibility and limitations](Compatibility-and-Limitations) for the boundary between local evidence and owner-reported host acceptance.
+Stable version `2026.11.04.05` is available on main. The dev channel can advance independently; future dev pushes do not automatically inherit stable qualification or change stable installations. See [compatibility and limitations](Compatibility-and-Limitations) for the boundary between local evidence and owner-reported host acceptance.

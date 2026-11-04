@@ -1,6 +1,6 @@
 # Complete settings reference
 
-> Stable release: **2026.11.04.04** · Stable channel: **main** · Development channel: **dev**
+> Stable release: **2026.11.04.05** · Stable channel: **main** · Development channel: **dev**
 
 The table is derived from checked `default.cfg`. Raw values do not imply that every field is visible or fully host-qualified. Prefer the UI for normal configuration.
 

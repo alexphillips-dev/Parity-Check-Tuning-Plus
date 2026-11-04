@@ -1,6 +1,6 @@
 # Compatibility and limitations
 
-> Stable release: **2026.11.04.04** · Stable channel: **main** · Development channel: **dev**
+> Stable release: **2026.11.04.05** · Stable channel: **main** · Development channel: **dev**
 
 ## Declared platform
 
@@ -35,7 +35,7 @@ All 42 catalogs are bundled and checked, with three aliases. Machine-authored wo
 
 ## Channels
 
-Stable release 2026.11.04.04 is published on `main`. Development updates publish on `dev`. Both update and archive URLs remain on the selected channel; future dev changes do not move stable installations to dev. A Community Applications listing is not implied by this release. See [installation and channel switching](Installation-and-Migration).
+Stable version 2026.11.04.05 is published on `main`. Development updates publish on `dev`. Both update and archive URLs remain on the selected channel; future dev changes do not move stable installations to dev. A Community Applications listing is not implied by this release. See [installation and channel switching](Installation-and-Migration).
 
 ## Original-plugin comparison
 

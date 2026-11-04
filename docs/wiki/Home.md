@@ -1,8 +1,10 @@
 # Parity Check Tuning Plus
 
-> Stable release: **2026.11.04.04** · Stable channel: **main** · Development channel: **dev** · Maintainer: **alexphillips-dev**
+> Stable release: **2026.11.04.05** · Stable channel: **main** · Development channel: **dev** · Maintainer: **alexphillips-dev**
 
 Parity Check Tuning Plus manages the execution of long-running Unraid array operations. It can apply scheduled increments, coordinate pauses around mover/backup activity, monitor temperature conditions, and extend operation history. The assistant can investigate a selected range after parity-error sectors have been identified.
+
+Support and troubleshooting: [Unraid forum thread](https://forums.unraid.net/topic/201158-plugin-parity-check-tuning-plus/). Structured bugs and feature requests: [GitHub Issues](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/issues).
 
 ## Start here
 

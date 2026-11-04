@@ -1,9 +1,9 @@
 # Stable and development update channels
 
-Stable release `2026.11.04.04` is published on `main`, with its matching manifest
+Stable version `2026.11.04.05` is published on `main`, with its matching manifest
 and package. Development builds are published separately on `dev`. Both channels
 retain their own update and download URLs. Version `2026.11.04.03` introduced the
-channel-preparation tooling; the first stable release includes all earlier Plus fixes.
+channel-preparation tooling; the first stable release, `2026.11.04.04`, includes all earlier Plus fixes. The subsequent `2026.11.04.05` metadata update sets the dedicated Unraid support thread without changing installed runtime files.
 Read the [complete release notes](releases/2026.11.04.04.md) before migrating.
 
 ## Channel contract

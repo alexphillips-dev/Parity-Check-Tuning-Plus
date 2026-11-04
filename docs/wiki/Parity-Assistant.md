@@ -1,6 +1,6 @@
 # Parity assistant
 
-> Stable release: **2026.11.04.04** · Stable channel: **main** · Development channel: **dev**
+> Stable release: **2026.11.04.05** · Stable channel: **main** · Development channel: **dev**
 
 Find the assistant under **Tools > Parity Check Tuning Plus**. Use it to investigate a selected range after parity/read-check problems have been reported. It does not replace a complete parity check after the underlying problem is addressed.
 
