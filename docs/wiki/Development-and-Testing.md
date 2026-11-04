@@ -1,6 +1,6 @@
 # Development and testing
 
-> Stable release: **2026.11.04.04** · Stable channel: **main** · Development channel: **dev**
+> Stable release: **2026.11.04.05** · Stable channel: **main** · Development channel: **dev**
 
 Inspect intended files, callers, state owners, and tests before editing. Work/publish on `dev` unless another action is explicitly authorized. Local agent instructions and workspace configuration are not public repository inputs.
 

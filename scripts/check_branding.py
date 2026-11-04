@@ -73,7 +73,7 @@ def check(branch='dev', root=ROOT):
     xml = ET.fromstring(manifest.read_text(encoding="utf-8"))
     assert xml.attrib["name"] == PLUGIN and xml.attrib["author"] == "alexphillips-dev"
     manifest_channel(manifest.read_text(encoding='utf-8'), branch)
-    assert xml.attrib["support"] == "https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/issues"
+    assert xml.attrib["support"] == "https://forums.unraid.net/topic/201158-plugin-parity-check-tuning-plus/"
     version = xml.attrib["version"]
     archive_path = root / "archives" / f"{PLUGIN}-{version}.txz"
     payload = archive_path.read_bytes()

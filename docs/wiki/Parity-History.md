@@ -1,6 +1,6 @@
 # Parity history
 
-> Stable release: **2026.11.04.04** · Stable channel: **main** · Development channel: **dev**
+> Stable release: **2026.11.04.05** · Stable channel: **main** · Development channel: **dev**
 
 Plus works with `/boot/config/parity-checks.log` and can add incremented-operation information. The renderer exposes operation, date, size, runtime, speed, status, and errors, with elapsed-time/increment columns when extended layouts are handled.
 

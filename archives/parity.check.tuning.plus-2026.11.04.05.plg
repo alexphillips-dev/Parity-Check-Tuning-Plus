@@ -1,0 +1,314 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE PLUGIN [
+<!ENTITY name "parity.check.tuning.plus">
+<!ENTITY author "alexphillips-dev">
+<!ENTITY version "2026.11.04.05">
+<!ENTITY branch "dev">
+<!ENTITY md5 "00723dd5ec680d7c769acda09c705e85">
+<!ENTITY sha256 "c9720e3fd994c6ceddb4a6284b0b88fa7df941f9e7953eb8c0aa89cad3805667">
+<!ENTITY launch "Settings/Scheduler">
+<!ENTITY plugin "parity.check.tuning.plus">
+<!ENTITY plugdir "/usr/local/emhttp/plugins/&plugin;">
+<!ENTITY github "alexphillips-dev/Parity-Check-Tuning-Plus">
+<!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/&branch;/&plugin;.plg">
+]>
+<PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;"
+        pluginURL="&pluginURL;" min="6.9.2" icon="wrench"
+        support="https://forums.unraid.net/topic/201158-plugin-parity-check-tuning-plus/">
+<multiLanguage>true</multiLanguage>
+<CHANGES>
+### 2026.11.04.05
+
+- Point the plugin manager's Support Thread link to the dedicated Unraid forum topic.
+- Keep GitHub Issues available for structured bug reports and feature requests.
+- Synchronize documentation and Community Applications support links. Installed runtime files and saved settings are unchanged.
+
+### 2026.11.04.04
+
+First stable Plus release. This release brings the reviewed development fixes, independent Plus branding, offline language support, and separate stable/development update channels to `main`. The changes below are cumulative from the previous plugin's distributed `2026.04.24` baseline, including defects found and repaired during Plus development.
+
+#### Original repository issues resolved in Plus
+
+All five open upstream reports reviewed for this release are addressed below. These are fixes in Plus; the original repository's tickets remain under its own maintainer's control. The [issue remediation guide](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/wiki/Issue-Remediation) links each original report and records the implementation and synthetic evidence.
+
+| Original issue | Reported problem | Resolution included in this release |
+| --- | --- | --- |
+| #16 | Installing the old package could change filesystem-root permissions/ownership and break SSH authentication. | Root-owned deterministic archives exclude the filesystem-root entry and unrelated paths. Validation rejects unsafe paths, entry types, ownership, and modes; extraction tests preserve destination-root metadata. This prevents the packaging defect rather than changing permissions on an already affected host. |
+| #17 | The version was missing and the page emitted an invalid HTML tag. | Read the matching Plus runtime version file, validate the numeric version, and escape its presentation. Missing, empty, malformed, or HTML-looking values display a plain-text unknown fallback. |
+| #19 | End-point help described the start point. | Correct the canonical end-point help and all generated offline catalogs; verify the rendered help. |
+| #21 | Fresh installs unexpectedly sent informational mover/background notifications. | Default informational notifications off while retaining automatic pause/resume handling and saved user choices. Opted-in messages follow actual task transitions. |
+| #22 | Mover detection counted process-name matches and could identify unrelated processes. | Use the mover PID file with validated numeric PID and process arguments; support native and tuned mover identities and reject missing, malformed, stale, reused, overflowing, or unrelated identities. |
+
+The remaining sections include connected defects found while repairing those reports, the later code audit, and the subsequent Plus regressions and cleanup.
+
+#### Installation and migration
+
+- Install the stable manifest through **Plugins &gt; Install Plugin**: `https://raw.githubusercontent.com/alexphillips-dev/Parity-Check-Tuning-Plus/main/parity.check.tuning.plus.plg`.
+- Remove the previous tuning plugin and conflicting integrations before the first Plus installation. Finish active array work before changing hook ownership.
+- Plus has its own settings/state directory and `parity.check.plus` CLI. Original settings and in-progress markers are not imported automatically; recreate the desired settings through the Plus UI.
+- Ordinary Plus updates preserve saved preferences and native backups. **Defaults** deliberately resets preferences, and uninstalling Plus deletes its configuration and state. Do not uninstall merely to switch Plus channels.
+- Stable installations keep both update and package-download URLs on `main`. Development installations stay on `dev`. Explicitly installing the other manifest changes channels; equal/older versions may need native **Force Install**. Review the target version before a deliberate downgrade.
+
+#### Scheduling and operation controls
+
+- Correct daily/weekly execution windows, overnight resume boundaries, and weekly day handling. Resume boundaries are inclusive and pause boundaries exclusive, including overnight and week crossings. Custom increment windows survive idle observations and unrelated monitor changes, and are cleared when their pause/resume schedule changes.
+- Validate custom cron syntax, reject identical pause/resume times and injected commands, and preserve the last valid schedule after invalid input. Cron files are replaced only after successful validation and writing. Reject a zero-minute monitoring interval instead of replacing valid jobs with an invalid schedule.
+- Verify native command success and observed state before announcing starts, pauses, resumes, cancellations, or restarts. Failed transitions retain appropriate ownership/retry state rather than reporting success.
+- Preserve native argument quoting and observe state after commands. Correct scheduled/manual/automatic trigger ownership and the CLI correction preference; an unclean-start observation no longer reclassifies a rebuild as a parity check.
+- Run native observation after the command, preserving every quoted argument and the native exit status. Bare check callbacks no longer read a missing optional argument, and padded parent-process names do not lose scheduled classification.
+- Require a started array and an observed active operation for a full-check start. Map the native correction preference correctly; a missing preference defaults to non-correcting. Failed cancellation retains ownership and does not announce cancellation; successful cancellation retains the operation description.
+- Handle missing, malformed, stopped, and overflowing native state safely while refreshing descriptions after state reloads. Marker timestamps now record the actual creation time.
+- Correct detection of either parity slot and active/idle/paused CLI status. Applying Defaults reloads reset preferences before regenerating cron entries.
+
+#### Mover, backup, temperature, and restart handling
+
+- Detect native/tuned mover activity using a validated PID and process identity, avoiding unrelated processes that merely contain the word mover. Retain the supported backup/restore marker paths.
+- Coordinate overlapping mover/backup pauses, preserve manual pauses, transfer ownership correctly, and resume only when the relevant background, thermal, restart, partial-check, and increment-window restrictions clear.
+- Explicit CLI pause relinquishes background resume ownership, including when the operation was already paused. Failed background or heat pauses claim no pause; failed resumes keep their markers so later monitoring can retry.
+- Default informational mover/backup notifications to off for fresh installs; automatic pause/resume remains separately controlled and saved choices survive updates. Opted-in transition messages are not repeatedly duplicated.
+- Follow native warning/critical temperature inheritance, including per-disk, SSD/NVMe, inherited, and explicitly disabled limits. Invalid saved offsets no longer stop monitoring with arithmetic errors.
+- Separate critical-temperature shutdown from completion shutdown and heat-pause preferences. Check available critical temperatures before idle/stopped/partial exits, including pool disks, and reread the saved policy before shutdown.
+- Validate saved restart positions, ranges, correction/action fields, operation identity, enabled policy, and disk assignments. Detect removed/replaced disks, bound restart polling, preserve trigger information, and reject failed attempts without a false success notification.
+- Detect added or missing array assignments as well as removed/replaced disks, excluding pool disks from the restart identity snapshot. Check the current restart preference before acting. Each cancellation/start wait is limited to six five-second observations rather than waiting indefinitely.
+
+#### Completion, notifications, progress, and history
+
+- A completed operation no longer inherits a stale canceled result from an earlier increment. Save history and merge errors before sending the completion summary.
+- Coordinate native parity-finish delivery with operation identity, completion locking, and delivered-summary receipts to prevent misleading duplicate canceled notifications after a successful Plus summary.
+- Preserve real cancellations, failures, new errors, unrelated notifications, and native delivery fallback when state is unowned/corrupt or delivery fails.
+- Prevent duplicate pause/resume/stop/restart observations from double-counting runtime or increments. Retain correction labels, native action tokens, historical temperature annotations, and supported progress delimiter/history formats.
+- Preserve the initial correcting/non-correcting policy after terminal native metadata clears. Resolve stale terminal progress only against the matching final native operation, and retain correct final time, elapsed time, runtime, increment count, and merged errors.
+- Serialize duplicate analyzers and native finish delivery. Delayed snapshots still match the intended operation; higher native error counts, aborted runs, invalid receipts, failed history writes, and failed Plus delivery keep native warning/fallback delivery available. The notification wrapper passes unrelated commands, arguments, output, and exit status through.
+- Limit canceled-history cleanup to the matching operation; retain unrelated rows and handle missing/malformed history safely. Escape history output.
+- Render supported five-through-ten-field history rows without arithmetic errors from nonnumeric durations, missing-subtype warnings, or malformed header cells. Persisted history text cannot become HTML. Preserve corrupt progress for diagnosis rather than crashing analysis or suppressing native fallback.
+- Partial progress with a missing running marker stays diagnostic-only and cannot produce full-check history, a full-check completion summary, or completion shutdown.
+- Correct conflict/unknown-trigger diagnostics and native Unraid version-boundary checks at 6.10.3 and 6.11.0.
+- Remove the extra dollar sign in trigger-conflict diagnostics and the undefined variable in unknown-trigger warnings. Include exactly 6.10.3 and 6.11.0 in their respective supported feature branches.
+
+#### Assistant, settings, and interface
+
+- Repair Assistant mode selection, form/button references, sector-message popup paths/case, and escaped syslog output. Correct endpoint help and version display.
+- Validate sector/percentage ranges on the server before invoking native commands; bind immutable bounds and correction policy to the actual partial operation. Stale markers cannot cancel another run, and failed stop requests retain retry state.
+- Remove the ownership marker after a failed partial start, without claiming a started operation. Display the running operation's saved range and correction choice rather than later edited settings. Emit one valid language attribute in the syslog popup, with no undefined language variable or duplicate attribute.
+- Keep Settings and Assistant labels/controls aligned in the native responsive grid, including conditional fields, expanded help, desktop/mobile layouts, and unrelated native Scheduler controls.
+- Defaults can recover invalid schedules. Each actual submission selects its own command, so a blocked/canceled reset cannot turn a later Apply into another reset.
+- Restore a compact normal-size plugin header and concise description, removing the oversized heading and broken inline image. Escape saved form values and retain native current/legacy history dialogs and parser fallback.
+
+#### Languages, installation safety, and maintenance
+
+- Bundle **42 offline language catalogs**, three native aliases, and **45 native exports**, covering settings, help, dialogs, CLI text, history, and notifications. Arabic, Persian, and Hebrew support RTL presentation. Stored machine/protocol values remain language-independent.
+- Load translations after native early parsing so settings, full help, dialogs, and notification/CLI templates translate reliably. Safely encode translated JavaScript/HTML and retain positional formatting placeholders and native parser fallback. Resolve Danish/Japanese/Korean aliases; empty or unknown locales reset to English instead of retaining a previous language.
+- Keep action names and stored history descriptions in English even when their presentation is translated. Translate testing-mode CLI descriptions without translating command tokens. Invalidate only Plus translation caches during installation/removal, preserving other plugins' cached translations.
+- Reject unsafe package paths/types/ownership/modes and filesystem-root metadata; use deterministic root-owned packages and preserve an existing archive if staged package validation fails.
+- Keep archive MD5/SHA256 values, manifest snapshots, and checksum sidecars in sync. Check case-sensitive installed paths and source/package parity before publishing.
+- Enforce native hook ownership, preserve original command/history/notification backups, block missing/foreign integrations, and restore native hooks on removal.
+- Remove unfinished Docker/container controls, the unimplemented CLI history placeholder, unused helpers/branches/assignments, redundant UI logic, inert refresh integration, and nine event handlers with no operational work. Retain GUI history, six operational lifecycle hooks, and working native compatibility. Upgrades remove retired installed files while preserving saved configuration.
+- Add detailed README/wiki guidance, five issue forms, a reviewed label catalog, synthetic/browser regressions, original-plugin comparisons, runtime-reference checks, and exact-index publication/privacy checks. GPLv2 and required original copyright/permission notices remain.
+- Keep local agent instructions, editor/assistant sessions, credentials, private host data, downloaded tools, and generated reports out of publication. Review exact staged bytes and package members rather than relying on ignore rules.
+
+#### Verification and remaining limits
+
+The runtime entering this release passed the combined **134-test Python suite**, **225 browser page cases**, **945 native-grid layouts**, locale checks, package/source parity, and Windows/Linux reproducibility checks. The offline original/current checker covers **602 executable comparisons**, with additional cron and native temperature matrices documented in the repository. Final stable-candidate checks are recorded in the validation guide.
+
+The owner reports completing the discussed live Unraid acceptance checks for the prior runtime. That is separate from automated fixture evidence; no host/version/log details are published. This stable promotion changes release/channel metadata and documentation, not installed runtime code. The declared minimum remains Unraid **6.9.2**; testing does not certify every host, historical/future build, or third-party integration. Translation wording is machine-authored and has not received complete native-speaker review. Partial checks stop through periodic monitoring and can run beyond the selected endpoint; they do not replace a full parity check.
+
+See the [installation and migration guide](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/wiki/Installation-and-Migration), [validation record](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/blob/main/docs/VALIDATION.md), and [original-plugin comparison](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/blob/main/docs/UPSTREAM-COMPATIBILITY.md).
+
+### 2026.11.04.03
+- Keep stable and development installations on their selected update and package-download channel.
+- Validate channel consistency before building; support isolated stable-candidate preparation without publishing main.
+
+### 2026.11.04.02
+- Keep Defaults available for invalid schedules and select the correct command on every Apply or Defaults submission.
+- Compare the original distribution against current operation policies, schedules, state, formatting, and notifications.
+- Verify older progress records, delimiter variants, native action tokens, timing, and history formats across supported version branches.
+
+### 2026.11.04.01
+- Remove the unused refresh scaffold, no-op event hooks, historical design notes, and unfinished Docker controls.
+- Remove unused helpers, parameters, assignments, redundant branches, and disabled implementation blocks.
+- Remove the CLI history placeholder while keeping the GUI history view and native parser compatibility.
+- Preserve historical progress records, saved configuration, licenses, and current operation behavior.
+- Keep marker-lost partial diagnostics out of full-check completion summaries.
+- Remove retired installed hook files during updates and validate runtime function references.
+
+### 2026.11.03.07
+- Verify native pause, resume, full-check, partial-check, cancellation, and restart outcomes before announcing success or transferring ownership.
+- Correct CLI correction-mode mapping, automatic-check classification, and scheduled/restarted trigger metadata.
+- Separate critical-temperature shutdown from completion shutdown; use native temperature inheritance and monitor idle, stopped, partial, and pool disks.
+- Validate restart state and disk identities, bound restart polling, and scope canceled-history cleanup to its operation.
+- Repair weekly/overnight increment windows and validate cron expressions before atomically replacing working schedules.
+- Bind partial checks to a kernel operation and immutable range; preserve retry state after failed transitions.
+- Prevent duplicate progress accounting, preserve correction labels, and keep native notifications available for corrupt progress.
+- Escape saved fields and history text, tolerate malformed history, and align Assistant settings in the native grid.
+- Retire the nonfunctional native-button scaffold and extend synthetic and browser regressions.
+
+### 2026.11.03.06
+- Preserve final completion status and time instead of importing a stale canceled history result.
+- Commit history and error counts before reporting completion; serialize duplicate analysis.
+- Guard native parity-finish duplicates using tracked operation identity and a delivered completion receipt.
+- Preserve genuine cancellations, new errors, unrelated notifications, and native delivery fallback.
+- Back up and restore the native notification entry point through the existing hook ownership workflow.
+
+### 2026.11.03.05
+- Keep Scheduler setting labels and controls paired in the native responsive grid.
+- Separate inline help from setting rows and align the action buttons with the controls.
+
+### 2026.11.03.04
+- Restore a compact bold plugin-name header above the short Plugins-page description.
+
+### 2026.11.03.03
+- Shorten the Plugins-page description and remove the oversized heading and broken inline image.
+
+### 2026.11.03.02
+- Enforce safe package ownership, permissions, and paths, including a guard against filesystem-root entries.
+- Detect native and tuned mover processes through a validated PID and command identity.
+- Default informational background notifications to off while preserving saved preferences and pause/resume handling.
+- Preserve manual pauses, handle overlapping background tasks, and honor temperature, restart, and increment-window restrictions.
+- Correct assistant mode selection, range validation, endpoint help, popup behavior, and backend partial-check bounds.
+- Bundle 42 complete language catalogs and three native locale aliases, with offline translations for settings, dialogs, help, history, CLI, and notifications.
+- Keep version fallback safe and history/status protocol fields independent of translated labels.
+
+### 2026.11.03.01
+- Establish Parity Check Tuning Plus with its own plugin, configuration, package, and translation identities.
+- Rename the CLI command to parity.check.plus and brand settings, assistance, logs, and notifications.
+- Replace inherited update, support, and donation links with Plus project metadata.
+- Remove historical distributions and editor-session files from the active project.
+- Keep native command and history backups owned by Plus across updates and removal.
+</CHANGES>
+
+<!-- Check before downloading or changing native hooks. -->
+<FILE Run="/bin/bash">
+<INLINE>
+set -eu
+previous_plugin="&plugin;"
+previous_plugin="${previous_plugin%.plus}"
+if [ -f "/boot/config/plugins/${previous_plugin}.plg" ] ||
+   [ -d "/usr/local/emhttp/plugins/${previous_plugin}" ]; then
+  echo "Uninstall the previous parity tuning plugin before installing Parity Check Tuning Plus."
+  exit 1
+fi
+plugin_dir="&plugdir;"
+for hook in /usr/local/sbin/mdcmd /usr/local/emhttp/plugins/dynamix/scripts/parity_history /usr/local/emhttp/plugins/dynamix/include/ParityHistory.php /usr/local/emhttp/webGui/scripts/notify; do
+  if [ -L "$hook" ]; then
+    case "$(readlink "$hook")" in
+      "$plugin_dir"/*)
+        if [ ! -f "$hook.&plugin;.orig" ]; then
+          echo "Native backup missing for $hook; installation stopped."
+          exit 1
+        fi ;;
+      *) echo "Another plugin owns $hook. Remove that integration before installing Parity Check Tuning Plus."; exit 1 ;;
+    esac
+  fi
+done
+if [ ! -f /usr/local/emhttp/webGui/scripts/notify ] || [ ! -x /usr/local/emhttp/webGui/scripts/notify ]; then
+  echo "Native notification command missing; installation stopped."
+  exit 1
+fi
+mkdir -p "/boot/config/plugins/&plugin;"
+</INLINE>
+</FILE>
+
+<FILE Name="/boot/config/plugins/&plugin;/&plugin;-&version;.txz" Run="upgradepkg --install-new">
+  <URL>https://raw.githubusercontent.com/&github;/&branch;/archives/&plugin;-&version;.txz</URL>
+  <SHA256>&sha256;</SHA256>
+</FILE>
+
+<FILE Run="/bin/bash">
+<INLINE>
+set -eu
+plugin_dir="&plugdir;"
+config_dir="/boot/config/plugins/&plugin;"
+mkdir -p "$config_dir"
+# Retire previously shipped inert integrations on existing installations.
+rm -f -- "$plugin_dir/Parity.check.tuning.plus.refresh.page"
+for retired_event in driver_loaded disks_mounted svcs_restarted docker_started libvirt_started stopping_svcs stopping_libvirt stopping_docker unmounting_disks; do
+  rm -f -- "$plugin_dir/event/$retired_event"
+done
+chmod 755 "$plugin_dir/&plugin;.php" "$plugin_dir/&plugin;.history.php" "$plugin_dir/&plugin;.mdcmd" "$plugin_dir/&plugin;.notify.php"
+chmod 755 "$plugin_dir"/event/*
+for catalog in /usr/local/emhttp/languages/*/paritychecktuningplus.dot; do
+  rm -f -- "$catalog"
+done
+ln -sfn "$plugin_dir/&plugin;.php" /usr/local/bin/parity.check.plus
+if [ ! -f "$config_dir/&plugin;.cfg" ]; then
+  cp "$plugin_dir/default.cfg" "$config_dir/&plugin;.cfg"
+fi
+
+# Save each native hook once; updating Plus must preserve the native backup.
+install_hook() {
+  local hook="$1" target="$2" backup="$1.&plugin;.orig"
+  if [ -L "$hook" ] &amp;&amp; [ "$(readlink "$hook")" = "$target" ]; then
+    if [ ! -f "$backup" ]; then
+      echo "Native backup missing for $hook; restore it before reinstalling."
+      return 1
+    fi
+    return 0
+  fi
+  if [ ! -f "$hook" ]; then
+    echo "Native hook missing: $hook"
+    return 1
+  fi
+  if [ ! -e "$backup" ]; then
+    cp -p "$hook" "$backup"
+  fi
+  ln -sfn "$target" "$hook"
+}
+install_hook /usr/local/sbin/mdcmd "$plugin_dir/&plugin;.mdcmd"
+install_hook /usr/local/emhttp/webGui/scripts/notify "$plugin_dir/&plugin;.notify.php"
+if [ -f /usr/local/emhttp/plugins/dynamix/scripts/parity_history ]; then
+  install_hook /usr/local/emhttp/plugins/dynamix/scripts/parity_history "$plugin_dir/&plugin;.history.php"
+elif [ -f /usr/local/emhttp/plugins/dynamix/include/ParityHistory.php ]; then
+  install_hook /usr/local/emhttp/plugins/dynamix/include/ParityHistory.php "$plugin_dir/&plugin;.history.php"
+fi
+rm -f "$config_dir/&plugin;.stopping"
+echo "&version;" &gt; "$plugin_dir/&plugin;.version"
+"$plugin_dir/&plugin;.php" config
+echo "Parity Check Tuning Plus &version; installed."
+</INLINE>
+</FILE>
+
+<FILE Run="/bin/bash" Method="remove">
+<INLINE>
+set -eu
+plugin_dir="&plugdir;"
+# Check all owned backups before restoring any hook.
+for hook in /usr/local/sbin/mdcmd /usr/local/emhttp/plugins/dynamix/scripts/parity_history /usr/local/emhttp/plugins/dynamix/include/ParityHistory.php /usr/local/emhttp/webGui/scripts/notify; do
+  if [ -L "$hook" ]; then
+    case "$(readlink "$hook")" in
+      "$plugin_dir"/*)
+        if [ ! -f "$hook.&plugin;.orig" ]; then
+          echo "Native backup missing for $hook; removal stopped."
+          exit 1
+        fi ;;
+    esac
+  fi
+done
+# Restore only hooks still pointing at Plus; preserve another owner's hooks.
+restore_hook() {
+  local hook="$1" target="$2" backup="$1.&plugin;.orig"
+  if [ -L "$hook" ] &amp;&amp; [ "$(readlink "$hook")" = "$target" ]; then
+    if [ ! -f "$backup" ]; then
+      echo "Native backup missing for $hook; removal stopped to preserve the active integration."
+      return 1
+    fi
+    mv -f "$backup" "$hook"
+  fi
+}
+restore_hook /usr/local/sbin/mdcmd "$plugin_dir/&plugin;.mdcmd"
+restore_hook /usr/local/emhttp/webGui/scripts/notify "$plugin_dir/&plugin;.notify.php"
+restore_hook /usr/local/emhttp/plugins/dynamix/scripts/parity_history "$plugin_dir/&plugin;.history.php"
+restore_hook /usr/local/emhttp/plugins/dynamix/include/ParityHistory.php "$plugin_dir/&plugin;.history.php"
+if [ -L /usr/local/bin/parity.check.plus ] &amp;&amp;
+   [ "$(readlink /usr/local/bin/parity.check.plus)" = "$plugin_dir/&plugin;.php" ]; then
+  rm -f /usr/local/bin/parity.check.plus
+fi
+removepkg "&plugin;-&version;"
+for catalog in /usr/local/emhttp/languages/*/paritychecktuningplus.dot; do
+  rm -f -- "$catalog"
+done
+rm -rf "$plugin_dir" "/boot/config/plugins/&plugin;"
+/usr/local/sbin/update_cron
+echo "Parity Check Tuning Plus removed."
+</INLINE>
+</FILE>
+</PLUGIN>

@@ -1,6 +1,14 @@
 # Release notes
 
-> Stable release: **2026.11.04.04** · Stable channel: **main** · Development channel: **dev**
+> Stable release: **2026.11.04.05** · Stable channel: **main** · Development channel: **dev**
+
+## 2026.11.04.05
+
+- Point the plugin manager's **Support Thread** link to the [dedicated Unraid forum topic](https://forums.unraid.net/topic/201158-plugin-parity-check-tuning-plus/).
+- Keep GitHub Issues for structured reports and synchronize the README, wiki, and Community Applications support links.
+- Manifest and documentation update only; runtime files, language catalogs, saved settings, and native integration behavior are unchanged.
+
+Local qualification passed: 21 focused channel/installer tests on Linux, package/source and checksum checks, documentation/wiki validation, and all 42 language catalogs. The runtime archive is byte-identical to the preceding version.
 
 ## 2026.11.04.04
 

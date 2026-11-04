@@ -1,6 +1,6 @@
 # Installation and migration
 
-> Stable release: **2026.11.04.04** · Stable channel: **main** · Development channel: **dev**
+> Stable release: **2026.11.04.05** · Stable channel: **main** · Development channel: **dev**
 
 ## Channel install URLs
 
@@ -16,7 +16,7 @@ Development (`dev`, for development updates):
 https://raw.githubusercontent.com/alexphillips-dev/Parity-Check-Tuning-Plus/dev/parity.check.tuning.plus.plg
 ```
 
-Use **Plugins > Install Plugin** in Unraid and paste the chosen published URL. The manifest declares a minimum Unraid version of `6.9.2`. Its explicit branch entity keeps both future update checks and the matching archive download on that channel. Stable release 2026.11.04.04 is published on main; future main promotions remain explicit maintainer actions.
+Use **Plugins > Install Plugin** in Unraid and paste the chosen published URL. The manifest declares a minimum Unraid version of `6.9.2`. Its explicit branch entity keeps both future update checks and the matching archive download on that channel. Stable version 2026.11.04.05 is published on main; future main promotions remain explicit maintainer actions.
 
 ## Before installation
 

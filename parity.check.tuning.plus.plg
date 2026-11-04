@@ -2,7 +2,7 @@
 <!DOCTYPE PLUGIN [
 <!ENTITY name "parity.check.tuning.plus">
 <!ENTITY author "alexphillips-dev">
-<!ENTITY version "2026.11.04.04">
+<!ENTITY version "2026.11.04.05">
 <!ENTITY branch "dev">
 <!ENTITY md5 "00723dd5ec680d7c769acda09c705e85">
 <!ENTITY sha256 "c9720e3fd994c6ceddb4a6284b0b88fa7df941f9e7953eb8c0aa89cad3805667">
@@ -14,9 +14,15 @@
 ]>
 <PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;"
         pluginURL="&pluginURL;" min="6.9.2" icon="wrench"
-        support="https://github.com/&github;/issues">
+        support="https://forums.unraid.net/topic/201158-plugin-parity-check-tuning-plus/">
 <multiLanguage>true</multiLanguage>
 <CHANGES>
+### 2026.11.04.05
+
+- Point the plugin manager's Support Thread link to the dedicated Unraid forum topic.
+- Keep GitHub Issues available for structured bug reports and feature requests.
+- Synchronize documentation and Community Applications support links. Installed runtime files and saved settings are unchanged.
+
 ### 2026.11.04.04
 
 First stable Plus release. This release brings the reviewed development fixes, independent Plus branding, offline language support, and separate stable/development update channels to `main`. The changes below are cumulative from the previous plugin's distributed `2026.04.24` baseline, including defects found and repaired during Plus development.
