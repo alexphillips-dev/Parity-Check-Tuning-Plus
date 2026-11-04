@@ -3,7 +3,7 @@
 <!ENTITY name "parity.check.tuning.plus">
 <!ENTITY author "alexphillips-dev">
 <!ENTITY version "2026.11.04.04">
-<!ENTITY branch "main">
+<!ENTITY branch "dev">
 <!ENTITY md5 "00723dd5ec680d7c769acda09c705e85">
 <!ENTITY sha256 "c9720e3fd994c6ceddb4a6284b0b88fa7df941f9e7953eb8c0aa89cad3805667">
 <!ENTITY launch "Settings/Scheduler">
