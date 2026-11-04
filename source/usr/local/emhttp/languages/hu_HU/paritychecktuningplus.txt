@@ -1,0 +1,606 @@
+; Parity Check Tuning Plus - generated offline catalog. Do not edit by hand.
+
+%s %s %d %s=%1$s %2$s (%3$d %4$s)
+%s %s, %s %s, %s %d, %s %s=%1$s %2$s, %3$s %4$s, %5$s %6$d, %7$s %8$s
+%s Cancelled=%1$sTörölve
+%s cancel request sent %s=%1$störlési kérés elküldve%2$s
+%s no longer running=%1$smár nem fut
+%s running=%1$sfutás
+%s started=%1$s elindult
+%s will not be restarted=%1$s nem indul újra
+ but in active period so leave running=... de aktív időszakban hagyd futni
+ but suppressed as notifications do not appear to be enabled for pauseresume=... de le van tiltva, mivel úgy tűnik, hogy az értesítések nincsenek engedélyezve a szüneteltetéshez/folytatáshoz
+ but suppressed as system notifications do not appear to be enabled=... de le van tiltva, mivel úgy tűnik, hogy a rendszerértesítések nincsenek engedélyezve
+ outside active period so needs pausing=... aktív időszakon kívül, ezért szünetet kell tartani
+ using =... használva
+A crontab entry should have 5 space-separated values defining the minutes, hour, day of the month, month, day of the week Click on the crontab link to get more details on valid formats=A crontab bejegyzésnek 5 szóközzel elválasztott értékkel kell rendelkeznie, amelyek meghatározzák a percet, órát, a hónap napját, a hónapot és a hét napját.  Kattintson a crontab hivatkozásra az érvényes formátumok további részleteiért.
+Action=Akció
+All array drives below temperature threshold for a Pause=Minden tömbmeghajtó a szüneteltetéshez szükséges hőmérsékleti küszöbérték alatt van
+Analyze results from an array operation=Egy tömbművelet eredményeinek elemzése
+Appears to be a %s array operation=Úgy tűnik, hogy a%1$stömbművelet
+Apply=Alkalmazni
+Array has just been started=A tömb most indult el
+Array is being started=A tömb indítása folyamatban van
+Array must be started to use this assistant=Az asszisztens használatához el kell indítani a tömböt
+Array not yet started=A tömb még nem indult el
+Array operation completed=A tömbművelet befejeződött
+Array operation not resumed - outside increment window=A tömbművelet nem folytatódott – a növekményablakon kívül
+Array operation paused but drives not cooled enough to resume=A tömb működése szünetel, de a meghajtók nem hűtöttek le eléggé a folytatáshoz
+Array operation paused but not for temperature related reason=A tömb működése szünetel, de nem hőmérsékleti ok miatt
+Array operation paused with some drives still too hot to resume=A tömb működése szünetel, néhány meghajtó még mindig túl meleg a folytatáshoz
+Array operation restarted=A tömbművelet újraindult
+Array operation will not be restarted=A tömbművelet nem indul újra
+Array shutdown=Tömb leállítás
+Array size is not available=A tömb mérete nem elérhető
+Array stopping=Tömb leállás
+Array stopping while %s was in progress %s=Tömb leállás közben%1$sfolyamatban volt%2$s
+Array stopping Restart will be attempted on next array start=Tömb leállítása: A következő tömbindításkor megkísérli az újraindítást
+Automatic=Automatikus
+Automatic parity check pause not configured=Az automatikus paritásellenőrzési szünet nincs konfigurálva
+Average Speed=Átlagsebesség
+Background activity %s=Háttér tevékenység:%1$s
+Basic=Alapvető
+Before you can set this option to Yes you must first have enabled system notifications=Mielőtt ezt az opciót Igen értékre állíthatja, először engedélyeznie kell a rendszerértesítéseket.
+Cancel a running parity check=Törölje a futó paritásellenőrzést
+Cancel automatically started array operation=Az automatikusan elindított tömbművelet megszakítása
+Cancel request=Törölje a kérést
+Canceled=Törölve
+Check=Ellenőrizze
+Choose a start point and a larger end point within the disk=Válasszon ki egy kezdőpontot és egy nagyobb végpontot a lemezen belül
+Choose sectors or percentages=Válasszon szektorokat vagy százalékokat
+Choose whether to write corrections=Válassza ki, hogy szeretne-e javításokat írni
+Click to show Array Operations history=Kattintson a tömbműveletek előzményeinek megjelenítéséhez
+Click to show Parity check entries from syslog=Kattintson a paritásellenőrzési bejegyzések megjelenítéséhez a rendszernaplóból
+Command Line was=Parancssor volt
+Completed partial check %s=Részleges ellenőrzés befejezve (%1$s)
+Configuration=Konfiguráció
+Correcting=Javítás
+Created cron entry for %s interval monitoring=cron bejegyzés létrehozva ehhez%1$sintervallum monitorozás
+Created cron entry for scheduled pause and resume=Cron bejegyzés létrehozva az ütemezett szünethez és folytatáshoz
+Critical=Kritikus
+Custom=Egyedi
+Daily=Naponta
+Data-Rebuild=Adat-újraépítés
+Date=Dátum
+Debug=Hibakeresés
+Debug mode is intended to give users a feel for when the plugin is active Debug mode can generate frequent additional log entries in the syslog file so do not leave debug mode active if you are not interested in this information=A hibakeresési mód célja, hogy a felhasználók érezzék, mikor aktív a beépülő modul. A hibakeresési mód gyakran generálhat további naplóbejegyzéseket a syslog fájlban, ezért ne hagyja aktívan a hibakeresési módot, ha nem érdekli ez az információ.
+Defaults=Alapértelmezések
+Detected a change to the disk configuration=Változást észlelt a lemez konfigurációjában
+Detected disk configuration reset=A lemezkonfiguráció visszaállítása észlelve
+Detected shutdown that was due to following drives reaching critical temperature=Leállást észlelt, ami a következő meghajtók kritikus hőmérsékletének elérése miatt volt
+Detected that array had been paused due to following drives getting hot=Azt észlelte, hogy a tömb szünetel, mert a következő meghajtók felmelegedtek
+Disk Clear=Lemez törlése
+Disk-Clear=Lemeztörlés
+Do you really want Debug logging mode=Tényleg szeretné a hibakeresési naplózási módot?
+Do you really want Testing logging mode=Valóban szeretné tesztelni a naplózási módot?
+Do you really want automatic Shutdown=Valóban automatikus leállítást akar?
+Do you really want to log to the flash drive=Valóban be akar jelentkezni a flash meghajtóra?
+Do you really want to pause Automatic checks=Biztosan szünetelteti az automatikus ellenőrzéseket?
+Do you really want to pause Clear operations=Biztosan szünetelteti a törlési műveleteket?
+Done=Kész
+Drives been above resume temperature threshold for %s minutes=A meghajtók a következőnél meghaladták a folytatási hőmérsékleti küszöbértéket%1$spercben
+Drives cooled down=A meghajtók lehűltek
+Duration=Időtartam
+ERROR=HIBA
+Elapsed Time=Eltelt idő
+End point for check=Az ellenőrzés végpontja
+Error in custom entry=Hiba az egyéni bejegyzésben
+Errors=Hibák
+Flash only=Csak vaku
+Following drives overheated=A következő meghajtók túlmelegedtek
+Friday=péntek
+High disk temperatures can shutdown server=A magas lemezhőmérséklet leállíthatja a szervert
+History=Történelem
+Incompatible options=Nem kompatibilis opciók
+Inconsisten state information - Restart requested but no progress file=Inkonzisztens állapotinformációk – Újraindítást kértek, de nincs folyamatfájl
+Increment frequency=Növelési gyakoriság
+Increment pause time=Növelje a szünetidőt
+Increment resume time=A folytatási idő növelése
+Increments=Növekmények
+Invalid check range=Érvénytelen ellenőrzési tartomány
+Logging to the flash drive can cause a lot additional writes thus potentially shortening its lifetime Do not leave this active if you are not interested in this information CAUTION At the moment there is no mechanism to stop this file from growing forever so it is up to you to manage this manually=A flash meghajtóra való naplózás sok további írást okozhat, így potenciálisan lerövidítheti az élettartamát. Ne hagyja aktív állapotban, ha nem érdekli ez az információ. VIGYÁZAT: Jelenleg nincs olyan mechanizmus, amely megakadályozná ennek a fájlnak a növekedését örökre, így Önnek kell manuálisan kezelnie.
+Manual=Kézikönyv
+Manually paused=Manuálisan szüneteltetve
+Manually resumed=Manuálisan folytatva
+Method used to specify start and stop points=A kezdő- és végpontok megadására használt módszer
+Monday=hétfő
+No.=Nem
+No Parity disk present=Nincs paritáslemez
+No action outstanding=Nincs folyamatban lévő művelet
+No action specified=Nincs megadva művelet
+No array operation currently in progress=Jelenleg nincs folyamatban lévő tömbművelet
+No array operation in progress=Nincs folyamatban tömbművelet
+No array operation in progress and no restart information saved=Nincs folyamatban tömbművelet, és nincs mentve az újraindítási információ
+No array operation in progress but restart information saved=Nincs folyamatban tömbművelet, de az újraindítási információk elmentve
+No check is made to see if there is any other activity running on the server at the time the array operation completes As a safety measure if you switch off this option while an array operation is running then the shutdown will be aborted=A tömbművelet befejezésekor nem kerül sor annak ellenőrzésére, hogy fut-e más tevékenység a kiszolgálón. Biztonsági intézkedésként, ha egy tömbművelet futása közben kikapcsolja ezt az opciót, akkor a leállítás megszakad.
+No parity check entries found in syslog=Nem található paritásellenőrző bejegyzés a syslogban
+No parity check history present=Nincsenek paritásellenőrzési előzmények
+No parity present, so no automatic parity check=Nincs paritás, így nincs automatikus paritásellenőrzés
+No restart information present=Nincsenek újraindítási információk
+Non-Correcting=Nem helyesbítés
+Not allowed as %s already running=Nem engedélyezett mint%1$smár fut
+Not automatic check %s=Nem automatikus ellenőrzés (%1$s)
+Notifications not enabled=Az értesítések nincsenek engedélyezve
+OK=OK
+Only able to start a Read-Check as no parity drive present=Csak az olvasás-ellenőrzést lehet elindítani, mivel nincs paritásmeghajtó
+Only able to start a Read-Check due to number of disabled drives=A letiltott meghajtók száma miatt csak az olvasási ellenőrzést lehet elindítani
+Option not currently recognized=Az opció jelenleg nem ismerhető fel
+Outside increment scheguled time=Növelje a tervezett időt kívül
+Outside time slot for running operation type=Külső időrés a futási típushoz
+Outside times for increments so not resuming=Kívüli időn belül a lépések miatt, így nem folytatható
+PAUSED=SZÜNETELTETT
+Parity Check=Paritásellenőrzés
+Parity Check Tuning Plus logging=Parity Check Tuning Plusfakitermelés
+Parity Operation History=Paritásos működési előzmények
+Parity Sync Data Rebuild=Paritásszinkronizálás / Adatok újraépítése
+Parity-Check=Paritás-ellenőrzés
+Parity-Sync=Paritás-szinkronizálás
+Partial=Részleges
+Partial check not started=A részleges ellenőrzés nem indult el
+Partial parity check %s=Részleges paritásellenőrzés (%1$s)
+Pause=Szünet
+Pause %s=Szünet%1$s
+Pause a running array operation=Egy futó tömbművelet szüneteltetése
+Pause an array operation at=Egy tömbművelet szüneteltetése itt:
+Pause and Resume array operations if disks overheat=A tömbműveletek szüneteltetése és folytatása, ha a lemezek túlmelegednek
+Pause and Resume times=Szünet és folytatás időpontja?
+Pause array operations while appdata backup or restore running=A tömbműveletek szüneteltetése az appdata biztonsági mentése vagy visszaállítása közben
+Pause array operations while mover running=A tömbműveletek szüneteltetése a mozgató futása közben
+Pause request=Kérelem szüneteltetése
+Paused=Szüneteltetve
+Pausing Automatic parity check configured=Szüneteltetés Az automatikus paritásellenőrzés konfigurálva
+Pausing an automatic parity check after an unclean shutdown extends the time before the you can be confident that parity is still valid so that recovering from a disabled disk is likely to work without data corruption or data loss Only use this option if you cannot afford the performance penalty of such checks occurring during prime time=Az automatikus paritásellenőrzés szüneteltetése egy tisztátalan leállás után meghosszabbítja azt az időt, amíg a paritás továbbra is érvényes, így a letiltott lemezről való helyreállítás valószínűleg adatsérülés vagy adatvesztés nélkül fog működni.  Csak akkor használja ezt a lehetőséget, ha nem engedheti meg magának a főműsoridőben végrehajtott ellenőrzések teljesítménybüntetését.
+Pausing an disk Clear operation extends the time before the disk is successfully added to the array and becomes ready for formatting and then used for data storage On most systems a disk Clear operation does not adversely affect performance so typically this option is left disabled=A lemez törlési műveletének szüneteltetése meghosszabbítja azt az időt, amíg a lemez sikeresen hozzáadódik a tömbhöz, és készen áll a formázásra, majd adattárolásra.  A legtöbb rendszeren a lemeztörlés művelet nem befolyásolja hátrányosan a teljesítményt, ezért általában ez az opció le van tiltva.
+Pausing an operation that is building parity or rebuilding a failed disk has a level of risk as your array is not back in a protected state until this operation completes successfully Only enable this option if the operation is adversely affecting system use and you are not worried about the extra time that will elapse before the system is once again in a protected state=A paritást létrehozó művelet szüneteltetése vagy a meghibásodott lemez újraépítése kockázati szinttel jár, mivel a tömb nem kerül vissza védett állapotba, amíg a művelet sikeresen be nem fejeződik.   Csak akkor engedélyezze ezt az opciót, ha a művelet hátrányosan befolyásolja a rendszer használatát, és nem aggódik amiatt, hogy a rendszer ismét védett állapotba kerül, eltelik a plusz idő.
+Pausing automatic parity check=Az automatikus paritásellenőrzés szünetel
+Percentage=Százalék
+Percentage endpoints must be between 0 and 100=A százalékos végpontoknak 0 és 100 között kell lenniük
+Range=Tartomány
+Read Check=Olvassa el az Ellenőrzést
+Read-Check=Olvasás-ellenőrzés
+Requires Unraid 6103 or later=MegköveteliUnraid6.10.3 vagy újabb
+Reset settings to defaults=Állítsa vissza a beállításokat az alapértelmezett értékekre
+Restart requested - but appears to not be happening=Újraindítás kérve – de úgy tűnik, hogy nem történik meg
+Restart will not be attempted=Az újraindítást nem kísérlik meg
+Resume=Folytatás
+Resume %s=Folytatás%1$s
+Resume a paused array operation=Szüneteltetett tömbművelet folytatása
+Resume an array operation at=Tömbművelet folytatása itt:
+Resume array operations on next array start=A tömbműveletek folytatása a következő tömbindításkor
+Resume ignored as paused because background task running=A folytatás szüneteltetettként figyelmen kívül hagyva, mert háttérfeladat fut
+Resume request=Folytatáskérés
+Resumed=Folytatva
+Runtime=Futásidő
+Saturday=szombat
+Scheduled=Ütemezett
+Sector Numbers=Ágazati számok
+Sector endpoints must be whole numbers within the disk=A szektor végpontjainak egész számoknak kell lenniük a lemezen belül
+Sectors=Szektorok
+Send notification=Értesítés küldése
+Send notifications for Pause or Resume of increments=Értesítések küldése a növekedés szüneteltetéséről vagy folytatásáról
+Send notifications for mover or backup running=Értesítések küldése a költöztetésről vagy a biztonsági mentésről
+Send notifications for mover running=Értesítések küldése a költöztető futáshoz
+Send notifications for temperature related Pause or Resume=Értesítések küldése a hőmérséklettel kapcsolatos szüneteltetésről vagy folytatásról
+Server will be shutdown when array operation completes=A szerver leáll, amikor a tömbművelet befejeződik
+Settings reset to default values=A beállítások visszaállnak az alapértelmezett értékekre
+Show Sector Numbers=Szektorszámok megjelenítése
+Show the status of a running parity check=Egy futó paritásellenőrzés állapotának megjelenítése
+Shutdown=Leállítás
+Shutdown aborted=A leállítás megszakadt
+Shutdown server at=A szerver leállítása itt
+Shutdown server when array operation completes=A kiszolgáló leállítása, amikor a tömbművelet befejeződött
+Size=Méret
+Something wrong progress information present without disks file present=Valami hiba történt: folyamatinformációk jelennek meg disks fájl nélkül
+Something wrong restart information present without progress present=Valami hiba történt: a folyamatban lévő információk újraindítása
+Speed=Sebesség
+Start a correcting parity check=Indítson el egy javító paritásellenőrzést
+Start a non-correcting parity check=Indítson el egy nem javító paritásellenőrzést
+Start a parity check with scheduled settings=Indítsa el a paritásellenőrzést az ütemezett beállításokkal
+Start a partial parity check=Indítsa el a részleges paritásellenőrzést
+Start array issued via Command Line=Indítsa el a parancssoron keresztül kiadott tömböt
+Start point for check=Az ellenőrzés kezdőpontja
+Start the array=Indítsa el a tömböt
+Start the array and wait for other array operations to finish=Indítsa el a tömböt, és várja meg, amíg a többi tömbművelet befejeződik
+Starting Shutdown=Leállítás indítása
+Status=Állapot
+Stop array issued via Command Line=Parancssoron keresztül kiadott tömb leállítása
+Stop the array=Állítsa le a tömböt
+Sunday=vasárnap
+Suppressed built-in %s finished notification=Elnyomott beépített%1$skész értesítés
+Suppressed built-in %s started notification=Elnyomott beépített%1$smegkezdte az értesítést
+Syslog and Flash=Syslog és Flash
+Syslog only=Csak Syslog
+System crashed=A rendszer összeomlott
+Temperature Pause and Resume=Hőmérséklet Szünet és folytatás?
+Temperature monitoring switched off=A hőmérséklet-figyelés kikapcsolva
+Testing=Tesztelés
+Testing mode is normally only used by the plugin author or when gathering evidence of a suspected bug in the plugin Testing mode is very verbose and generates a lot of additional log entries so you do not want it enabled unless it is really necessary=A tesztelési módot általában csak a beépülő modul szerzője használja, vagy amikor bizonyítékokat gyűjt a bővítmény feltételezett hibájáról. A tesztelési mód nagyon bőbeszédű, és sok további naplóbejegyzést generál, így nem szeretné engedélyezni, hacsak nem igazán szükséges.
+The Pause and Resume custom times cannot be identical=A Szünet és a Folytatás egyéni időpontok nem lehetnek azonosak.
+The Pause and Resume times cannot be identical=A szünet és a folytatás ideje nem lehet azonos.
+The Pause and Resume times would give an increment length of more than 12 hours which is unusual Are you sure you these are the right way around=A Szünet és Folytatás idők 12 óránál hosszabb növekményt adnának, ami szokatlan.  Biztos vagy benne, hogy ez a helyes út?
+The Resume value must be greater than the Pause one for the heat related Pause and Resume to work correctly as they are both subtracted from the disk temperature warning value when calculating the desired temperature=A Folytatás értéknek nagyobbnak kell lennie a Szünet értéknél, hogy a hővel kapcsolatos Szünet és Folytatás megfelelően működjön, mivel mindkettőt levonják a lemez hőmérsékletére vonatkozó figyelmeztetés értékéből a kívánt hőmérséklet kiszámításakor.
+The Unraid Cumulative Parity Check setting must be set to No if you want to use the Parity Check Tuning Plus plugin to run Array operations in increments=AUnraidA kumulatív paritásellenőrzés beállítását nem értékre kell állítani, ha használni szeretné aParity Check Tuning Plusbeépülő modul a tömbműveletek lépésenkénti futtatásához
+The end point must be larger than the start=A végpontnak nagyobbnak kell lennie, mint a kezdőpont
+The following are also available for testing purposes only=Az alábbiak szintén csak tesztelési célból állnak rendelkezésre
+The value you have specified seems unusually large as it is not an absolute value but is relative to the value specified for the drives Temperature Warning level at the Unraid level=Az Ön által megadott érték szokatlanul nagynak tűnik, mivel nem abszolút érték, hanem relatív a meghajtó hőmérséklet-figyelmeztetési szintjéhez megadott értékhez.Unraidszinten
+This might affect array integrity=Ez befolyásolhatja a tömb integritását
+Thursday=csütörtök
+Tidy shutdown file not present in %s event=A rendezett leállítási fájl nincs benne%1$sesemény
+Tuesday=kedd
+Unable to stop array=Nem lehet leállítani a tömböt
+Unavailable=Nem elérhető
+Unclean shutdown detected=Tiszta leállás észlelve
+Unknown action %s=Ismeretlen művelet:%1$s
+Unrecognized option=Ismeretlen opció
+Unusually large value=Szokatlanul nagy érték?
+Update cron table entries=Frissítse a cron tábla bejegyzéseit
+Updated cron settings are in %s=Megérkeztek a frissített cron beállítások%1$s
+Usage=Használat
+Use increments for %s %s=Használjon növekményt a%1$s %2$s
+Use increments for Clear operations=Használjon lépésközt a törlési műveletekhez
+Use increments for Parity Sync or Data Rebuild operations=Használjon növekményt a Parity Sync vagy Data Rebuild műveletekhez
+Version=Verzió
+Versions Unraid %s, Plugin %s=Verziók:Unraid %1$s, Plugin%2$s
+Waiting=Várakozás
+Warning=Figyelmeztetés
+Wednesday=szerda
+Weekly=Hetente
+Write Corrections to Parity=Írjon javításokat a paritásra
+Write current settings to syslog=Írja be az aktuális beállításokat a syslogba
+Yes.=Igen
+:parityProblemsPlus_check_plug:
+> Ha rákattint az **Ellenőrzés** gombra, akkor egy részleges ellenőrzés indul el
+> lefedi legalább az Ön által megadott kezdő- és végpontokat. Ez egy korrekciós ellenőrzés lesz
+> ha a **Javítások írása** opció **Igen** értékre van állítva, ellenkező esetben pedig az olvasási ellenőrzést.
+> Vegye figyelembe, hogy ez az ellenőrzés legalább 1 percig fut még akkor is, ha nagyon kevés ellenőrizendő szektort ad meg.
+:end
+
+:parityProblemsPlus_correct_plug:
+> Adja meg, hogy meg kívánja-e kísérelni a paritás frissítését a talált hibák kijavítása érdekében,
+> vagy egyszerűen csak végezzen olvasási tesztet, hogy lássa, nincs-e jelentett paritási hiba.
+:end
+
+:parityProblemsPlus_end_plug:
+> Válassza ki, hol szeretné befejezni a csekket. A végpontot megadhatja szektorszámként vagy a legnagyobb paritású lemez méretének százalékában.
+>
+> Gyakorlatilag technikai okokból előfordulhat, hogy az ellenőrzés később fejeződik be, mint az Ön által ellenőrzésként megadott pont, percenként csak egyszer kerül sor annak ellenőrzésére, hogy elérték-e a végpontot.
+:end
+
+:parityProblemsPlus_intro_plug:
+A **Parity Check Tuning Plus Assistant** része a **Parity Check Tuning Plus** plugin.<p/>
+A jelenlegi állapot **KÍSÉRLETI**, és mindig lehetséges, hogy ezt az asszisztenst a jövőben eltávolítják).
+**(várjuk a visszajelzéseket az alapkoncepcióról és a fejlesztési ötletekről)**.<p/>
+Az ötlet az, hogy ez az asszisztens akkor használható, ha egy paritásellenőrzés vagy olvasási ellenőrzés jelezte a problémákat, és naplózta a problémás szektorok részleteit a rendszernaplóba.
+Sok esetben az ilyen hibákat külső tényezők okozhatják, mint például a kábelezés vagy a tápegység, nem pedig a tényleges lemezek.<p/>
+Ez sem ritka, különösen **Ryzen/ThreadRipper** alapú rendszerek, hogy véletlenszerű paritási hibákat kapjanak, ha a RAM túl van hajtva
+(anXMPa profil **egy** túlóra),
+és az alaplap/CPU kombináció is olyan korlátokat írhat elő, amelyek alacsonyabbak, mint amennyit a RAM képes támogatni.<p/>
+Ha úgy gondolja, hogy elhárította a problémákat okozó okokat, akkor ezzel az asszisztenssel egy szűk tartományban részleges ellenőrzést hajthat végre annak megállapítására, hogy a probléma továbbra is fennáll-e.
+Ez sokkal gyorsabb lehet, mintha egy teljes paritásellenőrzést vagy olvasási ellenőrzést kellene futtatnia annak megállapításához, hogy megoldotta-e a problémát, vagy egy kiterjesztett lemezt kellene futtatnia.SMARTteszt a tényleges lemez teszteléséhez.<p/>
+**FONTOS**: Ezt az asszisztenst soha nem szabad a teljes paritásellenőrzés alternatívájaként használni, ha úgy gondolja, hogy a probléma megoldódott.
+:end
+
+:parityProblemsPlus_sectors_plug:
+> Ha rákattint a **Szektorszámok megjelenítése** lehetőségre, megjelenik egy párbeszédpanel
+> amely kivonja azokat a bejegyzéseket a rendszernaplóból, amelyek olyan szektorokat mutattak, amelyekhez bármilyen paritás tartozik
+> szektor jelenik meg, és hogy a javítás alatt áll-e, vagy paritási hiba.
+:end
+
+:parityProblemsPlus_start_plug:
+> Válassza ki, honnan szeretné elindítani az ellenőrzést.  A kezdőpont megadható szektorszámként vagy a legnagyobb paritású lemez méretének százalékában.
+>
+> Az abszolút szektorok megadása valószínűleg különösen akkor hasznos, ha a szektorszámokat a *syslog*-ból kinyerte, amikor az eredeti paritásellenőrzés hibákat jelentett ezekben a szektorokban. A beépülő modul egy jövőbeni verziójában a beépülő modult úgy lehet továbbfejleszteni, hogy automatikusan kivonja az ilyen szektorokat a *syslog*-ból, és egy legördülő listát jelenítsen meg, de ez a funkció még nincs megvalósítva.
+>
+> Gyakorlatilag technikai okokból az ellenőrzés valamivel korábban kezdődhet, mint az Ön által megadott pont, de ez csak kis mértékben lesz.
+:end
+
+:parityProblemsPlus_type_plug:
+> Válassza ki a kezdő- és végpont megadásának módját.
+>
+> Valószínűleg abszolút szektorszámokat szeretne használni, ha vannak olyanok, amelyek korábban hibaként szerepeltek a rendszernaplóban.
+> Az abszolút szektorszámok használata általában pontosabb, és rövidebb tesztekhez vezet, de több erőfeszítést igényel a beállítás.
+>
+> Az alternatíva a százalékok használata. Ha százalékokat használunk, akkor az általuk képviselt szektorszámok a legnagyobb paritású lemez százalékaként kerülnek kiszámításra.
+:end
+
+:parity_tuning_plus_allops_plug:
+> Ezek a tömbműveletek, amelyek új paritás létrehozását vagy egy meghibásodott lemez újraépítését foglalják magukban.
+>
+>Az ilyen típusú ellenőrzések általában csak akkor futnak le, ha potenciálisan probléma adódik a tömbbel, és lépéseket tesznek a védett állapot visszaállítása érdekében.
+>
+>**FONTOS**: Amíg ez a művelet be nem fejeződik, a tömbje nem lesz teljesen védett, ezért feltételezhető, hogy a legtöbb ember azt szeretné, ha ez a beállítás a **Nem**-on maradna.
+> Ne válassza az **Igen** lehetőséget, hacsak nem biztos benne, hogy ezt akarja.
+:end
+
+:parity_tuning_plus_automatic_plug:
+> Az automatikus ellenőrzések azok, amelyeket automatikusan kezdeményezUnraidtisztátalan leállás után.
+>
+> ha aUnraida rendszer nem áll le tisztán, majd a tömb következő indításakorUnraidautomatikusan elindítja az ellenőrzést. Ennek számos oka lehet, kezdve az áramkimaradástól; hardver problémák; és szoftverproblémák. Az automatikus ellenőrzés lefut, mert ha bármilyen paritáshiba van, az veszélyeztetheti a tömbmeghajtó meghibásodása utáni helyreállítási képességet egy későbbi időpontban, így a lehető leghamarabb vissza kíván térni az érvényes paritáshoz.
+> 
+> Ha ez az opció **Igen**-ra van állítva, akkor az ellenőrzés néhány percig futni fog (mivel a tisztátalan leállítást követő hibák nagy valószínűséggel a lemezek elején vannak, mivel nem lettek lecsatolva tisztán. Ha a lépések futtatásához megadott időn kívül az ellenőrzés szüneteltetett állapotba kerül. Az ellenőrzés fennmaradó része a futási időrésben megadott lépésekben fut.
+:end
+
+:parity_tuning_plus_background_plug:
+> Ez az opció csak akkor releváns, ha engedélyezte a Beállítások->Rendszerértesítések opciót (nagyon ajánlott).
+>
+> Ennek az opciónak a beállítása<strong>Igen</strong>azt jelenti, hogy minden alkalommal értesítést kap
+> amikor egy háttérfeladat, például az Appdata Backup vagy a Mover elindul vagy befejeződik. Ha ez a lehetőség
+> be van állítva, akkor a rendszer értesítést küld, amikor ezek a műveletek egy tömb alatt elindulnak vagy leállnak
+> művelet akkor is aktív, ha nem állította be a művelet szüneteltetését vagy folytatását közben
+> ilyen feladatok futnak. Ez hasznos lehet a tömb teljesítményének meghatározásában
+> a művelet valószínűleg rosszul működik a háttérfeladattal a teljesítmény szempontjából.
+>
+>Ha nem szeretne ilyen értesítéseket kapni, hagyja ezt a lehetőséget **Nem** értékre állítva.
+>Az értesítés **Megjegyzés** kategóriaüzenetként kerül elküldésre a * alatt megadott célpont(ok)nak.<a href="Settings/Notifications">Beállítások->Értesítési beállítások</a>*.
+:end
+
+:parity_tuning_plus_backup_plug:
+>Szüneteltessen egy tömbműveletet (paritásellenőrzés, olvasás-ellenőrzés, paritásszinkronizálás,. lemez újraépítése, lemez törlése), ha a CA Appdata vagy Appdata Backup beépülő modulok biztonsági mentést vagy visszaállítást futtatnakdockerkonténeradatok.  A biztonsági mentéssel vagy visszaállítással párhuzamosan futó tömbművelet hátrányosan befolyásolja a teljesítményt a lemezmeghajtókon való versengés miatt, így hatékonyabb, ha nem futnak egyszerre.
+>
+> Ez a beállítás akkor is érvényben van, ha nem használja a tömbműveletek lépésenkénti futtatására szolgáló opciókat.
+>
+> Ha a tömbművelettípust növekményekkel futtatja, akkor a folytatás csak a biztonsági mentés vagy a visszaállítás befejezése után történik meg, ha még mindig a növekmény időablakán belül van.
+:end
+
+:parity_tuning_plus_clear_plug:
+> Lemeztörlési művelet történik, ha új meghajtót ad hozzá (amelyet nem töröltek előre a Pre-Clear beépülő modullal) egy paritásvédett tömbhöz. A törlési folyamat az új lemez minden szektorába nullákat ír, így az a meglévő paritás befolyásolása nélkül hozzáadható a tömbhöz. Amíg a törlési művelet be nem fejeződik, nem tudja formázni a lemeztUnraidés kezdje el használni az adatok tárolására.
+>
+>Mivel a törlési művelet befejezéséig a lemez nem lesz használható, valószínűleg a legtöbben azt akarják, hogy ez az opció **Nem** legyen. Ezenkívül a Clear művelet általában nem terheli túl a rendszert, így kevésbé valószínű, hogy befolyásolja a teljesítményt normál napi használat során.
+:end
+
+:parity_tuning_plus_complete_plug:
+> Ha **Igen**-ra van állítva, akkor automatikusan elindítja a kiszolgáló szabályos leállítását, amikor az aktuális tömbművelet befejeződik.
+>
+> Ez a beállítás valószínűleg csak olyan kiszolgálón használható, amely az idő nagy részében ki van kapcsolva, mivel például biztonsági mentési célokra használják. Az ötlet az, hogy elindíthatja a tömbműveletet (manuálisan vagy ütemezetten), majd hagyhatja, hogy a kiszolgáló kikapcsoljon anélkül, hogy tudnia kellene, mennyi ideig tart a tömbművelet befejezése.
+>
+> Ha azt észleli, hogy ez a beállítás be van állítva, és egy tömbművelet van folyamatban, akkor a rendszer értesítést küld, hogy megtörténik a leállás. Biztonsági intézkedésként, ha ezt az opciót a tömbművelet kezdetén beállítják, de a művelet befejezése előtt hatástalanítják, akkor a leállítás megszakad.
+>
+>**FIGYELMEZTETÉS:** A tömbművelet befejezésekor a leállítás megkezdése előtt nem ellenőrzik, hogy fut-e más tevékenység a szerveren.
+:end
+
+:parity_tuning_plus_critical_plug:
+> Ez az érték azt jelzi, hogy a lemez hőmérséklete milyen közel érhető el a kritikus lemezhőmérséklet küszöbértékéhez beállított értékhez, mielőtt a kiszolgáló leállítása elindulna.
+> Előfordulhat, hogy egy kis pozitív érték kiváltja a szünetetUnraidértesítést küld Önnek arról, hogy a lemez hőmérsékleti kritikus küszöbértékét elérte.
+>
+>Ha egy egyedi meghajtóhoz explicit küszöbértéket határoztak meg, akkor ez az érték.  Ha nem, a rendszer a globális beállítást használja.
+:end
+
+:parity_tuning_plus_defaults_plug:
+> Az **Alkalmaz** gomb elmenti a beállítások aktuálisan megjelenített értékeit.
+>
+> A **Kész** gombbal kilép a beállítások oldaláról.
+>
+> Az **Alapértelmezettek** gomb visszaállítja a beépülő modul beállításait a beépülő modul első telepítésekor használt alapértelmezett értékekre, és azonnal elmenti ezeket az aktuális beállításokként.
+> Most módosíthatja ezeket a beállításokat a rendszernek megfelelően, és az Alkalmaz gombra kattintva mentheti őket.
+:end
+
+:parity_tuning_plus_explain_plug:
+> Ez a beépülő modul nem indít tömbműveleteket, hanem módosítja/javítja a viselkedést, miután a tömbművelet elindult.
+>
+> Ennek a beépülő modulnak az a fő célja, hogy lehetővé tegye a tömbműveletek, például a paritásellenőrzések korlátozását olyan időszakokra, amelyek nem okoznak kényelmetlenséget.  Egyedileg megadhatja, hogy a tömbműveletek minden fő típusához használjon-e növekményt.
+>
+>Ha ezen opciók egyikét **Nem**-ra állítja, akkor a művelet alapértelmezett rendszerviselkedése megszakítás nélkül fut, kivéve, ha manuálisan leállítja/szünetelteti/törli a műveletet.
+>
+>Ha ezen opciók egyikét **Igen**-ra állítja, akkor a tömbműveletet lépésekben kell futtatni, több napra elosztva.
+>
+> Példaként arra, hogy ez a bővítmény mit tud feltételezni
+>Van egy paritásellenőrzése, amely minden hónap első napján éjfélkor kezdődik
+>* Korábbi tapasztalatai azt mutatják, hogy ha a paritásellenőrzés megszakítás nélkül fut, akkor 30 órát vesz igénybe.
+>* Ezt a beépülő modult úgy állítja be, hogy 3 órás lépésekben használja éjféltől és hajnali 3-ig.
+>* A paritásellenőrzés most ténylegesen 10 nap eltelt időt vesz igénybe (10 x 3 = 30), így a paritásellenőrzés a hónap 10-én fejeződik be.
+>* Úgy ütemezte, hogy ezek a lépések éjfélkor kezdődnek és hajnali 3:00-kor érjenek véget. ha tudja, hogy a rendszert nem használják.
+>* Ön nem aggódik a megnövekedett eltelt idő miatt, és örömmel fogja fogadni a rendszer megnövekedett reakciókészségét a normál használat során.
+>* A hónap hátralévő részében ez a beépülő modul semmit sem csinál, mivel nincs folyamatban aktív paritásellenőrzés, amikor eljön a növekmény kezdési ideje.
+>
+>**MEGJEGYZÉSEK:**
+>* A szabványUnraidHa a tömb leáll, miközben egy tömbművelet nem teljes, az az, hogy az eddigi folyamat elveszik, és csak az elejéről lehet újraindítani.  Ezt elkerülheti, ha úgy állítja be a beépülő modult, hogy a következő tömbindításkor folytatja a tömbműveleteket.
+>* Ha nincs paritáslemeze, vagy ha a meghibásodott meghajtók száma megegyezik a letiltott meghajtók számával, akkor a **Paritásellenőrzés** helyett **Olvasásellenőrzés** történik, hogy megbizonyosodjon arról, hogy az összes többi meghajtó hiba nélkül olvasható.
+:end
+
+:parity_tuning_plus_frequency_plug:
+> Az a gyakoriság, amelyen az inkremenseket le kell futtatni egy tömbművelet során.
+>
+> Normál működés esetén a legtöbb felhasználó a **Napi** beállítást fogja használni, ezért ez az alapértelmezett. Van egy **Heti** lehetőség is azok számára, akik ritkán végeznek ellenőrzést.
+>
+> A más frekvenciákat kereső felhasználók támogatása érdekében lehetőség van **Egyéni** ütemezések beállítására, amelyek bonyolultabb ütemezéseket tesznek lehetővé a szüneteltetési és folytatási időpontokhoz. Ha ezt az opciót használja, akkor megadhatja a Linux által használt időt<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>hasznosság.
+:end
+
+:parity_tuning_plus_history_plug:
+> Az **Előzmények** gomb megjeleníti a paritásellenőrzések aktuális előzményeit.
+> Funkciójában megegyezik a **Fő** lapon található **Előzmények** gomb használatával.
+:end
+
+:parity_tuning_plus_hot_plug:
+>Szüneteltessen egy tömbműveletet (paritásellenőrzés, paritásszinkronizálás/lemez újraépítése, lemez törlése), ha a lemez hőmérséklete meghaladja a beállított határértékeket.
+>
+>A hőmérsékleteket a rendszer a Figyelmeztető lemez hőmérsékleti szintjeihez beállított küszöbértékekhez viszonyítva ellenőrzi. Ha egy egyedi meghajtóhoz küszöbértéket határoztak meg (ezt a Fő lapon a meghajtóra kattintva érheti el), akkor ez az érték. Ha nem, a globális beállítás (a *Beállítások->Kijelző beállításai* alatt beállított) kerül felhasználásra. Feltételezzük, hogy általában azt szeretné, ha a tömbművelet szüneteltetné a következőben beállított érték előttUnraidszintje, mint a Figyelmeztetési küszöb.
+>
+>Sokkal jobb megoldás a hűtés javítása az esetedben, hogy a lemezek soha ne melegedjenek túl. A gyakorlatban ez nem mindig bizonyul praktikusnak.
+>
+>Ha a tömbművelet szüneteltetve volt egy növekmény futtatása közben, akkor az nem folytatódik a növekményhez megadott időn kívül. Ha a tömbművelet bármilyen más okból indult, akkor a Szünet/Folytatás viselkedés a hőmérsékleten mindig aktív.
+:end
+
+:parity_tuning_plus_increments_plug:
+>Az ütemezett ellenőrzések azok, amelyeket a Beállítások->Ütemező menüpontban megadott időpontokban történő futtatásra konfigurált.
+>
+>Ha ezt az opciót **Igen**-ra állítja, akkor az ellenőrzéseket lépésekben, több napra elosztva kell futtatni.  Vegye figyelembe, hogy ha a beépülő modult szeretné használni a tömbműveletek lépéseinek kezelésére, akkor **nem** kell a Kumnlatív Paritásellenőrzés beállítását **Igen** értékre állítania a szabványban.UnraidParitásellenőrzés beállításai.
+>
+>Ha ezt a **Nem**-ra állította, akkor az alapértelmezett rendszerviselkedést kapja, amikor az ellenőrzések szünet nélkül futnak, hacsak nem manuálisan leállítja/szünetelteti/törli őket.
+:end
+
+:parity_tuning_plus_logging_plug:
+> Szabályozza a bejegyzések részletességét. A részletesség növelhető a bővítmény használatával felmerülő problémák hibakeresésének elősegítése érdekében.
+>
+>Az e beépülő modul által küldött üzenetek azonosítása az a tény, hogy az üzenetek innen származnak
+>* **Parity Check Tuning Plus**  
+>* **Parity Check Tuning Plus Assistant**  
+>attól függően, hogy a bővítmény melyik része generálta az üzeneteket
+>
+>Az **Alap** beállítással ezek csak egy kis számú üzenet jelzik, hogy a bővítmény valamilyen műveletet végzett, vagy egy lehetséges hibaállapotot észlelt.  A legtöbb felhasználó ezt szeretné normál működés közben.
+>
+>Ha ezt a beállítást **Debug**-ra állítja, további bejegyzések íródnak a rendszernaplóba, amelyek több információt adnak arról, hogy mi történik, amikor ez a beépülő modul fut. Megmutatják, hogyan működik a bővítmény egyes belső működése. Ezeket a további bejegyzéseket az a tény azonosítja, hogy a **DEBUG** szót hozzá kell adni az üzenetek elejéhez. Egyes felhasználók (különösen azok, akik korábban nem használták ezt a beépülő modult) szeretnék használni, hogy további részleteket lássanak a beépülő modul működéséről, de nem várható, hogy ez az opció normál futás közben engedélyezve marad.
+>
+>Végül van egy további **Tesztelés** beállítás, amelyet csak a fejlesztő használhat, de a kényelem kedvéért itt hagyjuk. Még több bőbeszédű üzenetet fog írni a rendszernaplóba, de ezek valószínűleg nem lesznek érdekesek (sőt értelmesek) az átlagos felhasználó számára.  Ezeknél az üzeneteknél a **TESZTELÉS** szó szerepel az üzenetek elején. Csak akkor futtassa ezt a naplózási szintet, ha felkérték, mert ez gyorsan feltöltheti a rendszernaplót, ha nem vigyáz.
+>
+>Várjuk a visszajelzéseket, hogy érdemes-e olyan köztes opciót bevezetni, amely információs típusú üzeneteket ad ki a bővítmények tevékenységéről, miközben kihagyunk néhány alacsonyabb szintű részletet, amelyek célja a plugin futása közben esetlegesen felmerülő problémák diagnosztizálása.
+>
+>Ha a Tesztelési módot beállította a naplózáshoz, akkor kiválaszthatja, hogy hova szeretné rögzíteni a naplóüzeneteket. Az alapértelmezés a szabványos rendszernapló, és ez az egyetlen lehetőség, amely az alap módban engedélyezett. A syslog a RAM-ban van tárolva, így nem okoz túl sok írást a flash meghajtóra.
+>A hibakeresési problémák megkönnyítése érdekében Tesztelés módban naplózhatja az üzeneteket a flash meghajtóra akár a syslog helyett, akár a syslog mellett. Az eredményül kapott parity.check.tuning.plus.log fájl a beépülő modul flash meghajtón lévő mappájában tárolódik, és ennek a fájlnak a fejlesztő rendelkezésére bocsátása segít a váratlan viselkedés diagnosztizálásában.
+:end
+
+:parity_tuning_plus_low_plug:
+> Ez az érték azt jelzi, hogy mennyivel kell a meghajtó Figyelmeztetési hőmérsékleti küszöbértéke alá érnie, mielőtt egy tömbművelet **folytatását** figyelembe veszi. Ha a végrehajtott művelet típusához növekményeket állítottak be, akkor az időnek a növekmény ablakon belül kell lennie, vagy a folytatás elhalasztja az ablak visszaállításáig.
+>
+>Jó egyensúlyt kell találnia a tömbműveletek túl korán történő folytatása (és így gyorsan eléri azt a szintet, hogy újabb szünetet kezdeményezzen) és a sok idő elpazarlása között.
+>
+>Ha egy lemezt valaha is lepörgetnek, a hőmérséklet nem érhető el, ezért feltételezzük, hogy ez a kritérium teljesül
+>
+>Ha nincs szüneteltetett tömbművelet, akkor nem történik semmilyen művelet.
+:end
+
+:parity_tuning_plus_manual_plug:
+> A kézi ellenőrzések azok, amelyeket a Fő lap **Ellenőrzés** gombjával kezdeményezett.
+>
+> Állítsa ezt **Igen** értékre, ha azt szeretné, hogy a manuálisan indított ellenőrzések is lépésekben futjanak?
+>
+> Valószínűleg azt szeretné, hogy egy ilyen ellenőrzés megszakítás nélkül befejeződjön, és ha igen, hagyja ezt az opciót **Nem** értékre állítva.
+> Ha ezt az opciót **Igen**-ra állítja, akkor ha manuálisan indítja el az ellenőrzést a főoldalról, majd manuálisan szünetelteti az ellenőrzést, akkor az ellenőrzést fokozatosan futtatja az ütemezett idők között, amíg az ellenőrzés be nem fejeződik.
+:end
+
+:parity_tuning_plus_mover_plug:
+>Szüneteltessen egy tömbműveletet (paritásellenőrzés, olvasás-ellenőrzés, paritásszinkronizálás,. lemez újraépítése, lemez törlése), ha a mozgató fut. A mozgatóval párhuzamosan futó tömbművelet hátrányosan befolyásolja a teljesítményt a lemezmeghajtókon való versengés miatt, így hatékonyabb, ha nem futnak egyszerre.
+>
+> Ez a beállítás akkor is érvényben van, ha nem használja a tömbműveletek lépésenkénti futtatására szolgáló opciókat.
+> 
+> Ha a tömbművelettípust lépésekben futtatja, akkor a folytatás csak a mozgató befejezése után fog megtörténni, ha még mindig a növekmény időablakán belül van.
+:end
+
+:parity_tuning_plus_notify_plug:
+> Ez az opció csak akkor releváns, ha engedélyezte a Beállítások->Rendszerértesítések opciót (erősen ajánlott).
+>
+> Ennek az opciónak a beállítása<strong>Igen</strong>azt jelenti, hogy minden alkalommal értesítést kap, amikor a beépülő modul szüneteltet vagy folytat egy növekedést egy tömbművelet során.
+>
+>Ha nem szeretne ilyen értesítéseket kapni, hagyja ezt a lehetőséget **Nem** értékre állítva.
+>
+>A csak tájékoztató jellegűnek ítélt értesítések **Normál** (zöld) kategóriájú üzenetként kerülnek elküldésre a *-ban megadott célokra.<a href="Settings/Notifications">Beállítások->Értesítési beállítások</a>*, bár a fontosabbak a **Figyelmeztetés** (narancssárga) vagy *Hiba** (piros) típusú értesítéseket fogják használni, ahol szükségesnek tűnik.
+:end
+
+:parity_tuning_plus_pause_plug:
+> Az az időpont, amikor a futó paritásellenőrzést szüneteltetni kell. Általában ez az az időpont, amikor azt szeretné, hogy a futó paritásellenőrzés ne érintsen más tevékenységet.
+>Ha ilyenkor nem fut aktív paritásellenőrzés, akkor nem történik semmilyen művelet.
+>
+>Általában érdemes megbizonyosodni arról, hogy ez az idő a rendszeres paritásellenőrzések ütemezésének időpontja után legyen. Az első növekmény ekkor a rendszeres paritásellenőrzés ütemezett indulásától a növekmény befejezésének időpontjáig tart.
+>
+>Ha a növekmény időtartama **Egyéni**-ra van állítva, akkor az óra/perc mezők el vannak rejtve, és ehelyett lehetőséget kap az idő beállítására<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>formátumban.
+>
+>Győződjön meg arról is, hogy a futási lépésekre szánt idő elegendő ahhoz, hogy a paritásellenőrzés a következő ellenőrzés megkezdése előtt befejeződjön. Mivel a legtöbben a paritásellenőrzéseket csak ritkán (például havonta vagy negyedévente) ütemezik, ezért ez nem valószínű, hogy probléma, de ezt figyelembe kell venni.
+:end
+
+:parity_tuning_plus_restart_plug:
+> Unraidáltalában elhagyja a paritásellenőrzést, ha a rendszert leállítják, újraindítják vagy a tömböt leállítják (az egyetlen lehetőség a paritásellenőrzés újraindítása az elejétől).
+> A többi tömbművelet elölről indul újra.
+> Ennek az opciónak a beállítása lehetővé teszi, hogy a beépülő modul újraindítsa a paritásellenőrzést onnan, ahol elérték
+> mindaddig, amíg az alábbi kritériumok teljesülnek:
+>* A tömb rendesen le volt kapcsolva
+>* A felhasználónak nem szabad módosítania a tömb konfigurációját.
+>
+>Amíg ezek a feltételek teljesülnek, akkor a tömb következő indításakor a művelet az előzőleg elért ponttól folytatódik.
+>
+>**MEGJEGYZÉSEK:**
+>* Ha a tömbművelet az ütemezett növekmény futtatásához beállított időn belül volt, akkor a tömbművelet újraindításakor a rendszer szüneteltetve lesz, ha kívül esik a növekmény futtatásához beállított időn.
+>* Ha a tömbművelet manuálisan szünetel, akkor az újraindított tömbművelet is szünetel.
+>
+:end
+
+:parity_tuning_plus_resume_plug:
+> Az az időpont, amikor a szüneteltetett paritásellenőrzést folytatni kell.<br>Ha jelenleg nincs szüneteltetett paritásellenőrzés, amikor eljön ez az idő, akkor nem történik semmilyen művelet.
+>
+>Általában ez az idő az éjszakai tétlenségi időszak kezdete. Megfelelő érték lehet az ütemezett paritásellenőrzés indításához megadott időpont használata.
+>
+>Ha a növekmény időtartama **Egyéni**-ra van állítva, akkor az óra/perc mezők el vannak rejtve, és ehelyett lehetőséget kap az idő beállítására<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>formátumban.
+:end
+
+:parity_tuning_plus_shutdown_plug:
+> Ha **Igen**-ra van állítva, akkor automatikusan elindítja a kiszolgáló szabályos leállítását, ha a tömbben vagy a készletekben bármely lemez eléri a meghatározott hőmérsékleti küszöböt.
+> A hőmérsékleteket a rendszer a **Kritikus** lemezhőmérséklet-szintekhez beállított küszöbértékekhez viszonyítja. Ha egy kritikus hőmérsékletet határoztak meg egy egyedi meghajtóhoz (a Fő lapon a meghajtóra kattintva érhető el), akkor ez az érték. Ha nem a globális beállítás (*<a href="Settings/DisplaySettings">Beállítások->Kijelző beállításai</a>) kerül felhasználásra.
+>
+>Ez az opció akkor aktiválódik, ha a rendszer hűtőrendszere valamilyen okból nem elegendő, vagy ha valamilyen módon meghibásodott. Az ötlet az, hogy rendesen le kell állítani, mielőtt a lemezek megsérülnének a túlmelegedés miatt. A kioldott leállítás funkcionálisan ugyanaz, mint a Leállítás gomb megnyomása esetén a főoldalon.UnraidGUI. Ha az értesítések engedélyezve vannak, akkor a rendszer küld egyet, hogy jelezze, hogy ez megtörtént.
+>
+>Amikor egy ilyen leállás után újraindul a szerver, akkor a tömb indításakor értesítést kap, hogy hőmérséklettel kapcsolatos leállás történt, ha nem tudta az okát.
+>
+>**FIGYELEM:** Ha a tömb leáll, miközben egy tömbművelet nem fejeződött be, akkor az alapértelmezettUnraidviselkedése az, hogy az eddigi fejlődés elveszett, és csak az elejéről lehet újraindítani.
+>
+>Ha engedélyezte az újraindítási opciót ebben a bővítményben *és* a leállítás egy szabályos leállítás), akkor a rendszer megpróbálja újraindítani a tömbműveletet arról a pontról, ahová korábban eljutott.
+:end
+
+:parity_tuning_plus_temp_notify_plug:
+> Ha ezt az opciót **Igen**-ra állítja, akkor minden alkalommal értesítést kap, amikor a bővítmény szünetelteti vagy folytatja a tömbműveletet a meghajtók hőmérséklete miatt.<br>Ha nem szeretne ilyen értesítéseket kapni, hagyja ezt a lehetőséget **Nem** értékre állítva. Az értesítés **Megjegyzés** kategóriaüzenetként kerül elküldésre a * alatt megadott célpont(ok)nak.<a href="Settings/Notifications">Beállítások->Értesítési beállítások</a>*.
+:end
+
+:parity_tuning_plus_warn_plug:
+> Ez az érték azt jelzi, hogy a lemezek hőmérséklete milyen közel érheti el a Figyelmeztető lemez hőmérsékleti küszöbértékéhez beállított értéket, mielőtt egy futó tömbművelet **szünetet** elindítana. Ha egy egyedi meghajtóhoz explicit küszöbértéket határoztak meg, akkor ez az érték. Ha nem, a rendszer a globális beállítást használja.
+>
+> Általában egy kis pozitív értékre van szükség a szünet kiváltásáraUnraidarra készül, hogy értesítést küldjön Önnek arról, hogy a lemez hőmérsékletére vonatkozó figyelmeztetési küszöböt elérték.
+>
+>Ha nincs aktív tömbművelet, akkor nem történik semmilyen művelet akkor sem, ha a lemez hőmérséklete meghaladja a megadott küszöbértéket.
+>
+> Ha nincs futó tömbművelet, akkor nem történik semmilyen művelet.
+:end
+
+aborted=elvetélt
+action=akció
+already paused=már szüneteltetve
+already running=már fut
+appears there is a running array operation but no Progress file yet created=úgy tűnik, hogy fut egy tömbművelet, de még nem jött létre folyamatfájl
+appears to be a regular scheduled check=rendszeres ütemezett ellenőrzésnek tűnik
+appears to be an unclean shutdown=tisztátalan leállásnak tűnik
+appears to be manual parity check=kézi paritásellenőrzésnek tűnik
+appears to be marked as automatic parity check=úgy tűnik, hogy automatikus paritásellenőrzésként van megjelölve
+appears to be marked as scheduled parity check=úgy tűnik, hogy ütemezett paritásellenőrzésként van megjelölve
+appears to be partial parity check=részleges paritásellenőrzésnek tűnik
+array drives=tömbmeghajtók
+automatic=automatikus
+backup=biztonsági mentés
+below critical disk temperature threshold=kritikus lemezhőmérséklet-küszöb alatt
+below warning disk temperature threshold=a figyelmeztető lemez hőmérsékleti küszöb alatt
+canceled=törölve
+completed=elkészült
+cool=hűvös
+critical=kritikus
+day=napon
+detected=észlelt
+detected that mdcmd had been called from %s with command %s=észlelte, hogy innen hívták az mdcmd-t%1$sparanccsal%2$s
+disabled=letiltva
+does not appear to be an unclean shutdown=nem tűnik tisztátalan leállásnak
+drive temperature limits=meghajtó hőmérsékleti határértékek
+entry in %s format=belépés%1$sformátumban
+errors=hibákat
+exit code=kilépési kód
+finished=kész
+global temperature limits=globális hőmérsékleti határértékek
+hot=forró
+hr=hr
+idle=tétlen
+manual=kézikönyvet
+min=min
+minute=perc
+mover=mozgató
+no action taken as appears restart outstanding=nem történt semmilyen intézkedés, mivel az újraindítás folyamatban van
+no array operation in progress=nincs folyamatban tömbművelet
+not a parity check so always treat it as an automatic operation=nem paritásellenőrzés, ezért mindig automatikus műveletként kezelje
+operation was paused when reboot initiated so pause it immediately=A művelet az újraindításkor szünetel, ezért azonnal szüneteltesse
+past size=múlt mérete
+paused=szüneteltetve
+percent=százalék
+plugin temperature settings=plugin hőmérséklet beállításai
+running=futás
+scheduled=ütemezve
+sec=mp
+sector=szektorban
+spundown=pörgött le
+to get ready for restart=hogy felkészüljünk az újraindításra
+trigger unknown - assume manual=trigger ismeretlen – tegyük fel a kézikönyvet
+unknown=ismeretlen
+using scheduled mode of %s=ütemezett mód használatával%1$s
+warm=meleg
+where action is one of=ahol a cselekvés az egyik

@@ -1,0 +1,265 @@
+{
+  "source": "https://github.com/unraid/webgui/blob/master/emhttp/plugins/dynamix/include/languages.key",
+  "source_blob": "5353e0b68e6b48f4ece0eabe7d603c413de25edb",
+  "language_pack_source": "https://github.com/unraid/language-templates/tree/master/limetech",
+  "verified": "2026-11-03",
+  "aliases": {
+    "da_DA": "da_DK",
+    "ja_JA": "ja_JP",
+    "ko_KO": "ko_KR"
+  },
+  "locales": {
+    "af_ZA": {
+      "name": "Afrikaans (Afrikaans)",
+      "translate": "af",
+      "tag": "af-ZA",
+      "rtl": false
+    },
+    "ar_AR": {
+      "name": "العربية (Arabic)",
+      "translate": "ar",
+      "tag": "ar",
+      "rtl": true
+    },
+    "bn_BN": {
+      "name": "বাংলা (Bengali)",
+      "translate": "bn",
+      "tag": "bn",
+      "rtl": false
+    },
+    "bs_BA": {
+      "name": "Bosanski (Bosnian)",
+      "translate": "bs",
+      "tag": "bs-BA",
+      "rtl": false
+    },
+    "ca_CA": {
+      "name": "Català (Catalan)",
+      "translate": "ca",
+      "tag": "ca",
+      "rtl": false
+    },
+    "cs_CZ": {
+      "name": "Čeština (Czech)",
+      "translate": "cs",
+      "tag": "cs-CZ",
+      "rtl": false
+    },
+    "da_DK": {
+      "name": "Dansk (Danish)",
+      "translate": "da",
+      "tag": "da-DK",
+      "rtl": false
+    },
+    "de_DE": {
+      "name": "Deutsch (German)",
+      "translate": "de",
+      "tag": "de-DE",
+      "rtl": false
+    },
+    "el_GR": {
+      "name": "ελληνικά (Greek)",
+      "translate": "el",
+      "tag": "el-GR",
+      "rtl": false
+    },
+    "en_US": {
+      "name": "English (American)",
+      "translate": "en",
+      "tag": "en-US",
+      "rtl": false
+    },
+    "es_ES": {
+      "name": "Español (Spanish)",
+      "translate": "es",
+      "tag": "es-ES",
+      "rtl": false
+    },
+    "et_EE": {
+      "name": "Eesti (Estonian)",
+      "translate": "et",
+      "tag": "et-EE",
+      "rtl": false
+    },
+    "fa_FA": {
+      "name": "فارسی (Persian)",
+      "translate": "fa",
+      "tag": "fa",
+      "rtl": true
+    },
+    "fi_FI": {
+      "name": "Suomi (Finnish)",
+      "translate": "fi",
+      "tag": "fi-FI",
+      "rtl": false
+    },
+    "fr_FR": {
+      "name": "Français (French)",
+      "translate": "fr",
+      "tag": "fr-FR",
+      "rtl": false
+    },
+    "ga_IE": {
+      "name": "Gaeilge (Irish)",
+      "translate": "ga",
+      "tag": "ga-IE",
+      "rtl": false
+    },
+    "he_IL": {
+      "name": "עברית (Hebrew)",
+      "translate": "iw",
+      "tag": "he-IL",
+      "rtl": true
+    },
+    "hi_IN": {
+      "name": "हिन्दी (Hindi)",
+      "translate": "hi",
+      "tag": "hi-IN",
+      "rtl": false
+    },
+    "hr_HR": {
+      "name": "Hrvatski (Croatian)",
+      "translate": "hr",
+      "tag": "hr-HR",
+      "rtl": false
+    },
+    "hu_HU": {
+      "name": "Magyar (Hungarian)",
+      "translate": "hu",
+      "tag": "hu-HU",
+      "rtl": false
+    },
+    "id_ID": {
+      "name": "Bahasa (Indonesian)",
+      "translate": "id",
+      "tag": "id-ID",
+      "rtl": false
+    },
+    "it_IT": {
+      "name": "Italiano (Italian)",
+      "translate": "it",
+      "tag": "it-IT",
+      "rtl": false
+    },
+    "ja_JP": {
+      "name": "日本語 (Japanese)",
+      "translate": "ja",
+      "tag": "ja",
+      "rtl": false
+    },
+    "ko_KR": {
+      "name": "한국어 (Korean)",
+      "translate": "ko",
+      "tag": "ko",
+      "rtl": false
+    },
+    "lv_LV": {
+      "name": "Latviešu (Latvian)",
+      "translate": "lv",
+      "tag": "lv-LV",
+      "rtl": false
+    },
+    "nl_NL": {
+      "name": "Nederlands (Dutch)",
+      "translate": "nl",
+      "tag": "nl-NL",
+      "rtl": false
+    },
+    "no_NO": {
+      "name": "Norsk (Norwegian)",
+      "translate": "no",
+      "tag": "nb",
+      "rtl": false
+    },
+    "pl_PL": {
+      "name": "Polski (Polish)",
+      "translate": "pl",
+      "tag": "pl-PL",
+      "rtl": false
+    },
+    "pt_BR": {
+      "name": "Português (Brazilian)",
+      "translate": "pt",
+      "tag": "pt-BR",
+      "rtl": false
+    },
+    "pt_PT": {
+      "name": "Português (Portuguese)",
+      "translate": "pt-PT",
+      "tag": "pt-PT",
+      "rtl": false
+    },
+    "ro_RO": {
+      "name": "Română (Romanian)",
+      "translate": "ro",
+      "tag": "ro-RO",
+      "rtl": false
+    },
+    "ru_RU": {
+      "name": "Русский (Russian)",
+      "translate": "ru",
+      "tag": "ru-RU",
+      "rtl": false
+    },
+    "sk_SK": {
+      "name": "Slovenčina (Slovak)",
+      "translate": "sk",
+      "tag": "sk-SK",
+      "rtl": false
+    },
+    "sl_SI": {
+      "name": "Slovenščina (Slovenian)",
+      "translate": "sl",
+      "tag": "sl-SI",
+      "rtl": false
+    },
+    "sr_RS": {
+      "name": "Српски Језик (Serbian)",
+      "translate": "sr",
+      "tag": "sr-RS",
+      "rtl": false
+    },
+    "sv_SE": {
+      "name": "Svenska (Swedish)",
+      "translate": "sv",
+      "tag": "sv-SE",
+      "rtl": false
+    },
+    "th_TH": {
+      "name": "ไทย (Thai)",
+      "translate": "th",
+      "tag": "th-TH",
+      "rtl": false
+    },
+    "tr_TR": {
+      "name": "Türkçe (Turkish)",
+      "translate": "tr",
+      "tag": "tr-TR",
+      "rtl": false
+    },
+    "uk_UA": {
+      "name": "Українська (Ukrainian)",
+      "translate": "uk",
+      "tag": "uk-UA",
+      "rtl": false
+    },
+    "vi_VN": {
+      "name": "Tiếng Việt (Vietnamese)",
+      "translate": "vi",
+      "tag": "vi-VN",
+      "rtl": false
+    },
+    "zh_CN": {
+      "name": "中文 (Chinese)",
+      "translate": "zh-CN",
+      "tag": "zh-Hans",
+      "rtl": false
+    },
+    "zh_TW": {
+      "name": "繁體中文 (Traditional Chinese)",
+      "translate": "zh-TW",
+      "tag": "zh-Hant",
+      "rtl": false
+    }
+  }
+}

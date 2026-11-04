@@ -1,0 +1,25 @@
+Parity Check Tuning Plus
+Maintained by alexphillips-dev.
+
+The inherited source is licensed under GNU General Public License version 2.
+Original copyright and permission notices are retained in the source files.
+Copyright 2019-2026, Dave Walker (itimpi).
+The history renderer additionally retains notices for Lime Technology and
+Bergware International. See the individual files for their original years.
+
+Modified 2026-11-03 by alexphillips-dev: establish the Plus plugin identity,
+rename plugin-owned paths, configuration keys, CLI, UI and translations,
+replace project links and package metadata, and update installation ownership.
+
+Additional Plus changes on 2026-11-03: enforce safe archive metadata; validate
+mover identity; track background pause ownership and notification transitions;
+validate assistant submissions and partial-check bounds; bundle offline
+translations and native locale aliases; preserve language-neutral protocol data.
+
+The Plus project is independently maintained. Historical authorship remains
+in the Git history and these notices; it does not identify the Plus maintainer.
+The complete GNU GPL version 2 text is provided in COPYING.
+
+Plus cleanup on 2026-11-04: retire unused scaffolding, unfinished controls,
+no-op integrations, and obsolete helpers; preserve native parser and stored
+protocol compatibility; validate installed-file cleanup and runtime references.

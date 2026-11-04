@@ -1,0 +1,30 @@
+{
+  "monitor": {
+    "url": "https://github.com/unraid/webgui/blob/master/emhttp/plugins/dynamix/scripts/monitor",
+    "blob": "d026f46a872c9ce22b65b73d595aa845b64420e9"
+  },
+  "default-base.css": {
+    "url": "https://github.com/unraid/webgui/blob/master/emhttp/plugins/dynamix/styles/default-base.css",
+    "blob": "1789cb5c260156a8fed7ea6fb2f6390948edb766"
+  },
+  "MarkdownExtra.inc.php": {
+    "url": "https://github.com/unraid/webgui/blob/master/emhttp/plugins/dynamix/include/MarkdownExtra.inc.php",
+    "blob": "25b507617bbaae81ff3da9117ad4fcfeca4590e8"
+  },
+  "MarkdownInterface.php": {
+    "url": "https://github.com/unraid/webgui/blob/master/emhttp/plugins/dynamix/include/MarkdownInterface.php",
+    "blob": "84e6545900d075e94f0b11ccac4a112f12a08bf6"
+  },
+  "Markdown.php": {
+    "url": "https://github.com/unraid/webgui/blob/master/emhttp/plugins/dynamix/include/Markdown.php",
+    "blob": "06f9554eb1d497cfd2d930190af3f34a061e4ecf"
+  },
+  "MarkdownExtra.php": {
+    "url": "https://github.com/unraid/webgui/blob/master/emhttp/plugins/dynamix/include/MarkdownExtra.php",
+    "blob": "23b5aec4d36335e3d5334a8ef1536be466dbd4b4"
+  },
+  "Translations.php": {
+    "url": "https://github.com/unraid/webgui/blob/master/emhttp/plugins/dynamix/include/Translations.php",
+    "blob": "c3bd47382de092d94eff3eb2b4d92a9b200d64d9"
+  }
+}

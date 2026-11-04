@@ -1,0 +1,606 @@
+; Parity Check Tuning Plus - generated offline catalog. Do not edit by hand.
+
+%s %s %d %s=%1$s %2$s (%3$d %4$s)
+%s %s, %s %s, %s %d, %s %s=%1$s %2$s, %3$s %4$s, %5$s %6$d, %7$s %8$s
+%s Cancelled=%1$sAvbruten
+%s cancel request sent %s=%1$savbryt begäran skickad%2$s
+%s no longer running=%1$sinte längre igång
+%s running=%1$slöpning
+%s started=%1$s startade
+%s will not be restarted=%1$s kommer inte att startas om
+ but in active period so leave running=... men i aktiv period så lämna igång
+ but suppressed as notifications do not appear to be enabled for pauseresume=... men undertryckt eftersom aviseringar inte verkar vara aktiverade för paus/återuppta
+ but suppressed as system notifications do not appear to be enabled=... men undertryckt eftersom systemmeddelanden inte verkar vara aktiverade
+ outside active period so needs pausing=... utanför aktiv period så behöver pausas
+ using =... använder
+A crontab entry should have 5 space-separated values defining the minutes, hour, day of the month, month, day of the week Click on the crontab link to get more details on valid formats=En crontab-post ska ha 5 mellanslagsseparerade värden som definierar minuter, timme, månad, månad, veckodag.  Klicka på crontab-länken för att få mer information om giltiga format.
+Action=Åtgärd
+All array drives below temperature threshold for a Pause=Alla arrayenheter under temperaturtröskeln för en paus
+Analyze results from an array operation=Analysera resultat från en arrayoperation
+Appears to be a %s array operation=Ser ut att vara en%1$sarrayoperation
+Apply=Ansök
+Array has just been started=Array har precis startats
+Array is being started=Array startas
+Array must be started to use this assistant=Array måste startas för att kunna använda denna assistent
+Array not yet started=Arrayen har inte startat ännu
+Array operation completed=Arrayoperation slutförd
+Array operation not resumed - outside increment window=Arrayoperationen återupptogs inte - utanför inkrementfönstret
+Array operation paused but drives not cooled enough to resume=Array-driften pausades men enheterna är inte tillräckligt kylda för att kunna återupptas
+Array operation paused but not for temperature related reason=Arraydrift pausad men inte av temperaturrelaterad anledning
+Array operation paused with some drives still too hot to resume=Arrayoperationen pausades med vissa enheter fortfarande för varma för att återupptas
+Array operation restarted=Arrayoperationen startade om
+Array operation will not be restarted=Arraydrift kommer inte att startas om
+Array shutdown=Array avstängning
+Array size is not available=Arraystorlek är inte tillgänglig
+Array stopping=Array stannar
+Array stopping while %s was in progress %s=Array stannar medan%1$svar på gång%2$s
+Array stopping Restart will be attempted on next array start=Arraystopp: Omstart kommer att göras vid nästa arraystart
+Automatic=Automatisk
+Automatic parity check pause not configured=Paus för automatisk paritetskontroll är inte konfigurerad
+Average Speed=Medelhastighet
+Background activity %s=Bakgrundsaktivitet:%1$s
+Basic=Grundläggande
+Before you can set this option to Yes you must first have enabled system notifications=Innan du kan ställa in det här alternativet till Ja måste du först ha aktiverat systemaviseringar.
+Cancel a running parity check=Avbryt en löpande paritetskontroll
+Cancel automatically started array operation=Avbryt automatiskt påbörjad arrayoperation
+Cancel request=Avbryt begäran
+Canceled=Avbruten
+Check=Kontrollera
+Choose a start point and a larger end point within the disk=Välj en startpunkt och en större slutpunkt inom disken
+Choose sectors or percentages=Välj sektorer eller procentsatser
+Choose whether to write corrections=Välj om du vill skriva korrigeringar
+Click to show Array Operations history=Klicka för att visa Array Operations-historik
+Click to show Parity check entries from syslog=Klicka för att visa paritetskontrollposter från syslog
+Command Line was=Kommandoraden var
+Completed partial check %s=Slutförd delkontroll (%1$s)
+Configuration=Konfiguration
+Correcting=Rättar till
+Created cron entry for %s interval monitoring=Skapade cron-inlägg för%1$sintervallövervakning
+Created cron entry for scheduled pause and resume=Skapade cron-post för schemalagd paus och återuppta
+Critical=Kritisk
+Custom=Anpassad
+Daily=Dagligen
+Data-Rebuild=Data-Rebuild
+Date=Datum
+Debug=Felsök
+Debug mode is intended to give users a feel for when the plugin is active Debug mode can generate frequent additional log entries in the syslog file so do not leave debug mode active if you are not interested in this information=Felsökningsläget är tänkt att ge användarna en känsla för när plugin-programmet är aktivt. Felsökningsläge kan generera frekventa ytterligare loggposter i syslog-filen så lämna inte felsökningsläget aktivt om du inte är intresserad av denna information.
+Defaults=Standardvärden
+Detected a change to the disk configuration=Upptäckte en ändring av diskkonfigurationen
+Detected disk configuration reset=Upptäckt diskkonfigurationsåterställning
+Detected shutdown that was due to following drives reaching critical temperature=Upptäckte avstängning som berodde på att följande enheter nådde kritisk temperatur
+Detected that array had been paused due to following drives getting hot=Upptäckte att arrayen hade pausats på grund av att följande enheter blev varma
+Disk Clear=Disk Rensa
+Disk-Clear=Disk-Clear
+Do you really want Debug logging mode=Vill du verkligen ha felsökningsloggningsläge?
+Do you really want Testing logging mode=Vill du verkligen testa loggningsläge?
+Do you really want automatic Shutdown=Vill du verkligen ha automatisk avstängning?
+Do you really want to log to the flash drive=Vill du verkligen logga till flashenheten?
+Do you really want to pause Automatic checks=Vill du verkligen pausa automatiska kontroller?
+Do you really want to pause Clear operations=Vill du verkligen pausa Clear operations?
+Done=Klart
+Drives been above resume temperature threshold for %s minutes=Drivsystem har varit över tröskelvärdet för återuppta temperatur för%1$sminuter
+Drives cooled down=Drivenheten kyls ner
+Duration=Varaktighet
+ERROR=FEL
+Elapsed Time=Förfluten tid
+End point for check=Slutpunkt för kontroll
+Error in custom entry=Fel i anpassad post
+Errors=Fel
+Flash only=Endast blixt
+Following drives overheated=Följande enheter överhettade
+Friday=fredag
+High disk temperatures can shutdown server=Höga disktemperaturer kan stänga av servern
+History=Historia
+Incompatible options=Inkompatibla alternativ
+Inconsisten state information - Restart requested but no progress file=Inkonsekvent statusinformation - Omstart begärd men ingen förloppsfil
+Increment frequency=Öka frekvensen
+Increment pause time=Öka paustiden
+Increment resume time=Öka återupptagningstiden
+Increments=Ökar
+Invalid check range=Ogiltigt kontrollintervall
+Logging to the flash drive can cause a lot additional writes thus potentially shortening its lifetime Do not leave this active if you are not interested in this information CAUTION At the moment there is no mechanism to stop this file from growing forever so it is up to you to manage this manually=Att logga till flash-enheten kan orsaka mycket ytterligare skrivningar och därmed potentiellt förkorta dess livslängd. Lämna inte detta aktivt om du inte är intresserad av denna information. VARNING: För närvarande finns det ingen mekanism för att stoppa den här filen från att växa för alltid så det är upp till dig att hantera detta manuellt.
+Manual=Manuell
+Manually paused=Manuellt pausad
+Manually resumed=Manuellt återupptas
+Method used to specify start and stop points=Metod som används för att ange start- och stopppunkter
+Monday=måndag
+No.=Nej
+No Parity disk present=Ingen paritetsdisk finns
+No action outstanding=Ingen åtgärd utestående
+No action specified=Ingen åtgärd specificerad
+No array operation currently in progress=Ingen matrisoperation pågår för närvarande
+No array operation in progress=Ingen arrayoperation pågår
+No array operation in progress and no restart information saved=Ingen array-operation pågår och ingen omstartsinformation sparad
+No array operation in progress but restart information saved=Ingen arrayoperation pågår men omstartsinformationen har sparats
+No check is made to see if there is any other activity running on the server at the time the array operation completes As a safety measure if you switch off this option while an array operation is running then the shutdown will be aborted=Ingen kontroll görs för att se om det finns någon annan aktivitet som körs på servern när arrayoperationen slutförs. Som en säkerhetsåtgärd kommer avstängningen att avbrytas om du stänger av detta alternativ medan en array-operation körs.
+No parity check entries found in syslog=Inga paritetskontrollposter hittades i syslog
+No parity check history present=Ingen paritetskontrollhistorik närvarande
+No parity present, so no automatic parity check=Ingen paritet närvarande, så ingen automatisk paritetskontroll
+No restart information present=Ingen omstartsinformation finns
+Non-Correcting=Ej korrigerande
+Not allowed as %s already running=Inte tillåtet som%1$sredan igång
+Not automatic check %s=Inte automatisk kontroll (%1$s)
+Notifications not enabled=Aviseringar inte aktiverade
+OK=OK
+Only able to start a Read-Check as no parity drive present=Kan endast starta en Read-Check eftersom det inte finns någon paritetsenhet
+Only able to start a Read-Check due to number of disabled drives=Kan endast starta en läskontroll på grund av antalet inaktiverade enheter
+Option not currently recognized=Alternativet känns inte igen för närvarande
+Outside increment scheguled time=Utanför inkrement schemalagd tid
+Outside time slot for running operation type=Utanför tidslucka för drifttyp
+Outside times for increments so not resuming=Utomhustider för inkrement så återupptas inte
+PAUSED=PAUS
+Parity Check=Paritetskontroll
+Parity Check Tuning Plus logging=Parity Check Tuning Plusloggning
+Parity Operation History=Paritetsoperationshistorik
+Parity Sync Data Rebuild=Paritetssynkronisering / Dataåteruppbyggnad
+Parity-Check=Paritetskontroll
+Parity-Sync=Paritetssynk
+Partial=Partiell
+Partial check not started=Delkontroll har inte påbörjats
+Partial parity check %s=Partiell paritetskontroll (%1$s)
+Pause=Pausa
+Pause %s=Pausa%1$s
+Pause a running array operation=Pausa en pågående arrayoperation
+Pause an array operation at=Pausa en matrisoperation kl
+Pause and Resume array operations if disks overheat=Pausa och återuppta arrayoperationer om diskarna överhettas
+Pause and Resume times=Pausa och återuppta tider?
+Pause array operations while appdata backup or restore running=Pausa arrayoperationer medan appdata backup eller återställning körs
+Pause array operations while mover running=Pausa arrayoperationer medan mover körs
+Pause request=Pausa begäran
+Paused=Pausad
+Pausing Automatic parity check configured=Pausar Automatisk paritetskontroll konfigurerad
+Pausing an automatic parity check after an unclean shutdown extends the time before the you can be confident that parity is still valid so that recovering from a disabled disk is likely to work without data corruption or data loss Only use this option if you cannot afford the performance penalty of such checks occurring during prime time=Att pausa en automatisk paritetskontroll efter en oren avstängning förlänger tiden innan du kan vara säker på att pariteten fortfarande är giltig så att återställning från en inaktiverad disk sannolikt kommer att fungera utan datakorruption eller dataförlust.  Använd endast det här alternativet om du inte har råd med prestationsstraffet för sådana kontroller som sker under bästa sändningstid.
+Pausing an disk Clear operation extends the time before the disk is successfully added to the array and becomes ready for formatting and then used for data storage On most systems a disk Clear operation does not adversely affect performance so typically this option is left disabled=Pausa en disk Rensningsoperation förlänger tiden innan disken läggs till i arrayen och blir redo för formatering och sedan används för datalagring.  På de flesta system påverkar inte en diskrensningsoperation prestanda negativt, så vanligtvis lämnas det här alternativet inaktiverat.
+Pausing an operation that is building parity or rebuilding a failed disk has a level of risk as your array is not back in a protected state until this operation completes successfully Only enable this option if the operation is adversely affecting system use and you are not worried about the extra time that will elapse before the system is once again in a protected state=Att pausa en operation som bygger paritet eller återuppbygga en defekt disk har en risknivå eftersom din array inte är tillbaka i ett skyddat tillstånd förrän denna operation har slutförts.   Aktivera endast det här alternativet om åtgärden påverkar systemets användning negativt och du inte är orolig för den extra tid som kommer att ta innan systemet återigen är i skyddat tillstånd.
+Pausing automatic parity check=Pausar automatisk paritetskontroll
+Percentage=Procent
+Percentage endpoints must be between 0 and 100=Procentuella slutpunkter måste vara mellan 0 och 100
+Range=Räckvidd
+Read Check=Läs Check
+Read-Check=Läs-kontroll
+Requires Unraid 6103 or later=KräverUnraid6.10.3 eller senare
+Reset settings to defaults=Återställ inställningarna till standardinställningarna
+Restart requested - but appears to not be happening=Omstart begärd - men verkar inte ske
+Restart will not be attempted=Omstart kommer inte att göras
+Resume=Återuppta
+Resume %s=Återuppta%1$s
+Resume a paused array operation=Återuppta en pausad arrayoperation
+Resume an array operation at=Återuppta en arrayoperation kl
+Resume array operations on next array start=Återuppta arrayoperationer vid nästa arraystart
+Resume ignored as paused because background task running=Återuppta ignoreras som pausad eftersom bakgrundsuppgift körs
+Resume request=Återuppta begäran
+Resumed=Återupptas
+Runtime=Körtid
+Saturday=lördag
+Scheduled=Schemalagt
+Sector Numbers=Sektornummer
+Sector endpoints must be whole numbers within the disk=Sektorslutpunkter måste vara heltal på disken
+Sectors=Sektorer
+Send notification=Skicka meddelande
+Send notifications for Pause or Resume of increments=Skicka meddelanden för paus eller återuppta steg
+Send notifications for mover or backup running=Skicka meddelanden om flytt eller backup körs
+Send notifications for mover running=Skicka aviseringar för att flyttaren kör
+Send notifications for temperature related Pause or Resume=Skicka meddelanden för temperaturrelaterad paus eller återuppta
+Server will be shutdown when array operation completes=Servern kommer att stängas av när arrayoperationen är klar
+Settings reset to default values=Inställningar återställs till standardvärden
+Show Sector Numbers=Visa sektornummer
+Show the status of a running parity check=Visa status för en pågående paritetskontroll
+Shutdown=Avstängning
+Shutdown aborted=Avstängning avbröts
+Shutdown server at=Avstängning av server kl
+Shutdown server when array operation completes=Stäng av servern när arrayoperationen är klar
+Size=Storlek
+Something wrong progress information present without disks file present=Något fel: förloppsinformation finns utan diskfil närvarande
+Something wrong restart information present without progress present=Något fel: starta om informationen finns utan framsteg
+Speed=Hastighet
+Start a correcting parity check=Starta en korrigerande paritetskontroll
+Start a non-correcting parity check=Starta en icke-korrigerande paritetskontroll
+Start a parity check with scheduled settings=Starta en paritetskontroll med schemalagda inställningar
+Start a partial parity check=Starta en partiell paritetskontroll
+Start array issued via Command Line=Startarray utfärdas via kommandoraden
+Start point for check=Startpunkt för kontroll
+Start the array=Starta arrayen
+Start the array and wait for other array operations to finish=Starta arrayen och vänta på att andra arrayoperationer ska avslutas
+Starting Shutdown=Startar avstängning
+Status=Status
+Stop array issued via Command Line=Stopparray utfärdas via kommandoraden
+Stop the array=Stoppa arrayen
+Sunday=söndag
+Suppressed built-in %s finished notification=Undertryckt inbyggd%1$savslutad anmälan
+Suppressed built-in %s started notification=Undertryckt inbyggd%1$spåbörjat meddelande
+Syslog and Flash=Syslog och Flash
+Syslog only=Endast Syslog
+System crashed=Systemet kraschade
+Temperature Pause and Resume=Temperaturpausa och återuppta?
+Temperature monitoring switched off=Temperaturövervakningen avstängd
+Testing=Testning
+Testing mode is normally only used by the plugin author or when gathering evidence of a suspected bug in the plugin Testing mode is very verbose and generates a lot of additional log entries so you do not want it enabled unless it is really necessary=Testläge används normalt bara av plugin-författaren eller när man samlar bevis på en misstänkt bugg i plugin-programmet. Testläget är väldigt utförligt och genererar många ytterligare loggposter så du vill inte att det ska vara aktiverat om det inte verkligen är nödvändigt.
+The Pause and Resume custom times cannot be identical=De anpassade tiderna för paus och återuppta kan inte vara identiska.
+The Pause and Resume times cannot be identical=Tiderna för paus och återuppta kan inte vara identiska.
+The Pause and Resume times would give an increment length of more than 12 hours which is unusual Are you sure you these are the right way around=Tiderna för paus och återuppta skulle ge en ökningslängd på mer än 12 timmar, vilket är ovanligt.  Är du säker på att de här är rätt väg runt?
+The Resume value must be greater than the Pause one for the heat related Pause and Resume to work correctly as they are both subtracted from the disk temperature warning value when calculating the desired temperature=Resume-värdet måste vara större än Paus ett för att värmerelaterade Paus och Resume ska fungera korrekt eftersom de båda subtraheras från disktemperaturvarningsvärdet vid beräkning av önskad temperatur
+The Unraid Cumulative Parity Check setting must be set to No if you want to use the Parity Check Tuning Plus plugin to run Array operations in increments=DenUnraidKumulativ paritetskontroll måste ställas in på Nej om du vill användaParity Check Tuning Plusplugin för att köra Array-operationer i steg
+The end point must be larger than the start=Slutpunkten måste vara större än början
+The following are also available for testing purposes only=Följande är också endast tillgängliga för teständamål
+The value you have specified seems unusually large as it is not an absolute value but is relative to the value specified for the drives Temperature Warning level at the Unraid level=Värdet du har angett verkar ovanligt stort eftersom det inte är ett absolut värde utan är relativt värdet som anges för frekvensomriktarens temperaturvarningsnivå vidUnraidnivå
+This might affect array integrity=Detta kan påverka arrayintegriteten
+Thursday=torsdag
+Tidy shutdown file not present in %s event=Prydlig avstängningsfil finns inte i%1$shändelse
+Tuesday=tisdag
+Unable to stop array=Det gick inte att stoppa arrayen
+Unavailable=Ej tillgänglig
+Unclean shutdown detected=En oren avstängning upptäcktes
+Unknown action %s=Okänd åtgärd:%1$s
+Unrecognized option=Okänt alternativ
+Unusually large value=Ovanligt stort värde?
+Update cron table entries=Uppdatera cron-tabellposter
+Updated cron settings are in %s=Uppdaterade cron-inställningar är in%1$s
+Usage=Användning
+Use increments for %s %s=Använd steg för%1$s %2$s
+Use increments for Clear operations=Använd inkrement för Rensa operationer
+Use increments for Parity Sync or Data Rebuild operations=Använd steg för Paritetssynkronisering eller Data Rebuild-operationer
+Version=Version
+Versions Unraid %s, Plugin %s=Versioner:Unraid %1$s, Plugin%2$s
+Waiting=Väntar
+Warning=Varning
+Wednesday=onsdag
+Weekly=Varje vecka
+Write Corrections to Parity=Skriv korrigeringar till paritet
+Write current settings to syslog=Skriv aktuella inställningar till syslog
+Yes.=Ja
+:parityProblemsPlus_check_plug:
+> När du klickar på **Kontrollera** initieras en partiell kontroll som
+> kommer att täcka åtminstone de start- och slutpunkter som du har angett. Det blir en korrigerande kontroll
+> om alternativet **Skrivkorrigeringar** är inställt på **Ja**, och en läskontroll annars.
+> Observera att denna kontroll kommer att pågå i minst 1 minut även om du anger ett mycket litet antal sektorer som ska kontrolleras.
+:end
+
+:parityProblemsPlus_correct_plug:
+> Ange om du vill försöka uppdatera pariteten för att korrigera eventuella fel som hittats,
+> eller gör bara ett lästest för att se om några paritetsfel har rapporterats.
+:end
+
+:parityProblemsPlus_end_plug:
+> Välj var du vill att kontrollen ska avslutas. Du kan ange slutpunkten som antingen ett sektornummer eller som en procentandel av storleken på den största paritetsskivan.
+>
+> I praktiken av tekniska skäl kan kontrollen avslutas senare än den punkt du anger eftersom en kontroll endast görs en gång i minuten för att se om slutpunkten har nåtts.
+:end
+
+:parityProblemsPlus_intro_plug:
+Den **Parity Check Tuning Plus Assistant** är en del av **Parity Check Tuning Plus** plugin.<p/>
+Den nuvarande statusen är **EXPERIMENTELL** och det är alltid möjligt att denna assistent kan tas bort i framtiden).
+**(feedback välkomnas om det grundläggande konceptet och idéer för förbättringar)**.<p/>
+Tanken är att denna assistent kan användas efter att en paritetskontroll eller läskontroll har rapporterat problem och loggat detaljerna för eventuella problemsektorer till sysloggen.
+I många fall kan sådana fel bero på externa faktorer som kablage eller strömförsörjning snarare än på själva diskarna.<p/>
+Det är inte heller ovanligt, särskilt på **Ryzen/ThreadRipper** baserade system, för att få slumpmässiga paritetsfel om RAM-minnet är överklockat
+(enXMPprofil **är** en överklocka),
+och moderkort/CPU-kombinationen kan också införa gränser som är lägre än vad RAM-minnet kan stödja.<p/>
+Om du tror att du har åtgärdat det som orsakade problemen kan du använda den här assistenten för att köra en partiell kontroll över ett smalt intervall för att se om problemet fortfarande uppstår.
+Detta kan vara mycket snabbare än att behöva köra en fullständig paritetskontroll eller läskontroll för att se om du har löst problemet eller att köra en förlängd diskSMARTtesta för att testa den faktiska disken.<p/>
+**VIKTIGT**: Denna assistent ska aldrig användas som ett alternativ till att köra en fullständig paritetskontroll när du tror att problemet har lösts.
+:end
+
+:parityProblemsPlus_sectors_plug:
+> När du klickar på alternativet **Visa sektornummer** kommer en dialogruta att visas
+> som extraherar poster från sysloggen som har visat alla sektorer för vilka någon paritet
+> sektorn visas och om den korrigerades eller är ett paritetsfel.
+:end
+
+:parityProblemsPlus_start_plug:
+> Välj var du vill att kontrollen ska startas från.  Du kan ange startpunkten som antingen ett sektornummer eller som en procentandel av storleken på den största paritetsskivan.
+>
+> Att specificera absoluta sektorer kommer sannolikt att vara särskilt användbart när du har extraherat sektornumren från *syslog* när den ursprungliga paritetskontrollen rapporterade fel på dessa sektorer. I en framtida version av denna plugin kan plugin-programmet förbättras för att automatiskt extrahera sådana sektorer från *syslog* och ge dig en rullgardinslista men den här funktionen är ännu inte implementerad.
+>
+> I praktiken kan kontrollen av tekniska skäl starta något tidigare än den punkt du anger, men detta kommer bara att vara ett litet belopp.
+:end
+
+:parityProblemsPlus_type_plug:
+> Välj hur du vill ange start- och slutpunkter.
+>
+> Du kommer sannolikt att vilja använda absoluta sektornummer om det finns sådana som tidigare har listats i sysloggen som ett fel.
+> Att använda absoluta sektorsiffror tenderar att vara mer exakt och leda till kortare tester men kan vara mer ansträngning att ställa in.
+>
+> Alternativet är att använda procentsatser. När man använder procenttal beräknas sektornumren som dessa representerar som procent av den största paritetsskivan.
+:end
+
+:parity_tuning_plus_allops_plug:
+> Dessa är array-operationer som involverar att bygga ny paritet eller återuppbygga en defekt disk.
+>
+>Denna typ av kontroll kommer vanligtvis bara att köras om det potentiellt finns något problem med din array och åtgärder vidtas för att få den tillbaka till ett skyddat tillstånd.
+>
+>**VIKTIGT**: Tills den här operationen är klar är din array inte helt skyddad så det antas att de flesta kommer att vilja ha det här alternativet kvar på **Nej**.
+> Välj inte **Ja** om du inte är helt säker på att det är vad du vill.
+:end
+
+:parity_tuning_plus_automatic_plug:
+> Automatiska kontroller är de som initieras automatiskt avUnraidefter en oren avstängning.
+>
+> omUnraidsystemet stängs inte av rent sedan nästa gång arrayen startasUnraidkommer automatiskt att starta en kontroll. Detta kan hända av en mängd olika orsaker, allt från strömavbrott; hårdvaruproblem; och mjukvaruproblem. Den automatiska kontrollen körs eftersom om det finns några paritetsfel kan detta äventyra möjligheten att återställa från ett array-enhetsfel vid ett senare tillfälle så att du vill återgå till att ha giltig paritet så snart som är praktiskt möjligt.
+> 
+> Om det här alternativet är inställt på **Ja** kommer kontrollen att tillåtas köras i några minuter (eftersom eventuella fel efter en oren avstängning med största sannolikhet är i början av diskarna eftersom de inte avmonterades rent. Om utanför den angivna tiden för att köra inkrement försätts kontrollen i ett pausat tillstånd. Resten av kontrollen ökar sedan för att köras i inkrement i enlighet med tiden.
+:end
+
+:parity_tuning_plus_background_plug:
+> Det här alternativet är endast relevant om du har aktiverat alternativet Inställningar->Systemmeddelanden (rekommenderas starkt).
+>
+> Ställer in detta alternativ till<strong>Ja</strong>innebär att du kommer att få ett meddelande varje
+> gång en bakgrundsuppgift som Appdata Backup eller mover startar eller slutförs. Om detta alternativ
+> är inställd så skickas meddelandet närhelst dessa operationer startar eller slutar medan en array
+> operationen är aktiv även om du inte har ställt in operationen på att pausas eller återupptas under tiden
+> sådana uppgifter körs. Detta kan vara till hjälp för att se när arrayens prestanda
+> driften kommer sannolikt att interagera dåligt med bakgrundsuppgiften när det gäller prestanda.
+>
+>Om du hellre inte vill få sådana meddelanden lämnar du alternativet inställt på **Nej**.
+>Meddelandet skickas som ett **Meddelande** kategorimeddelande till de mål som anges under *<a href="Settings/Notifications">Inställningar-> Aviseringsinställningar</a>*.
+:end
+
+:parity_tuning_plus_backup_plug:
+>Pausa en arrayoperation (Parity Check, Read-Check, Parity-Sync,. Disk Rebuild, Disk Clear) om CA Appdata eller Appdata Backup-plugins kör en säkerhetskopia eller återställning avdockerbehållardata.  En arrayoperation som körs parallellt med säkerhetskopieringen eller återställningen påverkar prestandan negativt på grund av konflikter på diskenheterna, så det är mer effektivt att inte ha dem igång samtidigt.
+>
+> Den här inställningen träder i kraft även om du inte använder något av alternativen för att köra en arrayoperation i steg.
+>
+> Om du kör array-operationstypen i steg, kommer återupptagandet endast att ske efter att säkerhetskopieringen eller återställningen är klar om du fortfarande är inom tidsfönstren för inkrementet.
+:end
+
+:parity_tuning_plus_clear_plug:
+> En diskrensningsoperation inträffar när du lägger till en ny enhet (som inte har förrensats med insticksprogrammet Pre-Clear) till en array som är paritetsskyddad. Clear-processen skriver nollor till varje sektor på den nya disken så att den kan läggas till i arrayen utan att den befintliga pariteten påverkas. Förrän Rensa-operationen har slutförts kan du inte formatera diskenUnraidoch börja använda den för att lagra data.
+>
+>Eftersom disken inte kommer att vara tillgänglig för användning tills Rensa-operationen är klar är det troligt att de flesta kommer att vilja ha det här alternativet kvar på **Nej**. Dessutom tenderar en Clear-operation att inte belasta systemet så mycket, så det är mindre sannolikt att det påverkar prestandan vid normal daglig användning.
+:end
+
+:parity_tuning_plus_complete_plug:
+> Om inställt på **Ja** startas automatiskt en ordentlig avstängning av servern när den aktuella arrayoperationen är klar.
+>
+> Det här alternativet kommer sannolikt bara att vara användbart på en server som är avstängd för det mesta eftersom den används för något som säkerhetskopieringsändamål. Tanken är att du kan initiera arrayoperationen (antingen manuellt eller via ett schema) och sedan låta servern stänga av sig själv utan att behöva veta hur lång tid arrayoperationen kommer att ta att slutföra.
+>
+> När det upptäcks att du har det här alternativet inställt och en array-operation pågår, kommer ett meddelande att avstängningen kommer att ske. Som en säkerhetsåtgärd kommer avstängningen att avbrytas om det här alternativet initialt ställs in i början av arrayoperationen, men inte är inställt innan det avslutas.
+>
+>**VARNING:** Ingen kontroll görs för att se om det finns någon annan aktivitet som körs på servern när arrayoperationen slutförs innan avstängningen initieras
+:end
+
+:parity_tuning_plus_critical_plug:
+> Det här värdet indikerar hur nära det inställda värdet för den kritiska disktemperaturtröskeln temperaturen på en disk tillåts nå innan en avstängning av servern utlöses.
+> Du kanske vill ha ett litet positivt värde för att utlösa pausen innanUnraidkommer runt för att skicka ett meddelande till dig om att den temperaturkritiska tröskeln har nåtts för en disk.
+>
+>Om ett explicit tröskelvärde har definierats för en enskild enhet är detta det värde som används.  Om inte kommer den globala inställningen att användas.
+:end
+
+:parity_tuning_plus_defaults_plug:
+> Knappen **Verkställ** sparar de aktuella värdena för inställningarna.
+>
+> Knappen **Klar** lämnar inställningssidan.
+>
+> Knappen **Defaults** återställer plugin-inställningarna till standardvärdena som används när plugin-programmet först installeras och omedelbart sparar dessa som de aktuella inställningarna.
+> Du kan nu göra ändringar i dessa inställningar så att de passar ditt system och tryck på knappen Verkställ för att spara dem.
+:end
+
+:parity_tuning_plus_explain_plug:
+> Denna plugin initierar inte arrayoperationer - istället modifierar/förstärker den beteendet när arrayoperationen väl har startat.
+>
+> Huvudsyftet med detta plugin är att låta dig begränsa arrayoperationer som paritetskontroller till att köras vid tidpunkter som inte kommer att störa dig.  Du kan specificera individuellt om inkrement ska användas för varje huvudtyp av arrayoperation.
+>
+>Att ställa in ett av dessa alternativ till **Nej** innebär att du får standardsystembeteendet för operationen som körs utan avbrott till slutförd om du inte manuellt stoppar/pausar/avbryter operationen.
+>
+>Att ställa in ett av dessa alternativ till **Ja** anger att arrayoperationen ska köras i steg spridda över flera dagar.
+>
+> Som ett exempel på vad detta plugin kan anta
+>Du har en paritetskontroll som du har planerat att starta den första i varje månad vid midnatt
+>* Din tidigare erfarenhet har visat att om paritetskontrollen körs oavbrutet tar det 30 timmar att slutföra.
+>* Du ställer in detta plugin så att det använder 3 timmars steg från midnatt och slutar 03.00.
+>* Paritetskontrollen tar nu faktiskt 10 dagars förfluten tid (10 x 3 = 30) så paritetskontrollen kommer att slutföras den 10:e i månaden.
+>* Du har schemalagt dessa steg så att de börjar vid midnatt och slutar kl. 03.00. när du vet att systemet inte används.
+>* Du är inte orolig över denna ökade förflutna tid och kommer att välkomna den ökade systemets reaktionsförmåga under normal användning.
+>* Resten av månaden kommer detta plugin inte att göra något eftersom det inte pågår någon aktiv paritetskontroll när starttiden för ett inkrement kommer.
+>
+>**ANMÄRKNINGAR:**
+>* StandardenUnraidbeteende om arrayen stoppas medan en arrayoperation är ofullständig är att framstegen hittills har gått förlorad och den bara kan startas om från början.  Du kan undvika detta om du ställer in plugin-alternativet för att återuppta arrayoperationer vid nästa arraystart.
+>* Om du inte har någon paritetsdisk eller om antalet defekta enheter är lika med antalet inaktiverade enheter utförs en **Läskontroll** snarare än en **Paritetskontroll** för att säkerställa att alla återstående enheter kan läsas utan fel.
+:end
+
+:parity_tuning_plus_frequency_plug:
+> Frekvensen med vilken stegen ska köras under en arrayoperation.
+>
+> I normal drift förväntas det att alternativet **Dagligen** kommer att vara det som de flesta användare vill använda så detta är standard. Det finns också ett **Veckovis**-alternativ för dem som gör sällsynta kontroller.
+>
+> För att stödja användare som letar efter andra frekvenser finns det möjlighet att ställa in **Anpassade**-scheman som möjliggör mer komplicerade scheman för paus- och återuppta-tider. När du använder det här alternativet får du möjlighet att ange tiden som används av Linux<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>nytta.
+:end
+
+:parity_tuning_plus_history_plug:
+> Knappen **Historik** visar den aktuella historiken för paritetskontroller.
+> Funktionen är identisk med knappen **Historik** på fliken **Huvud**.
+:end
+
+:parity_tuning_plus_hot_plug:
+>Pausa en arrayoperation (Parity Check, Parity-Sync/Disk Rebuild, Disk Clear) om disktemperaturerna överskrider de gränser du har ställt in.
+>
+>Temperaturerna kontrolleras mot de inställda tröskelvärdena för temperaturnivåerna för varningsskivan. Om ett tröskelvärde har definierats för en enskild enhet (åtkomst genom att klicka på enheten på fliken Huvud) så är detta värdet som används. Om inte kommer den globala inställningen (inställd via *Inställningar->Skärminställningar*) att användas. Det antas att du normalt vill att arrayoperationen ska pausas före värdet som är inställt påUnraidnivå som varningströskeln.
+>
+>En mycket bättre lösning är att förbättra kylningen i ditt fall så att skivorna aldrig överhettas. I praktiken kanske det inte alltid är praktiskt.
+>
+>Om arrayoperationen pausades när ett inkrement kördes kommer den inte att återupptas utanför den tid som tilldelats för inkrementet. Om arrayoperationen initierades av någon annan anledning är Paus/Resume-beteendet för temperatur alltid aktivt.
+:end
+
+:parity_tuning_plus_increments_plug:
+>Schemalagda kontroller är de som du har konfigurerat att köra vid fastställda tider via Inställningar->Scheduler.
+>
+>Om du ställer in det här alternativet på **Ja** anger du att kontroller ska köras i steg fördelade över flera dagar.  Observera att om du vill använda plugin-programmet för att hantera arrayoperationsökningarna måste du **inte** ställa in alternativet Cumnlative Parity Check till **Ja** i standardenUnraidInställningar för paritetskontroll.
+>
+>Om du har ställt in detta på **Nej** får du standardsystembeteendet för kontroller som körs utan paus till slut såvida du inte manuellt stoppar/pausar/avbryter dem.
+:end
+
+:parity_tuning_plus_logging_plug:
+> Kontrollera detaljnivån i poster. Detaljnivån kan ökas för att hjälpa till med att felsöka eventuella problem med detta plugin.
+>
+>Meddelanden från detta plugin identifieras genom att de visas som kommer från
+>* **Parity Check Tuning Plus**  
+>* **Parity Check Tuning Plus Assistant**  
+>beroende på vilken del av plugin som genererade meddelandena
+>
+>Med **Basic**-alternativet inställt kommer dessa bara att vara ett litet antal meddelanden som indikerar att denna plugin har vidtagit någon åtgärd eller att ett möjligt feltillstånd har upptäckts.  Detta kommer att vara vad de flesta användare vill ha i normal drift.
+>
+>Om du ställer in det här alternativet till **Debug** kommer ytterligare poster att skrivas till sysloggen som ger mer information om vad som händer när detta plugin körs. De visar hur en del av den interna driften av hur plugin-programmet fungerar. Dessa ytterligare poster identifieras av det faktum att de kommer att ha ordet **DEBUG** tillagt i början av meddelanden. Vissa användare (särskilt de som inte har använt detta plugin tidigare) kanske gillar att använda det för att se mer detaljer om hur detta plugin fungerar, men det förväntas inte att det här alternativet kommer att vara aktiverat i normal drift.
+>
+>Slutligen finns det ytterligare en inställning av **Test** som endast är avsedd att användas av utvecklaren men som lämnas här för enkelhetens skull. Det kommer att skriva ännu mer utförliga meddelanden till sysloggen men dessa kommer sannolikt inte att vara intressanta (eller ens meningsfulla) för den genomsnittliga användaren.  Dessa meddelanden kommer att ha ordet **TESTING** tillagt i början av meddelanden. Du bör endast köra denna nivå av loggning om du har blivit ombedd att göra det eftersom det snabbt kan fylla upp din syslog om du inte är försiktig.
+>
+>Feedback är välkommet om det är värt att introducera något mellanliggande alternativ som matar ut informationsmeddelanden om plugin-aktiviteten, samtidigt som man utelämnar några av detaljerna på lägre nivå som syftar till att diagnostisera eventuella problem som kan uppstå när plugin-programmet körs.
+>
+>Om du har testläge inställt för loggningen kan du välja var du vill att loggmeddelanden ska registreras. Standard är standardsystemets syslog och detta är det enda alternativet som tillåts i Basic-läge. Sysloggen hålls i RAM-minnet så att den inte orsakar överdriven skrivning till flashenheten.
+>För att underlätta felsökningsproblem kan du i testläge logga meddelandena till flashenheten antingen istället för sysloggen eller utöver sysloggen. Den resulterande parity.check.tuning.plus.log-filen kommer att lagras i plugin-mappen på flashenheten och att tillhandahålla denna fil till utvecklaren hjälper dig att diagnostisera eventuellt oväntat beteende du stöter på.
+:end
+
+:parity_tuning_plus_low_plug:
+> Detta värde indikerar hur mycket under varningstemperaturtröskeln för en frekvensomriktare måste nå innan en **återuppta** av en arrayoperation övervägs. Om användning av inkrement har ställts in för den typ av operation som utförs måste tiden vara inom inkrementfönstret, annars kommer återupptagandet att skjutas upp tills det fönstret har flyttats tillbaka.
+>
+>Du måste få en bra balans mellan att arrayoperationer återupptas för tidigt (och därmed snabbt når nivån för att initiera ytterligare en paus) och att slösa mycket tid.
+>
+>Om en skiva någonsin snurras ner är temperaturen inte lättillgänglig så det antas att detta kriterium har uppfyllts
+>
+>Om det inte finns någon pausad array-operation kommer ingen åtgärd att vidtas.
+:end
+
+:parity_tuning_plus_manual_plug:
+> Manuella kontroller är de som du har initierat via knappen **Kontrollera** på huvudfliken.
+>
+> Ställ in detta på **Ja** om du vill att kontroller som startas manuellt också ska köras i steg?
+>
+> Det är ganska troligt att du vill att en sådan kontroll ska köras till slut utan avbrott och i så fall lämna det här alternativet inställt på **Nej**.
+> Med detta alternativ inställt på **Ja** och om du manuellt startar en kontroll från huvudsidan och sedan manuellt pausar kontrollen, kommer detta att resultera i att kontrollen körs i steg mellan de schemalagda tiderna tills kontrollen slutförs.
+:end
+
+:parity_tuning_plus_mover_plug:
+>Pausa en arrayoperation (Parity Check, Read-Check, Parity-Sync,. Disk Rebuild, Disk Clear) om mover körs. En arrayoperation som körs parallellt med mover påverkar prestandan negativt på grund av konflikter på diskenheterna, så det är mer effektivt att inte ha dem igång samtidigt.
+>
+> Den här inställningen träder i kraft även om du inte använder något av alternativen för att köra en arrayoperation i steg.
+> 
+> Om du kör array-operationstypen i steg, kommer återupptagandet endast att ske efter att flyttningen är klar om du fortfarande är inom tidsfönstren för inkrementet.
+:end
+
+:parity_tuning_plus_notify_plug:
+> Det här alternativet är endast relevant om du har aktiverat alternativet Inställningar->Systemmeddelanden (rekommenderas starkt).
+>
+> Ställer in detta alternativ till<strong>Ja</strong>betyder att du kommer att få ett meddelande varje gång plugin-programmet pausar eller återupptar ett steg under en array-operation.
+>
+>Om du hellre inte vill få sådana meddelanden lämnar du alternativet inställt på **Nej**.
+>
+>Meddelanden som anses bara vara informativa skickas som ett **Normal** (grönt) kategorimeddelande till de mål som anges under *<a href="Settings/Notifications">Inställningar-> Aviseringsinställningar</a>*, även om viktigare aviseringar kommer att använda meddelandena **Varning** (orange) eller *Fel** (röda) där det verkar lämpligt.
+:end
+
+:parity_tuning_plus_pause_plug:
+> Tiden då en löpande paritetskontroll ska pausas. Vanligtvis skulle detta vara inställt på en tid då du vill att annan aktivitet inte ska påverkas av en pågående paritetskontroll.
+>Om ingen paritetskontroll aktivt körs när den här tiden kommer kommer ingen åtgärd att göras.
+>
+>Normalt vill du se till att den här tiden är inställd på att vara efter den tid som du schemalägger att regelbundna paritetskontroller ska köras. Det första steget kommer då att vara från det att den vanliga paritetskontrollen är schemalagd att starta till den tid du har angett för att inkrementet ska sluta.
+>
+>Om inkrementperioden har ställts in på **Custom** är fälten för timmar/minuter dolda och du får istället möjlighet att ställa in tiden i<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>format.
+>
+>Du vill också försäkra dig om att tiden som allokeras för att köra steg är tillräcklig för att förvänta dig att paritetskontrollen ska köras tills den är klar innan nästa kontroll är schemalagd att starta. Eftersom de flesta människor bara schemalägger paritetskontroller så att de körs sällan (t.ex. månadsvis eller kvartalsvis) är det osannolikt att detta är ett problem men det är något att ta hänsyn till.
+:end
+
+:parity_tuning_plus_restart_plug:
+> Unraidkommer normalt att överge en paritetskontroll om systemet stängs av, startas om eller om arrayen stoppas (med enda alternativet är att starta om paritetskontrollen från början).
+> Andra arrayoperationer kommer att startas om från början.
+> Om du ställer in det här alternativet kan paritetskontroller startas om av detta plugin från den punkt de hade nått
+> så länge följande kriterier är uppfyllda:
+>* Arrayen stängdes av prydligt
+>* Användaren får inte ha gjort några ändringar i arraykonfigurationen.
+>
+>Så länge som dessa kriterier är uppfyllda så återupptas operationen från den punkt som tidigare nåtts när matrisen startas nästa gång.
+>
+>**ANMÄRKNINGAR:**
+>* Om arrayoperationen var inom den tid som ställts in för att ett schemalagt inkrement ska köras kommer den att vid omstart av arrayoperationen ställas in på paus om den nu ligger utanför den tid som ställts in för att köra inkrement.
+>* Om arrayoperationen pausades manuellt kommer även den omstartade arrayoperationen att pausas.
+>
+:end
+
+:parity_tuning_plus_resume_plug:
+> Tiden då en pausad paritetskontroll ska återupptas.<br>Om ingen paritetskontroll för närvarande är pausad när den här tiden kommer, kommer ingen åtgärd att vidtas.
+>
+>Vanligtvis skulle denna tid vara inställd på början av en viloperiod över natten. Ett lämpligt värde kan vara att använda samma tid som du har angett för att en schemalagd paritetskontroll ska starta.
+>
+>Om inkrementperioden har ställts in på **Custom** är fälten för timmar/minuter dolda och du får istället möjlighet att ställa in tiden i<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>format.
+:end
+
+:parity_tuning_plus_shutdown_plug:
+> Om inställt på **Ja** startas automatiskt en ordentlig avstängning av servern om någon disk i arrayen eller poolerna når den definierade temperaturtröskeln.
+> Temperaturerna kontrolleras mot tröskelvärdena som ställts in för **Kritiska** skivtemperaturnivåerna. Om en kritisk temperatur har definierats för en enskild enhet (åtkomst genom att klicka på enheten på huvudfliken) är detta värdet som används. Om inte den globala inställningen (*<a href="Settings/DisplaySettings">Inställningar->Skärminställningar</a>) kommer att användas.
+>
+>Detta alternativ är tänkt att utlösas om systemets kylsystem av någon anledning är otillräckligt eller om det har misslyckats på något sätt. Tanken är att du vill göra en snygg avstängning innan skivorna skadas på grund av överhettning. Avstängningen som utlöses är funktionellt densamma som när man trycker på knappen Stäng av på huvudsidan iUnraidGUI. Om aviseringar är aktiverade skickas du en för att indikera att detta har hänt.
+>
+>När servern startas upp igen efter en sådan avstängning kommer du när arrayen startas att få ett meddelande om att en temperaturrelaterad avstängning inträffade om du inte var medveten om orsaken.
+>
+>**VARNING:** Om arrayen stoppas medan en arrayoperation är ofullständig är standardinställningenUnraidbeteende är att framstegen hittills har gått förlorade och det kan bara startas om från början.
+>
+>Om du har aktiverat omstartsalternativet i detta plugin *och* avstängningen är en snygg avstängning) kommer ett försök att göras att starta om arrayoperationen från den punkt som den tidigare hade nått.
+:end
+
+:parity_tuning_plus_temp_notify_plug:
+> Att ställa in det här alternativet till **Ja** innebär att du kommer att få ett meddelande varje gång plugin-programmet pausar eller återupptar en array-operation på grund av temperaturen på dina enheter.<br>Om du hellre inte vill få sådana meddelanden lämnar du alternativet inställt på **Nej**. Meddelandet skickas som ett **Meddelande** kategorimeddelande till de mål som anges under *<a href="Settings/Notifications">Inställningar-> Aviseringsinställningar</a>*.
+:end
+
+:parity_tuning_plus_warn_plug:
+> Det här värdet indikerar hur nära det inställda värdet för Warning Disk Temperature Threshold en disks temperatur tillåts nå innan en **paus** av en körande array-operation utlöses. Om ett explicit tröskelvärde har definierats för en enskild enhet är detta det värde som används. Om inte kommer den globala inställningen att användas.
+>
+> Du vill normalt ha ett litet positivt värde för att utlösa pausen innanUnraidkommer runt för att skicka ett meddelande till dig om att temperaturvarningströskeln har nåtts för en disk.
+>
+>Om det inte finns någon aktiv arrayoperation kommer ingen åtgärd att vidtas även om disktemperaturerna överstiger det angivna tröskelvärdet.
+>
+> Om det inte finns någon aktiv array-operation kommer ingen åtgärd att vidtas.
+:end
+
+aborted=avbruten
+action=handling
+already paused=redan pausat
+already running=redan igång
+appears there is a running array operation but no Progress file yet created=visas att det finns en arrayoperation som körs men ingen Progress-fil har skapats ännu
+appears to be a regular scheduled check=verkar vara en vanlig schemalagd kontroll
+appears to be an unclean shutdown=verkar vara en oren avstängning
+appears to be manual parity check=verkar vara manuell paritetskontroll
+appears to be marked as automatic parity check=verkar vara markerad som automatisk paritetskontroll
+appears to be marked as scheduled parity check=verkar vara markerad som schemalagd paritetskontroll
+appears to be partial parity check=verkar vara partiell paritetskontroll
+array drives=array-enheter
+automatic=automatiskt
+backup=backup
+below critical disk temperature threshold=under kritisk disktemperaturtröskel
+below warning disk temperature threshold=under varningsdiskens temperaturtröskel
+canceled=inställd
+completed=avslutad
+cool=coolt
+critical=kritiska
+day=dag
+detected=upptäckt
+detected that mdcmd had been called from %s with command %s=upptäckt att mdcmd hade anropats från%1$smed kommando%2$s
+disabled=funktionshindrade
+does not appear to be an unclean shutdown=verkar inte vara en oren avstängning
+drive temperature limits=drivtemperaturgränser
+entry in %s format=inträde i%1$sformat
+errors=fel
+exit code=utgångskod
+finished=färdig
+global temperature limits=globala temperaturgränser
+hot=varmt
+hr=hr
+idle=tomgång
+manual=handbok
+min=min
+minute=minut
+mover=flyttare
+no action taken as appears restart outstanding=ingen åtgärd vidtas eftersom återstart verkar utestående
+no array operation in progress=ingen array-operation pågår
+not a parity check so always treat it as an automatic operation=inte en paritetskontroll så behandla det alltid som en automatisk operation
+operation was paused when reboot initiated so pause it immediately=operationen pausades när omstarten initierades så pausa den omedelbart
+past size=tidigare storlek
+paused=pausad
+percent=procent
+plugin temperature settings=plugin temperaturinställningar
+running=löpning
+scheduled=schemalagd
+sec=sek
+sector=sektorn
+spundown=spundown
+to get ready for restart=för att göra dig redo för omstart
+trigger unknown - assume manual=trigger okänd - anta manuell
+unknown=okänt
+using scheduled mode of %s=med schemalagt läge%1$s
+warm=varmt
+where action is one of=där handling är en av

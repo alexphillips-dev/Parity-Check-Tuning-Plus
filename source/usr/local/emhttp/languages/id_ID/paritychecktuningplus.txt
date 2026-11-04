@@ -1,0 +1,606 @@
+; Parity Check Tuning Plus - generated offline catalog. Do not edit by hand.
+
+%s %s %d %s=%1$s %2$s (%3$d %4$s)
+%s %s, %s %s, %s %d, %s %s=%1$s %2$s, %3$s %4$s, %5$s %6$d, %7$s %8$s
+%s Cancelled=%1$sDibatalkan
+%s cancel request sent %s=%1$sbatalkan permintaan yang dikirim%2$s
+%s no longer running=%1$stidak lagi berjalan
+%s running=%1$sberlari
+%s started=%1$s dimulai
+%s will not be restarted=%1$s tidak akan dimulai ulang
+ but in active period so leave running=...tapi dalam masa aktif jadi biarkan berjalan
+ but suppressed as notifications do not appear to be enabled for pauseresume=... tetapi disembunyikan karena notifikasi tampaknya tidak diaktifkan untuk jeda/melanjutkan
+ but suppressed as system notifications do not appear to be enabled=...tetapi disembunyikan karena notifikasi sistem tampaknya tidak diaktifkan
+ outside active period so needs pausing=...di luar masa aktif jadi perlu jeda
+ using =... menggunakan
+A crontab entry should have 5 space-separated values defining the minutes, hour, day of the month, month, day of the week Click on the crontab link to get more details on valid formats=Entri crontab harus memiliki 5 nilai yang dipisahkan spasi yang menentukan menit, jam, hari dalam sebulan, bulan, hari dalam seminggu.  Klik tautan crontab untuk mendapatkan detail lebih lanjut tentang format yang valid.
+Action=Tindakan
+All array drives below temperature threshold for a Pause=Semua array menggerakkan di bawah ambang batas suhu untuk Jeda
+Analyze results from an array operation=Analisis hasil dari operasi array
+Appears to be a %s array operation=Tampaknya a%1$soperasi susunan
+Apply=Terapkan
+Array has just been started=Array baru saja dimulai
+Array is being started=Array sedang dimulai
+Array must be started to use this assistant=Array harus dimulai untuk menggunakan asisten ini
+Array not yet started=Array belum dimulai
+Array operation completed=Operasi susunan selesai
+Array operation not resumed - outside increment window=Operasi array tidak dilanjutkan - di luar jendela kenaikan
+Array operation paused but drives not cooled enough to resume=Operasi susunan dijeda tetapi drive tidak cukup dingin untuk dilanjutkan
+Array operation paused but not for temperature related reason=Operasi array dijeda tetapi bukan karena alasan terkait suhu
+Array operation paused with some drives still too hot to resume=Operasi array dijeda karena beberapa drive masih terlalu panas untuk dilanjutkan
+Array operation restarted=Operasi array dimulai kembali
+Array operation will not be restarted=Operasi array tidak akan dimulai ulang
+Array shutdown=Penutupan susunan
+Array size is not available=Ukuran array tidak tersedia
+Array stopping=Array berhenti
+Array stopping while %s was in progress %s=Array berhenti sementara%1$ssedang berlangsung%2$s
+Array stopping Restart will be attempted on next array start=Penghentian larik: Mulai ulang akan dilakukan pada permulaan larik berikutnya
+Automatic=Otomatis
+Automatic parity check pause not configured=Jeda pemeriksaan paritas otomatis tidak dikonfigurasi
+Average Speed=Kecepatan Rata-Rata
+Background activity %s=Aktivitas latar belakang:%1$s
+Basic=Dasar
+Before you can set this option to Yes you must first have enabled system notifications=Sebelum Anda dapat mengatur opsi ini ke Ya, Anda harus mengaktifkan notifikasi sistem terlebih dahulu.
+Cancel a running parity check=Batalkan pemeriksaan paritas yang sedang berjalan
+Cancel automatically started array operation=Membatalkan operasi array yang dimulai secara otomatis
+Cancel request=Batalkan permintaan
+Canceled=Dibatalkan
+Check=Periksa
+Choose a start point and a larger end point within the disk=Pilih titik awal dan titik akhir yang lebih besar di dalam disk
+Choose sectors or percentages=Pilih sektor atau persentase
+Choose whether to write corrections=Pilih apakah akan menulis koreksi
+Click to show Array Operations history=Klik untuk menampilkan riwayat Operasi Array
+Click to show Parity check entries from syslog=Klik untuk menampilkan entri pemeriksaan paritas dari syslog
+Command Line was=Baris Perintah tadinya
+Completed partial check %s=Menyelesaikan pemeriksaan sebagian (%1$s)
+Configuration=Konfigurasi
+Correcting=Memperbaiki
+Created cron entry for %s interval monitoring=Entri cron yang dibuat untuk%1$spemantauan interval
+Created cron entry for scheduled pause and resume=Membuat entri cron untuk jeda dan melanjutkan terjadwal
+Critical=Kritis
+Custom=Adat
+Daily=Setiap hari
+Data-Rebuild=Pembangunan Kembali Data
+Date=Tanggal
+Debug=Men-debug
+Debug mode is intended to give users a feel for when the plugin is active Debug mode can generate frequent additional log entries in the syslog file so do not leave debug mode active if you are not interested in this information=Mode debug dimaksudkan untuk memberikan gambaran kepada pengguna saat plugin aktif. Mode debug dapat sering menghasilkan entri log tambahan di file syslog, jadi jangan biarkan mode debug aktif jika Anda tidak tertarik dengan informasi ini.
+Defaults=Default
+Detected a change to the disk configuration=Mendeteksi perubahan pada konfigurasi disk
+Detected disk configuration reset=Reset konfigurasi disk terdeteksi
+Detected shutdown that was due to following drives reaching critical temperature=Shutdown terdeteksi karena drive berikut mencapai suhu kritis
+Detected that array had been paused due to following drives getting hot=Mendeteksi bahwa array telah dijeda karena drive berikut menjadi panas
+Disk Clear=Hapus Disk
+Disk-Clear=Disk-Hapus
+Do you really want Debug logging mode=Apakah Anda benar-benar menginginkan mode Debug logging?
+Do you really want Testing logging mode=Apakah Anda benar-benar ingin Menguji mode logging?
+Do you really want automatic Shutdown=Apakah Anda benar-benar menginginkan Shutdown otomatis?
+Do you really want to log to the flash drive=Apakah Anda benar-benar ingin masuk ke flash drive?
+Do you really want to pause Automatic checks=Apakah Anda benar-benar ingin menjeda pemeriksaan Otomatis?
+Do you really want to pause Clear operations=Apakah Anda benar-benar ingin menjeda operasi Clear?
+Done=Selesai
+Drives been above resume temperature threshold for %s minutes=Drive berada di atas ambang batas suhu resume%1$smenit
+Drives cooled down=Drive menjadi dingin
+Duration=Durasi
+ERROR=KESALAHAN
+Elapsed Time=Waktu yang Berlalu
+End point for check=Titik akhir untuk pemeriksaan
+Error in custom entry=Kesalahan dalam entri khusus
+Errors=Kesalahan
+Flash only=Hanya lampu kilat
+Following drives overheated=Drive berikut terlalu panas
+Friday=Jumat
+High disk temperatures can shutdown server=Suhu disk yang tinggi dapat mematikan server
+History=Sejarah
+Incompatible options=Opsi yang tidak kompatibel
+Inconsisten state information - Restart requested but no progress file=Informasi status tidak konsisten - Mulai ulang diminta tetapi tidak ada file kemajuan
+Increment frequency=Frekuensi kenaikan
+Increment pause time=Tingkatkan waktu jeda
+Increment resume time=Tingkatkan waktu melanjutkan
+Increments=Peningkatan
+Invalid check range=Rentang pemeriksaan tidak valid
+Logging to the flash drive can cause a lot additional writes thus potentially shortening its lifetime Do not leave this active if you are not interested in this information CAUTION At the moment there is no mechanism to stop this file from growing forever so it is up to you to manage this manually=Masuk ke flash drive dapat menyebabkan banyak penulisan tambahan sehingga berpotensi memperpendek masa pakainya. Jangan biarkan ini aktif jika Anda tidak tertarik dengan informasi ini. PERHATIAN: Saat ini tidak ada mekanisme untuk menghentikan pertumbuhan file ini selamanya, jadi Anda bebas mengelolanya secara manual.
+Manual=petunjuk
+Manually paused=Dijeda secara manual
+Manually resumed=Dilanjutkan secara manual
+Method used to specify start and stop points=Metode yang digunakan untuk menentukan titik awal dan akhir
+Monday=Senin
+No.=Tidak
+No Parity disk present=Tidak ada disk Paritas
+No action outstanding=Tidak ada tindakan yang luar biasa
+No action specified=Tidak ada tindakan yang ditentukan
+No array operation currently in progress=Tidak ada operasi array yang sedang berlangsung
+No array operation in progress=Tidak ada operasi array yang sedang berlangsung
+No array operation in progress and no restart information saved=Tidak ada operasi array yang sedang berlangsung dan tidak ada informasi restart yang disimpan
+No array operation in progress but restart information saved=Tidak ada operasi array yang sedang berlangsung tetapi restart informasi disimpan
+No check is made to see if there is any other activity running on the server at the time the array operation completes As a safety measure if you switch off this option while an array operation is running then the shutdown will be aborted=Tidak ada pemeriksaan yang dilakukan untuk melihat apakah ada aktivitas lain yang berjalan di server pada saat operasi array selesai. Sebagai tindakan pengamanan jika Anda menonaktifkan opsi ini saat operasi array sedang berjalan maka pematian akan dibatalkan.
+No parity check entries found in syslog=Tidak ada entri pemeriksaan paritas yang ditemukan di syslog
+No parity check history present=Tidak ada riwayat pemeriksaan paritas
+No parity present, so no automatic parity check=Tidak ada paritas, jadi tidak ada pemeriksaan paritas otomatis
+No restart information present=Tidak ada informasi restart
+Non-Correcting=Tidak Mengoreksi
+Not allowed as %s already running=Tidak diperbolehkan sebagai%1$ssudah berjalan
+Not automatic check %s=Bukan pemeriksaan otomatis (%1$s)
+Notifications not enabled=Notifikasi tidak diaktifkan
+OK=Oke
+Only able to start a Read-Check as no parity drive present=Hanya dapat memulai Baca-Periksa karena tidak ada drive paritas
+Only able to start a Read-Check due to number of disabled drives=Hanya dapat memulai Baca-Periksa karena jumlah drive yang dinonaktifkan
+Option not currently recognized=Opsi saat ini tidak dikenali
+Outside increment scheguled time=Kenaikan waktu yang dijadwalkan di luar
+Outside time slot for running operation type=Slot waktu luar untuk jenis operasi yang berjalan
+Outside times for increments so not resuming=Di luar waktu untuk penambahan jadi tidak dilanjutkan
+PAUSED=DIJEDA
+Parity Check=Pemeriksaan Paritas
+Parity Check Tuning Plus logging=Parity Check Tuning Pluspencatatan
+Parity Operation History=Sejarah Operasi Paritas
+Parity Sync Data Rebuild=Sinkronisasi Paritas / Pembuatan Ulang Data
+Parity-Check=Periksa Paritas
+Parity-Sync=Sinkronisasi Paritas
+Partial=Sebagian
+Partial check not started=Pemeriksaan sebagian tidak dimulai
+Partial parity check %s=Pemeriksaan paritas parsial (%1$s)
+Pause=Jeda
+Pause %s=Jeda%1$s
+Pause a running array operation=Jeda operasi array yang sedang berjalan
+Pause an array operation at=Jeda operasi array di
+Pause and Resume array operations if disks overheat=Jeda dan Lanjutkan operasi array jika disk terlalu panas
+Pause and Resume times=Waktu Jeda dan Lanjutkan?
+Pause array operations while appdata backup or restore running=Jeda operasi array saat pencadangan atau pemulihan data aplikasi berjalan
+Pause array operations while mover running=Jeda operasi array saat penggerak berjalan
+Pause request=Jeda permintaan
+Paused=Dijeda
+Pausing Automatic parity check configured=Menjeda Pemeriksaan paritas otomatis dikonfigurasi
+Pausing an automatic parity check after an unclean shutdown extends the time before the you can be confident that parity is still valid so that recovering from a disabled disk is likely to work without data corruption or data loss Only use this option if you cannot afford the performance penalty of such checks occurring during prime time=Menjeda pemeriksaan paritas otomatis setelah pematian yang tidak bersih akan memperpanjang waktu sebelum Anda dapat yakin bahwa paritas masih valid sehingga pemulihan dari disk yang dinonaktifkan kemungkinan besar akan berhasil tanpa kerusakan data atau kehilangan data.  Hanya gunakan opsi ini jika Anda tidak mampu menanggung denda kinerja dari pemeriksaan tersebut yang dilakukan pada jam tayang utama.
+Pausing an disk Clear operation extends the time before the disk is successfully added to the array and becomes ready for formatting and then used for data storage On most systems a disk Clear operation does not adversely affect performance so typically this option is left disabled=Menjeda operasi Hapus disk akan memperpanjang waktu sebelum disk berhasil ditambahkan ke array dan siap untuk diformat dan kemudian digunakan untuk penyimpanan data.  Pada sebagian besar sistem, operasi Penghapusan disk tidak berdampak buruk pada kinerja sehingga biasanya opsi ini dibiarkan dinonaktifkan.
+Pausing an operation that is building parity or rebuilding a failed disk has a level of risk as your array is not back in a protected state until this operation completes successfully Only enable this option if the operation is adversely affecting system use and you are not worried about the extra time that will elapse before the system is once again in a protected state=Menjeda operasi yang membangun paritas atau membangun kembali disk yang gagal memiliki tingkat risiko karena array Anda tidak kembali dalam keadaan terlindungi hingga operasi ini berhasil diselesaikan.   Aktifkan opsi ini hanya jika pengoperasian berdampak buruk pada penggunaan sistem dan Anda tidak khawatir tentang waktu tambahan yang akan berlalu sebelum sistem kembali berada dalam kondisi terlindungi.
+Pausing automatic parity check=Menjeda pemeriksaan paritas otomatis
+Percentage=Persentase
+Percentage endpoints must be between 0 and 100=Titik akhir persentase harus antara 0 dan 100
+Range=Jangkauan
+Read Check=Baca Periksa
+Read-Check=Baca-Periksa
+Requires Unraid 6103 or later=MembutuhkanUnraid6.10.3 atau lebih baru
+Reset settings to defaults=Reset pengaturan ke default
+Restart requested - but appears to not be happening=Mulai ulang diminta - tetapi tampaknya tidak terjadi
+Restart will not be attempted=Mulai ulang tidak akan dilakukan
+Resume=Lanjutkan
+Resume %s=Lanjutkan%1$s
+Resume a paused array operation=Melanjutkan operasi array yang dijeda
+Resume an array operation at=Lanjutkan operasi array di
+Resume array operations on next array start=Lanjutkan operasi array pada awal array berikutnya
+Resume ignored as paused because background task running=Lanjutkan diabaikan karena dijeda karena tugas latar belakang sedang berjalan
+Resume request=Lanjutkan permintaan
+Resumed=Dilanjutkan
+Runtime=Waktu proses
+Saturday=Sabtu
+Scheduled=Dijadwalkan
+Sector Numbers=Nomor Sektor
+Sector endpoints must be whole numbers within the disk=Titik akhir sektor harus berupa bilangan bulat di dalam disk
+Sectors=Sektor
+Send notification=Kirim pemberitahuan
+Send notifications for Pause or Resume of increments=Kirim pemberitahuan untuk Jeda atau Lanjutkan kenaikan
+Send notifications for mover or backup running=Kirim pemberitahuan untuk penggerak atau pencadangan yang sedang berjalan
+Send notifications for mover running=Kirim pemberitahuan untuk penggerak yang sedang berjalan
+Send notifications for temperature related Pause or Resume=Kirim pemberitahuan untuk Jeda atau Lanjutkan terkait suhu
+Server will be shutdown when array operation completes=Server akan dimatikan ketika operasi array selesai
+Settings reset to default values=Pengaturan diatur ulang ke nilai default
+Show Sector Numbers=Tampilkan Nomor Sektor
+Show the status of a running parity check=Tampilkan status pemeriksaan paritas yang sedang berjalan
+Shutdown=Matikan
+Shutdown aborted=Pematian dibatalkan
+Shutdown server at=Matikan server di
+Shutdown server when array operation completes=Matikan server ketika operasi array selesai
+Size=Ukuran
+Something wrong progress information present without disks file present=Ada yang salah: informasi kemajuan ada tanpa ada file disk
+Something wrong restart information present without progress present=Ada yang salah: mulai ulang informasi yang ada tanpa ada kemajuan
+Speed=Kecepatan
+Start a correcting parity check=Mulai pemeriksaan paritas yang mengoreksi
+Start a non-correcting parity check=Mulai pemeriksaan paritas yang tidak mengoreksi
+Start a parity check with scheduled settings=Mulai pemeriksaan paritas dengan pengaturan terjadwal
+Start a partial parity check=Mulai pemeriksaan paritas parsial
+Start array issued via Command Line=Mulai array dikeluarkan melalui Command Line
+Start point for check=Titik awal untuk pemeriksaan
+Start the array=Mulai susunannya
+Start the array and wait for other array operations to finish=Mulai array dan tunggu hingga operasi array lainnya selesai
+Starting Shutdown=Memulai Shutdown
+Status=Status
+Stop array issued via Command Line=Hentikan array yang dikeluarkan melalui Command Line
+Stop the array=Hentikan susunannya
+Sunday=Minggu
+Suppressed built-in %s finished notification=Tertekan di dalamnya%1$spemberitahuan selesai
+Suppressed built-in %s started notification=Tertekan di dalamnya%1$spemberitahuan dimulai
+Syslog and Flash=Syslog dan Flash
+Syslog only=Hanya syslog
+System crashed=Sistem mogok
+Temperature Pause and Resume=Jeda Suhu dan Lanjutkan?
+Temperature monitoring switched off=Pemantauan suhu dimatikan
+Testing=Pengujian
+Testing mode is normally only used by the plugin author or when gathering evidence of a suspected bug in the plugin Testing mode is very verbose and generates a lot of additional log entries so you do not want it enabled unless it is really necessary=Mode pengujian biasanya hanya digunakan oleh pembuat plugin atau ketika mengumpulkan bukti adanya dugaan bug pada plugin. Mode pengujian sangat bertele-tele dan menghasilkan banyak entri log tambahan sehingga Anda tidak ingin mengaktifkannya kecuali benar-benar diperlukan.
+The Pause and Resume custom times cannot be identical=Waktu khusus Jeda dan Lanjutkan tidak boleh sama.
+The Pause and Resume times cannot be identical=Waktu Jeda dan Lanjutkan tidak boleh sama.
+The Pause and Resume times would give an increment length of more than 12 hours which is unusual Are you sure you these are the right way around=Waktu Jeda dan Lanjutkan akan memberikan penambahan durasi lebih dari 12 jam dan hal ini tidak biasa.  Apakah Anda yakin ini adalah cara yang benar?
+The Resume value must be greater than the Pause one for the heat related Pause and Resume to work correctly as they are both subtracted from the disk temperature warning value when calculating the desired temperature=Nilai Lanjutkan harus lebih besar daripada nilai Jeda agar Jeda dan Lanjutkan terkait panas dapat berfungsi dengan benar karena keduanya dikurangi dari nilai peringatan suhu disk saat menghitung suhu yang diinginkan
+The Unraid Cumulative Parity Check setting must be set to No if you want to use the Parity Check Tuning Plus plugin to run Array operations in increments=ItuUnraidPengaturan Pemeriksaan Paritas Kumulatif harus diatur ke Tidak jika Anda ingin menggunakanParity Check Tuning Plusplugin untuk menjalankan operasi Array secara bertahap
+The end point must be larger than the start=Titik akhir harus lebih besar dari titik awal
+The following are also available for testing purposes only=Berikut ini juga tersedia untuk tujuan pengujian saja
+The value you have specified seems unusually large as it is not an absolute value but is relative to the value specified for the drives Temperature Warning level at the Unraid level=Nilai yang Anda tentukan tampak luar biasa besar karena ini bukan nilai absolut namun relatif terhadap nilai yang ditentukan untuk tingkat Peringatan Suhu drive padaUnraidtingkat
+This might affect array integrity=Hal ini mungkin mempengaruhi integritas array
+Thursday=Kamis
+Tidy shutdown file not present in %s event=File shutdown yang rapi tidak ada di%1$sacara
+Tuesday=Selasa
+Unable to stop array=Tidak dapat menghentikan susunan
+Unavailable=Tidak tersedia
+Unclean shutdown detected=Shutdown yang tidak bersih terdeteksi
+Unknown action %s=Tindakan tidak diketahui:%1$s
+Unrecognized option=Opsi tidak dikenal
+Unusually large value=Nilai yang luar biasa besar?
+Update cron table entries=Perbarui entri tabel cron
+Updated cron settings are in %s=Pengaturan cron yang diperbarui sudah masuk%1$s
+Usage=Penggunaan
+Use increments for %s %s=Gunakan kenaikan untuk%1$s %2$s
+Use increments for Clear operations=Gunakan penambahan untuk operasi Clear
+Use increments for Parity Sync or Data Rebuild operations=Gunakan peningkatan untuk operasi Parity Sync atau Data Rebuild
+Version=Versi
+Versions Unraid %s, Plugin %s=Versi:Unraid %1$s, Pengaya%2$s
+Waiting=Menunggu
+Warning=Peringatan
+Wednesday=Rabu
+Weekly=Mingguan
+Write Corrections to Parity=Tulis Koreksi Paritas
+Write current settings to syslog=Tulis pengaturan saat ini ke syslog
+Yes.=Ya
+:parityProblemsPlus_check_plug:
+> Ketika Anda mengklik **Periksa** maka pemeriksaan sebagian akan dimulai
+> akan mencakup setidaknya titik awal dan akhir yang telah Anda tentukan. Ini akan menjadi pemeriksaan koreksi
+> jika opsi **Koreksi Tulis** diatur ke **Ya**, dan periksa baca sebaliknya.
+> Perhatikan bahwa pemeriksaan ini akan berjalan minimal 1 menit meskipun Anda menentukan sejumlah kecil sektor yang akan diperiksa.
+:end
+
+:parityProblemsPlus_correct_plug:
+> Tentukan apakah Anda ingin mencoba memperbarui paritas untuk memperbaiki kesalahan yang ditemukan,
+> atau cukup lakukan tes baca untuk melihat apakah ada kesalahan paritas yang dilaporkan.
+:end
+
+:parityProblemsPlus_end_plug:
+> Pilih di mana Anda ingin pemeriksaan diakhiri. Anda dapat menentukan titik akhir sebagai nomor sektor atau sebagai persentase ukuran disk paritas terbesar.
+>
+> Dalam praktiknya, karena alasan teknis, pemeriksaan mungkin berakhir lebih lambat dari titik yang Anda tentukan karena pemeriksaan hanya dilakukan satu menit sekali untuk melihat apakah titik akhir telah tercapai.
+:end
+
+:parityProblemsPlus_intro_plug:
+**Parity Check Tuning Plus Assistant** adalah bagian dari **Parity Check Tuning Plus** plugin.<p/>
+Status saat ini adalah **EKSPERIMENTAL** dan selalu ada kemungkinan bahwa asisten ini dapat dihapus di masa mendatang).
+**(umpan balik diterima mengenai konsep dasar dan ide untuk perbaikan)**.<p/>
+Idenya adalah bahwa asisten ini dapat digunakan setelah pemeriksaan paritas atau pemeriksaan baca melaporkan masalah dan mencatat rincian sektor masalah apa pun ke syslog.
+Dalam banyak kasus, kesalahan tersebut bisa disebabkan oleh faktor eksternal seperti kabel atau catu daya, bukan karena disk sebenarnya.<p/>
+Hal ini juga tidak jarang terjadi, terutama di **Ryzen/ThreadRipper** sistem berbasis, untuk mendapatkan kesalahan paritas acak jika RAM di-overclock
+(sebuahXMPprofil **adalah** overclock),
+dan kombinasi motherboard/CPU juga dapat menerapkan batasan yang lebih rendah dari kemampuan RAM untuk mendukungnya.<p/>
+Jika Anda merasa telah memperbaiki apa pun yang menyebabkan masalah tersebut terjadi, maka Anda dapat menggunakan asisten ini untuk menjalankan pemeriksaan sebagian dalam rentang sempit untuk melihat apakah masalah masih terjadi.
+Ini bisa jauh lebih cepat daripada harus menjalankan pemeriksaan paritas penuh atau pemeriksaan baca untuk melihat apakah Anda telah menyelesaikan masalah atau menjalankan disk yang diperluas.SMARTtest untuk menguji disk sebenarnya.<p/>
+**PENTING**: Asisten ini tidak boleh digunakan sebagai alternatif untuk menjalankan pemeriksaan paritas penuh setelah Anda merasa masalahnya telah teratasi.
+:end
+
+:parityProblemsPlus_sectors_plug:
+> Saat Anda mengklik opsi **Tampilkan Nomor Sektor** maka dialog akan ditampilkan
+> yang mengekstrak entri dari syslog yang telah menunjukkan sektor apa pun yang memiliki paritas apa pun
+> sektor ditampilkan dan apakah sedang diperbaiki atau merupakan kesalahan paritas.
+:end
+
+:parityProblemsPlus_start_plug:
+> Pilih dari mana Anda ingin pemeriksaan dimulai.  Anda dapat menentukan titik awal sebagai nomor sektor atau sebagai persentase ukuran disk paritas terbesar.
+>
+> Menentukan sektor absolut kemungkinan akan berguna ketika Anda telah mengekstrak nomor sektor dari *syslog* ketika pemeriksaan paritas asli melaporkan kesalahan pada sektor tersebut. Dalam versi mendatang dari plugin ini, plugin ini dapat ditingkatkan untuk secara otomatis mengekstrak sektor-sektor tersebut dari *syslog* dan memberi Anda daftar drop-down tetapi fitur ini belum diterapkan.
+>
+> Dalam praktiknya, karena alasan teknis, pemeriksaan mungkin dimulai sedikit lebih awal dari titik yang Anda tentukan, namun jumlahnya hanya sedikit.
+:end
+
+:parityProblemsPlus_type_plug:
+> Pilih cara yang Anda inginkan untuk menentukan titik awal dan akhir.
+>
+> Anda mungkin ingin menggunakan nomor sektor absolut jika ada nomor yang sebelumnya terdaftar di syslog sebagai kesalahan.
+> Penggunaan nomor sektor absolut cenderung lebih tepat dan menghasilkan pengujian yang lebih singkat, namun membutuhkan lebih banyak upaya untuk menyiapkannya.
+>
+> Alternatifnya adalah dengan menggunakan persentase. Bila menggunakan persentase maka nomor sektor yang diwakilinya dihitung sebagai persentase dari disk paritas terbesar.
+:end
+
+:parity_tuning_plus_allops_plug:
+> Ini adalah operasi yang melibatkan pembuatan paritas baru atau pembuatan ulang disk yang gagal.
+>
+>Jenis pemeriksaan ini biasanya hanya akan dijalankan jika ada potensi masalah dengan array Anda dan tindakan sedang diambil untuk mengembalikannya ke keadaan terlindungi.
+>
+>**PENTING**: Hingga operasi ini selesai, array Anda belum sepenuhnya terlindungi sehingga diasumsikan bahwa sebagian besar orang menginginkan opsi ini dibiarkan di **Tidak**.
+> Jangan pilih **Ya** kecuali Anda benar-benar yakin itu yang Anda inginkan.
+:end
+
+:parity_tuning_plus_automatic_plug:
+> Pemeriksaan Otomatis adalah pemeriksaan yang dimulai secara otomatis olehUnraidsetelah penutupan yang tidak bersih.
+>
+> jikaUnraidsistem tidak dimatikan dengan baik maka pada saat berikutnya array dimulaiUnraidsecara otomatis akan memulai pemeriksaan. Hal ini dapat terjadi karena berbagai alasan mulai dari hilangnya daya; masalah perangkat keras; dan masalah perangkat lunak. Pemeriksaan otomatis dijalankan karena jika ada kesalahan paritas, hal ini dapat membahayakan kemampuan pemulihan dari kegagalan drive array di kemudian hari sehingga Anda ingin kembali memiliki paritas yang valid sesegera mungkin.
+> 
+> Jika opsi ini diatur ke **Ya** maka pemeriksaan akan tetap diizinkan berjalan selama beberapa menit (karena kesalahan apa pun setelah pematian yang tidak bersih kemungkinan besar terjadi pada awal disk karena disk tidak dilepas dengan bersih. Kemudian jika di luar waktu yang ditentukan untuk menjalankan penambahan, pemeriksaan akan dimasukkan ke dalam status jeda. Sisa pemeriksaan kemudian dijalankan secara bertahap sesuai dengan slot waktu yang ditentukan untuk menjalankan penambahan.
+:end
+
+:parity_tuning_plus_background_plug:
+> Opsi ini hanya relevan jika Anda telah mengaktifkan opsi Pengaturan->Pemberitahuan Sistem (sangat disarankan).
+>
+> Menyetel opsi ini ke<strong>Ya</strong>berarti Anda akan dikirimi notifikasi setiap
+> waktu tugas latar belakang seperti Pencadangan Appdata atau penggerak dimulai atau diselesaikan. Jika pilihan ini
+> diatur maka pemberitahuan dikirim setiap kali operasi ini dimulai atau dihentikan saat sebuah array
+> Pengoperasian aktif meskipun Anda belum mengatur pengoperasian untuk dijeda atau dilanjutkan sementara
+> tugas seperti itu sedang berjalan. Hal ini dapat berguna untuk membantu melihat kapan kinerja array
+> operasi cenderung berinteraksi buruk dengan tugas latar belakang dalam hal kinerja.
+>
+>Jika Anda memilih untuk tidak menerima notifikasi seperti itu, biarkan opsi ini disetel ke **Tidak**.
+>Pemberitahuan dikirim sebagai pesan kategori **Pemberitahuan** ke target yang ditentukan di bawah *<a href="Settings/Notifications">Pengaturan->Pengaturan Pemberitahuan</a>*.
+:end
+
+:parity_tuning_plus_backup_plug:
+>Jeda operasi array (Pemeriksaan Paritas, Pemeriksaan Baca, Sinkronisasi Paritas, Pembuatan Ulang Disk, Pembersihan Disk) jika plugin CA Appdata atau Appdata Backup menjalankan pencadangan atau pemulihandockerdata kontainer.  Operasi array yang dijalankan secara paralel dengan pencadangan atau pemulihan akan berdampak buruk pada kinerja karena adanya pertentangan pada drive disk sehingga akan lebih efisien jika tidak menjalankannya secara bersamaan.
+>
+> Pengaturan ini berlaku meskipun Anda tidak menggunakan opsi apa pun untuk menjalankan operasi array secara bertahap.
+>
+> Jika Anda menjalankan jenis operasi array secara bertahap maka resume hanya akan terjadi setelah pencadangan atau pemulihan selesai jika Anda masih dalam jangka waktu untuk kenaikan tersebut.
+:end
+
+:parity_tuning_plus_clear_plug:
+> Operasi Pembersihan disk terjadi ketika Anda menambahkan drive baru (yang belum dibersihkan sebelumnya menggunakan plugin Pra-Hapus) ke array yang dilindungi paritas. Proses Clear menulis angka nol ke setiap sektor pada disk baru sehingga dapat ditambahkan ke array tanpa mempengaruhi paritas yang ada. Hingga operasi Hapus selesai, Anda tidak dapat memformat diskUnraiddan mulai menggunakannya untuk menyimpan data.
+>
+>Karena hingga operasi Hapus selesai, disk tidak akan tersedia untuk digunakan, kemungkinan besar sebagian besar orang menginginkan opsi ini dibiarkan di **Tidak**. Selain itu, pengoperasian Clear cenderung tidak memberikan banyak beban pada sistem sehingga kecil kemungkinannya memengaruhi kinerja dalam penggunaan normal sehari-hari.
+:end
+
+:parity_tuning_plus_complete_plug:
+> Jika diatur ke **Ya** maka secara otomatis memulai penutupan server secara rapi ketika operasi array saat ini selesai.
+>
+> Opsi ini kemungkinan besar hanya dapat digunakan pada server yang sering kali dimatikan karena digunakan untuk tujuan pencadangan. Idenya adalah Anda dapat memulai operasi array (baik secara manual atau melalui jadwal) dan kemudian membiarkan server mati sendiri tanpa harus mengetahui berapa lama waktu yang dibutuhkan untuk menyelesaikan operasi array.
+>
+> Ketika terdeteksi bahwa Anda telah mengatur opsi ini dan operasi array sedang berlangsung, maka pemberitahuan akan muncul bahwa pematian akan terjadi. Sebagai tindakan pengamanan, jika opsi ini awalnya disetel pada awal operasi array, namun tidak disetel sebelum selesai, maka pematian akan dibatalkan.
+>
+>**PERHATIAN:** Tidak ada pemeriksaan yang dilakukan untuk melihat apakah ada aktivitas lain yang berjalan di server pada saat operasi array selesai sebelum pematian dimulai
+:end
+
+:parity_tuning_plus_critical_plug:
+> Nilai ini menunjukkan seberapa dekat dengan nilai yang ditetapkan untuk Ambang Batas Suhu Disk Kritis, yaitu suhu yang boleh dicapai oleh disk sebelum penghentian server dipicu.
+> Anda mungkin menginginkan nilai positif kecil untuk memicu jeda sebelumnyaUnraidberusaha mengirimi Anda pemberitahuan bahwa ambang batas suhu kritis telah tercapai untuk disk.
+>
+>Jika ambang batas eksplisit telah ditentukan untuk masing-masing drive, maka inilah nilai yang digunakan.  Jika tidak, pengaturan global akan digunakan.
+:end
+
+:parity_tuning_plus_defaults_plug:
+> Tombol **Terapkan** akan menyimpan nilai pengaturan yang ditampilkan saat ini.
+>
+> Tombol **Selesai** keluar dari halaman pengaturan.
+>
+> Tombol **Default** akan mengatur ulang pengaturan plugin ke nilai default yang digunakan saat plugin pertama kali diinstal dan segera menyimpannya sebagai pengaturan saat ini.
+> Anda sekarang dapat membuat perubahan pada pengaturan ini agar sesuai dengan sistem Anda dan tekan tombol Terapkan untuk menyimpannya.
+:end
+
+:parity_tuning_plus_explain_plug:
+> Plugin ini tidak memulai operasi array - melainkan memodifikasi/meningkatkan perilaku setelah operasi array dimulai.
+>
+> Tujuan utama plugin ini adalah untuk memungkinkan Anda membatasi operasi array seperti pemeriksaan paritas agar berjalan pada waktu yang tidak merepotkan Anda.  Anda dapat menentukan secara individual apakah kenaikan harus digunakan untuk setiap tipe operasi array utama.
+>
+>Menyetel salah satu opsi ini ke **Tidak** berarti Anda menjalankan perilaku sistem default dari operasi tanpa jeda hingga selesai kecuali Anda menghentikan/menjeda/membatalkan operasi secara manual.
+>
+>Menyetel salah satu opsi ini ke **Ya** akan menetapkan bahwa operasi array harus dijalankan secara bertahap selama beberapa hari.
+>
+> Sebagai contoh asumsi yang dapat dilakukan plugin ini
+>Anda memiliki pemeriksaan paritas yang telah Anda jadwalkan untuk dimulai pada tanggal pertama setiap bulan pada tengah malam
+>* Pengalaman Anda sebelumnya menunjukkan bahwa jika pemeriksaan paritas berjalan tanpa gangguan, diperlukan waktu 30 jam untuk menyelesaikannya.
+>* Anda menyetel plugin ini untuk menggunakan penambahan 3 jam mulai tengah malam dan berakhir pada pukul 3.00 pagi.
+>* Pemeriksaan paritas sekarang akan memakan waktu 10 hari (10 x 3 = 30) sehingga pemeriksaan paritas akan selesai pada tanggal 10 bulan tersebut.
+>* Anda telah menjadwalkan peningkatan ini untuk dijalankan mulai tengah malam dan berakhir pada pukul 03.00. ketika Anda tahu sistem tidak sedang digunakan.
+>* Anda tidak khawatir dengan peningkatan waktu yang berlalu dan akan menyambut baik peningkatan respons sistem selama penggunaan normal.
+>* Di sisa bulan ini, plugin ini tidak akan melakukan apa pun karena tidak ada pemeriksaan paritas aktif yang sedang berlangsung ketika waktu mulai kenaikan tiba.
+>
+>**CATATAN:**
+>* StandarUnraidperilaku jika larik dihentikan saat operasi larik tidak selesai adalah kemajuan sejauh ini hilang dan hanya dapat dimulai ulang dari awal.  Anda dapat menghindari hal ini jika Anda mengatur opsi plugin untuk melanjutkan operasi array pada awal array berikutnya.
+>* Jika Anda tidak memiliki disk paritas atau jika jumlah drive yang gagal sama dengan jumlah drive yang dinonaktifkan, maka **Pemeriksaan Baca** akan dilakukan dan bukan **Pemeriksaan Paritas** untuk memastikan bahwa semua drive yang tersisa dapat dibaca tanpa kesalahan.
+:end
+
+:parity_tuning_plus_frequency_plug:
+> Frekuensi di mana kenaikan harus dijalankan selama operasi array.
+>
+> Dalam pengoperasian normal, opsi **Harian** diharapkan menjadi opsi yang paling ingin digunakan oleh sebagian besar pengguna, jadi ini adalah opsi default. Ada juga opsi **Mingguan** bagi mereka yang jarang melakukan pemeriksaan.
+>
+> Untuk mendukung pengguna yang mencari frekuensi lain, terdapat opsi untuk mengatur jadwal **Kustom** yang memungkinkan jadwal yang lebih rumit untuk waktu Jeda dan Lanjutkan. Saat Anda menggunakan opsi ini, Anda diberikan opsi untuk menentukan waktu seperti yang digunakan oleh Linux<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>utilitas.
+:end
+
+:parity_tuning_plus_history_plug:
+> Tombol **Riwayat** akan menampilkan riwayat pemeriksaan paritas saat ini.
+> Fungsinya sama dengan menggunakan tombol **History** pada tab **Main**.
+:end
+
+:parity_tuning_plus_hot_plug:
+>Jeda operasi array (Pemeriksaan Paritas, Sinkronisasi Paritas/Pembuatan Ulang Disk, Pembersihan disk) jika suhu disk melebihi batas yang telah Anda tetapkan.
+>
+>Suhu diperiksa berdasarkan ambang batas yang ditetapkan untuk tingkat suhu disk Peringatan. Jika ambang batas telah ditentukan untuk masing-masing drive (diakses dengan mengklik drive di tab Utama) maka inilah nilai yang digunakan. Jika tidak, pengaturan global (diatur melalui *Pengaturan->Pengaturan Tampilan*) akan digunakan. Diasumsikan bahwa biasanya Anda ingin operasi array dijeda sebelum nilai ditetapkan padaUnraidtingkat sebagai Ambang Peringatan.
+>
+>Solusi yang jauh lebih baik adalah meningkatkan pendinginan casing Anda sehingga disk tidak terlalu panas. Dalam praktiknya hal ini mungkin tidak selalu terbukti praktis.
+>
+>Jika operasi array dijeda saat menjalankan kenaikan, maka operasi array tidak akan dilanjutkan di luar waktu yang ditentukan untuk kenaikan tersebut. Jika operasi array dimulai karena alasan lain maka perilaku Jeda/Lanjutkan pada suhu selalu aktif.
+:end
+
+:parity_tuning_plus_increments_plug:
+>Pemeriksaan Terjadwal adalah pemeriksaan yang telah Anda konfigurasikan untuk dijalankan pada waktu yang ditentukan melalui Pengaturan-> Penjadwal.
+>
+>Menyetel opsi ini ke **Ya** menetapkan bahwa pemeriksaan harus dijalankan secara bertahap selama beberapa hari.  Perhatikan bahwa jika Anda ingin menggunakan plugin untuk menangani kenaikan operasi array maka Anda harus **tidak** menyetel opsi Pemeriksaan Paritas Kumunlatif ke **Ya** dalam standarUnraidPengaturan Pemeriksaan Paritas.
+>
+>Jika Anda telah menyetelnya ke **Tidak** maka Anda mendapatkan perilaku sistem default berupa pemeriksaan yang berjalan tanpa jeda hingga selesai kecuali Anda menghentikan/menjeda/membatalkannya secara manual.
+:end
+
+:parity_tuning_plus_logging_plug:
+> Kontrol tingkat detail dalam entri. Tingkat detail dapat ditingkatkan untuk membantu men-debug masalah apa pun yang mungkin dihadapi saat menggunakan plugin ini.
+>
+>Pesan-pesan dari plugin ini diidentifikasi berdasarkan fakta bahwa pesan-pesan tersebut ditampilkan berasal
+>* **Parity Check Tuning Plus**  
+>* **Parity Check Tuning Plus Assistant**  
+>tergantung pada bagian plugin mana yang menghasilkan pesan
+>
+>Jika opsi **Basic** disetel, ini hanya akan berupa sejumlah kecil pesan yang menunjukkan bahwa plugin ini telah mengambil tindakan atau kemungkinan kondisi kesalahan telah terdeteksi.  Ini akan menjadi apa yang diinginkan sebagian besar pengguna dalam pengoperasian normal.
+>
+>Menyetel opsi ini ke **Debug** akan menghasilkan entri tambahan yang ditulis ke syslog yang memberikan informasi lebih lanjut tentang apa yang terjadi saat plugin ini berjalan. Mereka menunjukkan bagaimana beberapa operasi internal dan bagaimana plugin berfungsi. Entri tambahan ini diidentifikasi oleh fakta bahwa kata **DEBUG** akan ditambahkan ke awal pesan. Beberapa pengguna (terutama mereka yang belum pernah menggunakan plugin ini sebelumnya) mungkin ingin menggunakannya untuk melihat lebih detail tentang cara kerja plugin ini, namun opsi ini diperkirakan tidak akan dibiarkan aktif saat berjalan normal.
+>
+>Terakhir, ada pengaturan tambahan **Pengujian** yang hanya dimaksudkan untuk digunakan oleh pengembang tetapi dibiarkan di sini demi kenyamanan. Ini akan menulis pesan yang lebih panjang ke syslog tetapi ini mungkin tidak menarik (atau bahkan bermakna) bagi rata-rata pengguna.  Pesan-pesan ini akan memiliki kata **TESTING** yang ditambahkan ke awal pesan. Anda sebaiknya hanya menjalankan level logging ini jika diminta karena ini dapat mengisi syslog Anda dengan cepat jika Anda tidak hati-hati.
+>
+>Umpan balik diterima mengenai apakah perlu memperkenalkan opsi perantara apa pun yang menampilkan pesan tipe informasi pada aktivitas plugin, sambil menghilangkan beberapa detail tingkat rendah yang ditujukan untuk mendiagnosis masalah apa pun yang mungkin ditemui saat plugin sedang berjalan.
+>
+>Jika Anda telah mengatur mode Pengujian untuk pencatatan, maka Anda dapat memilih di mana Anda ingin pesan log direkam. Standarnya adalah syslog sistem standar dan ini adalah satu-satunya pilihan yang diperbolehkan dalam mode Dasar. Syslog disimpan di RAM sehingga tidak menyebabkan penulisan berlebihan ke flash drive.
+>Untuk memfasilitasi masalah debugging maka dalam mode Pengujian Anda dapat mencatat pesan ke flash drive sebagai ganti syslog atau sebagai tambahan ke syslog. File parity.check.tuning.plus.log yang dihasilkan akan disimpan dalam folder plugin di flash drive dan memberikan file ini kepada pengembang akan membantu mendiagnosis perilaku tak terduga yang Anda temui.
+:end
+
+:parity_tuning_plus_low_plug:
+> Nilai ini menunjukkan seberapa jauh di bawah ambang batas suhu Peringatan drive yang harus dicapai sebelum **melanjutkan** operasi array dipertimbangkan. Jika penggunaan penambahan telah ditetapkan untuk jenis operasi yang dilakukan, maka waktunya harus berada dalam jendela penambahan atau resume akan ditunda hingga jendela tersebut dijadwalkan ulang.
+>
+>Anda perlu mendapatkan keseimbangan yang baik antara operasi array yang dilanjutkan terlalu cepat (dan dengan demikian dengan cepat mencapai level untuk memulai jeda lagi) dan membuang banyak waktu.
+>
+>Jika disk diputar turun suhunya tidak tersedia sehingga diasumsikan bahwa kriteria ini telah terpenuhi
+>
+>Jika tidak ada operasi array yang dijeda maka tidak ada tindakan yang akan diambil.
+:end
+
+:parity_tuning_plus_manual_plug:
+> Pemeriksaan Manual adalah pemeriksaan yang Anda mulai melalui tombol **Periksa** di tab Utama.
+>
+> Setel ini ke **Ya** jika Anda ingin pemeriksaan yang dimulai secara manual juga dijalankan secara bertahap?
+>
+> Kemungkinan besar Anda ingin pemeriksaan tersebut dijalankan hingga selesai tanpa gangguan dan jika demikian biarkan opsi ini disetel ke **Tidak**.
+> Dengan opsi ini disetel ke **Ya** maka jika Anda memulai pemeriksaan secara manual dari halaman Utama dan kemudian secara manual Menjeda pemeriksaan, hal ini akan mengakibatkan pemeriksaan dijalankan secara bertahap di antara waktu yang dijadwalkan hingga pemeriksaan selesai.
+:end
+
+:parity_tuning_plus_mover_plug:
+>Jeda operasi array (Pemeriksaan Paritas, Pemeriksaan Baca, Sinkronisasi Paritas, Pembuatan Ulang Disk, Pembersihan Disk) jika penggerak sedang berjalan. Operasi array yang dijalankan secara paralel dengan penggerak berdampak buruk pada kinerja karena adanya pertentangan pada disk drive sehingga lebih efisien jika tidak menjalankannya pada waktu yang sama.
+>
+> Pengaturan ini berlaku meskipun Anda tidak menggunakan opsi apa pun untuk menjalankan operasi array secara bertahap.
+> 
+> Jika Anda menjalankan jenis operasi array secara bertahap maka resume hanya akan terjadi setelah pemindahan selesai jika Anda masih dalam jangka waktu untuk kenaikan tersebut.
+:end
+
+:parity_tuning_plus_notify_plug:
+> Opsi ini hanya relevan jika Anda telah mengaktifkan opsi Pengaturan->Pemberitahuan Sistem (sangat disarankan).
+>
+> Menyetel opsi ini ke<strong>Ya</strong>berarti Anda akan dikirimi pemberitahuan setiap kali plugin Menjeda atau Melanjutkan kenaikan selama operasi array.
+>
+>Jika Anda memilih untuk tidak menerima notifikasi seperti itu, biarkan opsi ini disetel ke **Tidak**.
+>
+>Pemberitahuan yang dianggap hanya informatif dikirim sebagai pesan kategori **Normal** (hijau) ke target yang ditentukan di bawah *<a href="Settings/Notifications">Pengaturan->Pengaturan Pemberitahuan</a>*, meskipun yang lebih penting akan menggunakan jenis notifikasi **Peringatan** (oranye) atau *Kesalahan** (merah) jika dirasa sesuai.
+:end
+
+:parity_tuning_plus_pause_plug:
+> Waktu di mana pemeriksaan paritas yang sedang berjalan harus dihentikan sementara. Biasanya, ini akan diatur menjadi waktu ketika Anda ingin aktivitas lain tidak terpengaruh oleh pemeriksaan paritas yang sedang berjalan.
+>Jika tidak ada pemeriksaan paritas yang berjalan secara aktif saat waktu ini tiba, maka tidak ada tindakan yang akan dilakukan.
+>
+>Biasanya Anda ingin memastikan bahwa waktu ini diatur setelah waktu yang Anda jadwalkan untuk menjalankan pemeriksaan paritas reguler. Kenaikan pertama akan dimulai sejak pemeriksaan paritas reguler dijadwalkan untuk dimulai hingga waktu yang Anda tentukan untuk mengakhiri kenaikan tersebut.
+>
+>Jika periode kenaikan telah disetel ke **Kustom** maka bidang jam/menit akan disembunyikan dan Anda malah diberikan opsi untuk menyetel waktu<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>memformat.
+>
+>Anda juga ingin memastikan bahwa waktu yang dialokasikan untuk menjalankan peningkatan cukup untuk mengharapkan pemeriksaan paritas berjalan hingga selesai sebelum pemeriksaan berikutnya dijadwalkan untuk dimulai. Karena kebanyakan orang hanya menjadwalkan pemeriksaan paritas untuk dijalankan secara jarang (misalnya Bulanan atau Kuartalan), maka hal ini sepertinya tidak akan menjadi masalah, namun hal ini perlu dipertimbangkan.
+:end
+
+:parity_tuning_plus_restart_plug:
+> Unraidbiasanya akan mengabaikan pemeriksaan paritas jika sistem dimatikan, di-boot ulang, atau array dihentikan (dengan satu-satunya pilihan adalah memulai ulang pemeriksaan paritas dari awal).
+> Operasi array lainnya akan dimulai ulang dari awal.
+> Menyetel opsi ini memungkinkan pemeriksaan paritas dimulai ulang oleh plugin ini dari titik yang telah dicapai
+> selama kriteria berikut terpenuhi:
+>* Array dimatikan dengan rapi
+>* Pengguna tidak boleh melakukan perubahan apa pun pada konfigurasi array.
+>
+>Selama kriteria ini terpenuhi maka ketika array dimulai berikutnya, operasi dilanjutkan dari titik yang dicapai sebelumnya.
+>
+>**CATATAN:**
+>* Jika operasi larik berada dalam waktu yang ditetapkan untuk menjalankan kenaikan terjadwal, maka saat memulai ulang operasi larik, operasi larik akan disetel untuk dijeda jika sekarang berada di luar waktu yang ditetapkan untuk menjalankan kenaikan.
+>* Jika operasi larik dijeda secara manual, maka operasi larik yang dimulai ulang juga akan dijeda.
+>
+:end
+
+:parity_tuning_plus_resume_plug:
+> Waktu di mana pemeriksaan paritas yang dijeda harus dilanjutkan.<br>Jika saat ini tidak ada pemeriksaan paritas yang dijeda saat waktu tersebut tiba, maka tidak ada tindakan yang akan diambil.
+>
+>Biasanya waktu ini ditetapkan sebagai awal periode menganggur dalam semalam. Nilai yang sesuai mungkin adalah menggunakan waktu yang sama dengan yang telah Anda tentukan untuk memulai pemeriksaan paritas terjadwal.
+>
+>Jika periode kenaikan telah disetel ke **Kustom** maka bidang jam/menit akan disembunyikan dan Anda malah diberikan opsi untuk menyetel waktu<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>memformat.
+:end
+
+:parity_tuning_plus_shutdown_plug:
+> Jika diatur ke **Ya** maka secara otomatis memulai penutupan server secara rapi jika ada disk dalam larik atau kumpulan yang mencapai ambang batas suhu yang ditentukan.
+> Suhu diperiksa berdasarkan ambang batas yang ditetapkan untuk tingkat suhu disk **Kritis**. Jika suhu Kritis telah ditentukan untuk masing-masing drive (diakses dengan mengklik drive di tab Utama) maka ini adalah nilai yang digunakan. Jika bukan pengaturan global (*<a href="Settings/DisplaySettings">Pengaturan->Pengaturan Tampilan</a>) akan digunakan.
+>
+>Opsi ini dimaksudkan untuk dipicu jika karena alasan tertentu sistem pendingin sistem tidak mencukupi atau jika terjadi kegagalan dalam beberapa hal. Idenya adalah Anda ingin melakukan shutdown yang rapi sebelum disk menjadi rusak karena terlalu panas. Shutdown yang dipicu secara fungsional sama dengan menekan tombol Shutdown di halaman UtamaUnraidGUI. Jika notifikasi diaktifkan maka Anda akan dikirimi notifikasi untuk menunjukkan bahwa ini telah terjadi.
+>
+>Ketika server dihidupkan kembali setelah penutupan tersebut maka ketika array dimulai Anda akan diberitahu bahwa penutupan terkait suhu terjadi jika Anda tidak mengetahui alasannya.
+>
+>**PERHATIAN:** Jika array dihentikan saat operasi array tidak selesai maka defaultnyaUnraidPerilakunya adalah kemajuan sejauh ini hilang dan hanya dapat dimulai kembali dari awal.
+>
+>Jika Anda telah mengaktifkan opsi mulai ulang di plugin ini *dan* pematiannya adalah pematian yang rapi) maka upaya akan dilakukan untuk memulai ulang operasi array dari titik yang telah dicapai sebelumnya.
+:end
+
+:parity_tuning_plus_temp_notify_plug:
+> Menyetel opsi ini ke **Ya** berarti Anda akan dikirimi pemberitahuan setiap kali plugin Menjeda atau Melanjutkan operasi array karena suhu drive Anda.<br>Jika Anda memilih untuk tidak menerima notifikasi seperti itu, biarkan opsi ini disetel ke **Tidak**. Pemberitahuan dikirim sebagai pesan kategori **Pemberitahuan** ke target yang ditentukan di bawah *<a href="Settings/Notifications">Pengaturan->Pengaturan Pemberitahuan</a>*.
+:end
+
+:parity_tuning_plus_warn_plug:
+> Nilai ini menunjukkan seberapa dekat nilai yang ditetapkan untuk Ambang Batas Suhu Disk Peringatan yang boleh dicapai oleh suhu disk sebelum **jeda** dari operasi array yang sedang berjalan dipicu. Jika ambang batas eksplisit telah ditentukan untuk masing-masing drive, maka inilah nilai yang digunakan. Jika tidak, pengaturan global akan digunakan.
+>
+> Anda biasanya menginginkan nilai positif kecil untuk memicu jeda sebelumnyaUnraidberusaha mengirimi Anda pemberitahuan bahwa ambang batas peringatan suhu untuk disk telah tercapai.
+>
+>Jika tidak ada operasi array aktif maka tidak ada tindakan yang akan diambil meskipun suhu disk melebihi ambang batas yang ditentukan.
+>
+> Jika tidak ada operasi array yang berjalan maka tidak ada tindakan yang akan diambil.
+:end
+
+aborted=dibatalkan
+action=tindakan
+already paused=sudah dijeda
+already running=sudah berjalan
+appears there is a running array operation but no Progress file yet created=tampaknya ada operasi array yang berjalan tetapi belum ada file Kemajuan yang dibuat
+appears to be a regular scheduled check=tampaknya merupakan pemeriksaan terjadwal rutin
+appears to be an unclean shutdown=tampaknya merupakan penutupan yang tidak bersih
+appears to be manual parity check=tampaknya merupakan pemeriksaan paritas manual
+appears to be marked as automatic parity check=tampaknya ditandai sebagai pemeriksaan paritas otomatis
+appears to be marked as scheduled parity check=tampaknya ditandai sebagai pemeriksaan paritas terjadwal
+appears to be partial parity check=tampaknya merupakan pemeriksaan paritas parsial
+array drives=drive array
+automatic=otomatis
+backup=cadangan
+below critical disk temperature threshold=di bawah ambang batas suhu disk kritis
+below warning disk temperature threshold=di bawah ambang batas suhu disk peringatan
+canceled=dibatalkan
+completed=selesai
+cool=keren
+critical=kritis
+day=hari
+detected=terdeteksi
+detected that mdcmd had been called from %s with command %s=mendeteksi bahwa mdcmd telah dipanggil%1$sdengan perintah%2$s
+disabled=dinonaktifkan
+does not appear to be an unclean shutdown=tampaknya bukan penutupan yang tidak bersih
+drive temperature limits=batas suhu berkendara
+entry in %s format=masuk%1$smemformat
+errors=kesalahan
+exit code=kode keluar
+finished=selesai
+global temperature limits=batas suhu global
+hot=panas
+hr=jam
+idle=menganggur
+manual=panduan
+min=menit
+minute=menit
+mover=penggerak
+no action taken as appears restart outstanding=tidak ada tindakan yang diambil karena tampaknya restart luar biasa
+no array operation in progress=tidak ada operasi array yang sedang berlangsung
+not a parity check so always treat it as an automatic operation=bukan pemeriksaan paritas jadi selalu perlakukan ini sebagai operasi otomatis
+operation was paused when reboot initiated so pause it immediately=operasi dijeda saat reboot dimulai, jadi segera jeda
+past size=ukuran masa lalu
+paused=dijeda
+percent=persen
+plugin temperature settings=pengaturan suhu plugin
+running=berlari
+scheduled=dijadwalkan
+sec=detik
+sector=sektor
+spundown=berputar ke bawah
+to get ready for restart=untuk bersiap memulai kembali
+trigger unknown - assume manual=pemicu tidak diketahui - anggap manual
+unknown=tidak diketahui
+using scheduled mode of %s=menggunakan mode terjadwal%1$s
+warm=hangat
+where action is one of=di mana tindakan adalah salah satunya

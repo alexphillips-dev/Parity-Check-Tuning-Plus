@@ -1,0 +1,15 @@
+* text=auto eol=lf
+*.php text eol=lf
+*.page text eol=lf
+*.mdcmd text eol=lf
+*.plg text eol=lf
+*.cfg text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.svg text eol=lf
+source/**/event/* text eol=lf
+*.txz binary
+# Preserve the byte-verified upstream stylesheet, including its original whitespace.
+tests/fixtures/unraid/default-base.css -whitespace
+tests/fixtures/unraid/monitor -whitespace

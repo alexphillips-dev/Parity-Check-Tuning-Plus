@@ -1,0 +1,606 @@
+; Parity Check Tuning Plus - generated offline catalog. Do not edit by hand.
+
+%s %s %d %s=%1$s %2$s (%3$d %4$s)
+%s %s, %s %s, %s %d, %s %s=%1$s %2$s, %3$s %4$s, %5$s %6$d, %7$s %8$s
+%s Cancelled=%1$sZrušené
+%s cancel request sent %s=%1$szrušenie odoslanej žiadosti%2$s
+%s no longer running=%1$suž nebeží
+%s running=%1$sbeh
+%s started=%1$s začala
+%s will not be restarted=%1$s nebude reštartovaný
+ but in active period so leave running=... ale v aktívnom období tak nechajte behať
+ but suppressed as notifications do not appear to be enabled for pauseresume=... ale potlačené, pretože sa zdá, že upozornenia nie sú povolené na pozastavenie/obnovenie
+ but suppressed as system notifications do not appear to be enabled=... ale potlačené, pretože sa nezdá, že by systémové upozornenia boli povolené
+ outside active period so needs pausing=... mimo aktívneho obdobia, takže potrebuje pauzu
+ using =... pomocou
+A crontab entry should have 5 space-separated values defining the minutes, hour, day of the month, month, day of the week Click on the crontab link to get more details on valid formats=Položka crontab by mala mať 5 hodnôt oddelených medzerou, ktoré definujú minúty, hodinu, deň v mesiaci, mesiac, deň v týždni.  Kliknutím na odkaz crontab získate ďalšie podrobnosti o platných formátoch.
+Action=Akcia
+All array drives below temperature threshold for a Pause=Všetky jednotky poľa sú počas pauzy pod prahom teploty
+Analyze results from an array operation=Analyzujte výsledky operácie poľa
+Appears to be a %s array operation=Zdá sa, že je a%1$sprevádzka poľa
+Apply=Použiť
+Array has just been started=Pole sa práve spustilo
+Array is being started=Pole sa spúšťa
+Array must be started to use this assistant=Ak chcete používať tohto asistenta, musíte spustiť pole
+Array not yet started=Pole ešte nie je spustené
+Array operation completed=Operácia poľa dokončená
+Array operation not resumed - outside increment window=Prevádzka poľa sa neobnovila - mimo okna prírastku
+Array operation paused but drives not cooled enough to resume=Prevádzka poľa bola pozastavená, ale disky nie sú dostatočne vychladené, aby sa mohli obnoviť
+Array operation paused but not for temperature related reason=Prevádzka poľa bola pozastavená, ale nie z dôvodu teploty
+Array operation paused with some drives still too hot to resume=Prevádzka poľa bola pozastavená, pričom niektoré jednotky sú stále príliš horúce na to, aby sa mohli obnoviť
+Array operation restarted=Operácia poľa bola reštartovaná
+Array operation will not be restarted=Operácia poľa nebude reštartovaná
+Array shutdown=Vypnutie poľa
+Array size is not available=Veľkosť poľa nie je k dispozícii
+Array stopping=Zastavenie poľa
+Array stopping while %s was in progress %s=Počas zastavenia poľa%1$sprebiehal%2$s
+Array stopping Restart will be attempted on next array start=Zastavenie poľa: Reštart sa pokúsi pri ďalšom spustení poľa
+Automatic=Automaticky
+Automatic parity check pause not configured=Pozastavenie automatickej kontroly parity nie je nakonfigurované
+Average Speed=Priemerná rýchlosť
+Background activity %s=Aktivita na pozadí:%1$s
+Basic=Základné
+Before you can set this option to Yes you must first have enabled system notifications=Pred nastavením tejto možnosti na Áno musíte najskôr povoliť systémové upozornenia.
+Cancel a running parity check=Zrušte prebiehajúcu kontrolu parity
+Cancel automatically started array operation=Zrušiť automaticky spustenú operáciu poľa
+Cancel request=Zrušiť žiadosť
+Canceled=Zrušené
+Check=Skontrolujte
+Choose a start point and a larger end point within the disk=Vyberte počiatočný bod a väčší koncový bod na disku
+Choose sectors or percentages=Vyberte sektory alebo percentá
+Choose whether to write corrections=Vyberte, či chcete písať opravy
+Click to show Array Operations history=Kliknutím zobrazíte históriu operácií poľa
+Click to show Parity check entries from syslog=Kliknutím zobrazíte položky kontroly parity zo syslogu
+Command Line was=Príkazový riadok bol
+Completed partial check %s=Dokončená čiastočná kontrola (%1$s)
+Configuration=Konfigurácia
+Correcting=Oprava
+Created cron entry for %s interval monitoring=Vytvorený záznam cron pre%1$sintervalové sledovanie
+Created cron entry for scheduled pause and resume=Vytvorený záznam cronu pre plánovanú pauzu a pokračovanie
+Critical=Kritické
+Custom=Vlastné
+Daily=Denne
+Data-Rebuild=Data-Rebuild
+Date=Dátum
+Debug=Debug
+Debug mode is intended to give users a feel for when the plugin is active Debug mode can generate frequent additional log entries in the syslog file so do not leave debug mode active if you are not interested in this information=Režim ladenia má používateľom poskytnúť pocit, kedy je doplnok aktívny. Režim ladenia môže generovať časté dodatočné záznamy v súbore syslog, preto nenechávajte režim ladenia aktívny, ak vás tieto informácie nezaujímajú.
+Defaults=Predvolené
+Detected a change to the disk configuration=Zistila sa zmena konfigurácie disku
+Detected disk configuration reset=Zistil sa reset konfigurácie disku
+Detected shutdown that was due to following drives reaching critical temperature=Zistené vypnutie, ktoré bolo spôsobené tým, že nasledujúce disky dosiahli kritickú teplotu
+Detected that array had been paused due to following drives getting hot=Zistilo sa, že pole bolo pozastavené z dôvodu zahrievania nasledujúcich jednotiek
+Disk Clear=Disk Clear
+Disk-Clear=Disk-Clear
+Do you really want Debug logging mode=Naozaj chcete režim protokolovania ladenia?
+Do you really want Testing logging mode=Naozaj chcete testovať režim protokolovania?
+Do you really want automatic Shutdown=Naozaj chcete automatické vypnutie?
+Do you really want to log to the flash drive=Naozaj sa chcete prihlásiť na flash disk?
+Do you really want to pause Automatic checks=Naozaj chcete pozastaviť automatické kontroly?
+Do you really want to pause Clear operations=Naozaj chcete pozastaviť operácie Clear?
+Done=Hotovo
+Drives been above resume temperature threshold for %s minutes=Jednotky boli nad prahovou hodnotou teploty obnovenia pre%1$sminút
+Drives cooled down=Pohony vychladli
+Duration=Trvanie
+ERROR=CHYBA
+Elapsed Time=Uplynulý čas
+End point for check=Koncový bod na kontrolu
+Error in custom entry=Chyba vo vlastnom zadaní
+Errors=Chyby
+Flash only=Len blesk
+Following drives overheated=Nasledujúce disky sa prehrievajú
+Friday=piatok
+High disk temperatures can shutdown server=Vysoké teploty disku môžu vypnúť server
+History=História
+Incompatible options=Nekompatibilné možnosti
+Inconsisten state information - Restart requested but no progress file=Nekonzistentné informácie o stave - Vyžaduje sa reštart, ale žiadny súbor priebehu
+Increment frequency=Zvýšiť frekvenciu
+Increment pause time=Zvýšte čas pauzy
+Increment resume time=Zvýšte čas obnovenia
+Increments=Prírastky
+Invalid check range=Neplatný kontrolný rozsah
+Logging to the flash drive can cause a lot additional writes thus potentially shortening its lifetime Do not leave this active if you are not interested in this information CAUTION At the moment there is no mechanism to stop this file from growing forever so it is up to you to manage this manually=Prihlásenie na flash disk môže spôsobiť veľa ďalších zápisov, čím sa môže skrátiť jeho životnosť. Nenechávajte toto aktívne, ak vás tieto informácie nezaujímajú. UPOZORNENIE: V súčasnosti neexistuje žiadny mechanizmus, ktorý by navždy zastavil rast tohto súboru, takže je na vás, aby ste to spravovali manuálne.
+Manual=manuál
+Manually paused=Manuálne pozastavené
+Manually resumed=Manuálne obnovené
+Method used to specify start and stop points=Metóda používaná na určenie počiatočných a koncových bodov
+Monday=pondelok
+No.=Nie
+No Parity disk present=Nie je prítomný žiadny paritný disk
+No action outstanding=Žiadna nevyriešená akcia
+No action specified=Nie je zadaná žiadna akcia
+No array operation currently in progress=Momentálne neprebieha žiadna operácia poľa
+No array operation in progress=Neprebieha žiadna operácia poľa
+No array operation in progress and no restart information saved=Neprebieha žiadna operácia poľa a nie sú uložené žiadne informácie o reštarte
+No array operation in progress but restart information saved=Neprebieha žiadna operácia poľa, ale informácie o reštarte sú uložené
+No check is made to see if there is any other activity running on the server at the time the array operation completes As a safety measure if you switch off this option while an array operation is running then the shutdown will be aborted=Nevykonáva sa žiadna kontrola, či na serveri v čase dokončenia operácie poľa beží nejaká iná aktivita. Ako bezpečnostné opatrenie, ak túto možnosť vypnete počas prevádzky poľa, vypnutie sa preruší.
+No parity check entries found in syslog=V protokole syslog sa nenašli žiadne položky kontroly parity
+No parity check history present=Neexistuje žiadna história kontroly parity
+No parity present, so no automatic parity check=Žiadna parita, takže žiadna automatická kontrola parity
+No restart information present=Neexistujú žiadne informácie o reštarte
+Non-Correcting=Neopravujúce sa
+Not allowed as %s already running=Nie je povolené ako%1$suž beží
+Not automatic check %s=Nie automatická kontrola (%1$s)
+Notifications not enabled=Upozornenia nie sú povolené
+OK=OK
+Only able to start a Read-Check as no parity drive present=Je možné spustiť kontrolu čítania len vtedy, keď nie je prítomný žiadny paritný disk
+Only able to start a Read-Check due to number of disabled drives=Spustenie kontroly čítania je možné len kvôli počtu zakázaných jednotiek
+Option not currently recognized=Možnosť momentálne nie je rozpoznaná
+Outside increment scheguled time=Mimo plánovaného času prírastku
+Outside time slot for running operation type=Vonkajší časový úsek pre spustený typ operácie
+Outside times for increments so not resuming=Vonkajšie časy pre prírastky, takže sa nepokračuje
+PAUSED=POZASTAVENÉ
+Parity Check=Kontrola parity
+Parity Check Tuning Plus logging=Parity Check Tuning Plusťažba dreva
+Parity Operation History=História paritných operácií
+Parity Sync Data Rebuild=Paritná synchronizácia/obnovenie údajov
+Parity-Check=Kontrola parity
+Parity-Sync=Paritná synchronizácia
+Partial=Čiastočné
+Partial check not started=Čiastočná kontrola sa nespustila
+Partial parity check %s=Čiastočná kontrola parity (%1$s)
+Pause=Pauza
+Pause %s=Pauza%1$s
+Pause a running array operation=Pozastaviť spustenú operáciu poľa
+Pause an array operation at=Pozastaviť operáciu poľa o
+Pause and Resume array operations if disks overheat=Pozastaviť a obnoviť operácie poľa, ak sa disky prehrievajú
+Pause and Resume times=Časy pozastavenia a obnovenia?
+Pause array operations while appdata backup or restore running=Pozastavte operácie poľa počas zálohovania alebo obnovy aplikácií
+Pause array operations while mover running=Pozastaviť operácie poľa počas spustenia presunu
+Pause request=Pozastaviť žiadosť
+Paused=Pozastavené
+Pausing Automatic parity check configured=Pozastavenie Automatická kontrola parity je nakonfigurovaná
+Pausing an automatic parity check after an unclean shutdown extends the time before the you can be confident that parity is still valid so that recovering from a disabled disk is likely to work without data corruption or data loss Only use this option if you cannot afford the performance penalty of such checks occurring during prime time=Pozastavenie automatickej kontroly parity po nečistom vypnutí predlžuje čas, kým si môžete byť istí, že parita je stále platná, takže obnova z vypnutého disku bude pravdepodobne fungovať bez poškodenia alebo straty údajov.  Túto možnosť použite len vtedy, ak si nemôžete dovoliť trest za výkon takýchto kontrol počas hlavného vysielacieho času.
+Pausing an disk Clear operation extends the time before the disk is successfully added to the array and becomes ready for formatting and then used for data storage On most systems a disk Clear operation does not adversely affect performance so typically this option is left disabled=Pozastavenie disku Operácia vymazania predlžuje čas, kým sa disk úspešne pridá do poľa a bude pripravený na formátovanie a potom sa použije na ukladanie údajov.  Na väčšine systémov nemá operácia vymazania disku nepriaznivý vplyv na výkon, takže táto možnosť je zvyčajne ponechaná zakázaná.
+Pausing an operation that is building parity or rebuilding a failed disk has a level of risk as your array is not back in a protected state until this operation completes successfully Only enable this option if the operation is adversely affecting system use and you are not worried about the extra time that will elapse before the system is once again in a protected state=Pozastavenie operácie, ktorá vytvára paritu, alebo prestavba zlyhaného disku predstavuje určité riziko, pretože vaše pole nie je späť v chránenom stave, kým sa táto operácia úspešne nedokončí.   Túto možnosť povoľte iba vtedy, ak operácia nepriaznivo ovplyvňuje používanie systému a nemusíte sa obávať času navyše, ktorý uplynie, kým bude systém opäť v chránenom stave.
+Pausing automatic parity check=Pozastavenie automatickej kontroly parity
+Percentage=Percento
+Percentage endpoints must be between 0 and 100=Percentuálne koncové body musia byť medzi 0 a 100
+Range=Rozsah
+Read Check=Prečítajte si Kontrola
+Read-Check=Read-Check
+Requires Unraid 6103 or later=VyžadujeUnraid6.10.3 alebo neskôr
+Reset settings to defaults=Obnovte predvolené nastavenia
+Restart requested - but appears to not be happening=Vyžaduje sa reštart – ale zdá sa, že sa nedeje
+Restart will not be attempted=Reštart sa nepokúsi
+Resume=Obnoviť
+Resume %s=Obnoviť%1$s
+Resume a paused array operation=Obnovte pozastavenú operáciu poľa
+Resume an array operation at=Obnovte operáciu poľa o
+Resume array operations on next array start=Obnovte operácie poľa pri ďalšom spustení poľa
+Resume ignored as paused because background task running=Pokračovať ignorované ako pozastavené, pretože na pozadí beží úloha
+Resume request=Obnoviť žiadosť
+Resumed=Obnovené
+Runtime=Runtime
+Saturday=sobota
+Scheduled=Naplánované
+Sector Numbers=Čísla sektorov
+Sector endpoints must be whole numbers within the disk=Koncové body sektora musia byť celé čísla v rámci disku
+Sectors=Sektory
+Send notification=Odoslať upozornenie
+Send notifications for Pause or Resume of increments=Odosielať upozornenia na pozastavenie alebo obnovenie prírastkov
+Send notifications for mover or backup running=Odosielajte upozornenia na spustenie presunu alebo zálohovania
+Send notifications for mover running=Odošlite upozornenia na spustenie presunu
+Send notifications for temperature related Pause or Resume=Odosielať upozornenia na pozastavenie alebo obnovenie súvisiace s teplotou
+Server will be shutdown when array operation completes=Server sa vypne po dokončení operácie poľa
+Settings reset to default values=Nastavenia sa obnovia na predvolené hodnoty
+Show Sector Numbers=Zobraziť čísla sektorov
+Show the status of a running parity check=Zobraziť stav prebiehajúcej kontroly parity
+Shutdown=Vypnutie
+Shutdown aborted=Vypnutie bolo prerušené
+Shutdown server at=Vypnúť server o
+Shutdown server when array operation completes=Vypnite server po dokončení operácie poľa
+Size=Veľkosť
+Something wrong progress information present without disks file present=Niečo nie je v poriadku: informácie o priebehu sú k dispozícii bez súboru diskov
+Something wrong restart information present without progress present=Niečo nie je v poriadku: reštartujte informácie bez prítomnosti pokroku
+Speed=Rýchlosť
+Start a correcting parity check=Spustite korekčnú kontrolu parity
+Start a non-correcting parity check=Spustite kontrolu parity bez opravy
+Start a parity check with scheduled settings=Spustite kontrolu parity s naplánovanými nastaveniami
+Start a partial parity check=Spustite kontrolu čiastočnej parity
+Start array issued via Command Line=Spustite pole vydané cez príkazový riadok
+Start point for check=Východiskový bod pre kontrolu
+Start the array=Spustite pole
+Start the array and wait for other array operations to finish=Spustite pole a počkajte na dokončenie ostatných operácií poľa
+Starting Shutdown=Spúšťa sa vypnutie
+Status=Stav
+Stop array issued via Command Line=Zastaviť pole vydané cez príkazový riadok
+Stop the array=Zastavte pole
+Sunday=nedeľu
+Suppressed built-in %s finished notification=Potlačený vstavaný%1$sdokončené oznámenie
+Suppressed built-in %s started notification=Potlačený vstavaný%1$szačala notifikácia
+Syslog and Flash=Syslog a Flash
+Syslog only=Iba syslog
+System crashed=Systém zlyhal
+Temperature Pause and Resume=Pozastaviť a obnoviť teplotu?
+Temperature monitoring switched off=Monitorovanie teploty je vypnuté
+Testing=Testovanie
+Testing mode is normally only used by the plugin author or when gathering evidence of a suspected bug in the plugin Testing mode is very verbose and generates a lot of additional log entries so you do not want it enabled unless it is really necessary=Testovací režim zvyčajne používa iba autor doplnku alebo pri zhromažďovaní dôkazov o podozrení na chybu v doplnku. Testovací režim je veľmi podrobný a generuje množstvo dodatočných záznamov denníka, takže ho nechcete aktivovať, pokiaľ to nie je skutočne nevyhnutné.
+The Pause and Resume custom times cannot be identical=Vlastné časy pozastavenia a obnovenia nemôžu byť rovnaké.
+The Pause and Resume times cannot be identical=Časy pozastavenia a obnovenia nemôžu byť rovnaké.
+The Pause and Resume times would give an increment length of more than 12 hours which is unusual Are you sure you these are the right way around=Časy Pause a Resume by zvýšili dĺžku o viac ako 12 hodín, čo je nezvyčajné.  Si si istý, že toto je tá správna cesta?
+The Resume value must be greater than the Pause one for the heat related Pause and Resume to work correctly as they are both subtracted from the disk temperature warning value when calculating the desired temperature=Hodnota Pokračovať musí byť väčšia ako Pozastaviť, aby Pozastavenie a Pokračovanie súvisiace s teplom fungovali správne, pretože obe sa pri výpočte požadovanej teploty odpočítavajú od varovnej hodnoty teploty disku.
+The Unraid Cumulative Parity Check setting must be set to No if you want to use the Parity Check Tuning Plus plugin to run Array operations in increments=TheUnraidNastavenie Kumulatívnej kontroly parity musí byť nastavené na Nie, ak chcete použiťParity Check Tuning Plusplugin na spúšťanie operácií poľa v prírastkoch
+The end point must be larger than the start=Koncový bod musí byť väčší ako začiatok
+The following are also available for testing purposes only=Nasledujúce sú tiež dostupné len na testovacie účely
+The value you have specified seems unusually large as it is not an absolute value but is relative to the value specified for the drives Temperature Warning level at the Unraid level=Hodnota, ktorú ste zadali, sa zdá byť nezvyčajne veľká, pretože nejde o absolútnu hodnotu, ale je relatívna k hodnote špecifikovanej pre úroveň výstrahy teploty pohonu naUnraidúrovni
+This might affect array integrity=To môže ovplyvniť integritu poľa
+Thursday=štvrtok
+Tidy shutdown file not present in %s event=Čistý súbor vypnutia sa nenachádza v%1$sudalosť
+Tuesday=utorok
+Unable to stop array=Pole nie je možné zastaviť
+Unavailable=nedostupné
+Unclean shutdown detected=Bolo zistené nečisté vypnutie
+Unknown action %s=Neznáma akcia:%1$s
+Unrecognized option=Nerozpoznaná možnosť
+Unusually large value=Nezvyčajne veľká hodnota?
+Update cron table entries=Aktualizujte položky tabuľky cron
+Updated cron settings are in %s=Aktualizované nastavenia cronu sú k dispozícii%1$s
+Usage=Použitie
+Use increments for %s %s=Použiť prírastky pre%1$s %2$s
+Use increments for Clear operations=Na operácie Clear použite prírastky
+Use increments for Parity Sync or Data Rebuild operations=Pre operácie Parity Sync alebo Data Rebuild použite prírastky
+Version=Verzia
+Versions Unraid %s, Plugin %s=Verzie:Unraid %1$s, Plugin%2$s
+Waiting=Čakanie
+Warning=Upozornenie
+Wednesday=streda
+Weekly=Týždenne
+Write Corrections to Parity=Napíšte opravy do Parity
+Write current settings to syslog=Zapíšte aktuálne nastavenia do syslog
+Yes.=áno
+:parityProblemsPlus_check_plug:
+> Keď kliknete na **Skontrolovať**, spustí sa čiastočná kontrola
+> bude pokrývať aspoň začiatočný a koncový bod, ktorý ste určili. Bude to opravná kontrola
+> ak je možnosť **Opravy zápisu** nastavená na **Áno** a v opačnom prípade skontrolujte čítanie.
+> Upozorňujeme, že táto kontrola bude prebiehať minimálne 1 minútu, aj keď zadáte veľmi malý počet kontrolovaných sektorov.
+:end
+
+:parityProblemsPlus_correct_plug:
+> Zadajte, či sa chcete pokúsiť aktualizovať paritu, aby ste opravili akúkoľvek nájdenú chybu,
+> alebo jednoducho urobte test čítania, aby ste zistili, či nie sú hlásené nejaké chyby parity.
+:end
+
+:parityProblemsPlus_end_plug:
+> Vyberte, kde má byť kontrola ukončená. Koncový bod môžete zadať buď ako číslo sektora, alebo ako percento veľkosti disku s najväčšou paritou.
+>
+> V praxi môže kontrola z technických dôvodov skončiť neskôr ako vami zadaný bod, pretože kontrola sa vykonáva len raz za minútu, aby sa zistilo, či bol dosiahnutý koncový bod.
+:end
+
+:parityProblemsPlus_intro_plug:
+**Parity Check Tuning Plus Assistant** je súčasťou **Parity Check Tuning Plus** plugin.<p/>
+Aktuálny stav je **EXPERIMENTÁLNY** a vždy je možné, že tento asistent môže byť v budúcnosti odstránený).
+**(spätná väzba na základný koncept a nápady na zlepšenie je vítaná)**.<p/>
+Myšlienkou je, že tohto asistenta možno použiť po kontrole parity alebo po kontrole čítania, ktorá nahlásila problémy a zapísala podrobnosti o všetkých problémových sektoroch do syslogu.
+V mnohých prípadoch môžu byť takéto chyby spôsobené skôr vonkajšími faktormi, ako je kabeláž alebo napájanie, než skutočné disky.<p/>
+Tiež to nie je nezvyčajné, najmä na **Ryzen/ThreadRipper** systémy založené na náhodných chybách parity, ak je RAM pretaktovaná
+(anXMPprofil **je** pretaktovaný),
+a kombinácia základná doska/CPU môže tiež klásť limity, ktoré sú nižšie, ako dokáže podporovať RAM.<p/>
+Ak si myslíte, že ste odstránili čokoľvek, čo spôsobilo problémy, môžete pomocou tohto asistenta spustiť čiastočnú kontrolu v úzkom rozsahu, aby ste zistili, či problém stále pretrváva.
+Môže to byť oveľa rýchlejšie ako spustenie úplnej kontroly parity alebo kontroly čítania, aby ste zistili, či ste problém vyriešili, alebo spustenie rozšíreného diskuSMARTtest na otestovanie skutočného disku.<p/>
+**DÔLEŽITÉ**: Tento asistent by sa nikdy nemal používať ako alternatíva k spusteniu úplnej kontroly parity, keď si myslíte, že problém bol vyriešený.
+:end
+
+:parityProblemsPlus_sectors_plug:
+> Keď kliknete na možnosť **Zobraziť čísla sektorov**, zobrazí sa dialógové okno
+> ktorý extrahuje položky zo syslogu, ktoré zobrazujú všetky sektory s akoukoľvek paritou
+> sektor a či bol opravovaný alebo ide o chybu parity.
+:end
+
+:parityProblemsPlus_start_plug:
+> Vyberte, odkiaľ chcete kontrolu spustiť.  Počiatočný bod môžete zadať buď ako číslo sektora, alebo ako percento veľkosti disku s najväčšou paritou.
+>
+> Špecifikovanie absolútnych sektorov bude pravdepodobne užitočné najmä vtedy, keď ste extrahovali čísla sektorov z *syslog*, keď pôvodná kontrola parity hlásila chyby v týchto sektoroch. V budúcej verzii tohto zásuvného modulu môže byť zásuvný modul vylepšený tak, aby automaticky extrahoval takéto sektory zo *syslog* a poskytol vám rozbaľovací zoznam, ale táto funkcia ešte nie je implementovaná.
+>
+> V praxi môže kontrola z technických dôvodov začať o niečo skôr, ako je bod, ktorý určíte, ale bude to len o malú čiastku.
+:end
+
+:parityProblemsPlus_type_plug:
+> Vyberte spôsob, akým chcete určiť počiatočný a koncový bod.
+>
+> Pravdepodobne budete chcieť použiť absolútne čísla sektorov, ak existujú také, ktoré boli predtým uvedené v syslog ako chybové.
+> Použitie absolútnych čísel sektorov býva presnejšie a vedie ku kratším testom, ale nastavenie môže byť náročnejšie.
+>
+> Alternatívou je použiť percentá. Pri použití percent sa čísla sektorov, ktoré predstavujú, vypočítajú ako percentá najväčšieho paritného disku.
+:end
+
+:parity_tuning_plus_allops_plug:
+> Toto sú operácie poľa, ktoré zahŕňajú vytvorenie novej parity alebo prebudovanie neúspešného disku.
+>
+>Tento typ kontroly sa zvyčajne spustí iba vtedy, ak sa potenciálne vyskytne nejaký problém s vaším poľom a vykoná sa akcia na jeho vrátenie do chráneného stavu.
+>
+>**DÔLEŽITÉ**: Kým sa táto operácia nedokončí, vaše pole nie je úplne chránené, takže sa predpokladá, že väčšina ľudí bude chcieť ponechať túto možnosť na **Nie**.
+> Nevyberajte **Áno**, pokiaľ si nie ste úplne istí, že je to to, čo chcete.
+:end
+
+:parity_tuning_plus_automatic_plug:
+> Automatické kontroly sú tie, ktoré sa spúšťajú automatickyUnraidpo nečistom odstavení.
+>
+> akUnraidsystém sa pri ďalšom spustení poľa nevypne čistoUnraidautomaticky spustí kontrolu. To sa môže stať z rôznych dôvodov, od straty energie; problémy s hardvérom; a softvérové ​​problémy. Automatická kontrola sa spustí, pretože ak sa vyskytnú nejaké chyby parity, môže to ohroziť možnosť neskoršieho zotavenia po zlyhaní jednotky poľa, takže sa chcete vrátiť k platnej parite hneď, ako to bude praktické.
+> 
+> Ak je táto možnosť nastavená na **Áno**, kontrola bude môcť niekoľko minút bežať (keďže akékoľvek chyby po nečistom vypnutí budú s najväčšou pravdepodobnosťou na začiatku diskov, pretože neboli odpojené čisto. Potom, ak mimo času určeného pre prírastky spustenia, kontrola sa prepne do pozastaveného stavu. Zvyšok kontroly následne prebehne v prírastkoch zadaných podľa prírastkov spustenia.
+:end
+
+:parity_tuning_plus_background_plug:
+> Táto možnosť je relevantná iba vtedy, ak ste povolili možnosť Nastavenia->Systémové upozornenia (veľmi odporúčame).
+>
+> Nastavenie tejto možnosti na<strong>áno</strong>znamená, že vám bude vždy zaslané upozornenie
+> čas spustenia alebo dokončenia úlohy na pozadí, ako je napríklad zálohovanie údajov aplikácie alebo presun. Ak táto možnosť
+> je nastavené, potom sa upozornenie odošle vždy, keď sa tieto operácie spustia alebo zastavia počas poľa
+> prevádzka je aktívna, aj keď ste nenastavili pozastavenie alebo obnovenie operácie
+> takéto úlohy prebiehajú. To môže byť užitočné, ak chcete zistiť, kedy je výkon poľa
+> operácia pravdepodobne zle interaguje s úlohou na pozadí z hľadiska výkonu.
+>
+>Ak nechcete dostávať takéto upozornenia, ponechajte túto možnosť nastavenú na **Nie**.
+>Oznámenie sa odošle ako správa kategórie **Upozornenie** na cieľ(e) uvedené v časti *<a href="Settings/Notifications">Nastavenia->Nastavenia upozornení</a>*.
+:end
+
+:parity_tuning_plus_backup_plug:
+>Pozastavte operáciu poľa (kontrola parity, kontrola čítania, synchronizácia parity, obnova disku, vymazanie disku), ak v zásuvných moduloch CA Appdata alebo Appdata Backup prebieha zálohovanie alebo obnoveniedockerúdaje kontajnera.  Operácia poľa, ktorá je spustená paralelne so zálohovaním alebo obnovou, nepriaznivo ovplyvňuje výkon v dôsledku sporov na diskových jednotkách, takže je efektívnejšie ich nechať spustené súčasne.
+>
+> Toto nastavenie sa prejaví aj vtedy, ak nepoužívate žiadnu z možností na spustenie operácie poľa v prírastkoch.
+>
+> Ak spúšťate typ operácie poľa v prírastkoch, obnovenie sa uskutoční len po dokončení zálohovania alebo obnovy, ak ste stále v rámci časového okna pre prírastok.
+:end
+
+:parity_tuning_plus_clear_plug:
+> Operácia vymazania disku nastane, keď pridáte novú jednotku (ktorá nebola vopred vymazaná pomocou doplnku Pre-Clear) do poľa, ktoré je chránené paritou. Proces Clear zapíše nuly do každého sektora na novom disku, takže ho možno pridať do poľa bez ovplyvnenia existujúcej parity. Kým sa nedokončí operácia Clear, nebudete môcť naformátovať diskUnraida začnite ho používať na ukladanie údajov.
+>
+>Keďže kým sa nedokončí operácia Clear, disk nebude k dispozícii na použitie, je pravdepodobné, že väčšina ľudí bude chcieť túto možnosť ponechať na **Nie**. Okrem toho operácia Clear zvyčajne nezaťažuje systém, takže je menej pravdepodobné, že ovplyvní výkon pri bežnom každodennom používaní.
+:end
+
+:parity_tuning_plus_complete_plug:
+> Ak je nastavená na **Áno**, po dokončení aktuálnej operácie poľa sa automaticky spustí upratané vypnutie servera.
+>
+> Táto možnosť sa pravdepodobne použije iba na serveri, ktorý je väčšinu času vypnutý, pretože sa používa na niečo ako zálohovanie. Myšlienka je, že môžete spustiť operáciu poľa (buď manuálne alebo prostredníctvom plánu) a potom nechať server, aby sa sám vypol bez toho, aby ste museli vedieť, ako dlho bude operácia poľa trvať.
+>
+> Keď sa zistí, že máte nastavenú túto možnosť a prebieha operácia poľa, zobrazí sa upozornenie, že dôjde k vypnutiu. Ako bezpečnostné opatrenie, ak je táto možnosť pôvodne nastavená na začiatku operácie poľa, ale nie je nastavená pred jej dokončením, vypnutie sa preruší.
+>
+>**UPOZORNENIE:** V čase dokončenia operácie poľa pred spustením vypnutia sa na serveri nekontroluje žiadna iná aktivita.
+:end
+
+:parity_tuning_plus_critical_plug:
+> Táto hodnota udáva, ako blízko k hodnote nastavenej pre prah kritickej teploty disku môže teplota disku dosiahnuť pred spustením vypnutia servera.
+> Možno budete chcieť malú kladnú hodnotu na spustenie pauzy predtýmUnraidvám pošle upozornenie, že pre disk bol dosiahnutý kritický teplotný prah.
+>
+>Ak bol pre jednotlivý pohon definovaný explicitný prah, potom je to použitá hodnota.  Ak nie, použije sa globálne nastavenie.
+:end
+
+:parity_tuning_plus_defaults_plug:
+> Tlačidlo **Apply** uloží aktuálne zobrazené hodnoty nastavení.
+>
+> Tlačidlo **Hotovo** opustí stránku nastavení.
+>
+> Tlačidlo **Predvolené ** obnoví nastavenia pluginu na predvolené hodnoty, ktoré sa použijú pri prvej inštalácii doplnku a okamžite ich uloží ako aktuálne nastavenia.
+> Teraz môžete vykonať zmeny v týchto nastaveniach, aby vyhovovali vášmu systému, a kliknutím na tlačidlo Použiť ich uložíte.
+:end
+
+:parity_tuning_plus_explain_plug:
+> Tento doplnok nespúšťa operácie poľa – namiesto toho upravuje/vylepšuje správanie po spustení operácie poľa.
+>
+> Hlavným účelom tohto doplnku je umožniť vám obmedziť operácie poľa, ako sú kontroly parity, na spustenie v čase, ktorý vám nebude obťažovať.  Individuálne môžete určiť, či sa majú použiť prírastky pre každý hlavný typ operácie poľa.
+>
+>Nastavenie jednej z týchto možností na **Nie** znamená, že získate predvolené systémové správanie operácie spustenej bez prestávky až do jej dokončenia, pokiaľ operáciu manuálne nezastavíte, nepozastavíte alebo nezrušíte.
+>
+>Nastavenie jednej z týchto možností na **Áno** určuje, že operácia poľa by sa mala spúšťať v prírastkoch rozložených počas niekoľkých dní.
+>
+> Ako príklad toho, čo tento doplnok dokáže predpokladať
+>Máte kontrolu parity, ktorú ste naplánovali začať prvého dňa každého mesiaca o polnoci
+>* Vaše minulé skúsenosti ukázali, že ak kontrola parity prebieha bez prerušenia, dokončenie trvá 30 hodín.
+>* Tento doplnok nastavíte tak, aby používal 3-hodinové prírastky od polnoci do 3:00 ráno.
+>* Kontrola parity bude teraz v skutočnosti trvať uplynutých 10 dní (10 x 3 = 30), takže kontrola parity sa dokončí 10. dňa v mesiaci.
+>* Tieto prírastky ste naplánovali tak, aby začali o polnoci a skončili o 3:00 ráno. keď viete, že systém sa nepoužíva.
+>* Tento zvýšený uplynutý čas vás nemusí obávať a pri bežnom používaní uvítate zvýšenú odozvu systému.
+>* Po zvyšok mesiaca tento doplnok nebude robiť nič, pretože neprebieha žiadna aktívna kontrola parity, keď nastane čas začiatku zvýšenia.
+>
+>**POZNÁMKY:**
+>* ŠtandardUnraidsprávanie, ak je pole zastavené, zatiaľ čo operácia poľa nie je dokončená, znamená, že sa stratí doterajší priebeh a môže sa reštartovať iba od začiatku.  Tomu sa môžete vyhnúť, ak nastavíte možnosť doplnku na obnovenie operácií poľa pri ďalšom spustení poľa.
+>* Ak nemáte paritný disk alebo ak sa počet zlyhaných jednotiek rovná počtu zakázaných jednotiek, vykoná sa **Kontrola čítania** namiesto **Kontrola parity**, aby sa zaistilo, že všetky zostávajúce jednotky sa dajú prečítať bez chyby.
+:end
+
+:parity_tuning_plus_frequency_plug:
+> Frekvencia, s ktorou by sa mali prírastky vykonávať počas operácie poľa.
+>
+> Pri bežnej prevádzke sa očakáva, že väčšina používateľov bude chcieť použiť možnosť **Daily**, takže toto je predvolené nastavenie. K dispozícii je aj možnosť **Týždenne** pre tých, ktorí vykonávajú občasné kontroly.
+>
+> Na podporu používateľov, ktorí hľadajú iné frekvencie, existuje možnosť nastaviť **Vlastné** plány, ktoré umožnia komplikovanejšie rozvrhy pre časy pozastavenia a obnovenia. Keď použijete túto voľbu, dostanete možnosť zadať čas, ktorý používa Linux<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>užitočnosť.
+:end
+
+:parity_tuning_plus_history_plug:
+> Tlačidlo **História** zobrazí aktuálnu históriu kontrol parity.
+> Jeho funkcia je totožná s použitím tlačidla **História** na karte **Hlavné**.
+:end
+
+:parity_tuning_plus_hot_plug:
+>Pozastavte operáciu poľa (kontrola parity, synchronizácia parity/obnovenie disku, vymazanie disku), ak teploty disku prekročia limity, ktoré ste nastavili.
+>
+>Teploty sa kontrolujú podľa prahových hodnôt nastavených pre úrovne teploty varovného disku. Ak bol prah definovaný pre jednotlivý disk (prístupný kliknutím na disk na karte Main), potom je to použitá hodnota. Ak nie, použije sa globálne nastavenie (nastavené cez *Nastavenia->Nastavenia displeja*). Predpokladá sa, že normálne by ste chceli, aby bola operácia poľa pozastavená pred hodnotou nastavenou naUnraidúroveň ako prah varovania.
+>
+>Oveľa lepším riešením je vo vašom prípade zlepšiť chladenie, aby sa disky nikdy neprehrievali. V praxi sa to nemusí vždy ukázať ako praktické.
+>
+>Ak bola operácia poľa pozastavená počas spustenia prírastku, nebude obnovená mimo času vyhradeného pre prírastok. Ak bola operácia poľa spustená z akéhokoľvek iného dôvodu, potom je správanie Pause/Resume pri teplote vždy aktívne.
+:end
+
+:parity_tuning_plus_increments_plug:
+>Plánované kontroly sú tie, ktoré ste nakonfigurovali tak, aby sa spúšťali v nastavených časoch cez Nastavenia->Plánovač.
+>
+>Nastavenie tejto možnosti na **Áno** určuje, že kontroly by sa mali spúšťať v prírastkoch rozložených počas niekoľkých dní.  Všimnite si, že ak chcete použiť doplnok na spracovanie prírastkov operácií poľa, musíte **nie** nastaviť možnosť Kontrola kumulatívnej parity na **Áno** v štandardeUnraidNastavenia kontroly parity.
+>
+>Ak ste toto nastavili na **Nie**, získate predvolené systémové správanie kontrol prebiehajúcich bez prestávky až po dokončenie, pokiaľ ich manuálne nezastavíte/pozastavíte/nezrušíte.
+:end
+
+:parity_tuning_plus_logging_plug:
+> Ovládajte úroveň podrobností v záznamoch. Úroveň podrobností je možné zvýšiť, aby ste pomohli pri ladení akýchkoľvek problémov, s ktorými sa môže tento doplnok stretnúť.
+>
+>Správy tohto doplnku sú identifikované podľa toho, že sú zobrazené ako prichádzajúce z
+>* **Parity Check Tuning Plus**  
+>* **Parity Check Tuning Plus Assistant**  
+>v závislosti od toho, ktorá časť pluginu generovala správy
+>
+>Ak je nastavená možnosť **Základné**, bude to len malý počet správ indikujúcich, že tento doplnok vykonal nejakú akciu alebo bol zistený možný chybový stav.  To bude väčšina používateľov pri bežnej prevádzke chcieť.
+>
+>Nastavenie tejto možnosti na **Debug** bude mať za následok zapísanie ďalších záznamov do syslog, ktoré poskytujú viac informácií o tom, čo sa deje, keď je tento plugin spustený. Ukazujú, ako fungujú niektoré vnútorné operácie doplnku. Tieto dodatočné položky sú identifikované tým, že budú mať na začiatok správy pridané slovo **DEBUG**. Niektorí používatelia (najmä tí, ktorí tento doplnok ešte nepoužívali) ho možno budú chcieť použiť na zobrazenie podrobnejších informácií o tom, ako tento doplnok funguje, ale neočakáva sa, že táto možnosť zostane povolená pri normálnej prevádzke.
+>
+>Nakoniec je tu ďalšie nastavenie **Testovanie**, ktoré je určené iba na použitie vývojárom, ale je tu ponechané pre pohodlie. Zapíše do syslogu ešte podrobnejšie správy, ale tieto pravdepodobne nebudú zaujímavé (alebo dokonca zmysluplné) pre priemerného používateľa.  Tieto správy budú mať na začiatok správy pridané slovo **TESTOVANIE**. Túto úroveň protokolovania by ste mali spustiť iba vtedy, ak ste boli požiadaní, pretože môže rýchlo zaplniť váš syslog, ak si nedáte pozor.
+>
+>Vítame spätnú väzbu, či stojí za to zaviesť akúkoľvek prechodnú možnosť, ktorá vydáva správy o type informácií o aktivite doplnkov, pričom sa vynechajú niektoré podrobnosti nižšej úrovne, ktoré sú zamerané na diagnostikovanie akýchkoľvek problémov, ktoré sa môžu vyskytnúť počas spustenia doplnku.
+>
+>Ak máte pre protokolovanie nastavený testovací režim, môžete si vybrať, kam chcete zaznamenávať protokolové správy. Predvolený je štandardný systémový syslog a toto je jediná možnosť povolená v základnom režime. Systémový protokol je uložený v pamäti RAM, takže nespôsobuje nadmerné zápisy na flash disk.
+>Na uľahčenie problémov s ladením môžete v testovacom režime zaznamenať správy na flash disk buď namiesto syslogu alebo navyše k syslogu. Výsledný súbor parity.check.tuning.plus.log bude uložený v priečinku doplnku na flash disku a poskytnutie tohto súboru vývojárovi pomôže pri diagnostike akéhokoľvek neočakávaného správania, s ktorým sa stretnete.
+:end
+
+:parity_tuning_plus_low_plug:
+> Táto hodnota udáva, koľko pod varovným teplotným prahom musí disk dosiahnuť, kým sa zohľadní **obnovenie** operácie poľa. Ak bolo pre typ vykonávanej operácie nastavené používanie prírastkov, potom musí byť čas v rámci okna prírastkov, inak bude pokračovanie odložené, kým sa toto okno nezruší.
+>
+>Musíte dosiahnuť dobrú rovnováhu medzi operáciami poľa, ktoré sa obnovia príliš skoro (a teda rýchlym dosiahnutím úrovne na začatie ďalšej pauzy) a stratou veľa času.
+>
+>Ak sa disk niekedy roztočí, teplota nie je ľahko dostupná, takže sa bude predpokladať, že toto kritérium bolo splnené
+>
+>Ak nie je žiadna pozastavená operácia poľa, nevykoná sa žiadna akcia.
+:end
+
+:parity_tuning_plus_manual_plug:
+> Manuálne kontroly sú tie, ktoré ste spustili pomocou tlačidla **Kontrola** na karte Hlavné.
+>
+> Nastavte toto na **Áno**, ak chcete, aby sa manuálne spúšťané kontroly tiež spúšťali v prírastkoch?
+>
+> Je dosť pravdepodobné, že budete chcieť, aby takáto kontrola prebehla do konca bez prerušenia, a ak áno, ponechajte túto možnosť nastavenú na **Nie**.
+> Ak je táto možnosť nastavená na **Áno**, ak manuálne spustíte kontrolu z hlavnej stránky a potom manuálne pozastavíte kontrolu, bude to mať za následok, že kontrola sa bude spúšťať v prírastkoch medzi naplánovanými časmi, kým sa kontrola nedokončí.
+:end
+
+:parity_tuning_plus_mover_plug:
+>Pozastavte operáciu poľa (kontrola parity, kontrola čítania, synchronizácia parity, obnova disku, vymazanie disku), ak je spustený nástroj mover. Operácia poľa, ktorá je spustená paralelne s moverom, nepriaznivo ovplyvňuje výkon v dôsledku sporov na diskových jednotkách, takže je efektívnejšie, ak ich nenecháte spustené súčasne.
+>
+> Toto nastavenie sa prejaví aj vtedy, ak nepoužívate žiadnu z možností na spustenie operácie poľa v prírastkoch.
+> 
+> Ak spúšťate typ operácie poľa v prírastkoch, obnovenie sa uskutoční až po dokončení presunu, ak ste stále v rámci časového okna pre prírastok.
+:end
+
+:parity_tuning_plus_notify_plug:
+> Táto možnosť je relevantná iba vtedy, ak ste povolili možnosť Nastavenia->Systémové upozornenia (dôrazne odporúčame).
+>
+> Nastavenie tejto možnosti na<strong>áno</strong>znamená, že vám bude zaslané upozornenie vždy, keď doplnok počas operácie poľa pozastaví alebo obnoví prírastok.
+>
+>Ak nechcete dostávať takéto upozornenia, ponechajte túto možnosť nastavenú na **Nie**.
+>
+>Oznámenia, ktoré sa považujú len za informatívne, sa odosielajú ako správa kategórie **Normálna** (zelená) na ciele uvedené v časti *<a href="Settings/Notifications">Nastavenia->Nastavenia upozornení</a>*, hoci dôležitejšie typy budú používať upozornenia typu **Varovanie** (oranžové) alebo *Chyby** (červené), kde sa to javí ako vhodné.
+:end
+
+:parity_tuning_plus_pause_plug:
+> Čas, kedy by mala byť spustená kontrola parity pozastavená. Zvyčajne by to bol čas, keď chcete, aby iná aktivita nebola ovplyvnená spustenou kontrolou parity.
+>Ak v tomto čase aktívne neprebieha žiadna kontrola parity, nedôjde k žiadnej akcii.
+>
+>Normálne sa chcete uistiť, že tento čas je nastavený na neskorší čas, ktorý naplánujete na spustenie pravidelných kontrol parity. Prvý prírastok bude potom od plánovaného začiatku pravidelnej kontroly parity do času, ktorý ste určili ako koniec prírastku.
+>
+>Ak bolo obdobie prírastku nastavené na **Vlastné**, polia hodín/minút sú skryté a namiesto toho máte možnosť nastaviť čas v<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>formát.
+>
+>Tiež sa chcete uistiť, že čas pridelený na spustenie prírastkov je dostatočný na to, aby sa dalo očakávať, že kontrola parity bude dokončená pred plánovaným spustením ďalšej kontroly. Keďže väčšina ľudí naplánuje kontroly parity len tak, aby sa spúšťali zriedkavo (napr. mesačné alebo štvrťročné), je nepravdepodobné, že by to bol problém, ale treba to vziať do úvahy.
+:end
+
+:parity_tuning_plus_restart_plug:
+> Unraidza normálnych okolností opustí kontrolu parity, ak sa systém vypne, reštartuje alebo sa pole zastaví (jediná možnosť je reštartovať kontrolu parity od začiatku).
+> Ostatné operácie poľa budú reštartované od začiatku.
+> Nastavenie tejto možnosti umožňuje reštartovať kontroly parity týmto doplnkom od bodu, v ktorom dosiahli
+> pokiaľ sú splnené tieto kritériá:
+>* Pole bolo vypnuté v poriadku
+>* Používateľ nesmie vykonať žiadne zmeny v konfigurácii poľa.
+>
+>Pokiaľ sú tieto kritériá splnené, pri ďalšom spustení poľa sa operácia obnoví od bodu, ktorý sa dosiahol predtým.
+>
+>**POZNÁMKY:**
+>* Ak bola operácia poľa v rámci času nastaveného na spustenie plánovaného prírastku, potom pri reštartovaní operácie poľa bude nastavená tak, aby bola pozastavená, ak je teraz mimo času nastaveného na spustenie prírastkov.
+>* Ak bola operácia poľa manuálne pozastavená, reštartovaná operácia poľa bude tiež pozastavená.
+>
+:end
+
+:parity_tuning_plus_resume_plug:
+> Čas, kedy by sa mala obnoviť pozastavená kontrola parity.<br>Ak v tomto čase nie je momentálne pozastavená žiadna kontrola parity, nevykoná sa žiadna akcia.
+>
+>Tento čas by bol zvyčajne nastavený na začiatok nečinnosti cez noc. Vhodnou hodnotou môže byť použitie rovnakého času, ktorý ste zadali na spustenie plánovanej kontroly parity.
+>
+>Ak bolo obdobie prírastku nastavené na **Vlastné**, polia hodín/minút sú skryté a namiesto toho máte možnosť nastaviť čas v<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>formát.
+:end
+
+:parity_tuning_plus_shutdown_plug:
+> Ak je nastavené na **Áno**, automaticky sa spustí riadne vypnutie servera, ak niektorý disk v poli alebo fondoch dosiahne definovanú prahovú hodnotu teploty.
+> Teploty sa kontrolujú podľa prahových hodnôt nastavených pre **Kritické** úrovne teploty disku. Ak bola pre jednotlivý disk definovaná kritická teplota (dostanete sa k nemu kliknutím na disk na karte Main), potom je to použitá hodnota. Ak nie globálne nastavenie (*<a href="Settings/DisplaySettings">Nastavenia->Nastavenia displeja</a>) sa použije.
+>
+>Táto možnosť je určená na spustenie, ak z nejakého dôvodu nie je chladiaci systém systému dostatočný alebo ak nejakým spôsobom zlyhal. Myšlienka je taká, že chcete urobiť upratané vypnutie skôr, ako sa disky poškodia v dôsledku prehriatia. Vypnutie, ktoré sa spustí, je funkčne rovnaké ako v prípade stlačenia tlačidla Vypnúť na Hlavnej stránkeUnraidGUI. Ak sú upozornenia povolené, odošle sa vám upozornenie, že sa to stalo.
+>
+>Keď sa server po takomto vypnutí znova spustí, potom pri spustení poľa budete upozornení, že došlo k vypnutiu súvisiacemu s teplotou v prípade, že ste nevedeli o dôvode.
+>
+>**UPOZORNENIE:** Ak je pole zastavené, kým operácia poľa nie je dokončená, potom je to predvolené nastavenieUnraidsprávanie spočíva v tom, že doterajší pokrok sa stratí a možno ho reštartovať iba od začiatku.
+>
+>Ak ste v tomto doplnku povolili možnosť reštartu *a* vypnutie je čisté vypnutie), potom sa pokúsi reštartovať operáciu poľa od bodu, v ktorom predtým dosiahol.
+:end
+
+:parity_tuning_plus_temp_notify_plug:
+> Nastavenie tejto možnosti na **Áno** znamená, že vám bude zaslané upozornenie vždy, keď doplnok pozastaví alebo obnoví operáciu poľa kvôli teplote vašich diskov.<br>Ak nechcete dostávať takéto upozornenia, ponechajte túto možnosť nastavenú na **Nie**. Oznámenie sa odošle ako správa kategórie **Upozornenie** na cieľ(e) uvedené v časti *<a href="Settings/Notifications">Nastavenia->Nastavenia upozornení</a>*.
+:end
+
+:parity_tuning_plus_warn_plug:
+> Táto hodnota udáva, ako blízko k hodnote nastavenej pre varovný prah teploty disku môže teplota diskov dosiahnuť predtým, než sa spustí **pauza** bežiacej operácie poľa. Ak bol pre jednotlivý pohon definovaný explicitný prah, potom je to použitá hodnota. Ak nie, použije sa globálne nastavenie.
+>
+> Normálne chcete, aby malá kladná hodnota spustila pauzu predtýmUnraidvám pošle upozornenie, že pre disk bol dosiahnutý prah varovania teploty.
+>
+>Ak nie je aktívna žiadna operácia poľa, nevykoná sa žiadna akcia, aj keď teploty disku prekročia špecifikovaný prah.
+>
+> Ak nie je spustená žiadna operácia poľa, nevykoná sa žiadna akcia.
+:end
+
+aborted=prerušený
+action=akcie
+already paused=už pozastavené
+already running=už beží
+appears there is a running array operation but no Progress file yet created=Zdá sa, že prebieha operácia poľa, ale zatiaľ nie je vytvorený žiadny súbor Progress
+appears to be a regular scheduled check=Zdá sa, že ide o pravidelnú plánovanú kontrolu
+appears to be an unclean shutdown=Zdá sa, že ide o nečisté vypnutie
+appears to be manual parity check=Zdá sa, že ide o manuálnu kontrolu parity
+appears to be marked as automatic parity check=Zdá sa, že je označený ako automatická kontrola parity
+appears to be marked as scheduled parity check=Zdá sa, že je označený ako plánovaná kontrola parity
+appears to be partial parity check=Zdá sa, že ide o čiastočnú kontrolu parity
+array drives=diskové jednotky
+automatic=automatické
+backup=zálohovanie
+below critical disk temperature threshold=pod kritickým prahom teploty disku
+below warning disk temperature threshold=pod prahom teploty varovného disku
+canceled=zrušené
+completed=dokončené
+cool=v pohode
+critical=kritický
+day=deň
+detected=zistené
+detected that mdcmd had been called from %s with command %s=zistilo sa, že bolo zavolané mdcmd%1$ss príkazom%2$s
+disabled=zdravotne postihnutých
+does not appear to be an unclean shutdown=nezdá sa, že by išlo o nečisté vypnutie
+drive temperature limits=teplotné limity pohonu
+entry in %s format=vstup do%1$sformát
+errors=chyby
+exit code=výstupný kód
+finished=hotový
+global temperature limits=globálne teplotné limity
+hot=horúce
+hr=hr
+idle=nečinný
+manual=manuál
+min=min
+minute=minútu
+mover=hýbateľ
+no action taken as appears restart outstanding=nevykonala sa žiadna akcia, zdá sa, že reštart nebol dokončený
+no array operation in progress=neprebieha žiadna operácia poľa
+not a parity check so always treat it as an automatic operation=nejde o kontrolu parity, takže to vždy berte ako automatickú operáciu
+operation was paused when reboot initiated so pause it immediately=operácia bola pozastavená pri spustení reštartu, takže ju okamžite pozastavte
+past size=minulú veľkosť
+paused=pozastavené
+percent=percent
+plugin temperature settings=nastavenie teploty pluginu
+running=beh
+scheduled=naplánované
+sec=sek
+sector=sektore
+spundown=spundown
+to get ready for restart=aby ste sa pripravili na reštart
+trigger unknown - assume manual=spúšť neznáma - predpokladajte manuál
+unknown=neznámy
+using scheduled mode of %s=pomocou plánovaného režimu%1$s
+warm=teplý
+where action is one of=kde akcia je jednou z

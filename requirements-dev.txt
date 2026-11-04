@@ -1,0 +1,2 @@
+# Development-only issue-form validation; never installed with the Unraid plugin.
+PyYAML==6.0.3

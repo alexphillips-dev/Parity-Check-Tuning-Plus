@@ -1,0 +1,150 @@
+<?xml version="1.0" standalone="yes"?>
+<!DOCTYPE PLUGIN [
+<!ENTITY name "parity.check.tuning.plus">
+<!ENTITY author "alexphillips-dev">
+<!ENTITY version "2026.11.03.04">
+<!ENTITY md5 "a840fe9385f6edd7b430f5bac543b9e3">
+<!ENTITY sha256 "e65903661573cb07793044045416a993f1e91e2e7b10307cf36816fc9ff4da02">
+<!ENTITY launch "Settings/Scheduler">
+<!ENTITY plugin "parity.check.tuning.plus">
+<!ENTITY plugdir "/usr/local/emhttp/plugins/&plugin;">
+<!ENTITY github "alexphillips-dev/Parity-Check-Tuning-Plus">
+<!ENTITY pluginURL "https://raw.githubusercontent.com/&github;/dev/&plugin;.plg">
+]>
+<PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;"
+        pluginURL="&pluginURL;" min="6.9.2" icon="wrench"
+        support="https://github.com/&github;/issues">
+<multiLanguage>true</multiLanguage>
+<CHANGES>
+### 2026.11.03.04
+- Restore a compact bold plugin-name header above the short Plugins-page description.
+
+### 2026.11.03.03
+- Shorten the Plugins-page description and remove the oversized heading and broken inline image.
+
+### 2026.11.03.02
+- Enforce safe package ownership, permissions, and paths, including a guard against filesystem-root entries.
+- Detect native and tuned mover processes through a validated PID and command identity.
+- Default informational background notifications to off while preserving saved preferences and pause/resume handling.
+- Preserve manual pauses, handle overlapping background tasks, and honor temperature, restart, and increment-window restrictions.
+- Correct assistant mode selection, range validation, endpoint help, popup behavior, and backend partial-check bounds.
+- Bundle 42 complete language catalogs and three native locale aliases, with offline translations for settings, dialogs, help, history, CLI, and notifications.
+- Keep version fallback safe and history/status protocol fields independent of translated labels.
+
+### 2026.11.03.01
+- Establish Parity Check Tuning Plus with its own plugin, configuration, package, and translation identities.
+- Rename the CLI command to parity.check.plus and brand settings, assistance, logs, and notifications.
+- Replace inherited update, support, and donation links with Plus project metadata.
+- Remove historical distributions and editor-session files from the active project.
+- Keep native command and history backups owned by Plus across updates and removal.
+</CHANGES>
+
+<!-- Check before downloading or changing native hooks. -->
+<FILE Run="/bin/bash">
+<INLINE>
+set -eu
+previous_plugin="&plugin;"
+previous_plugin="${previous_plugin%.plus}"
+if [ -f "/boot/config/plugins/${previous_plugin}.plg" ] ||
+   [ -d "/usr/local/emhttp/plugins/${previous_plugin}" ]; then
+  echo "Uninstall the previous parity tuning plugin before installing Parity Check Tuning Plus."
+  exit 1
+fi
+plugin_dir="&plugdir;"
+for hook in /usr/local/sbin/mdcmd /usr/local/emhttp/plugins/dynamix/scripts/parity_history /usr/local/emhttp/plugins/dynamix/include/ParityHistory.php; do
+  if [ -L "$hook" ]; then
+    case "$(readlink "$hook")" in
+      "$plugin_dir"/*) ;;
+      *) echo "Another plugin owns $hook. Remove that integration before installing Parity Check Tuning Plus."; exit 1 ;;
+    esac
+  fi
+done
+mkdir -p "/boot/config/plugins/&plugin;"
+</INLINE>
+</FILE>
+
+<FILE Name="/boot/config/plugins/&plugin;/&plugin;-&version;.txz" Run="upgradepkg --install-new">
+  <URL>https://raw.githubusercontent.com/&github;/dev/archives/&plugin;-&version;.txz</URL>
+  <SHA256>&sha256;</SHA256>
+</FILE>
+
+<FILE Run="/bin/bash">
+<INLINE>
+set -eu
+plugin_dir="&plugdir;"
+config_dir="/boot/config/plugins/&plugin;"
+mkdir -p "$config_dir"
+chmod 755 "$plugin_dir/&plugin;.php" "$plugin_dir/&plugin;.history.php" "$plugin_dir/&plugin;.mdcmd"
+chmod 755 "$plugin_dir"/event/*
+for catalog in /usr/local/emhttp/languages/*/paritychecktuningplus.dot; do
+  rm -f -- "$catalog"
+done
+ln -sfn "$plugin_dir/&plugin;.php" /usr/local/bin/parity.check.plus
+if [ ! -f "$config_dir/&plugin;.cfg" ]; then
+  cp "$plugin_dir/default.cfg" "$config_dir/&plugin;.cfg"
+fi
+
+# Save each native hook once; updating Plus must preserve the native backup.
+install_hook() {
+  local hook="$1" target="$2" backup="$1.&plugin;.orig"
+  if [ -L "$hook" ] &amp;&amp; [ "$(readlink "$hook")" = "$target" ]; then
+    if [ ! -f "$backup" ]; then
+      echo "Native backup missing for $hook; restore it before reinstalling."
+      return 1
+    fi
+    return 0
+  fi
+  if [ ! -f "$hook" ]; then
+    echo "Native hook missing: $hook"
+    return 1
+  fi
+  if [ ! -e "$backup" ]; then
+    cp -p "$hook" "$backup"
+  fi
+  ln -sfn "$target" "$hook"
+}
+install_hook /usr/local/sbin/mdcmd "$plugin_dir/&plugin;.mdcmd"
+if [ -f /usr/local/emhttp/plugins/dynamix/scripts/parity_history ]; then
+  install_hook /usr/local/emhttp/plugins/dynamix/scripts/parity_history "$plugin_dir/&plugin;.history.php"
+elif [ -f /usr/local/emhttp/plugins/dynamix/include/ParityHistory.php ]; then
+  install_hook /usr/local/emhttp/plugins/dynamix/include/ParityHistory.php "$plugin_dir/&plugin;.history.php"
+fi
+rm -f "$config_dir/&plugin;.stopping"
+echo "&version;" &gt; "$plugin_dir/&plugin;.version"
+"$plugin_dir/&plugin;.php" config
+echo "Parity Check Tuning Plus &version; installed."
+</INLINE>
+</FILE>
+
+<FILE Run="/bin/bash" Method="remove">
+<INLINE>
+set -eu
+plugin_dir="&plugdir;"
+# Restore only hooks still pointing at Plus; preserve another owner's hooks.
+restore_hook() {
+  local hook="$1" target="$2" backup="$1.&plugin;.orig"
+  if [ -L "$hook" ] &amp;&amp; [ "$(readlink "$hook")" = "$target" ]; then
+    if [ ! -f "$backup" ]; then
+      echo "Native backup missing for $hook; removal stopped to preserve the active integration."
+      return 1
+    fi
+    mv -f "$backup" "$hook"
+  fi
+}
+restore_hook /usr/local/sbin/mdcmd "$plugin_dir/&plugin;.mdcmd"
+restore_hook /usr/local/emhttp/plugins/dynamix/scripts/parity_history "$plugin_dir/&plugin;.history.php"
+restore_hook /usr/local/emhttp/plugins/dynamix/include/ParityHistory.php "$plugin_dir/&plugin;.history.php"
+if [ -L /usr/local/bin/parity.check.plus ] &amp;&amp;
+   [ "$(readlink /usr/local/bin/parity.check.plus)" = "$plugin_dir/&plugin;.php" ]; then
+  rm -f /usr/local/bin/parity.check.plus
+fi
+removepkg "&plugin;-&version;"
+for catalog in /usr/local/emhttp/languages/*/paritychecktuningplus.dot; do
+  rm -f -- "$catalog"
+done
+rm -rf "$plugin_dir" "/boot/config/plugins/&plugin;"
+/usr/local/sbin/update_cron
+echo "Parity Check Tuning Plus removed."
+</INLINE>
+</FILE>
+</PLUGIN>

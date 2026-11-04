@@ -1,0 +1,43 @@
+name: Feature request
+description: Suggest a new capability or improvement.
+labels: [enhancement, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check the [current capabilities](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/wiki/Home) and existing requests first.
+        This report is public. Remove private information from any examples or attachments.
+  - type: checkboxes
+    id: existing-requests
+    attributes:
+      label: Existing requests
+      options:
+        - label: I searched the existing issues for this request.
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: Explain what you want to accomplish and what currently gets in the way.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe the result you would like, including which plugin feature it affects.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Current workaround or alternatives
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Optional. Include relevant Plus/Unraid versions or sanitized examples when compatibility matters.
+    validations:
+      required: false

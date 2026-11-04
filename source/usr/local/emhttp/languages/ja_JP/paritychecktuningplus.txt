@@ -1,0 +1,606 @@
+; Parity Check Tuning Plus - generated offline catalog. Do not edit by hand.
+
+%s %s %d %s=%1$s %2$s (%3$d %4$s)
+%s %s, %s %s, %s %d, %s %s=%1$s %2$s, %3$s %4$s, %5$s %6$d, %7$s %8$s
+%s Cancelled=%1$sキャンセルされました
+%s cancel request sent %s=%1$sキャンセルリクエストを送信しました%2$s
+%s no longer running=%1$sもう走っていません
+%s running=%1$s走っている
+%s started=%1$s 始めました
+%s will not be restarted=%1$s 再起動されない
+ but in active period so leave running=...ただしアクティブ期間中なので実行したままにしてください
+ but suppressed as notifications do not appear to be enabled for pauseresume=...ただし、通知の一時停止/再開が有効になっていないように見えるため抑制されています
+ but suppressed as system notifications do not appear to be enabled=...ただし、システム通知が有効になっていないように見えるため抑制されます
+ outside active period so needs pausing=...アクティブ期間外のため一時停止が必要
+ using =...を使用して
+A crontab entry should have 5 space-separated values defining the minutes, hour, day of the month, month, day of the week Click on the crontab link to get more details on valid formats=crontab エントリには、分、時間、日、月、曜日を定義する 5 つの値をスペースで区切って指定する必要があります。  crontab リンクをクリックすると、有効な形式の詳細が表示されます。
+Action=アクション
+All array drives below temperature threshold for a Pause=すべてのアレイ ドライブが一時停止の温度しきい値を下回っている
+Analyze results from an array operation=配列演算の結果を分析する
+Appears to be a %s array operation=のように見えます%1$s配列演算
+Apply=申し込む
+Array has just been started=アレイは開始されたばかりです
+Array is being started=アレイが開始されています
+Array must be started to use this assistant=このアシスタントを使用するにはアレイを開始する必要があります
+Array not yet started=アレイはまだ開始されていません
+Array operation completed=配列操作が完了しました
+Array operation not resumed - outside increment window=配列操作が再開されません - 増分ウィンドウの外にあります
+Array operation paused but drives not cooled enough to resume=アレイの操作は一時停止されましたが、ドライブが十分に冷却されていないため再開できませんでした
+Array operation paused but not for temperature related reason=アレイ操作は一時停止されましたが、温度関連の理由ではありません
+Array operation paused with some drives still too hot to resume=一部のドライブがまだ熱すぎて再開できないため、アレイ操作が一時停止されました
+Array operation restarted=アレイ操作が再開されました
+Array operation will not be restarted=アレイの操作は再開されません
+Array shutdown=アレイのシャットダウン
+Array size is not available=配列サイズは使用できません
+Array stopping=アレイの停止
+Array stopping while %s was in progress %s=アレイの停止中%1$s進行中だった%2$s
+Array stopping Restart will be attempted on next array start=アレイ停止中: 次回のアレイ起動時に再起動が試行されます
+Automatic=自動
+Automatic parity check pause not configured=自動パリティチェック一時停止が設定されていません
+Average Speed=平均速度
+Background activity %s=バックグラウンドアクティビティ:%1$s
+Basic=基本
+Before you can set this option to Yes you must first have enabled system notifications=このオプションを「はい」に設定するには、まずシステム通知を有効にする必要があります。
+Cancel a running parity check=実行中のパリティ チェックをキャンセルする
+Cancel automatically started array operation=自動的に開始されたアレイ操作をキャンセルします
+Cancel request=リクエストのキャンセル
+Canceled=キャンセルされました
+Check=チェックする
+Choose a start point and a larger end point within the disk=ディスク内の開始点とより大きな終了点を選択してください
+Choose sectors or percentages=セクターまたはパーセンテージを選択してください
+Choose whether to write corrections=訂正を書くかどうかを選択してください
+Click to show Array Operations history=クリックして配列操作の履歴を表示します
+Click to show Parity check entries from syslog=クリックすると、syslog のパリティ チェック エントリが表示されます
+Command Line was=以前のコマンドラインは
+Completed partial check %s=部分チェック完了（%1$s)
+Configuration=構成
+Correcting=修正中
+Created cron entry for %s interval monitoring=の cron エントリを作成しました%1$s間隔監視
+Created cron entry for scheduled pause and resume=スケジュールされた一時停止と再開のための cron エントリを作成しました
+Critical=クリティカル
+Custom=カスタム
+Daily=毎日
+Data-Rebuild=データ再構築
+Date=日付
+Debug=デバッグ
+Debug mode is intended to give users a feel for when the plugin is active Debug mode can generate frequent additional log entries in the syslog file so do not leave debug mode active if you are not interested in this information=デバッグ モードは、プラグインがアクティブになっているときの感覚をユーザーに提供することを目的としています。デバッグ モードでは、syslog ファイルに追加のログ エントリが頻繁に生成される可能性があるため、この情報に興味がない場合はデバッグ モードをアクティブのままにしないでください。
+Defaults=デフォルト
+Detected a change to the disk configuration=ディスク構成の変更を検出しました
+Detected disk configuration reset=ディスク構成のリセットが検出されました
+Detected shutdown that was due to following drives reaching critical temperature=後続のドライブが臨界温度に達したことによるシャットダウンを検出しました
+Detected that array had been paused due to following drives getting hot=次のドライブが熱くなったためにアレイが一時停止されたことを検出しました
+Disk Clear=ディスククリア
+Disk-Clear=ディスククリア
+Do you really want Debug logging mode=本当にデバッグログモードが必要ですか?
+Do you really want Testing logging mode=本当にテストログモードを使用しますか?
+Do you really want automatic Shutdown=本当に自動シャットダウンしますか?
+Do you really want to log to the flash drive=本当にフラッシュドライブにログを記録しますか?
+Do you really want to pause Automatic checks=本当に自動チェックを一時停止しますか?
+Do you really want to pause Clear operations=本当にクリア操作を一時停止しますか?
+Done=完了
+Drives been above resume temperature threshold for %s minutes=ドライブが再開温度しきい値を超えている%1$s分
+Drives cooled down=ドライブが冷えた
+Duration=期間
+ERROR=エラー
+Elapsed Time=経過時間
+End point for check=チェックの終点
+Error in custom entry=カスタムエントリのエラー
+Errors=エラー
+Flash only=フラッシュのみ
+Following drives overheated=次のドライブが過熱しました
+Friday=金曜日
+High disk temperatures can shutdown server=ディスク温度が高いとサーバーがシャットダウンする可能性があります
+History=歴史
+Incompatible options=互換性のないオプション
+Inconsisten state information - Restart requested but no progress file=状態情報が矛盾しています - 再起動が要求されましたが、進行状況ファイルがありません
+Increment frequency=インクリメント周波数
+Increment pause time=一時停止時間を増やす
+Increment resume time=再開時間を増やす
+Increments=増分
+Invalid check range=チェック範囲が無効です
+Logging to the flash drive can cause a lot additional writes thus potentially shortening its lifetime Do not leave this active if you are not interested in this information CAUTION At the moment there is no mechanism to stop this file from growing forever so it is up to you to manage this manually=フラッシュ ドライブにログを記録すると、大量の追加書き込みが発生し、その寿命が短くなる可能性があります。この情報に興味がない場合は、アクティブのままにしないでください。注意: 現時点では、このファイルの永久的な増大を阻止するメカニズムはないため、これを手動で管理する必要があります。
+Manual=マニュアル
+Manually paused=手動で一時停止しました
+Manually resumed=手動で再開
+Method used to specify start and stop points=開始点と終了点を指定する方法
+Monday=月曜日
+No.=いいえ
+No Parity disk present=パリティディスクが存在しません
+No action outstanding=未処理のアクションはありません
+No action specified=アクションが指定されていません
+No array operation currently in progress=現在進行中の配列操作はありません
+No array operation in progress=進行中の配列操作はありません
+No array operation in progress and no restart information saved=進行中のアレイ操作がなく、再起動情報も保存されていません
+No array operation in progress but restart information saved=進行中のアレイ操作はありませんが、再起動情報は保存されました
+No check is made to see if there is any other activity running on the server at the time the array operation completes As a safety measure if you switch off this option while an array operation is running then the shutdown will be aborted=アレイ操作の完了時に、サーバー上で他のアクティビティが実行されているかどうかのチェックは行われません。安全対策として、アレイ操作の実行中にこのオプションをオフにすると、シャットダウンは中止されます。
+No parity check entries found in syslog=syslog にパリティ チェック エントリが見つかりません
+No parity check history present=パリティチェック履歴がありません
+No parity present, so no automatic parity check=パリティが存在しないため、自動パリティ チェックは行われません
+No restart information present=再起動情報が存在しません
+Non-Correcting=非修正
+Not allowed as %s already running=次のようには許可されません%1$sすでに実行中
+Not automatic check %s=自動チェックではありません(%1$s)
+Notifications not enabled=通知が有効になっていません
+OK=OK
+Only able to start a Read-Check as no parity drive present=パリティドライブが存在しないため、読み取りチェックのみを開始できます
+Only able to start a Read-Check due to number of disabled drives=無効なドライブの数により、読み取りチェックのみを開始できます
+Option not currently recognized=オプションは現在認識されていません
+Outside increment scheguled time=増分予定時間外
+Outside time slot for running operation type=実行中の操作タイプの時間帯外
+Outside times for increments so not resuming=増分時間外のため再開しません
+PAUSED=一時停止中
+Parity Check=パリティチェック
+Parity Check Tuning Plus logging=Parity Check Tuning Plusロギング
+Parity Operation History=パリティ演算履歴
+Parity Sync Data Rebuild=パリティ同期/データ再構築
+Parity-Check=パリティチェック
+Parity-Sync=パリティ同期
+Partial=部分的
+Partial check not started=部分的なチェックが開始されていません
+Partial parity check %s=部分的なパリティ チェック (%1$s)
+Pause=一時停止
+Pause %s=一時停止%1$s
+Pause a running array operation=実行中のアレイ操作を一時停止する
+Pause an array operation at=配列操作を一時停止します
+Pause and Resume array operations if disks overheat=ディスクが過熱した場合のアレイ操作の一時停止と再開
+Pause and Resume times=一時停止と再開の時間は?
+Pause array operations while appdata backup or restore running=appdata のバックアップまたは復元の実行中にアレイ操作を一時停止する
+Pause array operations while mover running=ムーバーの実行中にアレイ操作を一時停止する
+Pause request=一時停止リクエスト
+Paused=一時停止中
+Pausing Automatic parity check configured=一時停止中 自動パリティチェックが設定されています
+Pausing an automatic parity check after an unclean shutdown extends the time before the you can be confident that parity is still valid so that recovering from a disabled disk is likely to work without data corruption or data loss Only use this option if you cannot afford the performance penalty of such checks occurring during prime time=クリーン シャットダウン後に自動パリティ チェックを一時停止すると、パリティがまだ有効であると確信できるようになるまでの時間が延長され、無効になったディスクからの回復がデータの破損や損失なしに機能する可能性が高くなります。  このオプションは、ゴールデンタイム中に発生するこのようなチェックによるパフォーマンスの低下を許容できない場合にのみ使用してください。
+Pausing an disk Clear operation extends the time before the disk is successfully added to the array and becomes ready for formatting and then used for data storage On most systems a disk Clear operation does not adversely affect performance so typically this option is left disabled=ディスクのクリア操作を一時停止すると、ディスクがアレイに正常に追加され、フォーマットの準備が整い、データの保存に使用できるようになるまでの時間が長くなります。  ほとんどのシステムでは、ディスクのクリア操作はパフォーマンスに悪影響を及ぼさないため、通常、このオプションは無効のままにしておきます。
+Pausing an operation that is building parity or rebuilding a failed disk has a level of risk as your array is not back in a protected state until this operation completes successfully Only enable this option if the operation is adversely affecting system use and you are not worried about the extra time that will elapse before the system is once again in a protected state=パリティの構築または障害が発生したディスクの再構築を行う操作を一時停止すると、この操作が正常に完了するまでアレイが保護された状態に戻らないため、ある程度のリスクが伴います。   操作がシステムの使用に悪影響を及ぼし、システムが再び保護状態になるまでに余分な時間がかかることを気にしない場合にのみ、このオプションを有効にしてください。
+Pausing automatic parity check=自動パリティチェックを一時停止する
+Percentage=パーセンテージ
+Percentage endpoints must be between 0 and 100=割合のエンドポイントは 0 ～ 100 の範囲にする必要があります
+Range=範囲
+Read Check=読み取りチェック
+Read-Check=読み取りチェック
+Requires Unraid 6103 or later=必要なものUnraid6.10.3以降
+Reset settings to defaults=設定をデフォルトにリセットする
+Restart requested - but appears to not be happening=再起動が要求されましたが、再起動が行われていないようです
+Restart will not be attempted=再起動は試行されません
+Resume=再開
+Resume %s=再開%1$s
+Resume a paused array operation=一時停止したアレイ操作を再開する
+Resume an array operation at=で配列操作を再開します。
+Resume array operations on next array start=次回のアレイ開始時にアレイ操作を再開する
+Resume ignored as paused because background task running=バックグラウンドタスクが実行されているため、一時停止として再開は無視されます
+Resume request=再開リクエスト
+Resumed=再開しました
+Runtime=ランタイム
+Saturday=土曜日
+Scheduled=予定されている
+Sector Numbers=セクター番号
+Sector endpoints must be whole numbers within the disk=セクターのエンドポイントはディスク内の整数でなければなりません
+Sectors=セクター
+Send notification=通知を送信する
+Send notifications for Pause or Resume of increments=増分の一時停止または再開の通知を送信する
+Send notifications for mover or backup running=ムーバーまたはバックアップの実行に関する通知を送信する
+Send notifications for mover running=ムーバーの実行に関する通知を送信する
+Send notifications for temperature related Pause or Resume=温度関連の一時停止または再開に関する通知を送信する
+Server will be shutdown when array operation completes=アレイ操作が完了するとサーバーがシャットダウンされます
+Settings reset to default values=設定がデフォルト値にリセットされる
+Show Sector Numbers=セクタ番号を表示
+Show the status of a running parity check=実行中のパリティ チェックのステータスを表示する
+Shutdown=シャットダウン
+Shutdown aborted=シャットダウンが中止されました
+Shutdown server at=サーバーをシャットダウンします
+Shutdown server when array operation completes=アレイ操作が完了したらサーバーをシャットダウンします
+Size=サイズ
+Something wrong progress information present without disks file present=何かが間違っています: ディスク ファイルが存在しないのに進行状況情報が存在します。
+Something wrong restart information present without progress present=何かが間違っています: 進行状況が存在しないのに再起動情報が存在します
+Speed=速度
+Start a correcting parity check=パリティチェックの修正を開始します
+Start a non-correcting parity check=非訂正パリティチェックを開始します
+Start a parity check with scheduled settings=スケジュールされた設定でパリティ チェックを開始する
+Start a partial parity check=部分パリティチェックを開始する
+Start array issued via Command Line=コマンドライン経由で発行された配列の開始
+Start point for check=チェックの開始点
+Start the array=アレイを開始する
+Start the array and wait for other array operations to finish=アレイを開始し、他のアレイ操作が完了するまで待ちます
+Starting Shutdown=シャットダウンの開始
+Status=ステータス
+Stop array issued via Command Line=コマンドライン経由で発行された配列の停止
+Stop the array=アレイを停止する
+Sunday=日曜日
+Suppressed built-in %s finished notification=抑制されたビルトイン%1$s完了通知
+Suppressed built-in %s started notification=抑制されたビルトイン%1$s通知を開始しました
+Syslog and Flash=Syslogとフラッシュ
+Syslog only=Syslogのみ
+System crashed=システムがクラッシュしました
+Temperature Pause and Resume=温度の一時停止と再開?
+Temperature monitoring switched off=温度監視がオフになりました
+Testing=テスト
+Testing mode is normally only used by the plugin author or when gathering evidence of a suspected bug in the plugin Testing mode is very verbose and generates a lot of additional log entries so you do not want it enabled unless it is really necessary=テスト モードは通常、プラグインの作成者によって、またはプラグインのバグの疑いの証拠を収集する場合にのみ使用されます。テスト モードは非常に冗長であり、大量の追加ログ エントリが生成されるため、本当に必要な場合を除き、有効にしないでください。
+The Pause and Resume custom times cannot be identical=一時停止と再開のカスタム時間を同じにすることはできません。
+The Pause and Resume times cannot be identical=一時停止時間と再開時間を同じにすることはできません。
+The Pause and Resume times would give an increment length of more than 12 hours which is unusual Are you sure you these are the right way around=一時停止時間と再開時間の増分の長さは 12 時間を超えますが、これは異例です。  これらが正しい方法だと確信していますか?
+The Resume value must be greater than the Pause one for the heat related Pause and Resume to work correctly as they are both subtracted from the disk temperature warning value when calculating the desired temperature=熱関連の一時停止と再開が正しく機能するには、再開の値が一時停止の値より大きい必要があります。これは、希望の温度を計算するときに両方の一時停止と再開がディスク温度の警告値から差し引かれるためです。
+The Unraid Cumulative Parity Check setting must be set to No if you want to use the Parity Check Tuning Plus plugin to run Array operations in increments=のUnraid累積パリティ チェックを使用する場合は、[累積パリティ チェック] 設定を [いいえ] に設定する必要があります。Parity Check Tuning Plus配列操作を段階的に実行するプラグイン
+The end point must be larger than the start=終点は始点より大きくなければなりません
+The following are also available for testing purposes only=以下はテスト目的のみで使用可能です
+The value you have specified seems unusually large as it is not an absolute value but is relative to the value specified for the drives Temperature Warning level at the Unraid level=指定した値は絶対値ではなく、ドライブの温度警告レベルに指定された相対値であるため、異常に大きいように見えます。Unraidレベル
+This might affect array integrity=これはアレイの整合性に影響する可能性があります
+Thursday=木曜日
+Tidy shutdown file not present in %s event=Tidy シャットダウン ファイルが存在しません%1$sイベント
+Tuesday=火曜日
+Unable to stop array=アレイを停止できません
+Unavailable=利用不可
+Unclean shutdown detected=不正なシャットダウンが検出されました
+Unknown action %s=不明なアクション:%1$s
+Unrecognized option=認識されないオプション
+Unusually large value=異常に大きな値ですか?
+Update cron table entries=cron テーブルのエントリを更新する
+Updated cron settings are in %s=更新された cron 設定は次のとおりです%1$s
+Usage=使用法
+Use increments for %s %s=増分を使用する%1$s %2$s
+Use increments for Clear operations=クリア操作にインクリメントを使用する
+Use increments for Parity Sync or Data Rebuild operations=パリティ同期またはデータ再構築操作に増分を使用する
+Version=バージョン
+Versions Unraid %s, Plugin %s=バージョン:Unraid %1$s、プラグイン%2$s
+Waiting=待っています
+Warning=警告
+Wednesday=水曜日
+Weekly=毎週
+Write Corrections to Parity=パリティへの書き込み修正
+Write current settings to syslog=現在の設定を syslog に書き込みます
+Yes.=はい
+:parityProblemsPlus_check_plug:
+> **Check** をクリックすると、部分的なチェックが開始されます。
+> 少なくとも指定した開始点と終了点をカバーします。修正チェックになります
+> **Write Corrections** のオプションが **Yes** に設定されている場合、そうでない場合は読み取りチェックが行われます。
+> このチェックは、チェック対象に指定したセクタ数が非常に少ない場合でも、最低 1 分間実行されることに注意してください。
+:end
+
+:parityProblemsPlus_correct_plug:
+> 見つかったエラーを修正するためにパリティの更新を試行するかどうかを指定します。
+> または、読み取りテストを実行して、パリティ エラーが報告されるかどうかを確認します。
+:end
+
+:parityProblemsPlus_end_plug:
+> チェックを終了する場所を選択します。エンドポイントは、セクター番号または最大パリティ ディスクのサイズのパーセンテージとして指定できます。
+>
+> 実際には、技術的な理由により、エンドポイントに到達したかどうかを確認するチェックは 1 分に 1 回しか行われないため、チェックは指定したポイントよりも遅く終了する場合があります。
+:end
+
+:parityProblemsPlus_intro_plug:
+**Parity Check Tuning Plus Assistant** は ** の一部ですParity Check Tuning Plus** プラグイン。<p/>
+現在のステータスは **実験中** であり、このアシスタントは将来削除される可能性が常にあります)。
+**(基本的なコンセプトや改善のアイデアについてのフィードバックは歓迎されます)**。<p/>
+このアシスタントは、パリティ チェックまたは読み取りチェックで問題が報告され、問題のあるセクタの詳細が syslog に記録された後に使用できるという考えです。
+多くの場合、このようなエラーは、実際のディスクではなく、ケーブル配線や電源などの外部要因が原因である可能性があります。<p/>
+特に ** では、それも珍しいことではありません。Ryzen/ThreadRipper** ベースのシステムでは、RAM がオーバークロックされている場合にランダムなパリティ エラーが発生します
+(XMPプロファイル ** はオーバークロックです)、
+また、マザーボードと CPU の組み合わせによっては、RAM がサポートできるよりも低い制限が課される場合もあります。<p/>
+問題の原因を修正したと思われる場合は、このアシスタントを使用して狭い範囲で部分的なチェックを実行し、問題が引き続き発生するかどうかを確認できます。
+これは、完全なパリティ チェックや読み取りチェックを実行して問題が解決したかどうかを確認したり、ディスク拡張を実行したりするよりもはるかに高速です。SMARTtest 実際のディスクをテストします。<p/>
+**重要**: 問題が解決したと思われる場合は、完全なパリティ チェックを実行する代わりに、このアシスタントを決して使用しないでください。
+:end
+
+:parityProblemsPlus_sectors_plug:
+> **セクター番号を表示** オプションをクリックすると、ダイアログが表示されます。
+> syslog から、パリティのあるセクタを示すエントリを抽出します。
+> セクタが表示され、それが修正されているか、パリティ エラーであるかが表示されます。
+:end
+
+:parityProblemsPlus_start_plug:
+> チェックを開始する場所を選択します。  開始点は、セクター番号または最大パリティ ディスクのサイズのパーセンテージとして指定できます。
+>
+> 絶対セクタの指定は、元のパリティ チェックでそれらのセクタのエラーが報告されたときに、*syslog* からセクタ番号を抽出した場合に特に役立ちます。このプラグインの将来のバージョンでは、*syslog* からそのようなセクターを自動的に抽出し、ドロップダウン リストを提供するようにプラグインが強化される可能性がありますが、この機能はまだ実装されていません。
+>
+> 実際には、技術的な理由により、指定した時点よりわずかに早くチェックが開始される場合がありますが、これはわずかな量にすぎません。
+:end
+
+:parityProblemsPlus_type_plug:
+> 開始点と終了点を指定する方法を選択します。
+>
+> 以前にエラーとして syslog にリストされているセクター番号がある場合は、絶対セクター番号を使用することをお勧めします。
+> 絶対セクタ番号を使用すると、より正確になり、テスト時間が短縮される傾向がありますが、セットアップに労力がかかる可能性があります。
+>
+> 代わりにパーセンテージを使用することもできます。パーセンテージを使用する場合、これらが表すセクター番号は、最大パリティ ディスクのパーセンテージとして計算されます。
+:end
+
+:parity_tuning_plus_allops_plug:
+> これらは、新しいパリティの構築または障害が発生したディスクの再構築を伴うアレイ操作です。
+>
+>このタイプのチェックは通常、アレイに潜在的に何らかの問題があり、保護された状態に戻すためのアクションが取られている場合にのみ実行されます。
+>
+>**重要**: この操作が完了するまで、アレイは完全に保護されていないため、ほとんどの人はこのオプションを**いいえ**のままにしておくことを望むと思われます。
+> それが希望するものであると確信できない限り、**はい** を選択しないでください。
+:end
+
+:parity_tuning_plus_automatic_plug:
+> 自動チェックは、によって自動的に開始されるチェックです。Unraid不潔なシャットダウンの後。
+>
+> もしUnraidシステムが正常にシャットダウンされず、次回アレイが起動されるときUnraid自動的にチェックが開始されます。これは、電力損失などさまざまな理由で発生する可能性があります。ハードウェアの問題。そしてソフトウェアの問題。自動チェックが実行されるのは、パリティ エラーがあると、後日アレイ ドライブの障害から回復する能力が損なわれる可能性があるため、できるだけ早く有効なパリティに戻す必要があるためです。
+> 
+> このオプションが **Yes** に設定されている場合、チェックは数分間実行できます (ディスクが正常にアンマウントされていないため、不潔なシャットダウン後のエラーはディスクの先頭で発生する可能性が最も高いためです。その後、実行増分に指定された時間外の場合、チェックは一時停止状態になります。その後、チェックの残りの部分は、実行増分に指定されたタイムスロットに従って増分的に実行されます)。
+:end
+
+:parity_tuning_plus_background_plug:
+> このオプションは、[設定] -> [システム通知] オプションを有効にした場合にのみ関係します (強く推奨)。
+>
+> このオプションを次のように設定すると、<strong>はい</strong>通知が毎回送信されることを意味します
+> Appdata バックアップやムーバーなどのバックグラウンド タスクが開始または完了する時間。このオプションの場合
+> が設定されている場合、アレイの実行中にこれらの操作が開始または停止されるたびに通知が送信されます。
+> 操作を一時停止または再開するように設定していなくても、操作はアクティブになります。
+> そのようなタスクが実行されています。これは、アレイのパフォーマンスがいつ低下するかを確認するのに役立ちます。
+> この操作は、パフォーマンスの点でバックグラウンド タスクと悪影響を及ぼしている可能性があります。
+>
+>このような通知を受け取りたくない場合は、このオプションを **いいえ** に設定したままにしてください。
+>通知は、**通知** カテゴリ メッセージとして * で指定されたターゲットに送信されます。<a href="Settings/Notifications">設定 -> 通知設定</a>*.
+:end
+
+:parity_tuning_plus_backup_plug:
+>CA Appdata または Appdata Backup プラグインが以下のバックアップまたはリストアを実行している場合は、アレイ操作 (パリティ チェック、読み取りチェック、パリティ同期、ディスク再構築、ディスク クリア) を一時停止します。dockerコンテナデータ。  アレイ操作をバックアップまたは復元と並行して実行すると、ディスク ドライブの競合によりパフォーマンスに悪影響が生じるため、同時に実行しない方が効率的です。
+>
+> この設定は、配列操作を増分で実行するオプションを使用していない場合でも有効です。
+>
+> アレイ操作タイプを増分で実行している場合、再開は、増分の時間枠内にある場合にのみ、バックアップまたはリストアの終了後に行われます。
+:end
+
+:parity_tuning_plus_clear_plug:
+> ディスクのクリア操作は、パリティで保護されているアレイに新しいドライブ (Pre-Clear プラグインを使用して事前にクリアされていない) を追加すると発生します。クリア プロセスでは、新しいディスクのすべてのセクターに 0 が書き込まれ、既存のパリティに影響を与えることなくアレイにディスクを追加できるようになります。クリア操作が完了するまで、ディスクをフォーマットすることはできません。Unraidデータの保存に使用し始めます。
+>
+>クリア操作が完了するまでディスクは使用できないため、ほとんどの人はこのオプションを **いいえ** のままにすることを望むでしょう。さらに、クリア操作はシステムにあまり負荷をかけない傾向があるため、日常の通常の使用ではパフォーマンスに影響を与える可能性が低くなります。
+:end
+
+:parity_tuning_plus_complete_plug:
+> **Yes** に設定すると、現在のアレイ操作が完了したときにサーバーの適切なシャットダウンが自動的に開始されます。
+>
+> このオプションは、バックアップなどの目的で使用されるため、ほとんどの時間電源がオフになっているサーバーでのみ使用できる可能性があります。このアイデアは、アレイ操作が完了するまでにどれくらいの時間がかかるかを知らなくても、(手動またはスケジュールによって) アレイ操作を開始し、その後サーバーの電源を自動的にオフにすることができるということです。
+>
+> このオプションが設定されており、アレイ操作が進行中であることが検出されると、シャットダウンが発生するという通知が生成されます。安全対策として、このオプションがアレイ操作の開始時に最初に設定され、終了する前に設定が解除された場合、シャットダウンは中止されます。
+>
+>**注意:** シャットダウンが開始される前のアレイ操作の完了時に、サーバー上で他のアクティビティが実行されているかどうかのチェックは行われません。
+:end
+
+:parity_tuning_plus_critical_plug:
+> この値は、サーバーのシャットダウンがトリガーされる前に、ディスクの温度が到達できる限界ディスク温度しきい値にどの程度近づくかを示します。
+> 前に一時停止をトリガーするには、小さな正の値が必要な場合があります。Unraidディスクの温度が重大なしきい値に達したことを知らせる通知が送信されます。
+>
+>個別のドライブに対して明示的なしきい値が定義されている場合、これが使用される値です。  そうでない場合は、グローバル設定が使用されます。
+:end
+
+:parity_tuning_plus_defaults_plug:
+> **適用** ボタンは、現在表示されている設定値を保存します。
+>
+> **完了** ボタンをクリックすると、設定ページが終了します。
+>
+> **デフォルト** ボタンは、プラグイン設定を、プラグインが最初にインストールされたときに使用されたデフォルト値にリセットし、これらを現在の設定としてすぐに保存します。
+> システムに合わせてこれらの設定を変更し、「適用」ボタンを押して保存できるようになりました。
+:end
+
+:parity_tuning_plus_explain_plug:
+> このプラグインは配列操作を開始しません。代わりに、配列操作が開始された後の動作を変更/強化します。
+>
+> このプラグインの主な目的は、パリティ チェックなどの配列操作の実行を、迷惑にならない時間に制限できるようにすることです。  配列演算の主要なタイプごとに増分を使用するかどうかを個別に指定できます。
+>
+>これらのオプションのいずれかを **No** に設定すると、操作を手動で停止/一時停止/キャンセルしない限り、操作が完了するまで中断することなく実行される操作のデフォルトのシステム動作が得られます。
+>
+>これらのオプションの 1 つを **Yes** に設定すると、配列操作が数日間にわたって増分的に実行されるように指定されます。
+>
+> このプラグインでできることの例としては、
+>パリティ チェックを毎月 1 日の午前 0 時に開始するようにスケジュールしています。
+>* 過去の経験から、パリティ チェックを中断せずに実行すると、完了までに 30 時間かかることがわかりました。
+>* このプラグインは、午前 0 時に始まり午前 3 時に終了する 3 時間単位を使用するように設定します。
+>* パリティ チェックには実際には 10 日の経過時間がかかるため (10 x 3 = 30)、パリティ チェックは毎月 10 日に完了します。
+>* これらの増分は午前 0 時に開始して午前 3 時に終了するようにスケジュールしました。システムが使用されていないことがわかっている場合。
+>* この経過時間の増加については心配する必要はなく、通常の使用時にシステムの応答性が向上することを歓迎します。
+>* 月の残りの期間は、増分の開始時間が近づいてもアクティブなパリティ チェックが実行されていないため、このプラグインは何も行いません。
+>
+>**注:**
+>* 標準Unraid配列操作が不完全なときに配列が停止された場合の動作は、それまでの進行状況が失われ、最初からのみ再開できます。  次回のアレイ起動時にアレイ操作を再開するようにプラグイン オプションを設定すると、これを回避できます。
+>* パリティ ディスクがない場合、または障害が発生したドライブの数が無効なドライブの数と等しい場合は、**パリティ チェック**ではなく**読み取りチェック**が実行され、残りのすべてのドライブがエラーなく読み取れることが確認されます。
+:end
+
+:parity_tuning_plus_frequency_plug:
+> 配列操作中に増分を実行する頻度。
+>
+> 通常の操作では、ほとんどのユーザーが **毎日** オプションを使用することが予想されるため、これがデフォルトになっています。チェックを頻繁に行わない人向けに、**毎週** オプションもあります。
+>
+> 他の周波数を探しているユーザーをサポートするために、一時停止時間と再開時間のより複雑なスケジュールを可能にする **カスタム** スケジュールを設定するオプションがあります。このオプションを使用すると、Linux で使用される時間を指定するオプションが提供されます。<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">クロンタブ</a>ユーティリティ。
+:end
+
+:parity_tuning_plus_history_plug:
+> **履歴** ボタンは、パリティ チェックの現在の履歴を表示します。
+> これは、**メイン** タブの **履歴** ボタンを使用するのと機能的には同じです。
+:end
+
+:parity_tuning_plus_hot_plug:
+>ディスク温度が設定した制限を超えた場合は、アレイ操作 (パリティ チェック、パリティ同期/ディスク再構築、ディスク クリア) を一時停止します。
+>
+>温度は、警告ディスク温度レベルに設定されたしきい値と比較してチェックされます。個々のドライブに対してしきい値が定義されている場合 ([メイン] タブでドライブをクリックしてアクセス)、これが使用される値です。そうでない場合は、グローバル設定 (*設定 -> ディスプレイ設定* で設定) が使用されます。通常は、値が設定される前に配列操作を一時停止する必要があると想定されます。Unraidレベルを警告しきい値として指定します。
+>
+>より良い解決策は、ディスクが過熱しないようにケースの冷却を改善することです。実際には、これが必ずしも実用的であるとは限りません。
+>
+>インクリメントの実行中にアレイ操作が一時停止された場合、インクリメントに割り当てられた時間外は再開されません。アレイ操作が他の理由で開始された場合、温度に対する一時停止/再開動作は常にアクティブになります。
+:end
+
+:parity_tuning_plus_increments_plug:
+>スケジュールされたチェックは、[設定] -> [スケジューラ] で設定した時間に実行するように構成したチェックです。
+>
+>このオプションを **Yes** に設定すると、チェックを数日間にわたって段階的に実行するように指定されます。  プラグインを使用して配列演算の増分を処理する場合は、標準のプラグインで [累積パリティ チェック] オプションを **Yes** に設定しないでください**。Unraidパリティチェックの設定。
+>
+>これを **いいえ** に設定した場合、チェックを手動で停止/一時停止/キャンセルしない限り、チェックが完了するまで中断することなく実行されるデフォルトのシステム動作が得られます。
+:end
+
+:parity_tuning_plus_logging_plug:
+> エントリの詳細レベルを制御します。詳細レベルを高めると、このプラグインを使用する際に発生する可能性のある問題のデバッグに役立ちます。
+>
+>このプラグインによるメッセージは、送信元として表示されることで識別されます。
+>* **Parity Check Tuning Plus**  
+>* **Parity Check Tuning Plus Assistant**  
+>プラグインのどの部分がメッセージを生成したかに応じて
+>
+>**Basic** オプションを設定すると、このプラグインが何らかのアクションを実行したか、または考えられるエラー状態が検出されたことを示す少数のメッセージのみが表示されます。  これは、通常の操作でほとんどのユーザーが望んでいることです。
+>
+>このオプションを **デバッグ** に設定すると、このプラグインの実行中に何が起こっているかに関する詳細情報を提供する追加のエントリが syslog に書き込まれます。これらは、プラグインがどのように機能するかという内部動作の一部を示しています。これらの追加エントリは、メッセージの先頭に **DEBUG** という単語が追加されることで識別されます。一部のユーザー (特に、これまでこのプラグインを使用したことがないユーザー) は、このプラグインがどのように動作するかを詳細に確認するためにこのプラグインを使用したいと考えるかもしれませんが、通常の実行ではこのオプションが有効のままになることは期待されていません。
+>
+>最後に、**Testing** の追加設定があります。これは開発者による使用のみを目的としていますが、便宜上ここに残されています。さらに詳細なメッセージが syslog に書き込まれますが、これらは平均的なユーザーにとって興味深い (または意味のある) ものではない可能性があります。  これらのメッセージには、メッセージの先頭に **TESTING** という単語が追加されます。注意しないと syslog がすぐにいっぱいになる可能性があるため、このレベルのログ記録は、要求された場合にのみ実行してください。
+>
+>プラグインの実行中に発生する可能性のある問題を診断することを目的とした下位レベルの詳細の一部を省略しながら、プラグイン アクティビティに関する情報タイプのメッセージを出力する中間オプションを導入する価値があるかどうかについてのフィードバックを歓迎します。
+>
+>ログにテスト モードを設定している場合は、ログ メッセージを記録する場所を選択できます。デフォルトは標準システム syslog であり、これが基本モードで許可される唯一のオプションです。 syslog は RAM に保持されるため、フラッシュ ドライブへの過剰な書き込みは発生しません。
+>問題のデバッグを容易にするために、テスト モードで、syslog の代わりに、または syslog に加えてメッセージをフラッシュ ドライブに記録できます。生成された parity.check.tuning.plus.log ファイルはフラッシュ ドライブ上のプラグインのフォルダーに保存され、このファイルを開発者に提供すると、発生した予期せぬ動作の診断に役立ちます。
+:end
+
+:parity_tuning_plus_low_plug:
+> この値は、アレイ操作の**再開**が考慮される前に、ドライブの警告温度しきい値がどの程度下に達する必要があるかを示します。実行される操作の種類に対して増分を使用するように設定されている場合、時間は増分ウィンドウ内である必要があり、そうでない場合、そのウィンドウが更新されるまで再開は延期されます。
+>
+>配列操作の再開が早すぎる (したがって、次の一時停止を開始するレベルにすぐに到達する) ことと、多くの時間を無駄にすることとの間で、適切なバランスを取る必要があります。
+>
+>ディスクがスピンダウンした場合、温度はすぐに入手できないため、この基準が満たされていると想定されます。
+>
+>一時停止された配列操作がない場合、アクションは実行されません。
+:end
+
+:parity_tuning_plus_manual_plug:
+> 手動チェックは、[メイン] タブの [**チェック**] ボタンを使用して開始したチェックです。
+>
+> 手動で開始したチェックも段階的に実行したい場合は、これを **はい** に設定しますか?
+>
+> このようなチェックを中断せずに最後まで実行する必要がある場合は、このオプションを **いいえ** に設定したままにしておきます。
+> このオプションを **Yes** に設定すると、メイン ページからチェックを手動で開始し、チェックを手動で一時停止すると、チェックが完了するまで、スケジュールされた時間の間にチェックが増分的に実行されます。
+:end
+
+:parity_tuning_plus_mover_plug:
+>ムーバーが実行中の場合は、アレイ操作 (パリティ チェック、読み取りチェック、パリティ同期、ディスク再構築、ディスク クリア) を一時停止します。アレイ操作をムーバーと並行して実行すると、ディスク ドライブの競合によりパフォーマンスに悪影響が生じるため、同時に実行しない方が効率的です。
+>
+> この設定は、配列操作を増分で実行するオプションを使用していない場合でも有効です。
+> 
+> 配列操作タイプを増分で実行している場合、増分の時間枠内にある場合にのみ、ムーバーの終了後に再開が行われます。
+:end
+
+:parity_tuning_plus_notify_plug:
+> このオプションは、[設定] -> [システム通知] オプションを有効にした場合にのみ関係します (強く推奨)。
+>
+> このオプションを次のように設定すると、<strong>はい</strong>これは、プラグインが配列操作中に増分を一時停止または再開するたびに通知が送信されることを意味します。
+>
+>このような通知を受け取りたくない場合は、このオプションを **いいえ** に設定したままにしてください。
+>
+>単なる情報と見なされる通知は、**通常** (緑色) カテゴリ メッセージとして * で指定されたターゲットに送信されます。<a href="Settings/Notifications">設定 -> 通知設定</a>* ただし、より重要なものは、適切と思われる場合、**警告** (オレンジ) または *エラー** (赤色) タイプの通知を使用します。
+:end
+
+:parity_tuning_plus_pause_plug:
+> 実行中のパリティ チェックを一時停止する時刻。通常、これは、実行中のパリティ チェックによって他のアクティビティが影響を受けないようにする時間に設定されます。
+>この時点でパリティ チェックがアクティブに実行されていない場合、アクションは実行されません。
+>
+>通常、この時刻は、定期的なパリティ チェックの実行をスケジュールした時刻より後に設定する必要があります。最初の増分は、通常のパリティ チェックの開始がスケジュールされている時刻から、増分の終了として指定した時刻までとなります。
+>
+>増分期間が **カスタム** に設定されている場合、時間/分のフィールドは非表示になり、代わりに時間を設定するオプションが表示されます。<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">クロンタブ</a>形式。
+>
+>また、実行増分に割り当てられた時間が、次のチェックの開始がスケジュールされる前にパリティ チェックが完了するまで実行されることを期待するのに十分であることを確認する必要もあります。ほとんどの人はパリティ チェックを低頻度 (例: 毎月または四半期ごと) に実行するようにスケジュールするだけなので、これが問題になる可能性は低いですが、考慮する必要があります。
+:end
+
+:parity_tuning_plus_restart_plug:
+> Unraidシステムがシャットダウン、再起動、またはアレイが停止した場合、通常はパリティ チェックを放棄します (唯一のオプションはパリティ チェックを最初から再開することです)。
+> 他の配列操作は最初から再開されます。
+> このオプションを設定すると、このプラグインによってパリティ チェックが到達した時点から再開されるようになります。
+> 以下の基準が満たされている限り:
+>* アレイは正常にシャットダウンされました
+>* ユーザーはアレイ構成に変更を加えてはいけません。
+>
+>これらの基準が満たされている限り、次にアレイが開始されると、以前に到達したポイントから操作が再開されます。
+>
+>**注:**
+>* アレイ操作が、スケジュールされた増分の実行に設定された時間内にあった場合、アレイ操作の再起動時に、実行中の増分に設定された時間外であれば、一時停止するように設定されます。
+>* アレイ操作が手動で一時停止された場合、再開されたアレイ操作も一時停止されます。
+>
+:end
+
+:parity_tuning_plus_resume_plug:
+> 一時停止したパリティ チェックを再開する時刻。<br>この時点でパリティ チェックが現在一時停止されていない場合、アクションは実行されません。
+>
+>通常、この時間は夜間のアイドル期間の開始時間として設定されます。適切な値は、スケジュールされたパリティ チェックの開始に指定した時刻と同じ時刻を使用することです。
+>
+>増分期間が **カスタム** に設定されている場合、時間/分のフィールドは非表示になり、代わりに時間を設定するオプションが表示されます。<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">クロンタブ</a>形式。
+:end
+
+:parity_tuning_plus_shutdown_plug:
+> **Yes** に設定すると、アレイまたはプール内のいずれかのディスクが定義された温度しきい値に達した場合に、サーバーの適切なシャットダウンが自動的に開始されます。
+> 温度は、**クリティカル** ディスク温度レベルに設定されたしきい値と比較してチェックされます。個々のドライブに対して限界温度が定義されている場合 ([メイン] タブでドライブをクリックしてアクセス)、これが使用される値です。グローバル設定ではない場合 (*<a href="Settings/DisplaySettings">設定 -> 表示設定</a>）が使用されます。
+>
+>このオプションは、何らかの理由でシステムの冷却システムが不十分である場合、または何らかの方法で障害が発生した場合にトリガーされることを目的としています。過熱によりディスクが損傷する前に、適切なシャットダウンを実行したいという考えがあります。トリガーされるシャットダウンは、機能的には、メイン ページのシャットダウン ボタンを押した場合と同じです。UnraidGUI。通知が有効になっている場合は、これが発生したことを示す通知が送信されます。
+>
+>このようなシャットダウン後にサーバーが再度起動され、アレイが起動されると、理由がわからなかった場合に備えて、温度に関連したシャットダウンが発生したことが通知されます。
+>
+>**注意:** アレイ操作が不完全な間にアレイが停止した場合、デフォルトのUnraidこの動作では、これまでの進行状況が失われ、最初からやり直すことしかできません。
+>
+>このプラグインで再起動オプションを有効にしており、*かつ* シャットダウンが適切なシャットダウンである場合は、以前に到達した時点からアレイ操作を再起動しようとします。
+:end
+
+:parity_tuning_plus_temp_notify_plug:
+> このオプションを **はい** に設定すると、ドライブの温度によりプラグインがアレイ操作を一時停止または再開するたびに通知が送信されます。<br>このような通知を受け取りたくない場合は、このオプションを **いいえ** に設定したままにしてください。通知は、**通知** カテゴリ メッセージとして * で指定されたターゲットに送信されます。<a href="Settings/Notifications">設定 -> 通知設定</a>*.
+:end
+
+:parity_tuning_plus_warn_plug:
+> この値は、実行中のアレイ操作の **一時停止**がトリガーされる前に、ディスク温度が警告ディスク温度しきい値に設定された値にどの程度近づくことが許容されるかを示します。個別のドライブに対して明示的なしきい値が定義されている場合、これが使用される値です。そうでない場合は、グローバル設定が使用されます。
+>
+> 通常、前に一時停止をトリガーするには小さな正の値が必要です。Unraidディスクの温度警告しきい値に達したことを示す通知が送信されます。
+>
+>アクティブなアレイ操作がない場合、ディスク温度が指定されたしきい値を超えてもアクションは実行されません。
+>
+> 実行中の配列操作がない場合、アクションは実行されません。
+:end
+
+aborted=中止された
+action=アクション
+already paused=すでに一時停止しています
+already running=すでに実行中
+appears there is a running array operation but no Progress file yet created=実行中の配列操作があるように見えますが、進行状況ファイルがまだ作成されていません
+appears to be a regular scheduled check=定期的なスケジュールされたチェックのようです
+appears to be an unclean shutdown=不正なシャットダウンのようです
+appears to be manual parity check=手動パリティチェックのようです
+appears to be marked as automatic parity check=自動パリティチェックとしてマークされているようです
+appears to be marked as scheduled parity check=スケジュールされたパリティ チェックとしてマークされているようです
+appears to be partial parity check=部分的なパリティチェックのようです
+array drives=アレイドライブ
+automatic=自動
+backup=バックアップ
+below critical disk temperature threshold=重要なディスク温度しきい値を下回っている
+below warning disk temperature threshold=警告ディスク温度しきい値を下回っています
+canceled=キャンセルされました
+completed=完成した
+cool=クールな
+critical=クリティカル
+day=日
+detected=検出されました
+detected that mdcmd had been called from %s with command %s=mdcmd が呼び出されたことを検出しました%1$sコマンド付き%2$s
+disabled=無効化された
+does not appear to be an unclean shutdown=不潔なシャットダウンではないようです
+drive temperature limits=ドライブの温度制限
+entry in %s format=エントリー%1$sフォーマット
+errors=エラー
+exit code=終了コード
+finished=終わった
+global temperature limits=世界の気温限界
+hot=熱い
+hr=時
+idle=アイドル状態
+manual=マニュアル
+min=分
+minute=分
+mover=引っ越し業者
+no action taken as appears restart outstanding=再起動が保留中であるように見えるため、何もアクションは実行されません
+no array operation in progress=進行中の配列操作はありません
+not a parity check so always treat it as an automatic operation=パリティチェックではないため、常に自動操作として扱います
+operation was paused when reboot initiated so pause it immediately=再起動の開始時に操作が一時停止されたため、すぐに一時停止してください
+past size=過去のサイズ
+paused=一時停止した
+percent=パーセント
+plugin temperature settings=プラグインの温度設定
+running=走っている
+scheduled=予定されている
+sec=秒
+sector=セクター
+spundown=スピンダウン
+to get ready for restart=再開の準備をするために
+trigger unknown - assume manual=トリガーが不明 - 手動であると仮定します
+unknown=不明
+using scheduled mode of %s=のスケジュールされたモードを使用する%1$s
+warm=暖かい
+where action is one of=ここでアクションは次のいずれかです

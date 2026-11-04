@@ -1,0 +1,253 @@
+Menu="ParityCheckTuningPlusUtilities"
+Title="Parity Check Tuning Plus Assistant"
+Tag="gear"
+Icon="gear"
+---
+<?PHP
+/* Copyright 2022-2026, Dave Walker (itimpi).
+ * Modified 2026-11-04 by alexphillips-dev for Parity Check Tuning Plus.
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License version 2,
+ * as published by the Free Software Foundation.
+ *
+ * Limetech is given explicit permission to use this code in any way they like.
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * Useful site for checking php sytax: https://phphub.net/linter/
+ */
+
+?>
+<!--
+##########################
+Parity.check.tuning.plus.problems.page
+##################33######
+-->
+<?
+require_once "/usr/local/emhttp/plugins/parity.check.tuning.plus/parity.check.tuning.plus.helpers.php";
+
+
+?>
+<? 
+loadVars(0);
+if ($parityTuningPlusNoParity)     echo "<p class='notice'>" . pctT('No Parity disk present') . ".</p>";
+if ($parityTuningPlusActive)   echo "<p class='notice'>" . $parityTuningPlusDescription . ' ' .  pctT('running') . "</p>"; 
+if ($var['mdState'] != 'STARTED') echo "<p class='notice'>" . pctT('Array must be started to use this assistant') . "</p>";
+
+?>
+
+<script>
+var totalSectors = <?=($parityTuningPlusSize * 2)?>;
+var noParity = <?=($parityTuningPlusNoParity ? 'true' : 'false')?>;
+var myWin;
+var pctProblemActive = <?=($parityTuningPlusActive ? 'true' : 'false')?>;
+
+$(function() {
+  if ( typeof caPluginUpdateCheck === "function" ) {
+    caPluginUpdateCheck("parity.check.tuning.plus.plg",{element:".pluginUpdate"});
+  }
+});
+
+$(document).ready(function(){
+  var oForm = document.getElementById('parityProblemPlusPage');
+  var isDisabled = pctProblemActive || noParity;
+  oForm.parityProblemPlusType.disabled         = isDisabled;
+  oForm.parityProblemPlusStartSector.disabled  = isDisabled;  
+  oForm.parityProblemPlusStartPercent.disabled = isDisabled;  
+  oForm.parityProblemPlusEndSector.disabled    = isDisabled;  
+  oForm.parityProblemPlusEndPercent.disabled   = isDisabled;  
+  oForm.parityProblemPlusCorrect.disabled      = isDisabled;
+  setProblemType(oForm);
+  if (pctProblemActive) setTimeout(refreshPage, 1000 * 30);
+});
+
+function refreshPage() {
+    window.location.reload(true);
+}
+
+function setProblemType(form) { 
+    if (form.parityProblemPlusType.value == "sector") {
+        document.getElementById('parityProblemPlusSectorStart').style.display  = "inline";
+        document.getElementById('parityProblemPlusSectorEnd').style.display    = "inline";
+        document.getElementById('parityProblemPlusPercentStart').style.display = "none";
+        document.getElementById('parityProblemPlusPercentEnd').style.display   = "none";
+    } else {
+        document.getElementById('parityProblemPlusPercentStart').style.display = "inline";
+        document.getElementById('parityProblemPlusPercentEnd').style.display   = "inline";
+        document.getElementById('parityProblemPlusSectorStart').style.display  = "none";
+        document.getElementById('parityProblemPlusSectorEnd').style.display    = "none";
+    }
+	checkStartEnd(form);
+}
+function checkStartEnd(form, showError = false) {
+    const decimal = /^(?:[0-9]+(?:\.[0-9]*)?|\.[0-9]+)$/;
+    const percent = form.parityProblemPlusType.value === 'percent';
+    const first = percent ? form.parityProblemPlusStartPercent.value : form.parityProblemPlusStartSector.value;
+    const last = percent ? form.parityProblemPlusEndPercent.value : form.parityProblemPlusEndSector.value;
+    const format = percent ? decimal : /^(0|[1-9][0-9]*)$/;
+    const limit = percent ? 100 : totalSectors;
+    const valid = !pctProblemActive && !noParity && totalSectors > 0
+        && format.test(first) && format.test(last)
+        && Number.isFinite(Number(first)) && Number.isFinite(Number(last))
+        && Number(first) >= 0 && Number(last) > Number(first) && Number(last) <= limit;
+    form.elements['#apply'].disabled = !valid;
+    if (!valid && showError) {
+        swal({title: <?=pctJ('Invalid check range')?>,
+              text: <?=pctJ('Choose a start point and a larger end point within the disk')?>, icon: 'error'});
+    }
+    return valid;
+}
+
+function changeProblemStartSector(form) {
+    var v = form.parityProblemPlusStartSector.value / totalSectors * 100;
+    updateIfChanged(form.parityProblemPlusStartPercent, v.toFixed(1));
+    checkStartEnd(form);
+
+}
+
+function updateIfChanged(fld, newVal) {
+    if (fld.value != newVal) fld.value = newVal;
+}
+
+function changeProblemStartPercent(form) {
+    var v1 = Number(form.parityProblemPlusStartPercent.value);
+    if (!Number.isFinite(v1)) return checkStartEnd(form);
+    updateIfChanged (form.parityProblemPlusStartPercent, v1);
+    var v2 = Math.floor(parseFloat(v1)/100 * totalSectors);
+    updateIfChanged (form.parityProblemPlusStartSector, v2);
+    checkStartEnd(form);
+}
+
+
+function changeProblemEndSector(form) {
+    var v = form.parityProblemPlusEndSector.value / totalSectors * 100;
+    updateIfChanged (form.parityProblemPlusEndPercent, v.toFixed(1));
+    checkStartEnd(form);
+}
+
+function changeProblemEndPercent(form) {
+    var v1 = Number(form.parityProblemPlusEndPercent.value);
+    if (!Number.isFinite(v1)) return checkStartEnd(form); 
+    updateIfChanged (form.parityProblemPlusEndPercent, v1);
+    var v2 = Math.ceil(v1/100 * totalSectors);
+    updateIfChanged (form.parityProblemPlusEndSector, v2);
+    checkStartEnd(form);
+}
+
+
+// try to center popup relative to Unraid browser window
+
+function positionPopup() {
+    if (!myWin) return;
+	var left = window.screenX + 300;
+	var top  = window.screenY + 200;
+	myWin.moveBy(left,top);
+	myWin.focus();
+}
+
+
+</script>
+
+<style>.pct-plus input[type="text"]{direction:ltr;unicode-bidi:isolate}</style>
+<div class="pluginUpdate"></div>
+
+<form   class="pct-plus" dir="<?=pctLocaleDefinition()['rtl'] ? 'rtl' : 'ltr'?>" markdown = "1" 
+        id       = "parityProblemPlusPage"
+        method   = "POST" 
+        action   = "/update.php" 
+        target   = "progressFrame" onsubmit="return checkStartEnd(this, true)">
+<input type="hidden" 
+       name="#file"    
+       value="<?=PARITY_TUNING_PLUS_CFG_FILE?>">  
+<input type="hidden" 
+       name="#command" 
+       value="<?=PARITY_TUNING_PLUS_PHP_FILE?>">
+<input type="hidden"
+       name="#arg[1]"
+       value="partial"><span style="float:right"><?=pctEscape($parityTuningPlusVersion)?></span>
+
+<?=pctHelp('parityProblemsPlus_intro_plug')?>
+
+<?=pctH('Method used to specify start and stop points')?>:
+: <select name="parityProblemPlusType" 
+	size='1' class='auto' onchange="setProblemType(this.form)">
+    <?=mk_option($parityTuningPlusCfg['parityProblemPlusType'], "sector", pctT('Sector Numbers')) . "\n"?>
+    <?=mk_option($parityTuningPlusCfg['parityProblemPlusType'], "percent", pctT('Percentage')) . "\n"?>
+  </select>
+
+<?=pctHelp('parityProblemsPlus_type_plug')?>
+
+<?=pctH('Start point for check')?>:
+: <span id="parityProblemPlusSectorStart">
+<input type="text"
+         size='1' class='narrow'
+         name="parityProblemPlusStartSector"
+         value="<?=pctEscape($parityTuningPlusCfg['parityProblemPlusStartSector'])?>"
+         onchange="changeProblemStartSector(this.form)"> <?=pctH('sector')?>
+</span>
+<span id="parityProblemPlusPercentStart">
+<input type="text"
+         size='1' class='narrow'
+         name="parityProblemPlusStartPercent"
+         value="<?=pctEscape($parityTuningPlusCfg['parityProblemPlusStartPercent'])?>"
+         onchange="changeProblemStartPercent(this.form)"> <?=pctH('percent')?>
+</span>
+
+<?=pctHelp('parityProblemsPlus_start_plug')?>
+
+<?=pctH('End point for check')?>:
+: <span id="parityProblemPlusSectorEnd">
+<input type="text"
+         size='1' class='narrow'
+         name="parityProblemPlusEndSector"
+         value="<?=pctEscape($parityTuningPlusCfg['parityProblemPlusEndSector'])?>"
+         onchange="changeProblemEndSector(this.form)"> <?=pctH('sector')?>
+</span>
+<span id="parityProblemPlusPercentEnd">
+<input type="text"
+         size='1' class='narrow'
+         name="parityProblemPlusEndPercent"
+         value="<?=pctEscape($parityTuningPlusCfg['parityProblemPlusEndPercent'])?>"
+         onchange="changeProblemEndPercent(this.form)"> <?=pctH('percent')?>
+</span>
+
+<?=pctHelp('parityProblemsPlus_end_plug')?>
+
+<?=pctH('Write Corrections to Parity')?>:
+: <select name="parityProblemPlusCorrect" 
+          size='1' class='narrow'>
+    <?=mk_option($parityTuningPlusCfg['parityProblemPlusCorrect'], "0", pctT("No")) . "\n"?>
+    <?=mk_option($parityTuningPlusCfg['parityProblemPlusCorrect'], "1", pctT("Yes")) . "\n"?>
+  </select>
+
+<?=pctHelp('parityProblemsPlus_correct_plug')?>
+
+&nbsp; <!--  This is to have a dummy field so buttons are correctly aligned --> 
+ 
+: <span class="buttons-spaced"><input type="button"
+     value="<?=pctH('Show Sector Numbers')?>" 
+     id="showErrorSector"
+	 onclick = "myWin=window.open('/plugins/parity.check.tuning.plus/parity.check.tuning.plus.entries.php','errorSectors','scrollbars=yes,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=600,height=900,left=0,top=0');positionPopup()">
+	 <?=pctH('Click to show Parity check entries from syslog')?></span>
+
+<?=pctHelp('parityProblemsPlus_sectors_plug')?>
+
+&nbsp; <!--  This is to have a dummy field so buttons are correctly aligned -->
+	 
+: <span class="buttons-spaced"><input type="submit"
+     name="#apply" 
+     value="<?=pctH('Check')?>" 
+     id='Apply'
+	 onclick="return checkStartEnd(this.form, true)">
+<input type="button" 
+     id="DONE" 
+     value="<?=pctH('Done')?>"
+     onclick="done()"></span>
+	 
+
+<?=pctHelp('parityProblemsPlus_check_plug')?>
+
+</form>
+

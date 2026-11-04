@@ -1,0 +1,37 @@
+name: Documentation correction
+description: Report incorrect or missing README, wiki, or help information.
+labels: [documentation, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for documentation problems. Use the Translation problem form for language corrections.
+        This report is public. Remove private information from examples and attachments.
+  - type: input
+    id: location
+    attributes:
+      label: Documentation link or location
+      description: Link to the README/wiki section, or identify the in-plugin help label.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Incorrect or missing information
+      description: Quote a short relevant passage or describe what is missing.
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Suggested correction
+      description: Optional. Explain the wording or instructions that would help.
+    validations:
+      required: false
+  - type: input
+    id: versions
+    attributes:
+      label: Relevant Plus and Unraid versions
+      description: Optional. Include versions when the documented behavior differs between releases.
+    validations:
+      required: false

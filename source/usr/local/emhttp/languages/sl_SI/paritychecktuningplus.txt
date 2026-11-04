@@ -1,0 +1,606 @@
+; Parity Check Tuning Plus - generated offline catalog. Do not edit by hand.
+
+%s %s %d %s=%1$s %2$s (%3$d %4$s)
+%s %s, %s %s, %s %d, %s %s=%1$s %2$s, %3$s %4$s, %5$s %6$d, %7$s %8$s
+%s Cancelled=%1$sPreklicano
+%s cancel request sent %s=%1$sposlana zahteva za preklic%2$s
+%s no longer running=%1$sne teče več
+%s running=%1$steče
+%s started=%1$s začelo
+%s will not be restarted=%1$s ne bo ponovno zagnan
+ but in active period so leave running=... vendar v aktivnem obdobju, zato pustite teči
+ but suppressed as notifications do not appear to be enabled for pauseresume=... vendar zatrta, ker se zdi, da obvestila niso omogočena za premor/nadaljevanje
+ but suppressed as system notifications do not appear to be enabled=... vendar potlačeno, ker se zdi, da sistemska obvestila niso omogočena
+ outside active period so needs pausing=... zunaj aktivnega obdobja, zato je potrebna pavza
+ using =... uporabo
+A crontab entry should have 5 space-separated values defining the minutes, hour, day of the month, month, day of the week Click on the crontab link to get more details on valid formats=Vnos v crontab mora imeti 5 s presledki ločenih vrednosti, ki določajo minute, uro, dan v mesecu, mesec, dan v tednu.  Kliknite povezavo crontab za več podrobnosti o veljavnih formatih.
+Action=Akcija
+All array drives below temperature threshold for a Pause=Vsi pogoni niza pod temperaturnim pragom za premor
+Analyze results from an array operation=Analizirajte rezultate matrične operacije
+Appears to be a %s array operation=Zdi se, da je a%1$sdelovanje polja
+Apply=Prijavite se
+Array has just been started=Array je bil pravkar zagnan
+Array is being started=Matrika se zaganja
+Array must be started to use this assistant=Za uporabo tega pomočnika je treba Array zagnati
+Array not yet started=Niz še ni začet
+Array operation completed=Operacija polja je končana
+Array operation not resumed - outside increment window=Delovanje polja se ni nadaljevalo - zunaj okna prirastka
+Array operation paused but drives not cooled enough to resume=Delovanje polja je zaustavljeno, vendar pogoni niso dovolj ohlajeni za nadaljevanje
+Array operation paused but not for temperature related reason=Delovanje polja je zaustavljeno, vendar ne zaradi razloga, povezanega s temperaturo
+Array operation paused with some drives still too hot to resume=Delovanje matrike je zaustavljeno, nekateri pogoni pa so še prevroči za nadaljevanje
+Array operation restarted=Delovanje polja se je znova zagnalo
+Array operation will not be restarted=Delovanje polja se ne bo znova zagnalo
+Array shutdown=Zaustavitev polja
+Array size is not available=Velikost niza ni na voljo
+Array stopping=Zaustavitev niza
+Array stopping while %s was in progress %s=Niz se ustavi med%1$sje bil v teku%2$s
+Array stopping Restart will be attempted on next array start=Zaustavitev matrike: Ob naslednjem zagonu matrike bo poskus ponovnega zagona
+Automatic=Samodejno
+Automatic parity check pause not configured=Samodejna zaustavitev preverjanja paritete ni konfigurirana
+Average Speed=Povprečna hitrost
+Background activity %s=Dejavnost v ozadju:%1$s
+Basic=Osnovno
+Before you can set this option to Yes you must first have enabled system notifications=Preden lahko to možnost nastavite na Da, morate najprej omogočiti sistemska obvestila.
+Cancel a running parity check=Prekliči tekoče paritetno preverjanje
+Cancel automatically started array operation=Prekliči samodejno začeto operacijo polja
+Cancel request=Prekliči zahtevo
+Canceled=Preklicano
+Check=Preverite
+Choose a start point and a larger end point within the disk=Izberite začetno točko in večjo končno točko znotraj diska
+Choose sectors or percentages=Izberite sektorje ali odstotke
+Choose whether to write corrections=Izberite, ali želite pisati popravke
+Click to show Array Operations history=Kliknite za prikaz zgodovine operacij polja
+Click to show Parity check entries from syslog=Kliknite za prikaz vnosov preverjanja parnosti iz sistemskega dnevnika
+Command Line was=Ukazna vrstica je bila
+Completed partial check %s=Opravljen delni pregled (%1$s)
+Configuration=Konfiguracija
+Correcting=Popravljanje
+Created cron entry for %s interval monitoring=Ustvarjen cron vnos za%1$sintervalno spremljanje
+Created cron entry for scheduled pause and resume=Ustvarjen vnos cron za načrtovani premor in nadaljevanje
+Critical=Kritično
+Custom=Po meri
+Daily=Dnevno
+Data-Rebuild=Obnova podatkov
+Date=Datum
+Debug=Odpravljanje napak
+Debug mode is intended to give users a feel for when the plugin is active Debug mode can generate frequent additional log entries in the syslog file so do not leave debug mode active if you are not interested in this information=Način za odpravljanje napak naj bi uporabnikom dal občutek, kdaj je vtičnik aktiven. Način za odpravljanje napak lahko ustvari pogoste dodatne vnose v dnevnik v datoteki syslog, zato načina za odpravljanje napak ne pustite aktivnega, če vas te informacije ne zanimajo.
+Defaults=Privzete nastavitve
+Detected a change to the disk configuration=Zaznana sprememba konfiguracije diska
+Detected disk configuration reset=Zaznana ponastavitev konfiguracije diska
+Detected shutdown that was due to following drives reaching critical temperature=Zaznan izklop, ki je bil posledica naslednjih pogonov, ki so dosegli kritično temperaturo
+Detected that array had been paused due to following drives getting hot=Zaznano je bilo, da je bilo polje začasno ustavljeno zaradi segrevanja naslednjih pogonov
+Disk Clear=Počisti disk
+Disk-Clear=Počisti disk
+Do you really want Debug logging mode=Ali res želite način beleženja odpravljanja napak?
+Do you really want Testing logging mode=Ali res želite preizkusiti način beleženja?
+Do you really want automatic Shutdown=Ali res želite samodejni izklop?
+Do you really want to log to the flash drive=Ali se res želite prijaviti na bliskovni pogon?
+Do you really want to pause Automatic checks=Ali res želite začasno ustaviti samodejna preverjanja?
+Do you really want to pause Clear operations=Ali res želite začasno ustaviti operacije brisanja?
+Done=Končano
+Drives been above resume temperature threshold for %s minutes=Pogoni so bili nad temperaturnim pragom za nadaljevanje%1$sminut
+Drives cooled down=Pogoni so se ohladili
+Duration=Trajanje
+ERROR=NAPAKA
+Elapsed Time=Pretečeni čas
+End point for check=Končna točka za preverjanje
+Error in custom entry=Napaka pri vnosu po meri
+Errors=Napake
+Flash only=Samo Flash
+Following drives overheated=Naslednji pogoni so se pregreli
+Friday=Petek
+High disk temperatures can shutdown server=Visoke temperature diska lahko zaustavijo strežnik
+History=Zgodovina
+Incompatible options=Nezdružljive možnosti
+Inconsisten state information - Restart requested but no progress file=Neskladne informacije o stanju – zahtevan je ponovni zagon, vendar ni datoteke napredka
+Increment frequency=Povečaj frekvenco
+Increment pause time=Povečaj čas premora
+Increment resume time=Povečaj čas nadaljevanja
+Increments=Prirastki
+Invalid check range=Neveljaven kontrolni obseg
+Logging to the flash drive can cause a lot additional writes thus potentially shortening its lifetime Do not leave this active if you are not interested in this information CAUTION At the moment there is no mechanism to stop this file from growing forever so it is up to you to manage this manually=Beleženje na bliskovni pogon lahko povzroči veliko dodatnih zapisov in tako potencialno skrajša njegovo življenjsko dobo. Tega ne pustite aktivnega, če vas te informacije ne zanimajo. POZOR: Trenutno ni mehanizma, ki bi preprečil večno rast te datoteke, zato je odvisno od vas, da to upravljate ročno.
+Manual=Priročnik
+Manually paused=Ročno zaustavljeno
+Manually resumed=Ročno nadaljevanje
+Method used to specify start and stop points=Metoda, ki se uporablja za določanje začetnih in končnih točk
+Monday=ponedeljek
+No.=št
+No Parity disk present=Ni paritetnega diska
+No action outstanding=Nobeno dejanje ni odprto
+No action specified=Ni določenega dejanja
+No array operation currently in progress=Trenutno ne poteka nobena operacija polja
+No array operation in progress=Nobena operacija polja ni v teku
+No array operation in progress and no restart information saved=Ne poteka nobena operacija polja in niso shranjene nobene informacije o ponovnem zagonu
+No array operation in progress but restart information saved=Nobena operacija polja ni v teku, vendar so informacije o ponovnem zagonu shranjene
+No check is made to see if there is any other activity running on the server at the time the array operation completes As a safety measure if you switch off this option while an array operation is running then the shutdown will be aborted=Nobenega preverjanja ni, ali se na strežniku izvaja kakšna druga dejavnost v času, ko se zaključi operacija polja. Če iz varnostnih razlogov izklopite to možnost med izvajanjem operacije polja, bo zaustavitev prekinjena.
+No parity check entries found in syslog=V sistemskem dnevniku ni bilo najdenih vnosov za preverjanje parnosti
+No parity check history present=Zgodovina preverjanja paritete ni prisotna
+No parity present, so no automatic parity check=Pariteta ni prisotna, zato ni samodejnega preverjanja paritete
+No restart information present=Podatkov o ponovnem zagonu ni
+Non-Correcting=Nepopravljajoče
+Not allowed as %s already running=Ni dovoljeno kot%1$sže teče
+Not automatic check %s=Ni samodejnega preverjanja (%1$s)
+Notifications not enabled=Obvestila niso omogočena
+OK=OK
+Only able to start a Read-Check as no parity drive present=Preverjanje branja je mogoče zagnati samo, če ni paritetnega pogona
+Only able to start a Read-Check due to number of disabled drives=Preverjanje branja je mogoče zagnati samo zaradi števila onemogočenih pogonov
+Option not currently recognized=Možnost trenutno ni prepoznana
+Outside increment scheguled time=Zunanji prirastek načrtovanega časa
+Outside time slot for running operation type=Zunaj časovnega intervala za tekočo vrsto operacije
+Outside times for increments so not resuming=Zunanji časi za povečanja, tako da se ne nadaljuje
+PAUSED=ZAUSTAVLJENO
+Parity Check=Preverjanje paritete
+Parity Check Tuning Plus logging=Parity Check Tuning Plussečnja
+Parity Operation History=Zgodovina delovanja paritete
+Parity Sync Data Rebuild=Parity Sync / Obnova podatkov
+Parity-Check=Paritetno preverjanje
+Parity-Sync=Parity-Sync
+Partial=Delno
+Partial check not started=Delno preverjanje se ni začelo
+Partial parity check %s=Delno preverjanje paritete (%1$s)
+Pause=Premor
+Pause %s=Premor%1$s
+Pause a running array operation=Zaustavite operacijo tekočega polja
+Pause an array operation at=Zaustavite operacijo matrike pri
+Pause and Resume array operations if disks overheat=Začasna zaustavitev in nadaljevanje delovanja polja, če se diski pregrejejo
+Pause and Resume times=Časi premora in nadaljevanja?
+Pause array operations while appdata backup or restore running=Zaustavite operacije polja med izvajanjem varnostnega kopiranja ali obnovitve podatkov aplikacije
+Pause array operations while mover running=Med delovanjem premikalnika začasno ustavite operacije polja
+Pause request=Zahteva za premor
+Paused=Zaustavljeno
+Pausing Automatic parity check configured=Nastavljena je zaustavitev samodejnega preverjanja parnosti
+Pausing an automatic parity check after an unclean shutdown extends the time before the you can be confident that parity is still valid so that recovering from a disabled disk is likely to work without data corruption or data loss Only use this option if you cannot afford the performance penalty of such checks occurring during prime time=Začasna ustavitev samodejnega preverjanja paritete po nečisti zaustavitvi podaljša čas, preden ste lahko prepričani, da je pariteta še vedno veljavna, tako da bo obnovitev z onemogočenega diska verjetno delovala brez poškodb ali izgube podatkov.  To možnost uporabite samo, če si ne morete privoščiti kazni za delovanje takšnih pregledov, ki se izvajajo v najbolj priljubljenem času.
+Pausing an disk Clear operation extends the time before the disk is successfully added to the array and becomes ready for formatting and then used for data storage On most systems a disk Clear operation does not adversely affect performance so typically this option is left disabled=Začasno ustavitev operacije brisanja diska podaljša čas, preden je disk uspešno dodan v polje in postane pripravljen za formatiranje ter nato uporabljen za shranjevanje podatkov.  V večini sistemov operacija Čiščenje diska ne vpliva negativno na zmogljivost, zato ta možnost običajno ostane onemogočena.
+Pausing an operation that is building parity or rebuilding a failed disk has a level of risk as your array is not back in a protected state until this operation completes successfully Only enable this option if the operation is adversely affecting system use and you are not worried about the extra time that will elapse before the system is once again in a protected state=Začasna zaustavitev operacije, ki gradi pariteto ali vnovično gradnjo okvarjenega diska, ima določeno stopnjo tveganja, saj vaše polje ni nazaj v zaščiteno stanje, dokler se ta operacija uspešno ne zaključi.   To možnost omogočite le, če operacija negativno vpliva na uporabo sistema in vas ne skrbi dodatni čas, ki bo pretekel, preden bo sistem znova v zaščitenem stanju.
+Pausing automatic parity check=Zaustavitev samodejnega preverjanja paritete
+Percentage=Odstotek
+Percentage endpoints must be between 0 and 100=Končne točke v odstotkih morajo biti med 0 in 100
+Range=Razpon
+Read Check=Preberite Preverite
+Read-Check=Preberi-Preveri
+Requires Unraid 6103 or later=ZahtevaUnraid6.10.3 ali novejši
+Reset settings to defaults=Ponastavi nastavitve na privzete
+Restart requested - but appears to not be happening=Zahtevan je ponovni zagon, vendar se zdi, da se ne zgodi
+Restart will not be attempted=Ponovnega zagona ne bo mogoče poskusiti
+Resume=Nadaljevanje
+Resume %s=Nadaljevanje%1$s
+Resume a paused array operation=Nadaljevanje zaustavljene operacije polja
+Resume an array operation at=Nadaljujte z operacijo matrike pri
+Resume array operations on next array start=Nadaljevanje matričnih operacij ob naslednjem začetku matrike
+Resume ignored as paused because background task running=Nadaljevanje je prezrto kot zaustavljeno, ker se opravilo izvaja v ozadju
+Resume request=Zahteva za nadaljevanje
+Resumed=Nadaljevan
+Runtime=Runtime
+Saturday=sobota
+Scheduled=Načrtovano
+Sector Numbers=Številke sektorjev
+Sector endpoints must be whole numbers within the disk=Končne točke sektorjev morajo biti cela števila na disku
+Sectors=Sektorji
+Send notification=Pošlji obvestilo
+Send notifications for Pause or Resume of increments=Pošiljanje obvestil za premor ali nadaljevanje korakov
+Send notifications for mover or backup running=Pošljite obvestila za premikanje ali izvajanje varnostne kopije
+Send notifications for mover running=Pošljite obvestila o izvajanju premikanja
+Send notifications for temperature related Pause or Resume=Pošljite obvestila o premoru ali nadaljevanju, povezani s temperaturo
+Server will be shutdown when array operation completes=Strežnik se bo zaustavil, ko bo operacija polja končana
+Settings reset to default values=Nastavitve ponastavite na privzete vrednosti
+Show Sector Numbers=Pokaži številke sektorjev
+Show the status of a running parity check=Prikažite stanje preverjanja paritete v teku
+Shutdown=Izklop
+Shutdown aborted=Zaustavitev je prekinjena
+Shutdown server at=Zaustavitev strežnika ob
+Shutdown server when array operation completes=Zaustavitev strežnika, ko je operacija polja končana
+Size=Velikost
+Something wrong progress information present without disks file present=Nekaj je narobe: informacije o napredku so prisotne brez prisotne diskovne datoteke
+Something wrong restart information present without progress present=Nekaj je narobe: informacije o ponovnem zagonu so prisotne brez napredka
+Speed=Hitrost
+Start a correcting parity check=Začnite preverjanje popravljalne paritete
+Start a non-correcting parity check=Začnite preverjanje paritete brez popravljanja
+Start a parity check with scheduled settings=Začnite preverjanje paritete z načrtovanimi nastavitvami
+Start a partial parity check=Začnite delno paritetno preverjanje
+Start array issued via Command Line=Zagon niza, izdanega prek ukazne vrstice
+Start point for check=Začetna točka za preverjanje
+Start the array=Zaženite niz
+Start the array and wait for other array operations to finish=Zaženite matriko in počakajte, da se druge operacije matrike končajo
+Starting Shutdown=Začetek zaustavitve
+Status=Stanje
+Stop array issued via Command Line=Ustavi matriko, izdano prek ukazne vrstice
+Stop the array=Ustavi niz
+Sunday=nedelja
+Suppressed built-in %s finished notification=Potlačeno vgradno%1$skončano obvestilo
+Suppressed built-in %s started notification=Potlačeno vgradno%1$szačel obvestilo
+Syslog and Flash=Syslog in Flash
+Syslog only=Samo sistemski dnevnik
+System crashed=Sistem se je zrušil
+Temperature Pause and Resume=Temperatura Premor in nadaljevanje?
+Temperature monitoring switched off=Nadzor temperature je izklopljen
+Testing=Testiranje
+Testing mode is normally only used by the plugin author or when gathering evidence of a suspected bug in the plugin Testing mode is very verbose and generates a lot of additional log entries so you do not want it enabled unless it is really necessary=Testni način običajno uporablja samo avtor vtičnika ali ko zbira dokaze o domnevni napaki v vtičniku. Način testiranja je zelo podroben in ustvari veliko dodatnih vnosov v dnevnik, zato ga ne želite omogočiti, razen če je res potrebno.
+The Pause and Resume custom times cannot be identical=Časa po meri za premor in nadaljevanje ne moreta biti enaka.
+The Pause and Resume times cannot be identical=Časa premora in nadaljevanja ne moreta biti enaka.
+The Pause and Resume times would give an increment length of more than 12 hours which is unusual Are you sure you these are the right way around=Časa za premor in nadaljevanje bi dala dolžino prirastka več kot 12 ur, kar je nenavadno.  Ste prepričani, da je to pravi način?
+The Resume value must be greater than the Pause one for the heat related Pause and Resume to work correctly as they are both subtracted from the disk temperature warning value when calculating the desired temperature=Vrednost za nadaljevanje mora biti večja od vrednosti za premor, da lahko premor in nadaljevanje, povezana s toploto, delujeta pravilno, saj se pri izračunu želene temperature obe odštejeta od vrednosti opozorila o temperaturi diska.
+The Unraid Cumulative Parity Check setting must be set to No if you want to use the Parity Check Tuning Plus plugin to run Array operations in increments=TheUnraidNastavitev Kumulativno preverjanje parnosti mora biti nastavljena na Ne, če želite uporabitiParity Check Tuning Plusvtičnik za izvajanje operacij polja v korakih
+The end point must be larger than the start=Končna točka mora biti večja od začetne
+The following are also available for testing purposes only=Naslednji so prav tako na voljo samo za namene testiranja
+The value you have specified seems unusually large as it is not an absolute value but is relative to the value specified for the drives Temperature Warning level at the Unraid level=Vrednost, ki ste jo določili, se zdi nenavadno velika, saj ni absolutna vrednost, ampak je relativna glede na vrednost, navedeno za raven opozorila o temperaturi pogonov naUnraidravni
+This might affect array integrity=To lahko vpliva na celovitost niza
+Thursday=četrtek
+Tidy shutdown file not present in %s event=Urejena datoteka za zaustavitev ni v%1$sdogodek
+Tuesday=torek
+Unable to stop array=Matrike ni mogoče ustaviti
+Unavailable=Ni na voljo
+Unclean shutdown detected=Zaznan nečist izklop
+Unknown action %s=Neznano dejanje:%1$s
+Unrecognized option=Neprepoznana možnost
+Unusually large value=Nenavadno velika vrednost?
+Update cron table entries=Posodobite vnose v tabeli cron
+Updated cron settings are in %s=Posodobljene nastavitve cron so na voljo%1$s
+Usage=Uporaba
+Use increments for %s %s=Uporabite prirastke za%1$s %2$s
+Use increments for Clear operations=Uporabite prirastke za operacije Clear
+Use increments for Parity Sync or Data Rebuild operations=Uporabite prirastke za operacije Parity Sync ali Data Rebuild
+Version=Različica
+Versions Unraid %s, Plugin %s=Različice:Unraid %1$s, vtičnik%2$s
+Waiting=Čakanje
+Warning=Opozorilo
+Wednesday=sreda
+Weekly=Tedensko
+Write Corrections to Parity=Napišite popravke paritete
+Write current settings to syslog=Zapišite trenutne nastavitve v syslog
+Yes.=ja
+:parityProblemsPlus_check_plug:
+> Ko kliknete **Preveri**, se sproži delno preverjanje, ki
+> bo zajemal vsaj začetno in končno točko, ki ste ju določili. To bo popravljalni pregled
+> če je možnost **Zapiši popravke** nastavljena na **Da**, sicer pa preverjanje branja.
+> Upoštevajte, da bo to preverjanje potekalo najmanj 1 minuto, tudi če določite zelo majhno število sektorjev za preverjanje.
+:end
+
+:parityProblemsPlus_correct_plug:
+> Določite, ali želite poskusiti posodobiti pariteto, da popravite vse najdene napake,
+> ali samo opravite test branja, da vidite, ali so sporočene napake paritete.
+:end
+
+:parityProblemsPlus_end_plug:
+> Izberite, kje želite, da se preverjanje zaključi. Končno točko lahko določite kot številko sektorja ali kot odstotek velikosti največjega paritetnega diska.
+>
+> V praksi se lahko zaradi tehničnih razlogov preverjanje konča pozneje kot točka, ki jo določite, saj se preverjanje izvede samo enkrat na minuto, da se preveri, ali je končna točka dosežena.
+:end
+
+:parityProblemsPlus_intro_plug:
+**Parity Check Tuning Plus Assistant** je del **Parity Check Tuning Plus** vtičnik.<p/>
+Trenutno stanje je **POSKUSNO** in vedno je možno, da bo ta pomočnik v prihodnosti odstranjen).
+**(povratne informacije o osnovnem konceptu in idejah za izboljšave so dobrodošle)**.<p/>
+Ideja je, da se ta pomočnik lahko uporabi potem, ko paritetno preverjanje ali preverjanje branja poroča o težavah in podrobnosti vseh problematičnih sektorjev zabeleži v sistemski dnevnik.
+V mnogih primerih so takšne napake lahko posledica zunanjih dejavnikov, kot so kabli ali napajalnik, ne pa dejanskih diskov.<p/>
+Prav tako ni neobičajno, zlasti na **Ryzen/ThreadRipper** sistemi, ki temeljijo na naključnih paritetnih napakah, če je RAM overclockiran
+(anXMPprofil **je** overclock),
+in kombinacija matične plošče/CPE lahko naloži tudi omejitve, ki so nižje od tistih, ki jih lahko podpira RAM.<p/>
+Če menite, da ste odpravili tisto, kar je povzročilo težave, potem lahko s tem pomočnikom izvedete delno preverjanje v ozkem obsegu, da vidite, ali se težava še vedno pojavlja.
+To je lahko veliko hitreje, kot če bi morali zagnati popolno paritetno preverjanje ali preverjanje branja, da vidite, ali ste odpravili težavo, ali zagnati razširjen diskSMARTpreizkusite dejanski disk.<p/>
+**POMEMBNO**: Tega pomočnika ne smete nikoli uporabljati kot alternativo izvajanju popolnega paritetnega preverjanja, ko menite, da je težava odpravljena.
+:end
+
+:parityProblemsPlus_sectors_plug:
+> Ko kliknete možnost **Pokaži številke sektorjev**, se prikaže pogovorno okno
+> ki ekstrahira vnose iz sistemskega dnevnika, ki so pokazali vse sektorje, za katere je določena pariteta
+> prikazan sektor in ali je bil popravljen ali gre za paritetno napako.
+:end
+
+:parityProblemsPlus_start_plug:
+> Izberite, od koder želite, da se preverjanje začne.  Začetno točko lahko določite kot številko sektorja ali kot odstotek velikosti največjega paritetnega diska.
+>
+> Določanje absolutnih sektorjev bo verjetno še posebej uporabno, če ste izvlekli številke sektorjev iz *syslog*, ko je prvotno preverjanje paritete poročalo o napakah v teh sektorjih. V prihodnji različici tega vtičnika bo morda izboljšan za samodejno ekstrahiranje takšnih sektorjev iz *syslog* in vam ponudi spustni seznam, vendar ta funkcija še ni implementirana.
+>
+> V praksi se lahko zaradi tehničnih razlogov preverjanje začne nekoliko prej od točke, ki jo določite, vendar bo to le za majhen znesek.
+:end
+
+:parityProblemsPlus_type_plug:
+> Izberite način, kako želite določiti začetno in končno točko.
+>
+> Verjetno boste želeli uporabiti absolutne številke sektorjev, če obstajajo tisti, ki so bili prej navedeni v sistemskem dnevniku kot napaka.
+> Uporaba absolutnih številk sektorjev je običajno bolj natančna in vodi do krajših testov, vendar lahko nastavitev zahteva več truda.
+>
+> Druga možnost je uporaba odstotkov. Pri uporabi odstotkov se številke sektorjev, ki jih predstavljajo, izračunajo kot odstotki največjega paritetnega diska.
+:end
+
+:parity_tuning_plus_allops_plug:
+> To so matrične operacije, ki vključujejo izgradnjo nove paritete ali ponovno izgradnjo okvarjenega diska.
+>
+>Ta vrsta preverjanja se običajno izvede samo, če obstaja morebitna težava z vašim poljem in se izvajajo ukrepi za vrnitev v zaščiteno stanje.
+>
+>**POMEMBNO**: Dokler se ta operacija ne zaključi, vaše polje ni popolnoma zaščiteno, zato se domneva, da bo večina ljudi želela, da ostane ta možnost na **Ne**.
+> Ne izberite **Da**, razen če ste povsem prepričani, da je to tisto, kar želite.
+:end
+
+:parity_tuning_plus_automatic_plug:
+> Samodejna preverjanja so tista, ki jih samodejno sprožiUnraidpo nečisti zaustavitvi.
+>
+> če jeUnraidob naslednjem zagonu polja se sistem ne zaustavi pravilnoUnraidsamodejno začne preverjanje. To se lahko zgodi zaradi številnih razlogov, od izgube električne energije; težave s strojno opremo; in težave s programsko opremo. Samodejno preverjanje se zažene, ker če pride do kakršnih koli napak paritete, lahko to ogrozi zmožnost obnovitve po okvari pogona polja pozneje, zato se želite vrniti k veljavni pariteti, takoj ko je to praktično.
+> 
+> Če je ta možnost nastavljena na **Da**, bo preverjanje vedno dovoljeno izvajati nekaj minut (saj so morebitne napake po nečisti zaustavitvi najverjetneje na začetku diskov, saj niso bili čisto odklopljeni. Potem, če je izven časa, določenega za izvajanje povečanj, se preverjanje postavi v stanje začasne zaustavitve. Preostanek preverjanja se nato izvaja v korakih v skladu s časovnimi režami, določenimi za izvajanje korakov.
+:end
+
+:parity_tuning_plus_background_plug:
+> Ta možnost je ustrezna le, če ste omogočili možnost Nastavitve->Sistemska obvestila (zelo priporočljivo).
+>
+> Nastavitev te možnosti na<strong>ja</strong>pomeni, da boste prejeli obvestilo vsak
+> čas začetka ali dokončanja opravila v ozadju, kot je varnostno kopiranje podatkov aplikacije ali premikanje. Če je ta možnost
+> je nastavljeno, se obvestilo pošlje vsakič, ko se te operacije začnejo ali ustavijo med nizom
+> operacija je aktivna, tudi če niste nastavili, da se operacija prekine ali nadaljuje med
+> take naloge tečejo. To je lahko koristno, če želite videti, kdaj je zmogljivost polja
+> delovanje verjetno slabo vpliva na opravilo v ozadju v smislu zmogljivosti.
+>
+>Če raje ne želite prejemati takih obvestil, pustite to možnost nastavljeno na **Ne**.
+>Obvestilo je poslano kot sporočilo kategorije **Obvestilo** na cilj(e), navedene pod *<a href="Settings/Notifications">Nastavitve->Nastavitve obvestil</a>*.
+:end
+
+:parity_tuning_plus_backup_plug:
+>Zaustavite operacijo polja (preverjanje parnosti, preverjanje branja, sinhronizacija parnosti, obnova diska, čiščenje diska), če vtičniki CA Appdata ali Appdata Backup izvajajo varnostno kopiranje ali obnovitevdockerpodatki vsebnika.  Operacija polja, ki se izvaja vzporedno z varnostnim kopiranjem ali obnovitvijo, negativno vpliva na zmogljivost zaradi spora na diskovnih pogonih, zato je bolj učinkovito, če se ne izvajajo hkrati.
+>
+> Ta nastavitev velja tudi, če ne uporabljate nobene možnosti za zagon operacije polja v korakih.
+>
+> Če vrsto operacije polja izvajate v korakih, se bo nadaljevanje zgodilo šele po koncu varnostnega kopiranja ali obnovitve, če ste še znotraj časovnih oken za povečanje.
+:end
+
+:parity_tuning_plus_clear_plug:
+> Operacija brisanja diska se izvede, ko dodate nov pogon (ki ni bil vnaprej počiščen z vtičnikom Pre-Clear) v polje, ki je paritetno zaščiteno. Postopek Clear zapiše ničle v vsak sektor na novem disku, tako da ga je mogoče dodati v polje, ne da bi to vplivalo na obstoječo pariteto. Dokler se operacija Clear ne zaključi, diska ne morete formatiratiUnraidin ga začnite uporabljati za shranjevanje podatkov.
+>
+>Ker disk ne bo na voljo za uporabo, dokler se operacija Clear ne zaključi, bo verjetno večina ljudi želela, da ta možnost ostane na **Ne**. Poleg tega operacija Clear običajno ne obremeni veliko sistema, zato je manj verjetno, da bo vplivala na zmogljivost pri običajni dnevni uporabi.
+:end
+
+:parity_tuning_plus_complete_plug:
+> Če je nastavljeno na **Da**, se samodejno zažene urejena zaustavitev strežnika, ko se zaključi trenutna operacija polja.
+>
+> Ta možnost bo verjetno uporabna le na strežniku, ki je večino časa izklopljen, saj se uporablja za nekaj podobnega kot varnostno kopiranje. Ideja je, da lahko začnete operacijo matrike (bodisi ročno ali prek urnika) in nato pustite strežnik, da se sam izklopi, ne da bi morali vedeti, kako dolgo bo operacija matrike trajala.
+>
+> Ko je zaznano, da imate nastavljeno to možnost in je v teku operacija polja, se sproži obvestilo, da bo prišlo do zaustavitve. Kot varnostni ukrep, če je ta možnost prvotno nastavljena na začetku delovanja polja, vendar ni nastavljena, preden se konča, bo zaustavitev prekinjena.
+>
+>**POZOR:** Preden se začne zaustavitev, se na strežniku ne izvaja nobena druga dejavnost, ko se zaključi operacija polja.
+:end
+
+:parity_tuning_plus_critical_plug:
+> Ta vrednost označuje, kako blizu vrednosti, nastavljene za prag kritične temperature diska, lahko temperatura diska doseže, preden se sproži zaustavitev strežnika.
+> Morda boste želeli, da majhna pozitivna vrednost prej sproži premorUnraidvam pošlje obvestilo, da je bil za disk dosežen temperaturni kritični prag.
+>
+>Če je bil za posamezen pogon definiran eksplicitni prag, je to uporabljena vrednost.  V nasprotnem primeru bo uporabljena globalna nastavitev.
+:end
+
+:parity_tuning_plus_defaults_plug:
+> Gumb **Uporabi** bo shranil trenutno prikazane vrednosti nastavitev.
+>
+> Gumb **Končano** zapre stran z nastavitvami.
+>
+> Gumb **Privzeto** ponastavi nastavitve vtičnika na privzete vrednosti, ki se uporabljajo ob prvi namestitvi vtičnika, in jih takoj shrani kot trenutne nastavitve.
+> Zdaj lahko spremenite te nastavitve, da bodo ustrezale vašemu sistemu, in pritisnite gumb Uporabi, da jih shranite.
+:end
+
+:parity_tuning_plus_explain_plug:
+> Ta vtičnik ne sproži matričnih operacij - namesto tega spremeni/izboljša vedenje, ko se matrična operacija začne.
+>
+> Glavni namen tega vtičnika je omogočiti, da operacije matrike, kot je preverjanje paritete, omejite na izvajanje ob trenutkih, ki vam ne bodo povzročali težav.  Posamezno lahko določite, ali naj se prirastki uporabijo za vsako glavno vrsto operacije polja.
+>
+>Če eno od teh možnosti nastavite na **Ne**, pomeni, da dobite privzeto sistemsko vedenje operacije, ki se izvaja brez prekinitve do zaključka, razen če ročno zaustavite/začasno ustavite/prekličete operacijo.
+>
+>Nastavitev ene od teh možnosti na **Da** določa, da je treba operacijo matrike izvajati v korakih, razporejenih v več dneh.
+>
+> Kot primer tega, kaj lahko naredi ta vtičnik, predpostavimo
+>Načrtovali ste začetek preverjanja paritete prvega v mesecu ob polnoči
+>* Vaše pretekle izkušnje so pokazale, da če preverjanje paritete teče neprekinjeno, traja 30 ur.
+>* Ta vtičnik nastavite tako, da uporablja 3-urne korake z začetkom ob polnoči in koncem ob 3.00 zjutraj.
+>* Preverjanje paritete bo zdaj dejansko trajalo 10 pretečenih dni (10 x 3 = 30), tako da se bo preverjanje paritete zaključilo 10. v mesecu.
+>* Načrtovali ste, da se ti prirastki izvajajo ob polnoči in končajo ob 3.00 zjutraj. ko veste, da se sistem ne uporablja.
+>* Ta povečan pretečeni čas vas ne skrbi in pozdravili boste večjo odzivnost sistema med običajno uporabo.
+>* Preostanek meseca ta vtičnik ne bo delal ničesar, ker ni v teku aktivno preverjanje paritete, ko pride začetni čas za povečanje.
+>
+>**OPOMBE:**
+>* StandardUnraidvedenje, če se matrika ustavi, medtem ko je operacija matrike nepopolna, je dosedanji napredek izgubljen in ga je mogoče znova zagnati samo od začetka.  Temu se lahko izognete, če nastavite možnost vtičnika za nadaljevanje operacij matrike ob naslednjem zagonu matrike.
+>* Če nimate paritetnega diska ali če je število okvarjenih pogonov enako številu onemogočenih pogonov, se namesto **Paritetnega preverjanja** izvede **Preverjanje branja**, da se zagotovi, da je mogoče vse preostale pogone prebrati brez napak.
+:end
+
+:parity_tuning_plus_frequency_plug:
+> Pogostost, s katero naj se prirastki izvajajo med operacijo polja.
+>
+> Pri običajnem delovanju se pričakuje, da bo večina uporabnikov želela uporabiti možnost **Dnevno**, zato je to privzeta možnost. Obstaja tudi možnost **Tedenska** za tiste, ki preglede opravljajo redko.
+>
+> Za podporo uporabnikom, ki iščejo druge frekvence, je na voljo možnost nastavitve urnikov **Po meri**, ki bodo omogočili bolj zapletene urnike za čase premora in nadaljevanja. Ko uporabite to možnost, imate možnost določiti čas, kot ga uporablja Linux<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>uporabnost.
+:end
+
+:parity_tuning_plus_history_plug:
+> Gumb **Zgodovina** bo prikazal trenutno zgodovino paritetnih preverjanj.
+> Po funkciji je enak uporabi gumba **Zgodovina** na zavihku **Glavno**.
+:end
+
+:parity_tuning_plus_hot_plug:
+>Zaustavite operacijo polja (preverjanje parnosti, parnostna sinhronizacija/ponovna izgradnja diska, čiščenje diska), če temperatura diska preseže meje, ki ste jih nastavili.
+>
+>Temperature se preverjajo glede na pragove, nastavljene za nivoje temperature opozorilnega diska. Če je bil določen prag za posamezen pogon (do katerega dostopate s klikom na pogon v zavihku Glavni), je to uporabljena vrednost. Če ne, bo uporabljena globalna nastavitev (nastavljena prek *Nastavitve->Nastavitve zaslona*). Predpostavlja se, da bi običajno želeli, da se operacija matrike začasno ustavi pred vrednostjo, nastavljeno naUnraidraven kot opozorilni prag.
+>
+>Veliko boljša rešitev je izboljšanje hlajenja v tvojem primeru, da se diski nikoli ne pregrejejo. V praksi se to morda ne izkaže vedno za praktično.
+>
+>Če je bila operacija matrike začasno ustavljena med izvajanjem prirastka, se ne bo nadaljevala izven časa, dodeljenega za prirast. Če je bila operacija niza sprožena iz katerega koli drugega razloga, je vedenje Premor/Nadaljuj pri temperaturi vedno aktivno.
+:end
+
+:parity_tuning_plus_increments_plug:
+>Načrtovana preverjanja so tista, ki ste jih konfigurirali za izvajanje ob nastavljenih urah prek Nastavitve->Razporejevalnik.
+>
+>Nastavitev te možnosti na **Da** določa, da je treba preglede izvajati v več dneh.  Upoštevajte, da če želite uporabljati vtičnik za obravnavo korakov delovanja polja, potem **ne** nastavite možnosti Cumnlative Parity Check na **Da** v standarduUnraidNastavitve preverjanja parnosti.
+>
+>Če ste to nastavili na **Ne**, dobite privzeto vedenje sistema, da se preverjanja izvajajo brez prekinitve do konca, razen če jih ročno ustavite/začasno ustavite/prekličete.
+:end
+
+:parity_tuning_plus_logging_plug:
+> Nadzirajte raven podrobnosti vnosov. Raven podrobnosti je mogoče povečati za pomoč pri odpravljanju napak pri uporabi tega vtičnika.
+>
+>Sporočila tega vtičnika so prepoznavna po tem, da so prikazana, kot da prihajajo iz
+>* **Parity Check Tuning Plus**  
+>* **Parity Check Tuning Plus Assistant**  
+>odvisno od tega, kateri del vtičnika je ustvaril sporočila
+>
+>Z nastavljeno možnostjo **Osnovno** bo to le majhno število sporočil, ki nakazujejo, da je ta vtičnik izvedel nekaj dejanj ali da je bila zaznana morebitna napaka.  To bo tisto, kar si želi večina uporabnikov pri normalnem delovanju.
+>
+>Če to možnost nastavite na **Debug**, bodo v sistemski dnevnik zapisani dodatni vnosi, ki dajejo več informacij o tem, kaj se dogaja, ko se ta vtičnik izvaja. Prikazujejo, kako delujejo nekatere notranje operacije vtičnika. Ti dodatni vnosi so prepoznavni po tem, da bodo imeli na začetku sporočil dodano besedo **DEBUG**. Nekateri uporabniki (zlasti tisti, ki tega vtičnika še niso uporabljali) ga morda želijo uporabiti, da bi videli več podrobnosti o tem, kako ta vtičnik deluje, vendar ni pričakovati, da bo ta možnost ostala omogočena pri običajnem delovanju.
+>
+>Nazadnje je na voljo dodatna nastavitev **Testiranje**, ki je namenjena samo za uporabo s strani razvijalca, vendar je tu opuščena zaradi priročnosti. V sistemski dnevnik bo napisal še bolj podrobna sporočila, vendar ta verjetno ne bodo zanimiva (ali celo pomembna) za povprečnega uporabnika.  Ta sporočila bodo imela na začetku dodano besedo **TESTIRANJE**. To raven beleženja zaženite le, če ste bili pozvani, saj lahko hitro zapolni vaš sistemski dnevnik, če niste previdni.
+>
+>Zaželene so povratne informacije o tem, ali je vredno uvesti kakršno koli vmesno možnost, ki izpiše sporočila vrste informacij o dejavnosti vtičnikov, hkrati pa izpusti nekatere podrobnosti na nižji ravni, ki so namenjene diagnosticiranju kakršnih koli težav, do katerih lahko pride med izvajanjem vtičnika.
+>
+>Če imate za beleženje nastavljen način testiranja, lahko izberete, kam želite beležiti sporočila dnevnika. Privzeto je standardni sistemski dnevnik in to je edina dovoljena možnost v osnovnem načinu. Sistemski dnevnik se hrani v RAM-u, tako da ne povzroča prekomernega zapisovanja na bliskovni pogon.
+>Za olajšanje težav pri odpravljanju napak lahko v načinu testiranja sporočila zabeležite na bliskovni pogon bodisi namesto v sistemski dnevnik bodisi poleg sistemskega dnevnika. Nastala datoteka parity.check.tuning.plus.log bo shranjena v mapi vtičnika na bliskovnem pogonu in zagotavljanje te datoteke razvijalcu bo pomagalo pri diagnosticiranju kakršnega koli nepričakovanega vedenja, na katerega naletite.
+:end
+
+:parity_tuning_plus_low_plug:
+> Ta vrednost nakazuje, koliko pod pragom opozorilne temperature mora pogon doseči, preden se upošteva **nadaljevanje** delovanja polja. Če je bila za vrsto izvajane operacije nastavljena uporaba prirastkov, mora biti čas znotraj okna prirastkov, sicer bo nadaljevanje odloženo, dokler se to okno ne obnovi.
+>
+>Doseči morate dobro ravnotežje med prezgodaj nadaljevanjem operacij polja (in tako hitro doseganjem ravni za sprožitev novega premora) in izgubo veliko časa.
+>
+>Če se disk kdaj zavrti, temperatura ni na voljo, zato se domneva, da je to merilo izpolnjeno
+>
+>Če ni zaustavljene operacije polja, potem ne bo izvedeno nobeno dejanje.
+:end
+
+:parity_tuning_plus_manual_plug:
+> Ročna preverjanja so tista, ki ste jih sprožili z gumbom **Preveri** na zavihku Glavno.
+>
+> Nastavite to na **Da**, če želite, da se preverjanja, ki se začnejo ročno, izvajajo tudi v korakih?
+>
+> Precej verjetno je, da boste želeli, da se takšno preverjanje izvede do konca brez prekinitev, in v tem primeru pustite to možnost nastavljeno na **Ne**.
+> Če je ta možnost nastavljena na **Da**, potem če ročno začnete preverjanje na glavni strani in nato ročno začasno ustavite preverjanje, se bo preverjanje izvajalo v korakih med načrtovanimi časi, dokler se preverjanje ne zaključi.
+:end
+
+:parity_tuning_plus_mover_plug:
+>Zaustavite operacijo polja (preverjanje parnosti, preverjanje branja, sinhronizacija parnosti, obnova diska, čiščenje diska), če se premikalnik izvaja. Operacija polja, ki se izvaja vzporedno s premikalnikom, negativno vpliva na zmogljivost zaradi spora na diskovnih pogonih, zato je bolj učinkovito, če se ne izvajajo hkrati.
+>
+> Ta nastavitev velja tudi, če ne uporabljate nobene možnosti za zagon operacije polja v korakih.
+> 
+> Če vrsto operacije niza izvajate v korakih, se bo nadaljevanje zgodilo šele, ko se premikalec konča, če ste še znotraj časovnih oken za korake.
+:end
+
+:parity_tuning_plus_notify_plug:
+> Ta možnost je ustrezna le, če ste omogočili možnost Nastavitve->Sistemska obvestila (zelo priporočljivo).
+>
+> Nastavitev te možnosti na<strong>ja</strong>pomeni, da boste prejeli obvestilo vsakič, ko vtičnik začasno ustavi ali nadaljuje prirast med operacijo polja.
+>
+>Če raje ne želite prejemati takih obvestil, pustite to možnost nastavljeno na **Ne**.
+>
+>Obvestila, za katera velja, da so zgolj informativna, se pošljejo kot sporočilo kategorije **Normalno** (zeleno) ciljnim skupinam, navedenim pod *<a href="Settings/Notifications">Nastavitve->Nastavitve obvestil</a>*, čeprav bodo pomembnejši uporabili obvestila tipa **Opozorilo** (oranžno) ali *Napaka** (rdeče), kjer se zdi primerno.
+:end
+
+:parity_tuning_plus_pause_plug:
+> Čas, ko je treba preverjanje paritete v teku začasno ustaviti. Običajno bi bilo to nastavljeno kot čas, ko želite, da preverjanje paritete, ki se izvaja, ne vpliva na druge dejavnosti.
+>Če se ob tem času ne izvaja preverjanje paritete, potem ne bo nobenega ukrepa.
+>
+>Običajno se želite prepričati, da je ta čas nastavljen tako, da bo po času, ko načrtujete izvajanje rednih paritetnih preverjanj. Prvi prirastek bo nato od takrat, ko je načrtovan začetek rednega preverjanja paritete, do časa, ki ste ga določili za konec prirastka.
+>
+>Če je bilo obdobje povečanja nastavljeno na **Po meri**, so polja za ure/minute skrita in namesto tega imate možnost, da nastavite čas v<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>format.
+>
+>Prav tako se želite prepričati, da je čas, dodeljen izvajanju prirastkov, zadosten za pričakovanje, da se bo paritetno preverjanje izvajalo do konca, preden je načrtovan začetek naslednjega preverjanja. Ker večina ljudi preverjanje paritete načrtuje samo za redko izvajanje (npr. mesečno ali četrtletno), je malo verjetno, da bo to težava, vendar je nekaj, kar je treba upoštevati.
+:end
+
+:parity_tuning_plus_restart_plug:
+> Unraidbo običajno opustil preverjanje paritete, če se sistem zaustavi, znova zažene ali se polje ustavi (pri čemer je edina možnost, da ponovno zažene preverjanje paritete od začetka).
+> Druge operacije polja se bodo znova zagnale od začetka.
+> Nastavitev te možnosti omogoča, da ta vtičnik znova zažene preverjanja parnosti od točke, ki so jo dosegli
+> dokler so izpolnjena naslednja merila:
+>* Niz je bil urejeno zaprt
+>* Uporabnik ne sme spreminjati konfiguracije polja.
+>
+>Dokler so ti kriteriji izpolnjeni, se ob naslednjem zagonu matrike operacija nadaljuje od predhodno dosežene točke.
+>
+>**OPOMBE:**
+>* Če je bila operacija matrike znotraj časa, nastavljenega za izvajanje načrtovanega prirastka, bo ob ponovnem zagonu operacije matrike nastavljena tako, da bo začasno ustavljena, če je zdaj zunaj časa, nastavljenega za izvajanje prirastkov.
+>* Če je bila operacija matrike ročno začasno ustavljena, bo tudi ponovno zagnana operacija matrike zaustavljena.
+>
+:end
+
+:parity_tuning_plus_resume_plug:
+> Čas, ko je treba nadaljevati zaustavljeno preverjanje paritete.<br>Če nobeno preverjanje parnosti trenutno ni zaustavljeno, ko pride ta čas, ne bo izvedeno nobeno dejanje.
+>
+>Običajno je ta čas nastavljen kot začetek obdobja mirovanja čez noč. Ustrezna vrednost bi lahko bila uporaba istega časa, ki ste ga podali za začetek načrtovanega preverjanja paritete.
+>
+>Če je bilo obdobje povečanja nastavljeno na **Po meri**, so polja za ure/minute skrita in namesto tega imate možnost, da nastavite čas v<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>format.
+:end
+
+:parity_tuning_plus_shutdown_plug:
+> Če je nastavljeno na **Da**, se samodejno zažene urejena zaustavitev strežnika, če kateri koli disk v nizu ali bazenih doseže določen temperaturni prag.
+> Temperature se preverjajo glede na pragove, nastavljene za **Kritične** nivoje temperature diska. Če je bila kritična temperatura definirana za posamezen pogon (do katerega dostopate s klikom na pogon v zavihku Main), potem je to uporabljena vrednost. Če ni globalna nastavitev (*<a href="Settings/DisplaySettings">Nastavitve->Nastavitve zaslona</a>) bodo uporabljeni.
+>
+>Ta možnost naj bi se sprožila, če je hladilni sistem sistema iz nekega razloga nezadosten ali če je na nek način odpovedal. Ideja je, da želite izvesti urejeno zaustavitev, preden se diski poškodujejo zaradi pregrevanja. Zaustavitev, ki se sproži, je funkcionalno enaka kot v primeru pritiska gumba Zaustavitev na glavni straniUnraidGUI. Če so obvestila omogočena, se vam pošlje eno, ki označuje, da se je to zgodilo.
+>
+>Ko se strežnik po takšni zaustavitvi znova zažene, boste ob zagonu polja obveščeni, da je prišlo do zaustavitve, povezane s temperaturo, če niste vedeli za razlog.
+>
+>**POZOR:** Če je matrika ustavljena, medtem ko operacija matrike ni dokončana, je privzetaUnraidvedenje je, da je dosedanji napredek izgubljen in ga je mogoče znova začeti le od začetka.
+>
+>Če ste v tem vtičniku omogočili možnost ponovnega zagona *in* je zaustavitev urejena zaustavitev), bo izveden poskus ponovnega zagona operacije polja s točke, ki jo je prej dosegla.
+:end
+
+:parity_tuning_plus_temp_notify_plug:
+> Če to možnost nastavite na **Da**, to pomeni, da boste prejeli obvestilo vsakič, ko vtičnik začasno ustavi ali nadaljuje delovanje polja zaradi temperature vaših pogonov.<br>Če raje ne želite prejemati takih obvestil, pustite to možnost nastavljeno na **Ne**. Obvestilo je poslano kot sporočilo kategorije **Obvestilo** na cilj(e), navedene pod *<a href="Settings/Notifications">Nastavitve->Nastavitve obvestil</a>*.
+:end
+
+:parity_tuning_plus_warn_plug:
+> Ta vrednost označuje, kako blizu vrednosti, nastavljene za opozorilni temperaturni prag diska, je dovoljeno doseči temperaturo diska, preden se sproži **pavza** izvajajoče se operacije polja. Če je bil za posamezen pogon definiran eksplicitni prag, je to uporabljena vrednost. V nasprotnem primeru bo uporabljena globalna nastavitev.
+>
+> Običajno želite, da majhna pozitivna vrednost prej sproži premorUnraidvam pošlje obvestilo, da je bil dosežen temperaturni opozorilni prag za disk.
+>
+>Če ni aktivnega delovanja polja, ne bo izvedeno nobeno dejanje, tudi če temperatura diska preseže podani prag.
+>
+> Če ni izvajajoče se operacije polja, ne bo izvedeno nobeno dejanje.
+:end
+
+aborted=prekinjeno
+action=ukrepanje
+already paused=že zaustavljeno
+already running=že teče
+appears there is a running array operation but no Progress file yet created=zdi se, da se izvaja operacija polja, vendar še ni ustvarjena datoteka napredka
+appears to be a regular scheduled check=zdi se, da gre za redni načrtovani pregled
+appears to be an unclean shutdown=zdi se, da gre za nečisto zaustavitev
+appears to be manual parity check=zdi se, da gre za ročno preverjanje paritete
+appears to be marked as automatic parity check=je označeno kot samodejno preverjanje paritete
+appears to be marked as scheduled parity check=se zdi, da je označeno kot načrtovano paritetno preverjanje
+appears to be partial parity check=zdi se, da gre za delno paritetno preverjanje
+array drives=pogoni polja
+automatic=samodejno
+backup=varnostno kopiranje
+below critical disk temperature threshold=pod kritično temperaturo diska
+below warning disk temperature threshold=pod opozorilnim pragom temperature diska
+canceled=preklicano
+completed=dokončana
+cool=kul
+critical=kritičen
+day=dan
+detected=odkrito
+detected that mdcmd had been called from %s with command %s=zaznal, da je bil poklican mdcmd%1$sz ukazom%2$s
+disabled=onemogočen
+does not appear to be an unclean shutdown=ne zdi se, da gre za nečisto zaustavitev
+drive temperature limits=omejitve temperature pogona
+entry in %s format=vstop v%1$sformat
+errors=napake
+exit code=izhodna koda
+finished=končano
+global temperature limits=globalne temperaturne omejitve
+hot=vroče
+hr=ur
+idle=mirovanje
+manual=priročnik
+min=min
+minute=minuta
+mover=premikač
+no action taken as appears restart outstanding=izvedeno ni bilo nobeno dejanje, saj se zdi, da čaka ponovni zagon
+no array operation in progress=nobena operacija polja ni v teku
+not a parity check so always treat it as an automatic operation=ni preverjanje parnosti, zato ga vedno obravnavajte kot samodejno operacijo
+operation was paused when reboot initiated so pause it immediately=je bilo delovanje začasno ustavljeno, ko se je začel ponovni zagon, zato ga takoj zaustavite
+past size=pretekla velikost
+paused=zaustavljeno
+percent=odstotkov
+plugin temperature settings=nastavitve temperature vtičnika
+running=teče
+scheduled=načrtovano
+sec=sek
+sector=sektor
+spundown=spundown
+to get ready for restart=da se pripravite na ponovni zagon
+trigger unknown - assume manual=sprožilec neznan - domnevamo ročno
+unknown=neznano
+using scheduled mode of %s=z uporabo načrtovanega načina%1$s
+warm=toplo
+where action is one of=kjer je akcija ena od

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-labelledby="title">
+  <title id="title">Parity Check Tuning Plus</title>
+  <rect x="8" y="8" width="112" height="112" rx="24" fill="#172b45"/>
+  <g fill="none" stroke="#72d5ea" stroke-width="8" stroke-linecap="round">
+    <path d="M30 37h52M30 62h35M30 87h35"/>
+    <path d="M88 68v32M72 84h32" stroke="#a6e875"/>
+  </g>
+  <g fill="#fff">
+    <circle cx="47" cy="37" r="9"/>
+    <circle cx="55" cy="62" r="9"/>
+    <circle cx="40" cy="87" r="9"/>
+  </g>
+</svg>

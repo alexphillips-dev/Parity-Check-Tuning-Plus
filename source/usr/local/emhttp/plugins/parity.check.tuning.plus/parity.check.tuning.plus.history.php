@@ -1,0 +1,173 @@
+#!/usr/bin/php -q
+<?PHP
+/* Copyright 2005-2022, Lime Technology
+ * Copyright 2012-2022, Bergware International.
+ * Copyright 2019-2025, Dave Walker (itimpi).
+ * Modified 2026-11-04 by alexphillips-dev for Parity Check Tuning Plus.
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License version 2,
+ * as published by the Free Software Foundation.
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * This version extends the native history display with:
+ * - Handling of extended information in parity history log file added by plugin
+ * - Elapsed Time and Increments columns added to displayed information
+ * - Extended Operation type information when aailable
+ *
+ * Useful site for checking php sytax: https://phphub.net/linter/
+ */
+?>
+<?
+require_once  '/usr/local/emhttp/plugins/parity.check.tuning.plus/parity.check.tuning.plus.helpers.php';
+parityTuningPlusLogger("Parity History invoked");
+extract(parse_plugin_cfg('dynamix',true));
+
+// add translations
+$_SERVER['REQUEST_URI'] = 'main';
+$login_locale = _var($display,'locale');
+require_once "$docroot/webGui/include/Translations.php";
+
+$month = [' Jan '=>'-01-',' Feb '=>'-02-',' Mar '=>'-03-',' Apr '=>'-04-',' May '=>'-05-',' Jun '=>'-06-',' Jul '=>'-07-',' Aug '=>'-08-',' Sep '=>'-09-',' Oct '=>'-10-',' Nov '=>'-11-',' Dec '=>'-12-'];
+$log   = "/boot/config/parity-checks.log";
+$list  = [];
+
+function this_plus($val, $word, $last) {
+  return $val>0 ? $val.' '.$word.($last?'':', ') : '';
+}
+function this_duration($time) {
+  if (!is_numeric($time) || $time <= 0 || !is_finite((float)$time)) return pctT('Unavailable');
+  $time = (int)$time;
+  $days = floor($time/86400);
+  $hmss = $time-$days*86400;
+  $hour = floor($hmss/3600);
+  $mins = floor($hmss/60)%60;
+  $secs = $hmss%60;
+  return this_plus($days,pctT('day'),($hour|$mins|$secs)==0).this_plus($hour,pctT('hr'),($mins|$secs)==0).this_plus($mins,pctT('min'),$secs==0).this_plus($secs,pctT('sec'),true);
+}
+
+parityTuningPlusLoggerTesting("Parity History: Checking for records in extended format");
+$lines = @file($log);
+$extended = false;
+if ($lines != false) {
+  foreach ($lines as $row) {
+	if (count(explode('|',$row)) > 6) {
+      $extended = true;
+      break;
+    }
+  }
+}
+parityTuningPlusLoggerTesting("Parity History: records with extended format present:$extended");
+?>
+<div class="TableContainer">
+<table style='margin-top:10px;background-color:inherit'>
+<tr style='font-weight:bold'><td><?=pctH('Action')?></td><td><?=pctH('Date')?></td><td><?=pctH('Size')?></td><td><?=pctH('Duration')?></td><td><?=pctH('Speed')?></td><td><?=pctH('Status')?></td><td><?=pctH('Errors')?></td>
+<?=($extended?"<td>".pctH('Elapsed Time')."</td><td>".pctH('Increments')."</td>":'')?></tr>
+		
+<?
+
+
+if (file_exists($log)) {
+  $handle = fopen($log, 'r');
+  $lineNumber = 0;
+  while (($row = fgets($handle))!==false) {
+	$lineNumber ++;
+	// workout what format the record it in and handle accordingly
+	parityTuningPlusLoggerTesting("Parity History Record $lineNumber: $row");
+	$fieldCount = count(explode('|',$row));
+	// Preset fields only present in extended formats for backwards compatibility
+	$increments = $elapsed = $parityTuningPlusType = $size = "";
+	$action = 'check P';
+	switch ($fieldCount) {
+		case 4:	// very old Unraid format prior to 2018.
+				// Has no year in date field  so ignore
+			ParityTuningPlusLoggerTesting("Line $lineNumber: Old Unraid format from 2018 or earlier - record ignored");
+			continue 2;
+		case 5: // Unraid format prior to 6.10 
+			parityTuningPlusLoggerTesting("... Unraid format before 6.10");
+			[$date,$duration,$speed,$status,$error] = my_explode('|',$row,5);
+			break;
+		case 6: // Unraid format (adds operation type) from 6.10 onwards
+			parityTuningPlusLoggerTesting("... Unraid format from 6.10");
+			[$date,$duration,$speed,$status,$error,$action] = my_explode('|',$row,6);
+			break;
+		case 7:	// Unraid format (adds size) from 6.11 onwards
+			parityTuningPlusLoggerTesting("... Unraid format from Unraid 6.11");
+			[$date,$duration,$speed,$status,$error,$action,$size] = my_explode('|',$row,7);
+			break;
+		
+		case 8: // plugin extended format (adds elapsed time, increments and type to 6.10 format)
+			parityTuningPlusLoggerTesting("... plugin format for Unraid < 6.10");
+			[$date,$duration,$speed,$status,$error,$elapsed,$increments,$parityTuningPlusType] = my_explode('|',$row,8);
+			break;
+		case 9: // plugin extended format (adds elapsed time, increments and type to 6.10 format)
+			parityTuningPlusLoggerTesting("... plugin format for Unraid 6.10");
+			[$date,$duration,$speed,$status,$error,$action,$elapsed,$increments,$parityTuningPlusType] = my_explode('|',$row,9);
+			break;
+		case 10:// plugin extended format (adds elapsed time, increments and type to 6.11 format)
+			parityTuningPlusLoggerTesting("... plugin format for Unraid 6.11+");
+			[$date,$duration,$speed,$status,$error,$action,$size,$elapsed,$increments,$parityTuningPlusType] = my_explode('|',$row,10);
+			break;
+		default:
+			parityTuningPlusLoggerDebug("ERROR:  Unexpected number of fields ($fieldCount) in parity-check.log on line $lineNumber:");
+			continue 2;		// Ignore this record
+	}
+
+	// Workaround for earlier bug where $action field not populated in history file.
+	if (!ctype_digit(trim($duration)) || !is_finite((float)$duration)) continue;
+	if ($size !== '' && (!is_numeric($size) || !is_finite((float)$size) || $size < 0)) continue;
+	if ($action ==='') $action = 'check P';
+	
+    $action = preg_split('/\s+/',$action);
+    switch ($action[0]) {
+      case 'recon': $action = in_array($action[1] ?? '',['P','Q']) ? pctT('Parity-Sync') : pctT('Data-Rebuild'); break;
+      case 'check': $action = count($action)>1 ? pctT('Parity-Check') : pctT('Read-Check'); 
+	  				$parityTuningPlusAction = preg_split('/\s+/',$parityTuningPlusType);
+					// Determine trigger type
+					switch (strtoupper($parityTuningPlusAction[0])) {
+						case 'MANUAL':     $parityTuningPlusType = pctT('Manual'); 
+									break;
+						case 'AUTOMATIC':  $parityTuningPlusType = pctT('Automatic');
+									break;
+						case 'SCHEDULED':   $parityTuningPlusType = pctT('Scheduled'); 
+									break;
+						default: $parityTuningPlusType = ''; 
+									break;
+					}
+					// Add in Correcting/Non-Correcting if known
+					if (count($parityTuningPlusAction) > 1) {
+						// Need to allow for cases before this was added to plugin extra info
+						if (! ($action === $parityTuningPlusAction[1])) {
+							$parityTuningPlusType .= ' ' . pctT($parityTuningPlusAction[1]);
+						}
+					}
+					// Build full expanded action
+					$action = $parityTuningPlusType.' '.$action;
+					break;
+      case 'clear': $action = pctT('Disk-Clear'); break;
+      default     : $action = '-';  break;
+    }
+	
+    $date = str_replace(' ',', ',strtr(str_replace('  ',' 0',$date),$month));
+    if (strtotime($date) === false) continue;
+    $date .= ' ('.pctT(date('l',strtotime($date))).')';
+    $size = $size ? my_scale($size*1024,$unit,-1)." $unit" : '-';
+    $duration = this_duration($duration);
+	$elapsed  = is_numeric($elapsed) ? this_duration($elapsed) : '';
+	$increments = ctype_digit(trim($increments)) ? trim($increments) : '';
+    // handle both old and new speed notation
+    $speed = $speed ? (is_numeric($speed) ? my_scale($speed,$unit,1)." $unit/s" : $speed) : pctT('Unavailable');
+    $status = $status==0 ? pctT('OK') : ($status==-4 ? pctT('Canceled') : $status);
+    foreach (['action','date','size','duration','speed','status','error','elapsed','increments'] as $field) $$field = pctEscape($$field);
+    array_unshift($list, "<tr><td>$action</td><td>$date</td><td>$size</td><td>&nbsp;$duration</td><td>&nbsp;$speed</td><td>&nbsp;$status</td><td>&nbsp;$error</td>"
+	.($extended?"<td>&nbsp;$elapsed</td><td>&nbsp;$increments</td>":'')."</tr>");
+
+  }
+  fclose($handle);
+}
+echo $list ? implode($list) : "<tr><td colspan='7' style='text-align:center;padding-top:12px'>".pctT('No parity check history present')."!</td></tr>";
+?>
+</table>
+</div>

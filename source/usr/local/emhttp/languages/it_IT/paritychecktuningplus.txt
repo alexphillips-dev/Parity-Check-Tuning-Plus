@@ -1,0 +1,606 @@
+; Parity Check Tuning Plus - generated offline catalog. Do not edit by hand.
+
+%s %s %d %s=%1$s %2$s (%3$d %4$s)
+%s %s, %s %s, %s %d, %s %s=%1$s %2$s, %3$s %4$s, %5$s %6$d, %7$s %8$s
+%s Cancelled=%1$sAnnullato
+%s cancel request sent %s=%1$srichiesta di annullamento inviata%2$s
+%s no longer running=%1$snon corre più
+%s running=%1$scorrere
+%s started=%1$s iniziato
+%s will not be restarted=%1$s non verrà riavviato
+ but in active period so leave running=... ma nel periodo attivo quindi lascialo in esecuzione
+ but suppressed as notifications do not appear to be enabled for pauseresume=... ma soppresso poiché le notifiche non sembrano essere abilitate per la pausa/ripresa
+ but suppressed as system notifications do not appear to be enabled=... ma soppresso poiché le notifiche di sistema non sembrano essere abilitate
+ outside active period so needs pausing=... al di fuori del periodo attivo, quindi necessita di una pausa
+ using =...utilizzando
+A crontab entry should have 5 space-separated values defining the minutes, hour, day of the month, month, day of the week Click on the crontab link to get more details on valid formats=Una voce crontab dovrebbe avere 5 valori separati da spazi che definiscono minuti, ora, giorno del mese, mese, giorno della settimana.  Fare clic sul collegamento crontab per ottenere maggiori dettagli sui formati validi.
+Action=Azione
+All array drives below temperature threshold for a Pause=Tutte le unità dell'array sono al di sotto della soglia di temperatura per una pausa
+Analyze results from an array operation=Analizzare i risultati di un'operazione su array
+Appears to be a %s array operation=Sembra essere a%1$soperazione di matrice
+Apply=Applicare
+Array has just been started=L'array è appena stato avviato
+Array is being started=L'array è in fase di avvio
+Array must be started to use this assistant=Per utilizzare questo assistente è necessario avviare l'array
+Array not yet started=Array non ancora avviato
+Array operation completed=Operazione sull'array completata
+Array operation not resumed - outside increment window=Operazione dell'array non ripresa: fuori dalla finestra di incremento
+Array operation paused but drives not cooled enough to resume=Il funzionamento dell'array è stato sospeso ma le unità non sono sufficientemente raffreddate per poter essere riprese
+Array operation paused but not for temperature related reason=Il funzionamento dell'array è stato sospeso ma non per motivi legati alla temperatura
+Array operation paused with some drives still too hot to resume=Il funzionamento dell'array è stato sospeso con alcune unità ancora troppo calde per essere riprese
+Array operation restarted=L'operazione dell'array è stata riavviata
+Array operation will not be restarted=Il funzionamento dell'array non verrà riavviato
+Array shutdown=Arresto dell'array
+Array size is not available=La dimensione dell'array non è disponibile
+Array stopping=Arresto dell'array
+Array stopping while %s was in progress %s=Arresto dell'array mentre%1$sera in corso%2$s
+Array stopping Restart will be attempted on next array start=Arresto dell'array: verrà tentato il riavvio al successivo avvio dell'array
+Automatic=Automatico
+Automatic parity check pause not configured=Pausa del controllo parità automatico non configurata
+Average Speed=Velocità media
+Background activity %s=Attività di base:%1$s
+Basic=Essenziale
+Before you can set this option to Yes you must first have enabled system notifications=Prima di poter impostare questa opzione su Sì è necessario aver abilitato le notifiche di sistema.
+Cancel a running parity check=Annulla un controllo di parità in corso
+Cancel automatically started array operation=Annulla l'operazione di array avviata automaticamente
+Cancel request=Annulla richiesta
+Canceled=Annullato
+Check=Controlla
+Choose a start point and a larger end point within the disk=Scegli un punto iniziale e un punto finale più grande all'interno del disco
+Choose sectors or percentages=Scegli settori o percentuali
+Choose whether to write corrections=Scegli se scrivere le correzioni
+Click to show Array Operations history=Fare clic per visualizzare la cronologia delle operazioni dell'array
+Click to show Parity check entries from syslog=Fare clic per mostrare le voci del controllo di parità da syslog
+Command Line was=La riga di comando era
+Completed partial check %s=Controllo parziale completato (%1$s)
+Configuration=Configurazione
+Correcting=Correggere
+Created cron entry for %s interval monitoring=Creata la voce cron per%1$smonitoraggio degli intervalli
+Created cron entry for scheduled pause and resume=Creata voce cron per pausa e ripresa programmate
+Critical=Critico
+Custom=Personalizzato
+Daily=Ogni giorno
+Data-Rebuild=Ricostruzione dei dati
+Date=Data
+Debug=Debug
+Debug mode is intended to give users a feel for when the plugin is active Debug mode can generate frequent additional log entries in the syslog file so do not leave debug mode active if you are not interested in this information=La modalità debug ha lo scopo di dare agli utenti un'idea di quando il plugin è attivo. La modalità debug può generare frequenti voci di registro aggiuntive nel file syslog, quindi non lasciare attiva la modalità debug se non sei interessato a queste informazioni.
+Defaults=Predefiniti
+Detected a change to the disk configuration=Rilevata una modifica alla configurazione del disco
+Detected disk configuration reset=Rilevata reimpostazione della configurazione del disco
+Detected shutdown that was due to following drives reaching critical temperature=Rilevato arresto dovuto al raggiungimento della temperatura critica delle unità successive
+Detected that array had been paused due to following drives getting hot=Rilevato che l'array è stato messo in pausa a causa del surriscaldamento delle unità successive
+Disk Clear=Cancella disco
+Disk-Clear=Cancella disco
+Do you really want Debug logging mode=Vuoi davvero la modalità di registrazione debug?
+Do you really want Testing logging mode=Vuoi davvero testare la modalità di registrazione?
+Do you really want automatic Shutdown=Vuoi davvero lo spegnimento automatico?
+Do you really want to log to the flash drive=Vuoi davvero accedere all'unità flash?
+Do you really want to pause Automatic checks=Vuoi davvero mettere in pausa i controlli automatici?
+Do you really want to pause Clear operations=Vuoi davvero mettere in pausa le operazioni di cancellazione?
+Done=Fatto
+Drives been above resume temperature threshold for %s minutes=Le unità sono state al di sopra della soglia di temperatura di ripristino per%1$sminuti
+Drives cooled down=Le unità si sono raffreddate
+Duration=Durata
+ERROR=ERRORE
+Elapsed Time=Tempo trascorso
+End point for check=Punto finale per il controllo
+Error in custom entry=Errore nell'immissione personalizzata
+Errors=Errori
+Flash only=Solo flash
+Following drives overheated=Le unità successive si sono surriscaldate
+Friday=Venerdì
+High disk temperatures can shutdown server=Temperature elevate del disco possono arrestare il server
+History=Storia
+Incompatible options=Opzioni incompatibili
+Inconsisten state information - Restart requested but no progress file=Informazioni sullo stato incoerenti: è richiesto il riavvio ma nessun file di avanzamento
+Increment frequency=Aumenta la frequenza
+Increment pause time=Aumenta il tempo di pausa
+Increment resume time=Aumenta il tempo di ripresa
+Increments=Incrementi
+Invalid check range=Intervallo di controllo non valido
+Logging to the flash drive can cause a lot additional writes thus potentially shortening its lifetime Do not leave this active if you are not interested in this information CAUTION At the moment there is no mechanism to stop this file from growing forever so it is up to you to manage this manually=La registrazione sull'unità flash può causare molte scritture aggiuntive, riducendone potenzialmente la durata. Non lasciarlo attivo se non sei interessato a queste informazioni. ATTENZIONE: al momento non esiste alcun meccanismo per impedire a questo file di crescere per sempre, quindi spetta a te gestirlo manualmente.
+Manual=Manuale
+Manually paused=In pausa manualmente
+Manually resumed=Ripresa manualmente
+Method used to specify start and stop points=Metodo utilizzato per specificare i punti di inizio e fine
+Monday=Lunedì
+No.=No
+No Parity disk present=Nessun disco di parità presente
+No action outstanding=Nessuna azione in sospeso
+No action specified=Nessuna azione specificata
+No array operation currently in progress=Nessuna operazione sull'array attualmente in corso
+No array operation in progress=Nessuna operazione sull'array in corso
+No array operation in progress and no restart information saved=Nessuna operazione sull'array in corso e nessuna informazione di riavvio salvata
+No array operation in progress but restart information saved=Nessuna operazione sull'array in corso ma informazioni di riavvio salvate
+No check is made to see if there is any other activity running on the server at the time the array operation completes As a safety measure if you switch off this option while an array operation is running then the shutdown will be aborted=Non viene effettuato alcun controllo per verificare se sono presenti altre attività in esecuzione sul server nel momento in cui viene completata l'operazione dell'array. Come misura di sicurezza, se si disattiva questa opzione mentre è in esecuzione un'operazione sull'array, l'arresto verrà interrotto.
+No parity check entries found in syslog=Nessuna voce di controllo parità trovata nel syslog
+No parity check history present=Nessuna cronologia del controllo di parità presente
+No parity present, so no automatic parity check=Nessuna parità presente, quindi nessun controllo di parità automatico
+No restart information present=Nessuna informazione di riavvio presente
+Non-Correcting=Non correttivo
+Not allowed as %s already running=Non consentito come%1$sgià in esecuzione
+Not automatic check %s=Controllo non automatico (%1$s)
+Notifications not enabled=Notifiche non abilitate
+OK=Va bene
+Only able to start a Read-Check as no parity drive present=È possibile avviare un controllo di lettura solo perché non è presente alcuna unità di parità
+Only able to start a Read-Check due to number of disabled drives=È possibile avviare un controllo di lettura solo a causa del numero di unità disabilitate
+Option not currently recognized=Opzione attualmente non riconosciuta
+Outside increment scheguled time=Incremento esterno dell'orario programmato
+Outside time slot for running operation type=Fascia oraria esterna per il tipo di operazione in corso
+Outside times for increments so not resuming=Fuori orario per incrementi quindi non ripresa
+PAUSED=IN PAUSA
+Parity Check=Controllo di parità
+Parity Check Tuning Plus logging=Parity Check Tuning Plusregistrazione
+Parity Operation History=Cronologia delle operazioni di parità
+Parity Sync Data Rebuild=Sincronizzazione parità/ricostruzione dati
+Parity-Check=Controllo di parità
+Parity-Sync=Sincronizzazione di parità
+Partial=Parziale
+Partial check not started=Controllo parziale non avviato
+Partial parity check %s=Controllo di parità parziale (%1$s)
+Pause=Pausa
+Pause %s=Pausa%1$s
+Pause a running array operation=Sospendere un'operazione di array in esecuzione
+Pause an array operation at=Metti in pausa un'operazione sull'array in
+Pause and Resume array operations if disks overheat=Sospende e riprende le operazioni dell'array se i dischi si surriscaldano
+Pause and Resume times=Tempi di pausa e ripresa?
+Pause array operations while appdata backup or restore running=Sospende le operazioni dell'array durante il backup o il ripristino dei dati dell'app in esecuzione
+Pause array operations while mover running=Sospende le operazioni dell'array durante l'esecuzione del mover
+Pause request=Richiesta di pausa
+Paused=In pausa
+Pausing Automatic parity check configured=Pausa Controllo parità automatico configurato
+Pausing an automatic parity check after an unclean shutdown extends the time before the you can be confident that parity is still valid so that recovering from a disabled disk is likely to work without data corruption or data loss Only use this option if you cannot afford the performance penalty of such checks occurring during prime time=La sospensione di un controllo di parità automatico dopo un arresto non corretto prolunga il tempo prima di poter avere la certezza che la parità sia ancora valida in modo che il ripristino da un disco disabilitato possa funzionare senza corruzione o perdita di dati.  Utilizza questa opzione solo se non puoi permetterti la penalità sulla performance di tali controlli avvenuti durante la prima serata.
+Pausing an disk Clear operation extends the time before the disk is successfully added to the array and becomes ready for formatting and then used for data storage On most systems a disk Clear operation does not adversely affect performance so typically this option is left disabled=La sospensione dell'operazione di cancellazione del disco prolunga il tempo trascorso prima che il disco venga aggiunto correttamente all'array e diventi pronto per la formattazione e quindi utilizzato per l'archiviazione dei dati.  Nella maggior parte dei sistemi un'operazione di cancellazione del disco non influisce negativamente sulle prestazioni, quindi in genere questa opzione viene lasciata disabilitata.
+Pausing an operation that is building parity or rebuilding a failed disk has a level of risk as your array is not back in a protected state until this operation completes successfully Only enable this option if the operation is adversely affecting system use and you are not worried about the extra time that will elapse before the system is once again in a protected state=La sospensione di un'operazione di creazione della parità o di ricostruzione di un disco guasto presenta un livello di rischio poiché l'array non torna in uno stato protetto finché l'operazione non viene completata correttamente.   Abilita questa opzione solo se l'operazione influisce negativamente sull'utilizzo del sistema e non sei preoccupato per il tempo extra che trascorrerà prima che il sistema torni di nuovo in uno stato protetto.
+Pausing automatic parity check=Pausa del controllo di parità automatico
+Percentage=Percentuale
+Percentage endpoints must be between 0 and 100=Gli endpoint percentuali devono essere compresi tra 0 e 100
+Range=Gamma
+Read Check=Leggi Controlla
+Read-Check=Leggi-Controlla
+Requires Unraid 6103 or later=RichiedeUnraid6.10.3 o successiva
+Reset settings to defaults=Ripristina le impostazioni predefinite
+Restart requested - but appears to not be happening=È richiesto il riavvio, ma sembra che non avvenga
+Restart will not be attempted=Non verrà tentato il riavvio
+Resume=Riprendi
+Resume %s=Riprendi%1$s
+Resume a paused array operation=Riprendere un'operazione di array in pausa
+Resume an array operation at=Riprendere un'operazione sull'array alle
+Resume array operations on next array start=Riprendere le operazioni dell'array al successivo avvio dell'array
+Resume ignored as paused because background task running=Riprendi ignorato come sospeso perché l'attività in background è in esecuzione
+Resume request=Riprendi la richiesta
+Resumed=Ripresa
+Runtime=Durata
+Saturday=Sabato
+Scheduled=Programmato
+Sector Numbers=I numeri del settore
+Sector endpoints must be whole numbers within the disk=Gli endpoint del settore devono essere numeri interi all'interno del disco
+Sectors=Settori
+Send notification=Invia notifica
+Send notifications for Pause or Resume of increments=Invia notifiche per la pausa o la ripresa degli incrementi
+Send notifications for mover or backup running=Invia notifiche per lo spostamento o il backup in esecuzione
+Send notifications for mover running=Invia notifiche per il movimento in esecuzione
+Send notifications for temperature related Pause or Resume=Invia notifiche per la pausa o la ripresa relativa alla temperatura
+Server will be shutdown when array operation completes=Il server verrà arrestato al termine dell'operazione dell'array
+Settings reset to default values=Le impostazioni vengono ripristinate ai valori predefiniti
+Show Sector Numbers=Mostra i numeri del settore
+Show the status of a running parity check=Mostra lo stato di un controllo di parità in esecuzione
+Shutdown=Spegnimento
+Shutdown aborted=Spegnimento interrotto
+Shutdown server at=Spegni il server alle
+Shutdown server when array operation completes=Arresta il server al termine dell'operazione dell'array
+Size=Dimensioni
+Something wrong progress information present without disks file present=Qualcosa non va: informazioni sull'avanzamento presenti senza file sui dischi presenti
+Something wrong restart information present without progress present=Qualcosa non va: riavviare le informazioni presenti senza progressi presenti
+Speed=Velocità
+Start a correcting parity check=Avvia un controllo di parità correttivo
+Start a non-correcting parity check=Avvia un controllo di parità non correttivo
+Start a parity check with scheduled settings=Avvia un controllo di parità con le impostazioni pianificate
+Start a partial parity check=Avvia un controllo di parità parziale
+Start array issued via Command Line=Array iniziale emesso tramite riga di comando
+Start point for check=Punto di partenza per il controllo
+Start the array=Inizia la serie
+Start the array and wait for other array operations to finish=Avviare l'array e attendere il completamento delle altre operazioni sull'array
+Starting Shutdown=Avvio dello spegnimento
+Status=Stato
+Stop array issued via Command Line=Arresta l'array emesso tramite la riga di comando
+Stop the array=Arrestare la serie
+Sunday=Domenica
+Suppressed built-in %s finished notification=Integrato soppresso%1$snotifica terminata
+Suppressed built-in %s started notification=Integrato soppresso%1$sha avviato la notifica
+Syslog and Flash=Syslog e Flash
+Syslog only=Solo syslog
+System crashed=Il sistema si è bloccato
+Temperature Pause and Resume=Pausa e ripresa della temperatura?
+Temperature monitoring switched off=Monitoraggio della temperatura disattivato
+Testing=Test
+Testing mode is normally only used by the plugin author or when gathering evidence of a suspected bug in the plugin Testing mode is very verbose and generates a lot of additional log entries so you do not want it enabled unless it is really necessary=La modalità di test viene normalmente utilizzata solo dall'autore del plugin o quando si raccolgono prove di un sospetto bug nel plugin. La modalità di test è molto dettagliata e genera molte voci di registro aggiuntive, quindi è consigliabile non abilitarla a meno che non sia realmente necessaria.
+The Pause and Resume custom times cannot be identical=Gli orari personalizzati Pausa e Riprendi non possono essere identici.
+The Pause and Resume times cannot be identical=I tempi di Pausa e Riprendi non possono essere identici.
+The Pause and Resume times would give an increment length of more than 12 hours which is unusual Are you sure you these are the right way around=I tempi di pausa e ripresa darebbero un incremento di durata superiore a 12 ore, il che è insolito.  Sei sicuro che questa sia la strada giusta?
+The Resume value must be greater than the Pause one for the heat related Pause and Resume to work correctly as they are both subtracted from the disk temperature warning value when calculating the desired temperature=Il valore Riprendi deve essere maggiore di quello Pausa affinché Pausa e Riprendi relativi al calore funzionino correttamente poiché vengono entrambi sottratti dal valore di avviso della temperatura del disco quando si calcola la temperatura desiderata
+The Unraid Cumulative Parity Check setting must be set to No if you want to use the Parity Check Tuning Plus plugin to run Array operations in increments=IlUnraidL'impostazione del controllo di parità cumulativo deve essere impostata su No se si desidera utilizzare il fileParity Check Tuning Plusplugin per eseguire operazioni sull'array in incrementi
+The end point must be larger than the start=Il punto finale deve essere più grande dell'inizio
+The following are also available for testing purposes only=I seguenti sono disponibili anche solo a scopo di test
+The value you have specified seems unusually large as it is not an absolute value but is relative to the value specified for the drives Temperature Warning level at the Unraid level=Il valore specificato sembra insolitamente grande in quanto non è un valore assoluto ma è relativo al valore specificato per il livello di avviso di temperatura delle unità al livelloUnraidlivello
+This might affect array integrity=Ciò potrebbe influire sull'integrità dell'array
+Thursday=Giovedì
+Tidy shutdown file not present in %s event=File di arresto ordinato non presente in%1$sevento
+Tuesday=Martedì
+Unable to stop array=Impossibile arrestare l'array
+Unavailable=Non disponibile
+Unclean shutdown detected=Rilevato arresto non corretto
+Unknown action %s=Azione sconosciuta:%1$s
+Unrecognized option=Opzione non riconosciuta
+Unusually large value=Valore insolitamente grande?
+Update cron table entries=Aggiorna le voci della tabella cron
+Updated cron settings are in %s=Sono presenti le impostazioni cron aggiornate%1$s
+Usage=Utilizzo
+Use increments for %s %s=Utilizza incrementi per%1$s %2$s
+Use increments for Clear operations=Utilizzare gli incrementi per le operazioni di cancellazione
+Use increments for Parity Sync or Data Rebuild operations=Utilizzare gli incrementi per le operazioni di sincronizzazione della parità o di ricostruzione dei dati
+Version=Versione
+Versions Unraid %s, Plugin %s=Versioni:Unraid %1$s, Plug-in%2$s
+Waiting=In attesa
+Warning=Avvertimento
+Wednesday=Mercoledì
+Weekly=Settimanale
+Write Corrections to Parity=Scrivi correzioni alla parità
+Write current settings to syslog=Scrivi le impostazioni correnti su syslog
+Yes.=Sì
+:parityProblemsPlus_check_plug:
+> Quando si fa clic su **Verifica** viene avviato un controllo parziale
+> coprirà almeno i punti iniziale e finale specificati. Sarà un controllo correttivo
+> se l'opzione **Scrivi correzioni** è impostata su **Sì**, altrimenti controlla la lettura.
+> Tieni presente che questo controllo verrà eseguito per un minimo di 1 minuto anche se specifichi un numero molto piccolo di settori da controllare.
+:end
+
+:parityProblemsPlus_correct_plug:
+> Specifica se vuoi tentare di aggiornare la parità per correggere eventuali errori rilevati,
+> o semplicemente fai un test di lettura per vedere se vengono segnalati errori di parità.
+:end
+
+:parityProblemsPlus_end_plug:
+> Seleziona dove vuoi che termini il controllo. È possibile specificare il punto finale come numero di settore o come percentuale della dimensione del disco di parità più grande.
+>
+> In pratica, per motivi tecnici, il controllo potrebbe terminare più tardi rispetto al punto specificato poiché il controllo viene effettuato solo una volta al minuto per verificare se il punto finale è stato raggiunto.
+:end
+
+:parityProblemsPlus_intro_plug:
+Il **Parity Check Tuning Plus Assistant**fa parte del **Parity Check Tuning Plus** plug-in.<p/>
+Lo stato attuale è **SPERIMENTALE** ed è sempre possibile che questo assistente venga rimosso in futuro).
+**(è gradito feedback sul concetto di base e idee di miglioramento)**.<p/>
+L'idea è che questo assistente possa essere utilizzato dopo che un controllo di parità o un controllo di lettura ha segnalato problemi e registrato i dettagli di eventuali settori problematici nel syslog.
+In molti casi tali errori possono essere dovuti a fattori esterni come il cablaggio o l'alimentazione piuttosto che ai dischi veri e propri.<p/>
+Inoltre non è raro, in particolare su **Ryzen/ThreadRipperSistemi basati su **, per ottenere errori di parità casuali se la RAM è overcloccata
+(unXMPprofilo **è** un overclock),
+e la combinazione scheda madre/CPU può anche imporre limiti inferiori a quelli che la RAM è in grado di supportare.<p/>
+Se ritieni di aver corretto qualunque cosa abbia causato il problema, puoi utilizzare questo assistente per eseguire un controllo parziale su un intervallo ristretto per vedere se il problema persiste.
+Questo può essere molto più veloce che dover eseguire un controllo di parità completo o un controllo di lettura per vedere se il problema è stato risolto o eseguire un'estensione del discoSMARTtest per testare il disco effettivo.<p/>
+**IMPORTANTE**: questo assistente non dovrebbe mai essere utilizzato come alternativa all'esecuzione di un controllo di parità completo una volta che si ritiene che il problema sia stato risolto.
+:end
+
+:parityProblemsPlus_sectors_plug:
+> Quando si fa clic sull'opzione **Mostra numeri di settore**, verrà visualizzata una finestra di dialogo
+> che estrae le voci dal syslog che hanno mostrato eventuali settori per i quali è presente alcuna parità
+> viene visualizzato il settore e se è stato corretto o si tratta di un errore di parità.
+:end
+
+:parityProblemsPlus_start_plug:
+> Seleziona da dove vuoi che inizi il controllo.  È possibile specificare il punto iniziale come numero di settore o come percentuale della dimensione del disco di parità più grande.
+>
+> Specificare i settori assoluti probabilmente sarà di particolare utilità quando hai estratto i numeri dei settori dal *syslog* quando il controllo di parità originale riportava errori su quei settori. In una versione futura di questo plugin il plugin potrebbe essere migliorato per estrarre automaticamente tali settori dal *syslog* e fornire un elenco a discesa ma questa funzionalità non è ancora implementata.
+>
+> In pratica, per motivi tecnici, il controllo potrebbe iniziare leggermente prima rispetto al punto specificato, ma ciò avverrà solo di una piccola quantità.
+:end
+
+:parityProblemsPlus_type_plug:
+> Seleziona il modo in cui desideri specificare i punti iniziale e finale.
+>
+> È probabile che tu voglia utilizzare numeri di settore assoluti se ce ne sono alcuni che sono stati precedentemente elencati nel syslog come errori.
+> L'uso dei numeri di settore assoluti tende ad essere più preciso e porta a test più brevi, ma può richiedere più sforzo da impostare.
+>
+> L'alternativa è usare le percentuali. Quando si utilizzano le percentuali, i numeri dei settori che queste rappresentano vengono calcolati come percentuali del disco di parità più grande.
+:end
+
+:parity_tuning_plus_allops_plug:
+> Queste sono le operazioni che implicano la creazione di una nuova parità o la ricostruzione di un disco guasto.
+>
+>Questo tipo di controllo verrà in genere eseguito solo se è potenzialmente presente qualche problema con l'array e viene intrapresa un'azione per riportarlo in uno stato protetto.
+>
+>**IMPORTANTE**: finché questa operazione non viene completata, l'array non sarà completamente protetto, quindi si presume che la maggior parte delle persone vorrà lasciare questa opzione su **No**.
+> Non selezionare **Sì** a meno che tu non sia assolutamente certo che sia ciò che desideri.
+:end
+
+:parity_tuning_plus_automatic_plug:
+> I controlli automatici sono quelli avviati automaticamente daUnraiddopo uno spegnimento non corretto.
+>
+> se ilUnraidil sistema non viene spento correttamente al successivo avvio dell'arrayUnraidavvierà automaticamente un controllo. Ciò può accadere per una vasta gamma di ragioni che vanno dalla perdita di potenza; problemi hardware; e problemi software. Il controllo automatico viene eseguito perché eventuali errori di parità potrebbero compromettere la capacità di ripristino in seguito a un guasto dell'unità array in un secondo momento, pertanto è necessario ripristinare una parità valida non appena possibile.
+> 
+> Se questa opzione è impostata su **Sì**, il controllo potrà essere eseguito per alcuni minuti (poiché eventuali errori dopo un arresto anomalo sono molto probabilmente all'inizio dei dischi poiché non sono stati smontati correttamente. Quindi, se al di fuori del tempo specificato per l'esecuzione degli incrementi, il controllo viene messo in uno stato di pausa. Il resto del controllo viene successivamente eseguito con incrementi in base agli intervalli di tempo specificati per l'esecuzione degli incrementi.
+:end
+
+:parity_tuning_plus_background_plug:
+> Questa opzione è rilevante solo se hai abilitato l'opzione Impostazioni->Notifiche di sistema (altamente consigliata).
+>
+> Impostando questa opzione su<strong>Sì</strong>significa che ti verrà inviata una notifica ogni
+> l'ora in cui viene avviata o completata un'attività in background come Appdata Backup o Mover. Se questa opzione
+> è impostato, la notifica viene inviata ogni volta che queste operazioni vengono avviate o interrotte durante un array
+> l'operazione è attiva anche se non è stata impostata la pausa o la ripresa dell'operazione
+> tali attività sono in esecuzione. Ciò può essere utile per verificare le prestazioni dell'array
+> è probabile che l'operazione interagisca male con l'attività in background in termini di prestazioni.
+>
+>Se preferisci non ricevere tali notifiche, lascia questa opzione impostata su **No**.
+>La notifica viene inviata come messaggio della categoria **Avviso** alle destinazioni specificate in *<a href="Settings/Notifications">Impostazioni->Impostazioni di notifica</a>*.
+:end
+
+:parity_tuning_plus_backup_plug:
+>Sospendere un'operazione di array (controllo di parità, controllo di lettura, sincronizzazione di parità, ricostruzione del disco, cancellazione del disco) se i plug-in CA Appdata o Appdata Backup stanno eseguendo un backup o un ripristino didockerdati del contenitore.  Un'operazione sull'array eseguita in parallelo al backup o al ripristino influisce negativamente sulle prestazioni a causa del conflitto sulle unità disco, pertanto è più efficiente non averle in esecuzione contemporaneamente.
+>
+> Questa impostazione ha effetto anche se non si utilizza nessuna delle opzioni per eseguire un'operazione su array in incrementi.
+>
+> Se si esegue il tipo di operazione array in incrementi, la ripresa avverrà solo al termine del backup o del ripristino se si è ancora entro gli intervalli di tempo per l'incremento.
+:end
+
+:parity_tuning_plus_clear_plug:
+> Un'operazione di cancellazione del disco si verifica quando si aggiunge una nuova unità (che non è stata pre-cancellata utilizzando il plug-in Pre-Clear) a un array protetto da parità. Il processo Clear scrive zero su ogni settore del nuovo disco in modo che possa essere aggiunto all'array senza influenzare la parità esistente. Fino al completamento dell'operazione di cancellazione non sarà possibile formattare il discoUnraide iniziare a usarlo per archiviare i dati.
+>
+>Poiché fino al completamento dell'operazione di cancellazione il disco non sarà disponibile per l'uso, è probabile che la maggior parte delle persone voglia lasciare questa opzione su **No**. Inoltre, un'operazione Cancella tende a non caricare molto il sistema, quindi è meno probabile che incida sulle prestazioni nel normale utilizzo quotidiano.
+:end
+
+:parity_tuning_plus_complete_plug:
+> Se impostato su **Sì**, avvia automaticamente uno spegnimento ordinato del server al termine dell'operazione corrente dell'array.
+>
+> È probabile che questa opzione sia utile solo su un server che rimane spento per la maggior parte del tempo poiché viene utilizzato per scopi di backup. L'idea è che è possibile avviare l'operazione dell'array (manualmente o tramite una pianificazione) e quindi lasciare che il server si spenga da solo senza dover sapere quanto tempo impiegherà il completamento dell'operazione dell'array.
+>
+> Quando viene rilevato che questa opzione è impostata ed è in corso un'operazione sull'array, viene inviata una notifica che avverrà l'arresto. Come misura di sicurezza, se questa opzione viene inizialmente impostata all'inizio del funzionamento dell'array, ma viene disattivata prima del termine, lo spegnimento verrà interrotto.
+>
+>**ATTENZIONE:** Non viene effettuato alcun controllo per verificare se sono presenti altre attività in esecuzione sul server nel momento in cui viene completata l'operazione dell'array prima che venga avviato l'arresto
+:end
+
+:parity_tuning_plus_critical_plug:
+> Questo valore indica quanto vicino al valore impostato per Soglia temperatura disco critica può raggiungere la temperatura di un disco prima che venga attivato l'arresto del server.
+> Potresti volere un piccolo valore positivo per attivare prima la pausaUnraidriesce a inviarti una notifica che la soglia critica di temperatura è stata raggiunta per un disco.
+>
+>Se è stata definita una soglia esplicita per un singolo azionamento, questo è il valore utilizzato.  In caso contrario verrà utilizzata l'impostazione globale.
+:end
+
+:parity_tuning_plus_defaults_plug:
+> Il pulsante **Applica** salverà i valori delle impostazioni attualmente visualizzati.
+>
+> Il pulsante **Fine** esce dalla pagina delle impostazioni.
+>
+> Il pulsante **Predefiniti** ripristinerà le impostazioni del plugin sui valori predefiniti utilizzati quando il plugin viene installato per la prima volta e le salverà immediatamente come impostazioni correnti.
+> Ora puoi apportare modifiche a queste impostazioni per adattarle al tuo sistema e premere il pulsante Applica per salvarle.
+:end
+
+:parity_tuning_plus_explain_plug:
+> Questo plugin non avvia le operazioni sull'array, ma modifica/migliora il comportamento una volta avviata l'operazione sull'array.
+>
+> Lo scopo principale di questo plugin è consentirti di limitare le operazioni dell'array come i controlli di parità all'esecuzione in orari che non ti disturberanno.  È possibile specificare individualmente se utilizzare gli incrementi per ciascun tipo principale di operazione sull'array.
+>
+>Impostando una di queste opzioni su **No** si ottiene il comportamento predefinito del sistema dell'operazione in esecuzione senza interruzioni fino al completamento, a meno che non si interrompa/metta in pausa/annulli manualmente l'operazione.
+>
+>L'impostazione di una di queste opzioni su **Sì** specifica che l'operazione sull'array deve essere eseguita con incrementi distribuiti su diversi giorni.
+>
+> Come esempio di cosa può fare questo plugin
+>Hai un controllo di parità che hai programmato per iniziare il primo di ogni mese a mezzanotte
+>* La tua esperienza passata ha dimostrato che se il controllo di parità viene eseguito ininterrottamente, sono necessarie 30 ore per essere completato.
+>* Imposta questo plugin per utilizzare incrementi di 3 ore a partire da mezzanotte e terminando alle 3:00 del mattino.
+>* Il controllo di parità ora richiederà effettivamente 10 giorni trascorsi (10 x 3 = 30), quindi il controllo di parità verrà completato il 10 del mese.
+>* Hai pianificato che questi incrementi vengano eseguiti a partire da mezzanotte e finiscano alle 3:00 del mattino. quando sai che il sistema non viene utilizzato.
+>* Non sei preoccupato per questo aumento del tempo trascorso e apprezzerai la maggiore reattività del sistema durante il normale utilizzo.
+>* Per il resto del mese questo plugin non farà nulla poiché non è in corso alcun controllo di parità attivo quando arriva l'ora di inizio di un incremento.
+>
+>**NOTE:**
+>* La normaUnraidIl comportamento se l'array viene interrotto mentre un'operazione sull'array è incompleta è che l'avanzamento fino a quel momento viene perso e può essere riavviato solo dall'inizio.  Puoi evitarlo se imposti l'opzione del plugin per riprendere le operazioni dell'array al successivo avvio dell'array.
+>* Se non si dispone di un disco di parità o se il numero di unità guaste è uguale al numero di unità disabilitate, viene eseguito un **controllo di lettura** anziché un **controllo di parità** per garantire che tutte le unità rimanenti possano essere lette senza errori.
+:end
+
+:parity_tuning_plus_frequency_plug:
+> La frequenza con cui devono essere eseguiti gli incrementi durante un'operazione di array.
+>
+> Durante il normale funzionamento si prevede che l'opzione **Giornaliero** sarà quella che la maggior parte degli utenti vorrà utilizzare, quindi questa è l'impostazione predefinita. C'è anche un'opzione **Settimanale** per coloro che eseguono controlli poco frequenti.
+>
+> Per supportare gli utenti che cercano altre frequenze, c'è la possibilità di impostare pianificazioni **Personalizzate** che consentiranno pianificazioni più complicate per i tempi di pausa e ripresa. Quando usi questa opzione ti viene data la possibilità di specificare l'ora utilizzata da Linux<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>utilità.
+:end
+
+:parity_tuning_plus_history_plug:
+> Il pulsante **Cronologia** visualizzerà la cronologia corrente dei controlli di parità.
+> La sua funzione è identica all'utilizzo del pulsante **Cronologia** nella scheda **Principale**.
+:end
+
+:parity_tuning_plus_hot_plug:
+>Sospendere un'operazione dell'array (controllo parità, sincronizzazione parità/ricostruzione disco, cancellazione disco) se la temperatura del disco supera i limiti impostati.
+>
+>Le temperature vengono verificate rispetto alle soglie impostate per i livelli di temperatura del disco di avviso. Se è stata definita una soglia per una singola unità (a cui si accede facendo clic sull'unità nella scheda Principale), questo è il valore utilizzato. In caso contrario verrà utilizzata l'impostazione globale (impostata tramite *Impostazioni->Impostazioni display*). Si presuppone che normalmente si desideri che l'operazione sull'array venga sospesa prima del valore impostato inUnraidlivello come soglia di avviso.
+>
+>Una soluzione molto migliore è migliorare il raffreddamento del case in modo che i dischi non si surriscaldino mai. In pratica ciò potrebbe non rivelarsi sempre pratico.
+>
+>Se l'operazione dell'array è stata sospesa durante l'esecuzione di un incremento, non verrà ripresa oltre il tempo assegnato per l'incremento. Se l'operazione dell'array è stata avviata per qualsiasi altro motivo, il comportamento Pausa/Riprendi in base alla temperatura è sempre attivo.
+:end
+
+:parity_tuning_plus_increments_plug:
+>I controlli pianificati sono quelli che hai configurato per essere eseguiti a orari prestabiliti tramite Impostazioni->Pianificazione.
+>
+>Impostando questa opzione su **Sì** si specifica che i controlli devono essere eseguiti in incrementi distribuiti su diversi giorni.  Tieni presente che se desideri utilizzare il plugin per gestire gli incrementi delle operazioni dell'array, allora **non** devi impostare l'opzione Cumnlative Parity Check su **Sì** nello standardUnraidImpostazioni del controllo parità.
+>
+>Se lo hai impostato su **No**, otterrai il comportamento predefinito del sistema di controlli in esecuzione senza interruzione fino al completamento, a meno che non li interrompi/metti in pausa/annulli manualmente.
+:end
+
+:parity_tuning_plus_logging_plug:
+> Controlla il livello di dettaglio nelle voci. Il livello di dettaglio può essere aumentato per facilitare il debug di eventuali problemi che potrebbero verificarsi utilizzando questo plugin.
+>
+>I messaggi di questo plugin sono identificati dal fatto che vengono mostrati come provenienti da
+>* **Parity Check Tuning Plus**  
+>* **Parity Check Tuning Plus Assistant**  
+>a seconda di quale parte del plugin ha generato i messaggi
+>
+>Con l'opzione **Base** impostata ci saranno solo un piccolo numero di messaggi che indicano che questo plugin ha intrapreso qualche azione o che è stata rilevata una possibile condizione di errore.  Questo sarà ciò che la maggior parte degli utenti desidera durante il normale funzionamento.
+>
+>Impostando questa opzione su **Debug** verranno scritte voci aggiuntive nel syslog che forniranno maggiori informazioni su ciò che accade quando questo plugin è in esecuzione. Mostrano il funzionamento interno del plugin. Queste voci aggiuntive sono identificate dal fatto che avranno la parola **DEBUG** aggiunta all'inizio dei messaggi. Alcuni utenti (in particolare quelli che non hanno mai utilizzato questo plugin in precedenza) potrebbero volerlo utilizzare per vedere maggiori dettagli su come funziona questo plugin, ma non è previsto che questa opzione venga lasciata abilitata durante il normale funzionamento.
+>
+>Infine c'è un'impostazione aggiuntiva di **Test** che è destinata esclusivamente all'uso da parte dello sviluppatore ma viene lasciata qui per comodità. Scriverà messaggi ancora più dettagliati nel syslog ma è probabile che questi non siano interessanti (o addirittura significativi) per l'utente medio.  Questi messaggi avranno la parola **TESTING** aggiunta all'inizio dei messaggi. Dovresti eseguire questo livello di registrazione solo se ti è stato chiesto di farlo poiché può riempire rapidamente il tuo registro di sistema se non stai attento.
+>
+>Sono graditi feedback sull'opportunità di introdurre qualche opzione intermedia che generi messaggi di tipo informativo sull'attività del plugin, omettendo alcuni dettagli di livello inferiore che mirano a diagnosticare eventuali problemi che potrebbero verificarsi durante l'esecuzione del plugin.
+>
+>Se è stata impostata la modalità Test per la registrazione, è possibile scegliere dove registrare i messaggi di registro. Il valore predefinito è il syslog di sistema standard e questa è l'unica opzione consentita in modalità Base. Il syslog è conservato nella RAM, quindi non causa scritture eccessive sull'unità flash.
+>Per facilitare i problemi di debug, in modalità Test è possibile registrare i messaggi sull'unità flash al posto del syslog o in aggiunta al syslog. Il file parity.check.tuning.plus.log risultante verrà archiviato nella cartella del plug-in sull'unità flash e fornire questo file allo sviluppatore aiuterà a diagnosticare qualsiasi comportamento imprevisto riscontrato.
+:end
+
+:parity_tuning_plus_low_plug:
+> Questo valore indica quanto deve essere inferiore alla soglia di temperatura di avviso di un'unità prima che venga presa in considerazione la **ripresa** del funzionamento dell'array. Se è stato impostato l'utilizzo degli incrementi per il tipo di operazione da eseguire, il tempo deve rientrare nella finestra degli incrementi altrimenti la ripresa verrà rinviata fino al ripristino di tale finestra.
+>
+>È necessario ottenere un buon equilibrio tra le operazioni sull'array riprese troppo presto (e quindi il raggiungimento rapidamente del livello per avviare un'altra pausa) e la perdita di molto tempo.
+>
+>Se un disco viene sottoposto a rotazione, la temperatura non è immediatamente disponibile, quindi si presumerà che questo criterio sia stato soddisfatto
+>
+>Se non è presente alcuna operazione sull'array in pausa, non verrà intrapresa alcuna azione.
+:end
+
+:parity_tuning_plus_manual_plug:
+> I controlli manuali sono quelli che hai avviato tramite il pulsante **Verifica** nella scheda Principale.
+>
+> Impostarlo su **Sì** se si desidera che anche i controlli avviati manualmente vengano eseguiti in incrementi?
+>
+> È molto probabile che tu voglia che questo controllo venga eseguito fino al completamento senza interruzioni e, in tal caso, lascia questa opzione impostata su **No**.
+> Con questa opzione impostata su **Sì**, se si avvia manualmente un controllo dalla pagina principale e poi si mette manualmente in pausa il controllo, il controllo verrà eseguito con incrementi tra gli orari pianificati fino al completamento del controllo.
+:end
+
+:parity_tuning_plus_mover_plug:
+>Sospendere un'operazione di array (controllo di parità, controllo di lettura, sincronizzazione di parità, ricostruzione del disco, cancellazione del disco) se il motore è in esecuzione. Un'operazione dell'array eseguita in parallelo al mover influisce negativamente sulle prestazioni a causa del conflitto sulle unità disco, quindi è più efficiente non averle in esecuzione contemporaneamente.
+>
+> Questa impostazione ha effetto anche se non si utilizza nessuna delle opzioni per eseguire un'operazione su array in incrementi.
+> 
+> Se si esegue il tipo di operazione array in incrementi, la ripresa avverrà solo al termine del movimento se si è ancora entro le finestre temporali per l'incremento.
+:end
+
+:parity_tuning_plus_notify_plug:
+> Questa opzione è rilevante solo se hai abilitato l'opzione Impostazioni->Notifiche di sistema (altamente consigliata).
+>
+> Impostando questa opzione su<strong>Sì</strong>significa che ti verrà inviata una notifica ogni volta che il plugin mette in pausa o riprende un incremento durante un'operazione di array.
+>
+>Se preferisci non ricevere tali notifiche, lascia questa opzione impostata su **No**.
+>
+>Le notifiche ritenute puramente informative vengono inviate come messaggio di categoria **Normale** (verde) ai destinatari specificati in *<a href="Settings/Notifications">Impostazioni->Impostazioni di notifica</a>*, anche se quelli più importanti utilizzeranno le notifiche di tipo **Avviso** (arancione) o *Errore** (rosso) dove sembra appropriato.
+:end
+
+:parity_tuning_plus_pause_plug:
+> L'ora in cui un controllo di parità in esecuzione deve essere sospeso. In genere, questo dovrebbe essere un momento in cui si desidera che altre attività non siano influenzate da un controllo di parità in esecuzione.
+>Se al momento opportuno non è in corso alcun controllo di parità, non verrà eseguita alcuna azione.
+>
+>Normalmente è necessario assicurarsi che questo orario sia impostato dopo l'orario in cui si pianifica l'esecuzione regolare dei controlli di parità. Il primo incremento avverrà quindi dal momento in cui è previsto l'inizio del regolare controllo di parità fino all'ora specificata per la fine dell'incremento.
+>
+>Se il periodo di incremento è stato impostato su **Personalizzato**, i campi ore/minuti vengono nascosti e viene invece data la possibilità di impostare l'ora in<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>formato.
+>
+>Si desidera inoltre assicurarsi che il tempo assegnato all'esecuzione degli incrementi sia sufficiente per aspettarsi che il controllo di parità venga eseguito fino al completamento prima dell'inizio pianificato del controllo successivo. Poiché la maggior parte delle persone pianifica l'esecuzione dei controlli di parità solo raramente (ad esempio mensilmente o trimestralmente), è improbabile che questo costituisca un problema, ma è qualcosa da tenere in considerazione.
+:end
+
+:parity_tuning_plus_restart_plug:
+> Unraidnormalmente abbandonerà un controllo di parità se il sistema viene spento, riavviato o l'array viene arrestato (con l'unica opzione che è quella di riavviare il controllo di parità dall'inizio).
+> Le altre operazioni sull'array verranno riavviate dall'inizio.
+> L'impostazione di questa opzione consente di riavviare i controlli di parità da parte di questo plugin dal punto in cui erano stati raggiunti
+> purché siano soddisfatti i seguenti criteri:
+>* L'array è stato spento in modo ordinato
+>* L'utente non deve aver apportato alcuna modifica alla configurazione dell'array.
+>
+>Finché questi criteri vengono soddisfatti, al successivo avvio dell'array l'operazione riprende dal punto raggiunto in precedenza.
+>
+>**NOTE:**
+>* Se l'operazione dell'array è avvenuta entro il tempo impostato per l'esecuzione di un incremento pianificato, al riavvio l'operazione dell'array verrà impostata per essere messa in pausa se ora è fuori dall'orario impostato per l'esecuzione degli incrementi.
+>* Se l'operazione dell'array è stata sospesa manualmente, verrà sospesa anche l'operazione dell'array riavviata.
+>
+:end
+
+:parity_tuning_plus_resume_plug:
+> L'ora in cui riprendere un controllo di parità sospeso.<br>Se al momento non è in pausa alcun controllo di parità, non verrà intrapresa alcuna azione.
+>
+>In genere questo orario viene impostato per essere l'inizio di un periodo di inattività durante la notte. Un valore appropriato potrebbe essere quello di utilizzare la stessa ora specificata per l'avvio di un controllo di parità pianificato.
+>
+>Se il periodo di incremento è stato impostato su **Personalizzato**, i campi ore/minuti vengono nascosti e viene invece data la possibilità di impostare l'ora in<a href="https://en.wikipedia.org/wiki/Cron#Overview" target="_blank">crontab</a>formato.
+:end
+
+:parity_tuning_plus_shutdown_plug:
+> Se impostato su **Sì**, avvia automaticamente uno spegnimento ordinato del server se un disco nell'array o nei pool raggiunge la soglia di temperatura definita.
+> Le temperature vengono controllate rispetto alle soglie impostate per i livelli di temperatura del disco **Critici**. Se è stata definita una temperatura critica per una singola unità (a cui si accede facendo clic sull'unità nella scheda Principale), questo sarà il valore utilizzato. Se non l'impostazione globale (*<a href="Settings/DisplaySettings">Impostazioni->Impostazioni schermo</a>) verrà utilizzato.
+>
+>Questa opzione deve essere attivata se per qualche motivo il sistema di raffreddamento del sistema è insufficiente o se ha fallito in qualche modo. L'idea è che si voglia eseguire uno spegnimento ordinato prima che i dischi si danneggino a causa del surriscaldamento. Lo spegnimento attivato è funzionalmente identico a quello che si avrebbe premendo il pulsante Spegnimento nella pagina principale delUnraidGUI. Se le notifiche sono abilitate, te ne verrà inviata una per indicare che ciò è accaduto.
+>
+>Quando il server viene riavviato dopo tale arresto, all'avvio dell'array verrà notificato che si è verificato un arresto correlato alla temperatura nel caso in cui non fossi a conoscenza del motivo.
+>
+>**ATTENZIONE:** Se l'array viene interrotto mentre un'operazione sull'array è incompleta, viene ripristinata l'impostazione predefinitaUnraidIl comportamento è che i progressi fatti finora sono perduti e si può solo ricominciare dall’inizio.
+>
+>Se hai abilitato l'opzione di riavvio in questo plugin *e* lo spegnimento è un arresto ordinato), verrà effettuato un tentativo di riavviare l'operazione dell'array dal punto raggiunto in precedenza.
+:end
+
+:parity_tuning_plus_temp_notify_plug:
+> Impostando questa opzione su **Sì** significa che ti verrà inviata una notifica ogni volta che il plugin mette in pausa o riprende un'operazione dell'array a causa della temperatura delle tue unità.<br>Se preferisci non ricevere tali notifiche, lascia questa opzione impostata su **No**. La notifica viene inviata come messaggio della categoria **Avviso** alle destinazioni specificate in *<a href="Settings/Notifications">Impostazioni->Impostazioni di notifica</a>*.
+:end
+
+:parity_tuning_plus_warn_plug:
+> Questo valore indica quanto vicino al valore impostato per Soglia temperatura disco di avviso può essere raggiunta la temperatura del disco prima che venga attivata una **pausa** di un'operazione di array in esecuzione. Se è stata definita una soglia esplicita per un singolo azionamento, questo è il valore utilizzato. In caso contrario verrà utilizzata l'impostazione globale.
+>
+> Normalmente si desidera che un piccolo valore positivo attivi prima la pausaUnraidriesce a inviarti una notifica che è stata raggiunta la soglia di avviso di temperatura per un disco.
+>
+>Se non è presente alcuna operazione attiva sull'array, non verrà intrapresa alcuna azione anche se la temperatura del disco supera la soglia specificata.
+>
+> Se non è in esecuzione alcuna operazione sull'array, non verrà eseguita alcuna azione.
+:end
+
+aborted=abortito
+action=azione
+already paused=già in pausa
+already running=già in esecuzione
+appears there is a running array operation but no Progress file yet created=sembra che sia in corso un'operazione sull'array ma non è stato ancora creato alcun file di avanzamento
+appears to be a regular scheduled check=sembra essere un controllo programmato regolare
+appears to be an unclean shutdown=sembra essere un arresto sporco
+appears to be manual parity check=sembra essere un controllo di parità manuale
+appears to be marked as automatic parity check=sembra essere contrassegnato come controllo di parità automatico
+appears to be marked as scheduled parity check=sembra essere contrassegnato come controllo di parità pianificato
+appears to be partial parity check=sembra essere un controllo di parità parziale
+array drives=unità di array
+automatic=automatico
+backup=backup
+below critical disk temperature threshold=al di sotto della soglia critica della temperatura del disco
+below warning disk temperature threshold=sotto la soglia di avviso della temperatura del disco
+canceled=annullato
+completed=completato
+cool=bello
+critical=critico
+day=giorno
+detected=rilevato
+detected that mdcmd had been called from %s with command %s=rilevato che è stato chiamato mdcmd da%1$scon comando%2$s
+disabled=disabilitato
+does not appear to be an unclean shutdown=non sembra essere un arresto improprio
+drive temperature limits=limiti di temperatura del convertitore
+entry in %s format=ingresso dentro%1$sformato
+errors=errori
+exit code=codice di uscita
+finished=finito
+global temperature limits=limiti di temperatura globale
+hot=caldo
+hr=ora
+idle=inattivo
+manual=manuale
+min=min
+minute=minuto
+mover=motore
+no action taken as appears restart outstanding=nessuna azione intrapresa come appare riavvio in sospeso
+no array operation in progress=nessuna operazione sull'array in corso
+not a parity check so always treat it as an automatic operation=non è un controllo di parità, quindi trattalo sempre come un'operazione automatica
+operation was paused when reboot initiated so pause it immediately=l'operazione è stata sospesa all'avvio del riavvio, quindi metterla in pausa immediatamente
+past size=dimensione passata
+paused=in pausa
+percent=per cento
+plugin temperature settings=impostazioni della temperatura del plug-in
+running=correre
+scheduled=programmato
+sec=sez
+sector=settore
+spundown=spundown
+to get ready for restart=per prepararci alla ripartenza
+trigger unknown - assume manual=trigger sconosciuto: presupporre il manuale
+unknown=sconosciuto
+using scheduled mode of %s=utilizzando la modalità pianificata di%1$s
+warm=caldo
+where action is one of=dove l'azione è uno dei

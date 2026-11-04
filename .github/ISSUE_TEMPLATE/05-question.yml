@@ -1,0 +1,58 @@
+name: Question / troubleshooting
+description: Ask about configuration or investigate behavior you are unsure about.
+labels: [question, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Check [Getting Started](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/wiki/Getting-Started), [Troubleshooting](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/wiki/Troubleshooting), and [Diagnostics and Support](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/wiki/Diagnostics-and-Support) first.
+        Issues and attachments are public. Remove hostnames, disk serials, addresses, credentials, private paths, and unrelated data.
+        Capture relevant evidence before reinstalling, applying Defaults, or deleting markers.
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Parity Check Tuning Plus version
+    validations:
+      required: true
+  - type: input
+    id: unraid-version
+    attributes:
+      label: Unraid version
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question or behavior to understand
+      description: Explain what you want to accomplish and what you are seeing.
+    validations:
+      required: true
+  - type: textarea
+    id: attempted
+    attributes:
+      label: What have you already tried?
+      description: Include relevant wiki sections or existing issue links. It is fine to say that you have not changed anything yet.
+    validations:
+      required: true
+  - type: textarea
+    id: settings
+    attributes:
+      label: Relevant configuration and operation state
+      description: Optional. Include only relevant settings, operation type, pause reason, integration versions, and timestamps.
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized log excerpts
+      description: Optional. Include only relevant lines. Do not attach a complete diagnostics archive or saved disk/configuration snapshots.
+      render: text
+    validations:
+      required: false
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Sanitized screenshot or additional context
+      description: Optional. Crop unrelated content and review every attachment for private information.
+    validations:
+      required: false

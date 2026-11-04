@@ -1,0 +1,128 @@
+name: Bug report
+description: Report unexpected behavior in Parity Check Tuning Plus.
+labels: [bug, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Read the [troubleshooting guide](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/wiki/Troubleshooting) first.
+        Issues and attachments are public. Remove hostnames, disk serials, addresses, credentials, private paths, and unrelated data before sharing.
+        Capture relevant state before refreshing, reinstalling, applying Defaults, or deleting markers. Do not change an array operation just to reproduce a problem.
+  - type: checkboxes
+    id: existing-issues
+    attributes:
+      label: Existing reports
+      options:
+        - label: I searched the existing issues for this problem.
+          required: true
+  - type: input
+    id: plugin-version
+    attributes:
+      label: Parity Check Tuning Plus version
+      placeholder: Copy the exact version shown on the Plugins page.
+    validations:
+      required: true
+  - type: input
+    id: unraid-version
+    attributes:
+      label: Unraid version
+      placeholder: Include the full version and any beta or RC suffix.
+    validations:
+      required: true
+  - type: dropdown
+    id: affected-feature
+    attributes:
+      label: Affected feature
+      multiple: true
+      options:
+        - Scheduling and increments
+        - Mover or backup pauses
+        - Temperature handling
+        - Restart after array stop or reboot
+        - Notifications
+        - Parity history
+        - Partial-check Assistant
+        - Installation, update, or removal
+        - Settings or interface
+        - Other / unsure
+    validations:
+      required: true
+  - type: dropdown
+    id: operation-type
+    attributes:
+      label: Array operation type
+      options:
+        - Scheduled parity check
+        - Manual parity check
+        - Automatic check after unclean shutdown
+        - Read check without parity
+        - Parity sync or data rebuild
+        - Disk clear
+        - Partial check using the Assistant
+        - No active array operation
+        - Unsure
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+      placeholder: |
+        Expected:
+        Actual:
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps or sequence of events
+      description: If the problem is intermittent, describe the events before it occurred and say that you cannot reproduce it reliably.
+      placeholder: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+  - type: dropdown
+    id: operation-state
+    attributes:
+      label: Operation state when the problem occurred
+      options:
+        - Running
+        - Paused manually
+        - Paused automatically
+        - Completing or canceling
+        - Restarting
+        - Idle or array stopped
+        - Unsure
+    validations:
+      required: false
+  - type: textarea
+    id: relevant-settings
+    attributes:
+      label: Relevant settings and integrations
+      description: Include the schedule, correcting/non-correcting mode, pause reason, mover/backup plugin versions, language/browser for UI problems, and relevant timestamps where applicable. Share only relevant settings.
+    validations:
+      required: false
+  - type: input
+    id: last-working-version
+    attributes:
+      label: Last working version, if known
+      description: Include whether this started after a Plus update, Unraid update, or settings change.
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized log excerpts
+      description: Optional. Include relevant timestamps and errors only. Do not upload a complete diagnostics archive or saved disk/configuration snapshots.
+      render: text
+    validations:
+      required: false
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Sanitized screenshots or additional context
+      description: Optional. Crop unrelated content and review every image for private information before attaching it.
+    validations:
+      required: false

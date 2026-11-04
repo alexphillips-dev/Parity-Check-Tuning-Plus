@@ -1,0 +1,40 @@
+#!/bin/bash
+#
+# This is a custom version of the unRaid standard 'mdcmd' command that 
+# adds the capability to detect exactly when certain events were initiated.
+# This is to try and detect the cases where a parity check was initiated
+# manually rather than as a standard scheduled task.  All original functionality
+# is retained so it should not affect normal operation.
+#
+# Copyright 2019-2025, Dave Walker (itimpi).
+# Modified 2026-11-03 by alexphillips-dev for Parity Check Tuning Plus.
+#
+# This program is free software; you can redistribute it and/or
+# modify it under the terms of the GNU General Public License version 2,
+# as published by the Free Software Foundation.
+#
+# Limetech is given explicit permission to use this code in any way they like.
+#
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+#
+if [ "$#" -eq 0 ]; then
+  echo "usage: mdcmd <command> [arg ... ]"
+  exit 1
+fi
+if [ "$1" = "status" ]; then
+  exec cat /proc/mdstat
+fi
+read -r pct_parent_pid < <(ps h -o ppid= "$PPID" 2>/dev/null)
+read -r pct_caller < <(ps h -o %c "$pct_parent_pid" 2>/dev/null)
+pct_runtime=/usr/local/emhttp/plugins/parity.check.tuning.plus/parity.check.tuning.plus.php
+# Analyze a previous inactive run before a new kernel command can replace its state.
+if [ "$1" = "check" ] && [ "${2:-}" != "resume" ]; then
+  php -f "$pct_runtime" mdcmd_prepare "$pct_caller" "$@"
+fi
+# Capture observed progress only after the native command has been accepted.
+printf '%s\n' "$*" > /proc/mdcmd || exit "$?"
+php -f "$pct_runtime" mdcmd "$pct_caller" "$@"
+# A monitoring failure must not change the outcome of a successful native write.
+exit 0
