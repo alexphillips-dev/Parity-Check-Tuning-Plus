@@ -7,6 +7,7 @@ workspace files. A file already tracked or force-added is checked despite ignore
 """
 from pathlib import Path, PurePosixPath
 import argparse
+import hashlib
 import io
 import re
 import subprocess
@@ -53,6 +54,16 @@ CONTENT_RULES = {
     'credential-in-url': re.compile(rb'https?://[^\s/<>"\x27:@]+:[^\s/<>"\x27@]+@'),
     'workstation-path': re.compile(rb'(?i)(?:[a-z]:[\\/]+(?:users|documents and settings)[\\/]+|/(?:Users|home)/)[^\s\x00<>"\x27]+'),
 }
+EMAIL_ADDRESS = re.compile(rb'(?i)(?<![a-z0-9._%+-])[a-z0-9._%+-]+@([a-z0-9.-]+\.[a-z]{2,})(?![a-z0-9.-])')
+PUBLIC_EMAIL_DOMAINS = {'users.noreply.github.com', 'noreply.github.com'}
+EXAMPLE_EMAIL_DOMAINS = {'example.com', 'example.net', 'example.org'}
+# Official native parser fixtures retain public author contacts and mailto examples.
+# An exact Git blob identity prevents adding unrelated data under a fixture name.
+NOTICE_EMAIL_FIXTURES = {
+    'tests/fixtures/unraid/Markdown.php': '06f9554eb1d497cfd2d930190af3f34a061e4ecf',
+    'tests/fixtures/unraid/MarkdownExtra.php': '23b5aec4d36335e3d5334a8ef1536be466dbd4b4',
+    'tests/fixtures/unraid/MarkdownInterface.php': '84e6545900d075e94f0b11ccac4a112f12a08bf6',
+}
 
 
 def local_path(name):
@@ -86,8 +97,34 @@ def allowed_path(name):
     return bool(re.fullmatch(r'source/usr/local/emhttp/languages/[a-z]{2}_[A-Z]{2}/paritychecktuningplus\.txt', name))
 
 
-def content_issues(data):
-    return [category for category, pattern in CONTENT_RULES.items() if pattern.search(data)]
+def content_issues(data, allow_notice_emails=False):
+    issues = [category for category, pattern in CONTENT_RULES.items() if pattern.search(data)]
+    if not allow_notice_emails and any(
+            match[1].decode('ascii').lower() not in PUBLIC_EMAIL_DOMAINS | EXAMPLE_EMAIL_DOMAINS
+            for match in EMAIL_ADDRESS.finditer(data)):
+        issues.append('nonpublic-email')
+    profile = Path.home().name
+    if len(profile.split()) >= 2 and profile.casefold() in data.decode('utf-8', errors='ignore').casefold():
+        issues.append('private-profile-name')
+    return issues
+
+
+def identity_issues(root=ROOT):
+    """Check resolved commit identities, including environment overrides, without echoing them."""
+    issues = []
+    for identity, label in [('GIT_AUTHOR_IDENT', 'git-author'), ('GIT_COMMITTER_IDENT', 'git-committer')]:
+        result = subprocess.run(['git', 'var', identity], cwd=root, capture_output=True, text=True)
+        match = re.match(r'([^<>\r\n]+) <([^<>\r\n]+)> ', result.stdout)
+        if result.returncode or not match:
+            issues.append((label, 'missing-public-identity'))
+            continue
+        name, email = match.groups()
+        email_match = re.fullmatch(r'[^@\s<>]+@([^@\s<>]+)', email)
+        if not email_match or email_match[1].casefold() not in PUBLIC_EMAIL_DOMAINS:
+            issues.append((label, 'nonpublic-identity-email'))
+        if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9-]{0,38}', name):
+            issues.append((label, 'nonpublic-identity-name'))
+    return issues
 
 
 def inspect_file(name, data):
@@ -111,7 +148,9 @@ def inspect_file(name, data):
         except (tarfile.TarError, EOFError, OSError):
             issues.append((name, 'unreadable-package'))
     else:
-        issues.extend((name, category) for category in content_issues(data))
+        blob = hashlib.sha1(b'blob ' + str(len(data)).encode('ascii') + b'\0' + data).hexdigest()
+        preserve_notice = NOTICE_EMAIL_FIXTURES.get(name) == blob
+        issues.extend((name, category) for category in content_issues(data, allow_notice_emails=preserve_notice))
     return issues
 
 
@@ -141,12 +180,13 @@ def main():
     parser.add_argument('--root', type=Path, default=ROOT)
     args = parser.parse_args()
     count, issues = check_index(args.root)
+    issues.extend(identity_issues(args.root))
     for name, category in issues:
         # Keep terminal control characters and matched private values out of logs.
         print(f'FAIL {category}: {ascii(name)}')
     if issues:
         raise SystemExit(1)
-    print(f'PASS: {count} indexed files and package contents checked; no local-only paths or configured private-content patterns found.')
+    print(f'PASS: {count} indexed files, package contents, and resolved Git identities checked; no configured private-data patterns found.')
 
 
 if __name__ == '__main__':

@@ -40,7 +40,7 @@ Run on Linux/WSL:
 python3 -B -m unittest discover -s scripts -p 'test_*.py' -v
 ```
 
-The suite has 134 tests covering installer/remover ownership, root metadata, failed-build preservation, mover identity, manual/overlap/temperature pause state, partial bounds, versions, defaults/status/history, locale switching, printf execution, escaping, parser-fixture integrity, all-language Testing-mode CLI help, publication boundaries, runtime references, compatibility, and cleanup behavior. One completion test includes 48 legacy-input subcases; a comparison negative control detects a deliberately changed setting binding.
+The suite has 143 tests covering installer/remover ownership, root metadata, failed-build preservation, mover identity, manual/overlap/temperature pause state, partial bounds, versions, defaults/status/history, locale switching, printf execution, escaping, parser-fixture integrity, all-language Testing-mode CLI help, publication boundaries, runtime references, compatibility, and cleanup behavior. One completion test includes 48 legacy-input subcases; a comparison negative control detects a deliberately changed setting binding.
 
 Completion tests execute the parity section of the verbatim, blob-verified `tests/fixtures/unraid/monitor`. A temporary notifier captures delivery without contacting external services. A barrier holds the real analyzer during delivery while a native snapshot attempts to emit: it must wait and then suppress its duplicate. Other cases preserve cancellation/errors, resolve stale terminal progress, retain native fallback on failure, preserve unrelated history, and check notifier install/update/removal and pass-through behavior.
 
@@ -91,7 +91,7 @@ The [source audit report](https://github.com/alexphillips-dev/Parity-Check-Tunin
 
 ## Compare the original distribution
 
-The [compatibility review](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/blob/main/docs/UPSTREAM-COMPATIBILITY.md) pins the upstream commit and original package checksum. Clone the original into an ignored directory and run:
+The [compatibility review](https://github.com/alexphillips-dev/Parity-Check-Tuning-Plus/blob/main/docs/UPSTREAM-COMPATIBILITY.md) pins the upstream commit and original package checksum. Provide a local checkout of that pinned baseline in the ignored `build/upstream-verification` directory, then run:
 
 ```text
 git -C build/upstream-verification checkout 5580d8f2a93223c81d805fbe556b00385b3201a7
